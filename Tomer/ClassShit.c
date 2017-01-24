@@ -21,6 +21,10 @@ int  main(void){
 	char stuff[] = ('b', 'b', 'c');
 	char *letter=stuff;
 	printf("%s, %s, %s\n", stuff[0], stuff[1],stuff[2]);
+	
+	
+	char *p= (char*)malloc(11*sizeof(char));
+	Does some crazy shit, allocates memory so that this shit language can do things. Allocates memory in the form of chars
 	*/
 	return 0;
 	
