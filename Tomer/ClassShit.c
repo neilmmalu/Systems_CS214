@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<string.h>
+
+/* This dude's email is gq19@cs.rutgers.edu*/
 struct fNode{
 char* token;
 struct fNode* next;
@@ -17,15 +19,17 @@ int  main(void){
 	Node T;	
 	T.token= "Slavery";
 	printf("%s\n", T.token);
-	/*Something is wrong with declaring stuff
-	char stuff[] = ('b', 'b', 'c');
+	char stuff[] = {'N', 'E', 'I', 'L'};
 	char *letter=stuff;
-	printf("%s, %s, %s\n", stuff[0], stuff[1],stuff[2]);
+	printf("Hello\n");
+	printf("%c%c%c%c\n", stuff[0], stuff[1],stuff[2],stuff[3]);
+	/*char1 c1='a';' c1 is a char
+ 	  char* c2 ="a"; c2 is a string*/
 	
-	
-	char *p= (char*)malloc(11*sizeof(char));
+	/*char *p= (char*)malloc(11*sizeof(char));
 	Does some crazy shit, allocates memory so that this shit language can do things. Allocates memory in the form of chars
 	*/
+	
 	return 0;
 	
 	

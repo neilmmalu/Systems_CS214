@@ -7,5 +7,7 @@ int main(int argc, char** argv){
 	printf("Well holy fuck %s go fuck yourself\n" ,name);
 
 	printf("\"To print a string that has quotation marks you needs to use the forward slash followed by the quotation marks. Ending with a slash and quote marks\"\n");
+	printf("%30s","Neil\n");
+	printf("%35s","Is a giant Jew\n");
 	return(0);
 }
