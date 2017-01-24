@@ -16,11 +16,14 @@ int  main(void){
 	printf("C is actually the worst language\n");
 	Node T;	
 	T.token= "Slavery";
-	Node *N;
-	N->token="NeilMalu";
-	T.next=N;
 	printf("%s\n", T.token);
+	/*Something is wrong with declaring stuff
+	char stuff[] = ('b', 'b', 'c');
+	char *letter=stuff;
+	printf("%s, %s, %s\n", stuff[0], stuff[1],stuff[2]);
+	*/
 	return 0;
+	
 	
 }
 
