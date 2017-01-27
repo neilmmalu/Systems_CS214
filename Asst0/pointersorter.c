@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
 	
 /*Validation for invalid parameters with usage statement*/
 	if(argc != 2){ 
-		printf("Invalid use. Usage string:\t ./pointersorter \"This is valid input\"\n");
+		printf("Invalid use. Proper Usage:   ./pointersorter \"This1is2valid3input\"\n");
 		//printf("Incorrect number of parameters: \n Usage: ./pointersorter \"astring\"\n");
 		return 0;
 	}
