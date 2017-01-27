@@ -15,7 +15,7 @@ struct Node *addNode(struct Node *head, char *word, int j);
 
 int main(int argc, char *argv[]){
 	if(argc != 2){ 
-		printf("Invalid use. Usage string:\t ./pointersorter \"This is valid input\"\n");
+		printf("Invalid use. Proper Usage:   ./pointersorter \"This1is2valid3input\"\n");
 		//printf("Incorrect number of parameters: \n Usage: ./pointersorter \"astring\"\n");
 		return 0;
 	}
