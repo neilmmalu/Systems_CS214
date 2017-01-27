@@ -15,7 +15,7 @@ struct Node *addNode(struct Node *head, char *word, int j);
 
 int main(int argc, char *argv[]){
 	
-/*Validation for invalid parameters with usage statement*/
+	/*Validation for invalid parameters with usage statement*/
 	if(argc != 2){ 
 		printf("Invalid use. Proper Usage:   ./pointersorter \"This1is2valid3input\"\n");
 		//printf("Incorrect number of parameters: \n Usage: ./pointersorter \"astring\"\n");
@@ -29,7 +29,11 @@ int main(int argc, char *argv[]){
 		printf("");
 		return 0;
 	}
+
+	/*Storing the length of the string*/
 	int inputLength = strlen(input);
+
+	/*Allocate memory to the first node*/
 
 	struct Node *head = (struct Node*)malloc(sizeof(struct Node));
 	head->componentString = NULL;
@@ -60,8 +64,10 @@ int main(int argc, char *argv[]){
 		}
 	}
 	printList(head);
+	free(head);
 }
 
+/*Function to print the strings at the end*/
 void printList(struct Node *head)
 {
 	if(head->componentString == NULL){
@@ -74,7 +80,7 @@ void printList(struct Node *head)
 	}
 }
 
-
+/*Function to add node in appropriate position*/
 struct Node *addNode(struct Node *head, char *copy, int j){
 	/*Check if head is initialized and set head as first string if not */
 	if(head->strLength == 0){
@@ -98,12 +104,13 @@ struct Node *addNode(struct Node *head, char *copy, int j){
 		return head;
 	}
 
-	/*set a pointer to go through linked list*/
+	/*set a pointer to go through the linked list*/
 	struct Node* ptr = head;
 	while(ptr->next != NULL){
 		/*to check if n lies between ptr and ptr->next */
 		strCheck = strcmp(ptr->next->componentString, n->componentString);
 		if(strCheck > 0){
+			/*Add n between ptr and ptr->next*/
 			n->next = ptr->next;
 			ptr->next = n;
 			return head;
