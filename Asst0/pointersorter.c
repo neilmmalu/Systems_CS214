@@ -11,6 +11,8 @@ struct Node{
 
 void printList(struct Node* head);
 
+struct Node *addNode(struct Node *head, char *word, int j);
+
 int main(int argc, char *argv[]){
 	if(argc != 2){
 		printf("Invalid use. Usage string:\t ./pointersorter \"This is valid input\"\n");
@@ -25,9 +27,7 @@ int main(int argc, char *argv[]){
 	int inputLength = strlen(input);
 
 	struct Node *head = (struct Node*)malloc(sizeof(struct Node));
-	head->componentString = NULL;
-	head->strLength = NULL;
-	head->next = NULL;
+	head->strLength = 0;
 	char c;
 	char *word = (char *)malloc(sizeof(char));
 	int i = 0, j = 0;
@@ -44,34 +44,48 @@ int main(int argc, char *argv[]){
 		}
 		else{
 			word[j] = '\0';
-			char *temp = word;
-			if(head->componentString == NULL){
-				printf("Enter\n");
-				head->componentString = temp;
-				head->strLength = j;
-				head->next = NULL;
-			}
-			else{
-				
-				struct Node *n = (struct Node*)malloc(sizeof(struct Node));
-				n->componentString = temp;
-				n->strLength = j;
-				n->next = head;
-				head = n;
-			}
+			char *copy = (char *)malloc(sizeof(strlen(word) + 1));
+			strcpy(copy, word);
+			head = addNode(head, copy, j);
 			j = 0;
 			word = (char *)realloc(word, (j+1)*sizeof(char));
 		}
-		printf("head word: %s\n", head->componentString);
+		// printf("head word: %s\n", head->componentString);
 	}
-	// printList(head);
+	printList(head);
 }
 
-void printList(struct Node* head){
-	while(head != NULL){
-		printf("%s -> ", head->componentString);
-		head = head->next;
+void printList(struct Node *head)
+{
+	for(head = head; head != NULL; head = head->next)
+	{
+		printf("%s ", head->componentString);
+		
+		if(head->next != NULL)
+		{
+			printf("\t");
+		}
 	}
 	printf("\n");
+}
+
+
+struct Node *addNode(struct Node *head, char *copy, int j){
+	if(head->strLength == 0){
+		head->componentString = copy;
+		head->strLength = j;
+		head->next = NULL;
+		printf("In add node head: ");
+		printList(head);
+		return head;
+	}
+	struct Node *n = (struct Node*)malloc(sizeof(struct Node));
+	n->componentString = copy;
+	n->strLength = j;
+	printf("In add node: ");
+	printList(head);
+	n->next = head;
+	head = n;
+	return head;
 }
 
