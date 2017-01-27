@@ -14,11 +14,13 @@ void printList(struct Node* head);
 struct Node *addNode(struct Node *head, char *word, int j);
 
 int main(int argc, char *argv[]){
-	if(argc != 2){
+	if(argc != 2){ /* Program always ends here, idk what argc!=2 means but the program never gets past here*/
 		printf("Invalid use. Usage string:\t ./pointersorter \"This is valid input\"\n");
+		//printf("Incorrect number of parameters: \n Usage: ./pointersorter \"astring\"\n");
+		//this is some print that explains how to use the program to the user? He wrote it.
 		return 0;
 	}
-	char *input = argv[1];
+	char *input = argv[1]; /* he saying something about dont change argv[1] Why.. he says youre toast*/
 
 	if(input == ""){
 		printf("error\n");
@@ -27,9 +29,15 @@ int main(int argc, char *argv[]){
 	int inputLength = strlen(input);
 
 	struct Node *head = (struct Node*)malloc(sizeof(struct Node));
+<<<<<<< HEAD
 	head->strLength = 0;
+=======
+	head->componentString = NULL;
+	head->strLength = 0; //ints cant be null - compiles after this change
+	head->next = NULL;
+>>>>>>> refs/remotes/origin/master
 	char c;
-	char *word = (char *)malloc(sizeof(char));
+	char *word = (char *)malloc(sizeof(char)); //Says to initialize *word before doing malloc
 	int i = 0, j = 0;
 	for(i = 0; i <= inputLength; i++){
 		c = input[i];
