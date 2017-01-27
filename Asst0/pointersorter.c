@@ -130,7 +130,7 @@ struct Node *addNode(struct Node *head, char *copy, int j){
 		}
 		ptr = ptr->next;
 	}
-
+	/*If it doesn't go anywhere, it has to go at the end*/
 	ptr->next = n;
 	n->next = NULL;
 	return head;
