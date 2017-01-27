@@ -33,31 +33,44 @@ int main(int argc, char *argv[]){
 	/*Storing the length of the string*/
 	int inputLength = strlen(input);
 
-	/*Allocate memory to the first node*/
-
+	/*Allocate memory to the first node and set it to default(NULLs and 0)*/
 	struct Node *head = (struct Node*)malloc(sizeof(struct Node));
 	head->componentString = NULL;
 	head->strLength = 0; 
 	head->next = NULL;
+
+	/*Declare char to go through string*/
 	char c;
+
+	/*Allocate memory to store component strings*/
 	char *word = (char *)malloc(sizeof(char)); 
+	/*i is size of input length and j is length of each component string */
 	int i = 0, j = 0;
 	for(i = 0; i <= inputLength; i++){
 		c = input[i];
-		
+		/*check if the char is an alphabet or something else*/
 		if(isalpha(c)){
+			/*Add the char to the word in position 'j'*/
 			word[j] = c;
 			j++;
+			/*Add null char at the end of strings*/
 			word[j] = '\0';
+			/*reallocate memory to word so that another char can be added in 
+			the next iteration*/
 			word = (char *)realloc(word, (j+1)*sizeof(char));
 		}
 		else{
+			/*If there's no letters between seperators, ignore them*/
 			if(j == 0){
 				continue;
 			}
+
 			word[j] = '\0';
+			/*Make a copy of the word, so that when word changes, the nodes won't*/
 			char *copy = (char *)malloc(sizeof(strlen(word) + 1));
 			strcpy(copy, word);
+
+			/*Add node to head and return the first node*/
 			head = addNode(head, copy, j);
 			j = 0;
 			word = (char *)realloc(word, (j+1)*sizeof(char));
