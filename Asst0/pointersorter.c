@@ -14,13 +14,12 @@ void printList(struct Node* head);
 struct Node *addNode(struct Node *head, char *word, int j);
 
 int main(int argc, char *argv[]){
-	if(argc != 2){ /* Program always ends here, idk what argc!=2 means but the program never gets past here*/
+	if(argc != 2){ 
 		printf("Invalid use. Usage string:\t ./pointersorter \"This is valid input\"\n");
 		//printf("Incorrect number of parameters: \n Usage: ./pointersorter \"astring\"\n");
-		//this is some print that explains how to use the program to the user? He wrote it.
 		return 0;
 	}
-	char *input = argv[1]; /* he saying something about dont change argv[1] Why.. he says youre toast*/
+	char *input = argv[1]; 
 
 	if(input == ""){
 		printf("error\n");
@@ -29,15 +28,11 @@ int main(int argc, char *argv[]){
 	int inputLength = strlen(input);
 
 	struct Node *head = (struct Node*)malloc(sizeof(struct Node));
-<<<<<<< HEAD
-	head->strLength = 0;
-=======
 	head->componentString = NULL;
-	head->strLength = 0; //ints cant be null - compiles after this change
+	head->strLength = 0; 
 	head->next = NULL;
->>>>>>> refs/remotes/origin/master
 	char c;
-	char *word = (char *)malloc(sizeof(char)); //Says to initialize *word before doing malloc
+	char *word = (char *)malloc(sizeof(char)); 
 	int i = 0, j = 0;
 	for(i = 0; i <= inputLength; i++){
 		c = input[i];
@@ -46,9 +41,7 @@ int main(int argc, char *argv[]){
 			word[j] = c;
 			j++;
 			word[j] = '\0';
-			// printf("j is : %d\n",j);
 			word = (char *)realloc(word, (j+1)*sizeof(char));
-			printf("Word: %s\n", word);
 		}
 		else{
 			word[j] = '\0';
@@ -58,7 +51,6 @@ int main(int argc, char *argv[]){
 			j = 0;
 			word = (char *)realloc(word, (j+1)*sizeof(char));
 		}
-		// printf("head word: %s\n", head->componentString);
 	}
 	printList(head);
 }
@@ -83,15 +75,11 @@ struct Node *addNode(struct Node *head, char *copy, int j){
 		head->componentString = copy;
 		head->strLength = j;
 		head->next = NULL;
-		printf("In add node head: ");
-		printList(head);
 		return head;
 	}
 	struct Node *n = (struct Node*)malloc(sizeof(struct Node));
 	n->componentString = copy;
 	n->strLength = j;
-	printf("In add node: ");
-	printList(head);
 	n->next = head;
 	head = n;
 	return head;
