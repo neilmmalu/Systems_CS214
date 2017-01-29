@@ -81,6 +81,7 @@ int main(int argc, char *argv[]){
 	}
 	printList(head);
 	free(word);
+	free(copy);
 	free(head);
 }
 
