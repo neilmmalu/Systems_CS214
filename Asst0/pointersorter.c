@@ -3,15 +3,15 @@
 #include<stdlib.h>
 #include<ctype.h>
 
-struct Node{
+typedef struct Node{
 	char *componentString;
 	int strLength;
 	struct Node *next;
-}Node;
+} Node;
 
-void printList(struct Node* head);
+void printList(Node* head);
 
-struct Node *addNode(struct Node *head, char *word, int j);
+Node *addNode(Node *head, char *word, int j);
 
 int main(int argc, char *argv[]){
 	
@@ -33,7 +33,7 @@ int main(int argc, char *argv[]){
 	int inputLength = strlen(input);
 
 	/*Allocate memory to the first node and set it to default(NULLs and 0)*/
-	struct Node *head = (struct Node*)malloc(sizeof(struct Node));
+	Node *head = (Node*)malloc(sizeof(Node));
 	head->componentString = NULL;
 	head->strLength = 0; 
 	head->next = NULL;
@@ -80,11 +80,12 @@ int main(int argc, char *argv[]){
 		}
 	}
 	printList(head);
+	free(word);
 	free(head);
 }
 
 /*Function to print the strings at the end*/
-void printList(struct Node *head)
+void printList(Node *head)
 {
 	if(head->componentString == NULL){
 		return;
@@ -96,7 +97,7 @@ void printList(struct Node *head)
 }
 
 /*Function to add node in appropriate position*/
-struct Node *addNode(struct Node *head, char *copy, int j){
+Node *addNode(Node *head, char *copy, int j){
 	
 	/*Check if head is initialized and set head as first string if not */
 	if(head->strLength == 0){
@@ -107,7 +108,7 @@ struct Node *addNode(struct Node *head, char *copy, int j){
 	}
 
 	/*create new node */
-	struct Node *n = (struct Node*)malloc(sizeof(struct Node));
+	Node *n = (Node*)malloc(sizeof(Node));
 	n->componentString = copy;
 	n->strLength = j;
 
@@ -122,7 +123,7 @@ struct Node *addNode(struct Node *head, char *copy, int j){
 	}
 
 	/*set a pointer to go through the linked list*/
-	struct Node* ptr = head;
+	Node* ptr = head;
 	while(ptr->next != NULL){
 		
 		/*to check if n lies between ptr and ptr->next */
