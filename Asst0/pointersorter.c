@@ -115,7 +115,7 @@ struct Node *addNode(struct Node *head, char *copy, int j){
 	int strCheck = strcmp(n->componentString, head->componentString);
 	
 	/*if strCheck < 0, that means n follows head*/
-	if(strCheck >= 0){
+	if(strCheck < 0){
 		n->next = head;
 		head = n;
 		return head;
@@ -127,7 +127,7 @@ struct Node *addNode(struct Node *head, char *copy, int j){
 		
 		/*to check if n lies between ptr and ptr->next */
 		strCheck = strcmp(n->componentString, ptr->next->componentString);
-		if(strCheck >= 0){
+		if(strCheck < 0){
 			/*Add n between ptr and ptr->next*/
 			n->next = ptr->next;
 			ptr->next = n;
