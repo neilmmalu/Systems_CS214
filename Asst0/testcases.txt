@@ -1,0 +1,58 @@
+					Test Cases
+
+		Input					Output
+
+./pointersorter “thing stuff otherstuff blarp”		blarp
+							otherstuff
+							stuff
+							thing
+
+./pointersorter	“thing1stuff3otherstuff,blarp”		blarp
+							otherstuff
+							stuff
+							thing
+
+./pointersorter aand,aAnd,Aand,AAnd			AAnd
+							Aand
+							aAnd
+							aand
+
+./pointersorter						Invalid use. Proper Usage:    ./pointersorter This1is2valid3input”
+
+./pointersorter wRyY4WryY3WRYy000000wryy		WRYy
+							WryY
+							wRyY
+							wryy
+
+./pointersorter NULL					NULL
+
+./pointersorter ./pointersorter				pointersorter
+
+./pointersorter 123412341234				
+
+./pointersorter “a30H211A…/h;;Ha”			A
+							H
+							Ha
+							a
+							h
+
+./pointersorter Systems214Is????Fun			Fun
+							Is
+							Systems
+
+./pointersorter “p1zz4 1s D3l1c10us”			D
+							c
+							l
+							p
+							s
+							us
+							zz
+
+./pointersorter “H11..e’’l][l0000o”			H
+							e
+							l
+							l
+							o
+	
+
+					
