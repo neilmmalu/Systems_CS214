@@ -9,7 +9,7 @@ typedef struct Node{
 	struct Node *next;
 } Node;
 
-void printList(Node* head);
+void printList(Node *head);
 
 Node *addNode(Node *head, char *word, int j);
 
@@ -86,8 +86,7 @@ int main(int argc, char *argv[]){
 }
 
 /*Function to print the strings at the end*/
-void printList(Node *head)
-{
+void printList(Node *head){
 	if(head->componentString == NULL){
 		return;
 	}
@@ -116,7 +115,7 @@ Node *addNode(Node *head, char *copy, int j){
 	/*check if head needs to be changed. i.e new node should be before head*/
 	int strCheck = strcmp(n->componentString, head->componentString);
 	
-	/*if strCheck < 0, that means n follows head*/
+	/*if strCheck < 0, that means head changes*/
 	if(strCheck < 0){
 		n->next = head;
 		head = n;
@@ -124,7 +123,7 @@ Node *addNode(Node *head, char *copy, int j){
 	}
 
 	/*set a pointer to go through the linked list*/
-	Node* ptr = head;
+	Node *ptr = head;
 	while(ptr->next != NULL){
 		
 		/*to check if n lies between ptr and ptr->next */
