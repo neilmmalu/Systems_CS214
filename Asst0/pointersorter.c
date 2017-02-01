@@ -81,7 +81,6 @@ int main(int argc, char *argv[]){
 	}
 	printList(head);
 	free(word);
-	//free(copy);  //./pointersorter this this this // Might need to work, not give an error. He talked about it for a second in class but I dont remember if it was "this wont be used or this will be used"
 	free(head);
 }
 
