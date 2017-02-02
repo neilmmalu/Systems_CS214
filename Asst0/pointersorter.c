@@ -82,6 +82,7 @@ int main(int argc, char *argv[]){
 	printList(head);
 	free(word);
 	free(head);
+	return 1;
 }
 
 /*Function to print the strings at the end*/
