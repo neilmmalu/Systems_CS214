@@ -11,3 +11,4 @@ void *myfree(char *p);
 
 int cleanUp(char* myblock, int size);
 
+void *initializeBlock(char* myblock);
