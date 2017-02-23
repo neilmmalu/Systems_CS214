@@ -11,3 +11,7 @@ void *initializeBlock(char* myblock){
 		*(short*)(myBlock + i) = 0;
 	}
 }
+
+void *mymalloc(int size){
+	
+}

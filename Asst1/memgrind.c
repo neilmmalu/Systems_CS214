@@ -1,7 +1,4 @@
 #include "mymalloc.c"
-#include <stdlib.h>
-#include <stdio.h>
-
 
 int main(int argc, char** argv){
 	char *test[1000];
