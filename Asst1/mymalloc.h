@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 #define malloc(x) mymalloc(x)
-
+#define free(x) myfree(x)
 static char myblock[5000];
 
 void *mymalloc(int size);
