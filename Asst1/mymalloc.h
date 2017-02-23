@@ -3,6 +3,11 @@
 
 #define malloc(x) mymalloc(x)
 
+static char myblock[5000];
+
 void *mymalloc(int size);
 
-static char myblock[5000];
+void *myfree(char *p);
+
+int cleanUp(char* myblock, int size);
+
