@@ -11,7 +11,13 @@ int main(int argc, char** argv){
 	for(i=0;i<1000;i++){
 		free(test[i]);
 	}
-	// Part B
+	//Part B
+	int i=0;
+	for(i=0;i<1000;i++){
+		test[i] = (char*)malloc(sizeof(char));
+		free(test[i]);
+	}
+	// Part C
 	int k=0;
 	while(k<1000){
 		int r = rand() %2;
@@ -28,9 +34,24 @@ int main(int argc, char** argv){
 		default:
 			break;
 	}
-		//free(test);
-	}	
-
+		free(test);
+	}
+	// Part D
+	int k=0;
+	while(k<1000){
+		int r = rand() %2;
+	switch(r){
+		case 0:
+			int bytes = rand() %65;
+			break;
+			//check if space is not being used already
+			//test[somenumber] = malloc(bytes) amount of bytes
+		case 1:
+			//free the first pointer it can find
+			break;
+		default:
+			break;
+	}
 	
 
 
