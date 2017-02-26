@@ -11,18 +11,18 @@ void partA(char *test[1000]){
 	
 	long average=0;
 	int x = 0;
-	for(x = 0; x < 100; x++){
+	// for(x = 0; x < 100; x++){
 		gettimeofday(&beginTime,0);
 		int i=0;
 		for(i=0;i<1000;i++){
 			test[i] = (char*)malloc(sizeof(char));
 		}
 		for(i=0;i<1000;i++){
-		//	free(test[i]);
+			free(test[i]);
 		}
 		gettimeofday(&endTime,0);
 		average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
-	}
+	// }
 	printf("%ld\n",average/100); 
 	return;
 }
