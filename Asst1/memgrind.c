@@ -31,6 +31,7 @@ void partB(char *test[1000]){
 	struct timeval endTime;
 	long average=0;
 	int x = 0;
+	
 	for(x = 0; x < 100; x++){
 		gettimeofday(&beginTime,0);
 		int i=0;
@@ -50,6 +51,8 @@ void partC(char *test[1000]){
 	struct timeval endTime;
 	gettimeofday(&beginTime,0);
 	int k=0;
+	time_t t;
+	srand((unsigned) time(&t));
 	while(k<1000){
 		int r =rand() %2;
 		switch(r){
@@ -80,6 +83,8 @@ void partD(char *test[1000]){
 	struct timeval endTime;
 	int x = 0;
 	long average=0;
+	time_t t;
+	srand((unsigned) time(&t));
 	for(x = 0; x < 100; x++){
 		gettimeofday(&beginTime,0);
 		int k=0;
