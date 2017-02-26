@@ -2,8 +2,6 @@
 
 int isEmpty = 1;
 
-int main(int argc, char *argv[]){
-}
 
 void initializeBlock(){
 	char *p;
