@@ -6,31 +6,49 @@ void partC(char *test[1000]);
 void partD(char *test[1000]);
 
 void partA(char *test[1000]){
-	struct timeval startTime;
-	struct timeval endTime;
-	gettimeofday(&startTime,0);
-	int i=0;
-	for(i=0;i<1000;i++){
-		test[i] = (char*)malloc(sizeof(char));
-	}
-	for(i=0;i<1000;i++){
-	//	free(test[i]);
-	}
+	struct timeval tv1;
+	struct timeval tv2;
+	
 	long average=0;
-	gettimeofday(&endTime,0);
-	average += ((endTime.tv_sec-startTime.tv_sec)*1000000 + endTime.tv_usec-startTime.tv_usec);
+	int x = 0;
+	for(x = 0; x < 100; x++){
+		gettimeofday(&tv1,0);
+		int i=0;
+		for(i=0;i<1000;i++){
+			test[i] = (char*)malloc(sizeof(char));
+		}
+		for(i=0;i<1000;i++){
+		//	free(test[i]);
+		}
+		gettimeofday(&tv2,0);
+		average += ((tv2.tv_sec-tv1.tv_sec)*1000000 + tv2.tv_usec-tv1.tv_usec);
+	}
 	printf("%ld\n",average/100); 
 	return;
 }
 void partB(char *test[1000]){
-	int i=0;
-	for(i=0;i<1000;i++){
-		test[i]=(char*)malloc(sizeof(char));
-	//	free(test[i]);
+	struct timeval tv1;
+	struct timeval tv2;
+	long average=0;
+	int x = 0;
+	for(x = 0; x < 100; x++){
+		gettimeofday(&tv1,0);
+		int i=0;
+		for(i=0;i<1000;i++){
+			test[i]=(char*)malloc(sizeof(char));
+		//	free(test[i]);
+		}
+		gettimeofday(&tv2,0);
+		average += ((tv2.tv_sec-tv1.tv_sec)*1000000 + tv2.tv_usec-tv1.tv_usec);
 	}
+
+	printf("%ld\n",average/100); 
 	return;
 }
 void partC(char *test[1000]){
+	struct timeval tv1;
+	struct timeval tv2;
+	gettimeofday(&tv1,0);
 	int k=0;
 	while(k<1000){
 		int r =rand() %2;
@@ -51,28 +69,42 @@ void partC(char *test[1000]){
 			}
 		}
 //	free(test);
+	long average=0;
+	gettimeofday(&tv2,0);
+	average += ((tv2.tv_sec-tv1.tv_sec)*1000000 + tv2.tv_usec-tv1.tv_usec);
+	printf("%ld\n",average/100); 
 	return;
 }
 void partD(char *test[1000]){
-	int k=0;
-	while(k<1000){
-		int r=rand() %2;
-		int bytes;
-		switch(r){
-			case 0:
-				
-				bytes = rand()%64;
-				bytes+=1;
-				k+=bytes;
-				break;
-			case 1:
-				//free first pointer it finds
-				break;
-			default:
-				break;
-			}
-	}
-//	free(test);
+	struct timeval tv1;
+	struct timeval tv2;
+	int x = 0;
+	long average=0;
+	for(x = 0; x < 100; x++){
+		gettimeofday(&tv1,0);
+		int k=0;
+		while(k<1000){
+			int r=rand() %2;
+			int bytes;
+			switch(r){
+				case 0:
+					
+					bytes = rand()%64;
+					bytes+=1;
+					k+=bytes;
+					break;
+				case 1:
+					//free first pointer it finds
+					break;
+				default:
+					break;
+				}
+		}
+		gettimeofday(&tv2,0);
+		average += ((tv2.tv_sec-tv1.tv_sec)*1000000 + tv2.tv_usec-tv1.tv_usec);
+	}	
+
+	printf("%ld\n",average/100); 
 	return;
 }
 int main(int argc, char** argv){

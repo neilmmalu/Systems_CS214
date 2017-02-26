@@ -36,11 +36,10 @@ void *allocateMem(int size){
     	return NULL;
     }
 
-    do {
-
-        short *mallocSize = (short*)(temp);
+    while(index < 5000){
+    	short *mallocSize = (short*)(temp);
         short mallocSizeMetadata = *mallocSize * -1;
-        if (mallocSizeMetadata < 0){
+        if (mallocSizeMetadata <= 0){
             mallocSizeMetadata *= -1;
         }
 
@@ -64,7 +63,9 @@ void *allocateMem(int size){
             temp = &myblock[index];
             i++;
         }
-    }while (index < 5000);
+    }
+        
+    
 
     return NULL;
 }
