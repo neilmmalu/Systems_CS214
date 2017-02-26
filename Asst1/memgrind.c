@@ -6,9 +6,9 @@ void partC(char *test[1000]);
 void partD(char *test[1000]);
 
 void partA(char *test[1000]){
-	struct timeval tv1;
-	struct timeval tv2;
-	gettimeofday(&tv1,0);
+	struct timeval startTime;
+	struct timeval endTime;
+	gettimeofday(&startTime,0);
 	int i=0;
 	for(i=0;i<1000;i++){
 		test[i] = (char*)malloc(sizeof(char));
@@ -17,8 +17,8 @@ void partA(char *test[1000]){
 	//	free(test[i]);
 	}
 	long average=0;
-	gettimeofday(&tv2,0);
-	average += ((tv2.tv_sec-tv1.tv_sec)*1000000 + tv2.tv_usec-tv1.tv_usec);
+	gettimeofday(&endTime,0);
+	average += ((endTime.tv_sec-startTime.tv_sec)*1000000 + endTime.tv_usec-startTime.tv_usec);
 	printf("%ld\n",average/100); 
 	return;
 }
