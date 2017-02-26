@@ -78,9 +78,9 @@ void partD(char *test[1000]){
 int main(int argc, char** argv){
 	char *test[1000];
 	partA(test);
-	partB(test);
-	partC(test);
-	partD(test);
+//	partB(test);
+//	partC(test);
+//	partD(test);
 
 	return 0;
 	}
