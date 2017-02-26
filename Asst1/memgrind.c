@@ -1,11 +1,14 @@
 #include "mymalloc.c"
-
+#include<time.h>
 void partA(char *test[1000]);
 void partB(char *test[1000]);
 void partC(char *test[1000]);
 void partD(char *test[1000]);
 
 void partA(char *test[1000]){
+	struct timeval tv1;
+	struct timeval tv2;
+	gettimeofday(&tv1,0);
 	int i=0;
 	for(i=0;i<1000;i++){
 		test[i] = (char*)malloc(sizeof(char));
@@ -13,6 +16,10 @@ void partA(char *test[1000]){
 	for(i=0;i<1000;i++){
 	//	free(test[i]);
 	}
+	long average=0;
+	gettimeofday(&tv2,0);
+	average += ((tv2.tv_sec-tv1.tv_sec)*1000000 + tv2.tv_usec-tv1.tv_usec);
+	printf("%ld\n",average/100); 
 	return;
 }
 void partB(char *test[1000]){
