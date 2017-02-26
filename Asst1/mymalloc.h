@@ -10,7 +10,7 @@ static char myblock[5000];
 
 void *mymalloc(int size, char *file, int line);
 void *allocateMem(int size);
-void *myfree(char *p, char *file, int line);
+void *myfree(void *p, char *file, int line);
 
 int cleanUp(char* myblock, int size);
 
