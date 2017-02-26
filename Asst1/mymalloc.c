@@ -2,22 +2,18 @@
 
 int isEmpty = 1;
 
-
-void initializeBlock(){
-	char *p;
-    p = &myblock[0];
-    *((short*)p) = -5000;
-}
-
 void *mymalloc(int size, char *file, int line){
 	if(isEmpty){
-		initializeBlock();
+		char *p;
+	    p = &myblock[0];
+	    *((short*)p) = -5000;
 		isEmpty = 0;
 	}
 
 	void *p = allocateMem(size);
 	if(p == NULL){
 		fprintf(stderr, "ERROR: Not enough free space for malloc in FILE: %s LINE: %d \n", file, line);
+		cleanup();
 	}
 
 	return p;
@@ -139,4 +135,8 @@ void myfree(void *p, char *file, int line){
         fprintf(stderr, "ERROR: Double free or pointer not allocated in FILE: %s at LINE: %d\n", file, line);
     }
 
+}
+
+void cleanup(){
+	
 }
