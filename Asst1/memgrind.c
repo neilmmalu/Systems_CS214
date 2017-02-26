@@ -1,12 +1,11 @@
 #include "mymalloc.c"
-#include<stdlib.h>
-#include<stdio.h>
-void partA(char *test);
-void partB(char *test);
-void partC(char *test);
-void partD(char *test);
 
-void partA(char *test){
+void partA(char *test[1000]);
+void partB(char *test[1000]);
+void partC(char *test[1000]);
+void partD(char *test[1000]);
+
+void partA(char *test[1000]){
 	int i=0;
 	for(i=0;i<1000;i++){
 		test[i] = (char*)malloc(sizeof(char));
@@ -16,7 +15,7 @@ void partA(char *test){
 	}
 	return;
 }
-void partB(char *test){
+void partB(char *test[1000]){
 	int i=0;
 	for(i=0;i<1000;i++){
 		test[i]=(char*)malloc(sizeof(char));
@@ -24,7 +23,7 @@ void partB(char *test){
 	}
 	return;
 }
-void partC(char *test){
+void partC(char *test[1000]){
 	int k=0;
 	while(k<1000){
 		int r =rand() %2;
@@ -47,7 +46,7 @@ void partC(char *test){
 //	free(test);
 	return;
 }
-void partD(char *test){
+void partD(char *test[1000]){
 	int k=0;
 	while(k<1000){
 		int r=rand() %2;
