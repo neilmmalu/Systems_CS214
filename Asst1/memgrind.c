@@ -62,13 +62,14 @@ void partB(char *test[1000]){
 void partC(char *test[1000]){
 	struct timeval beginTime;
 	struct timeval endTime;
-	
+	long average=0;
 	int k=0;
 	time_t t;
 	srand((unsigned) time(&t));
 	int x = 0;
-	gettimeofday(&beginTime,0);
+	
 	for(x = 0; x < 100; x++){
+		gettimeofday(&beginTime,0);
 		while(k<1000){
 			int r =rand() %2;
 			switch(r){
@@ -90,11 +91,12 @@ void partC(char *test[1000]){
 					break;
 			}
 		}
+		gettimeofday(&endTime,0);
+		average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
 	free(test);
-	long average=0;
-	gettimeofday(&endTime,0);
-	average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
+	
+	
 	printf("Grind C time: %ld\n",average/100); 
 	endGrind();
 	return;

@@ -1,16 +1,15 @@
 #include "mymalloc.h"
 
-int isEmpty = 1;
-// int freeCount = 0;
-// int mallocCount = 0;
-// int cleanUpCount = 0;
+int isEmpty = 1; 
+
+/*Add 0's or garbage values to the initial array and set the start as metadata to 4998*/
 void initializeBlock(){
 	int i = 0;
-		for(i = 0; i < 5000; i++){
-			myblock[i] = '0';
-		}
-		*(short *)myblock = 4998;
-		isEmpty = 0;
+	for(i = 0; i < 5000; i++){
+		myblock[i] = '0';
+	}
+	*(short *)myblock = 4998;
+	isEmpty = 0;
 }
 
 void *mymalloc(int size, char *file, int line){
