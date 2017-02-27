@@ -1,6 +1,6 @@
 #include "mymalloc.c"
 #include<time.h>
-
+#include<sys/time.h>
 int numMallocs = 0;
 int numFrees = 0;
 
