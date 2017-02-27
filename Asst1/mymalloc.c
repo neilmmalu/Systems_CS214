@@ -27,8 +27,6 @@ void *mymalloc(int size, char *file, int line){
 }
 
 void *allocateMem(int size, char* file, int line){
-    int i;
-    i = 0;
 
     //too small or too big
     if (size > 5000){
