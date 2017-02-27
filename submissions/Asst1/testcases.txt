@@ -1,0 +1,9 @@
+Two testcases workloads that we came up with:
+
+PartE:
+
+This will allocate the max amount of memory possible in our program, 4998 bytes which will also contain 2 bytes of meta-data. It will then immediately free it. This will repeat 1000 times, 100 times; so this part will run 100000 times. The purpose of this test case is to show the absolute worst runtime we could think of through a single for loop. Accessing, writing, then freeing all possible slots in our memory array.
+
+PartF:
+
+PartF is an error test case, there will be a lot of errors printed out while running this. essentally the purpose of having this test case is to showcase that our program will not freak out and give segmentation faults or crash when being asked to do something it cannot do like allocate 5000 or more bytes to our array, esepcailly when its being asked 100000 times!
