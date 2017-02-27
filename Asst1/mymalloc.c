@@ -27,7 +27,6 @@ void *mymalloc(int size, char *file, int line){
 }
 
 void *allocateMem(int size, char* file, int line){
-    int index = 0;
     int i;
     i = 0;
 
