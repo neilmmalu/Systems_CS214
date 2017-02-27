@@ -92,9 +92,15 @@ void partC(char *test[1000]){
 					break;
 			}
 		}
+<<<<<<< HEAD
 	
 free(test);
 	
+=======
+	}
+	free(test);
+	long average=0;
+>>>>>>> e61b65bdf72623132e4f266345dbcea6092ea433
 	gettimeofday(&endTime,0);
 	average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
