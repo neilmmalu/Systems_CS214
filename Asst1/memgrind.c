@@ -10,7 +10,7 @@ void partC(char *test[1000]);
 void partD(char *test[1000]);
 void PartE(char *test[1000]);
 void PartF(char *test[1000]);
-void endGrind();
+void endGrind(char *test[1000]);
 
 void partA(char *test[1000]){
 	struct timeval beginTime;
@@ -34,8 +34,8 @@ void partA(char *test[1000]){
 		gettimeofday(&endTime,0);
 		average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
-	printf("Grind A time: %ld\n",average/100); 
-	endGrind();
+	printf("Grind A time: %ld microseconds\n",average/100); 
+	endGrind(test);
 	return;
 }
 void partB(char *test[1000]){
@@ -57,18 +57,16 @@ void partB(char *test[1000]){
 		average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
 
-	printf("Grind B time: %ld\n",average/100); 
-	endGrind();
+	printf("Grind B time: %ld microseconds\n",average/100); 
+	endGrind(test);
 	return;
 }
 void partC(char *test[1000]){
 	struct timeval beginTime;
 	struct timeval endTime;
-<<<<<<< HEAD
+
 	long average=0;
-=======
-	long average =0;
->>>>>>> refs/remotes/origin/master
+
 	int k=0;
 	time_t t;
 	srand((unsigned) time(&t));
@@ -97,31 +95,15 @@ void partC(char *test[1000]){
 					break;
 			}
 		}
-<<<<<<< HEAD
 		gettimeofday(&endTime,0);
 		average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
 	free(test);
-	
-	
-=======
-<<<<<<< HEAD
-	
-free(test);
-	
-=======
-	}
-	free(test);
-	long average=0;
->>>>>>> e61b65bdf72623132e4f266345dbcea6092ea433
-	gettimeofday(&endTime,0);
-	average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
-	}
->>>>>>> refs/remotes/origin/master
-	printf("Grind C time: %ld\n",average/100); 
-	endGrind();
+	printf("Grind C time: %ld microseconds\n",average/100); 
+	endGrind(test);
 	return;
 }
+
 void partD(char *test[1000]){
 	struct timeval beginTime;
 	struct timeval endTime;
@@ -165,23 +147,23 @@ void partE(char *test[1000]){
 	long average=0;
 	time_t t;
 	srand((unsigned) time(&t));
+	
 	for(x=0;x<100;x++){
 		gettimeofday(&beginTime,0);
 		int k=0;
-		while(k<1000){
-			test[k]=(char*)malloc(4996-k*2);
+		for(k = 0; k < 1000; k++){
+			test[k] = (char *)malloc(4998 * sizeof(char));
 			numMallocs++;
 			free(test[k]);
 			numFrees++;
-			k++;
 		}
-	
-	
-	gettimeofday(&endTime,0);
-	average +=((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
+		gettimeofday(&endTime,0);
+		average +=((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
-	
-	endGrind();
+
+	free(test);
+	printf("Grind E time: %ld microseconds\n",average/100); 
+	endGrind(test);
 }	
 
 int main(int argc, char** argv){
@@ -195,10 +177,11 @@ int main(int argc, char** argv){
 	return 0;
 	}
 
-void endGrind(){
+void endGrind(char *test[1000]){
 	printf("Number of mallocs: %d\n", numMallocs);
 	printf("Number of frees: %d\n", numFrees);
 	numFrees = 0;
 	numMallocs = 0;
+	free(test);
 	printf("\n");
 }
