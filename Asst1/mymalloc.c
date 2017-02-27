@@ -1,7 +1,7 @@
 #include "mymalloc.h"
 
 int isEmpty = 1;
-
+// int freeCount = 0;
 void initializeBlock(){
 	int i = 0;
 		for(i = 0; i < 5000; i++){
@@ -17,7 +17,10 @@ void *mymalloc(int size, char *file, int line){
 	}
 
 	void *p = allocateMem(size, file, line);
-
+	if(p == NULL){
+		cleanUp();
+		p = allocateMem(size, file, line);
+	}
 	return p;
 }
 
@@ -45,13 +48,13 @@ void *allocateMem(int size, char* file, int line){
     short blockSize;
     short tracker = 0;
     while(tracker < 5000){
-    	printf("tracker: %hi\n", tracker);
+    	// printf("tracker: %hi\n", tracker);
     	blockSize = *(short *)current;
-    	printf("blockSize: %hi\n", blockSize);
+    	// printf("blockSize: %hi\n", blockSize);
     	if(blockSize > 0 && blockSize >= (short)size){
     		*(short *)current = (short)size *(-1);
-    		printf("current: %hi\n", *(short *)current);
-    		printf("blockSize: %hi\n", blockSize);
+    		// printf("current: %hi\n", *(short *)current);
+    		// printf("blockSize: %hi\n", blockSize);
     		*(short *)(current + (short)size + 2) = blockSize - (short)size - 2;
     		return (void *) (current + 2);
     	}
@@ -78,61 +81,51 @@ void myfree(void *p, char *file, int line){
 		return;
 	}
 
-	char *temp = (char *)p;
-	if(temp < &myblock[2] || temp > &myblock[4998]){
-		fprintf(stderr, "ERROR: Invalid pointer in FILE: %s at LINE: %d\n", file, line );
-		return;
+	void *targetFree = p - 2;
+	void *temp = (void *)myblock;
+	short x = 0;
+
+	while(targetFree != temp && x < 5000){
+		short blockSize = *(short *)temp;
+		if(blockSize < 0){
+			blockSize *= -1;
+		}
+		x += blockSize + 2;
+		temp += blockSize + 2;
 	}
 
-	char *curr = myblock;
-	while(curr <= (temp - 2)){
-		if(curr == (temp - 2)){
-			if(!*(short *)curr & ~1){
-				*(short *)curr *= -1;
-				cleanUp();
-				return;
-			}
-			else{
-				fprintf(stderr, "ERROR: Pointer points to free memory in FILE: %s at LINE: %d\n", file, line );
-				return;
-			}
-		}
-		if((short)curr < 0){
-			curr += *(short *)curr * (-1);
-		}
-		else{
-			curr += *(short *)curr;
+	if(targetFree == temp){
+		if(*(short *)temp < 0){
+			// freeCount++;
+			// printf("count: %d\n", freeCount);
+			*(short *)temp *= -1;
+			return;
 		}
 	}
-
-	fprintf(stderr, "ERROR: Invalid pointer in FILE: %s at LINE: %d\n", file, line );
-	return;
 }
 
 void cleanUp(){
-	char *temp = myblock;
-	short size1 = *(short *)temp;
-	while(temp < &myblock[4998]){
-		size1 = *(short *)temp;
-		if(size1 < 0){
-			size1 *= -1;
-			if((temp + size1) < &myblock[4998]){
-				char *nextBlock = (temp + size1);
-				short size2 = *(short *)nextBlock;
-				if(size2 < 0){
-					*(short *)temp *= -1;
-					*(short *)nextBlock = 0;
-					*(short *)temp += size2 + 2; 
-				}
-				else{
-					return;
-				}
-			}
-			else{
+	char *ptr = myblock;
+	short index = 0;
+
+	while(index < 5000){
+		short blockSize = *(short *)ptr;
+		if(blockSize < 0){
+			blockSize *= -1;
+			char *ptr2 = (ptr + blockSize + 2);
+			short blockSize2 = *(short *)ptr2;
+			if(blockSize2 < 0){
+				*(short *)ptr *= -1;
+				*(short *)ptr2 *= -1;
+				*(short *)ptr += *(short *)ptr2 + 2;
 				return;
 			}
-			
+			else{
+				index += blockSize + blockSize2 + 4;
+			}
 		}
-		temp += (2 + *(short *)temp + size1);
+		else{
+			index += blockSize + 2;
+		}
 	}
 }
