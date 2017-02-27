@@ -165,6 +165,33 @@ void partE(char *test[1000]){
 	printf("Grind E time: %ld microseconds\n",average/100); 
 	endGrind(test);
 }	
+//Part F prints out errors
+void partF(char *test[1000]){
+	struct timeval beginTime;
+	struct timeval endTime;
+	int x=0;
+	long average=0;
+	time_t t;
+	srand((unsigned) time(&t));
+	
+	for(x=0;x<100;x++){
+		gettimeofday(&beginTime,0);
+		int k=0;
+		for(k = 0; k < 1000; k++){
+			test[k] = (char *)malloc(5005 * sizeof(char));
+			// numMallocs++;
+			free(test[k]);
+			// numFrees++;
+		}
+		gettimeofday(&endTime,0);
+		average +=((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
+	}
+
+	free(test);
+	printf("Grind F time: %ld microseconds\n",average/100); 
+	endGrind(test);
+}
+
 
 int main(int argc, char** argv){
 	char *test[1000];
@@ -173,7 +200,7 @@ int main(int argc, char** argv){
 	partC(test);
 //partD(test);
 	partE(test);
-//	partF(test);
+	partF(test);
 	return 0;
 	}
 
