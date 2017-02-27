@@ -15,7 +15,7 @@ void partA(char *test[1000]){
 	
 	long average=0;
 	int x = 0;
-	for(x = 0; x < 7; x++){
+	for(x = 0; x < 100; x++){
 		gettimeofday(&beginTime,0);
 		int i=0;
 		for(i=0;i<1000;i++){

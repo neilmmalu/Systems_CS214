@@ -2,6 +2,8 @@
 
 int isEmpty = 1;
 // int freeCount = 0;
+// int mallocCount = 0;
+// int cleanUpCount = 0;
 void initializeBlock(){
 	int i = 0;
 		for(i = 0; i < 5000; i++){
@@ -55,7 +57,9 @@ void *allocateMem(int size, char* file, int line){
     		*(short *)current = (short)size *(-1);
     		// printf("current: %hi\n", *(short *)current);
     		// printf("blockSize: %hi\n", blockSize);
+
     		*(short *)(current + (short)size + 2) = blockSize - (short)size - 2;
+    		// printf("mallocCount: %d\n", ++mallocCount);
     		return (void *) (current + 2);
     	}
     	// printf("blockSize: %hi\n", blockSize);
@@ -66,6 +70,7 @@ void *allocateMem(int size, char* file, int line){
     	// printf("current: %hi\n", *(short *)current);
     	tracker+= blockSize;
     }
+    cleanUp();
 
     fprintf(stderr, "ERROR: Not enough free space in heap for malloc in FILE: %s LINE: %d \n", file, line);
     return NULL;
@@ -81,15 +86,18 @@ void myfree(void *p, char *file, int line){
 		return;
 	}
 
-	void *targetFree = p - 2;
-	void *temp = (void *)myblock;
+	char *targetFree = p - 2;
+	char *temp = myblock;
 	short x = 0;
 
 	while(targetFree != temp && x < 5000){
+		
 		short blockSize = *(short *)temp;
+		// printf("blockSize: %hi\n", blockSize);
 		if(blockSize < 0){
 			blockSize *= -1;
 		}
+
 		x += blockSize + 2;
 		temp += blockSize + 2;
 	}
@@ -97,8 +105,9 @@ void myfree(void *p, char *file, int line){
 	if(targetFree == temp){
 		if(*(short *)temp < 0){
 			// freeCount++;
-			// printf("count: %d\n", freeCount);
+			// printf("freeCount: %d\n", ++freeCount);
 			*(short *)temp *= -1;
+			cleanUp();
 			return;
 		}
 	}
@@ -107,17 +116,18 @@ void myfree(void *p, char *file, int line){
 void cleanUp(){
 	char *ptr = myblock;
 	short index = 0;
-
+	// printf("cleanUpCount: %d\n", ++cleanUpCount);
 	while(index < 5000){
 		short blockSize = *(short *)ptr;
-		if(blockSize < 0){
-			blockSize *= -1;
+		// printf("blockSize: %hi\n", blockSize);
+		if(blockSize > 0){
 			char *ptr2 = (ptr + blockSize + 2);
 			short blockSize2 = *(short *)ptr2;
-			if(blockSize2 < 0){
-				*(short *)ptr *= -1;
-				*(short *)ptr2 *= -1;
+			if(blockSize2 > 0){
 				*(short *)ptr += *(short *)ptr2 + 2;
+				*ptr2 = '0';
+				// printf("cleanUpCount: %d\n", ++cleanUpCount);
+				// printf("ptr: %hi\n", *(short *)ptr);
 				return;
 			}
 			else{
