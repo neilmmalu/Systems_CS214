@@ -1,6 +1,7 @@
 #include "mymalloc.c"
-#include<time.h>
-
+#include <time.h>
+#include <stdlib.h>
+#include <sys/time.h>
 int numMallocs = 0;
 int numFrees = 0;
 
@@ -19,7 +20,7 @@ void partA(char *test[1000]){
 	long average=0;
 	int x = 0;
 	for(x = 0; x < 100; x++){
-		gettimeofday(&beginTime,0);
+		gettimeofday(&beginTime, NULL);
 		int i=0;
 		for(i=0;i<1000;i++){
 			test[i] = (char*)malloc(sizeof(char));
@@ -31,7 +32,7 @@ void partA(char *test[1000]){
 			numFrees++;
 			// printf("numFrees: %li\n", numFrees++);
 		}
-		gettimeofday(&endTime,0);
+		gettimeofday(&endTime, NULL);
 		average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
 	printf("Grind A time: %ld microseconds\n",average/100); 
@@ -45,7 +46,7 @@ void partB(char *test[1000]){
 	int x = 0;
 	
 	for(x = 0; x < 100; x++){
-		gettimeofday(&beginTime,0);
+		gettimeofday(&beginTime, NULL);
 		int i=0;
 		for(i=0;i<1000;i++){
 			test[i]=(char*)malloc(sizeof(char));
@@ -53,7 +54,7 @@ void partB(char *test[1000]){
 			free(test[i]);
 			numFrees++;
 		}
-		gettimeofday(&endTime,0);
+		gettimeofday(&endTime, NULL);
 		average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
 
@@ -73,7 +74,7 @@ void partC(char *test[1000]){
 	int x = 0;
 	
 	for(x = 0; x < 100; x++){
-		gettimeofday(&beginTime,0);
+		gettimeofday(&beginTime, NULL);
 		while(k<1000){
 			int r =rand() %2;
 			switch(r){
@@ -95,7 +96,7 @@ void partC(char *test[1000]){
 					break;
 			}
 		}
-		gettimeofday(&endTime,0);
+		gettimeofday(&endTime, NULL);
 		average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
 	free(test);
@@ -112,7 +113,7 @@ void partD(char *test[1000]){
 	time_t t;
 	srand((unsigned) time(&t));
 	for(x = 0; x < 100; x++){
-		gettimeofday(&beginTime,0);
+		gettimeofday(&beginTime, NULL);
 		int k=0;
 		while(k<1000){
 			int r=rand() %2;
@@ -133,7 +134,7 @@ void partD(char *test[1000]){
 					break;
 				}
 		}
-		gettimeofday(&endTime,0);
+		gettimeofday(&endTime, NULL);
 		average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}	
 
@@ -149,7 +150,7 @@ void partE(char *test[1000]){
 	srand((unsigned) time(&t));
 	
 	for(x=0;x<100;x++){
-		gettimeofday(&beginTime,0);
+		gettimeofday(&beginTime, NULL);
 		int k=0;
 		for(k = 0; k < 1000; k++){
 			test[k] = (char *)malloc(4998 * sizeof(char));
@@ -157,7 +158,7 @@ void partE(char *test[1000]){
 			free(test[k]);
 			numFrees++;
 		}
-		gettimeofday(&endTime,0);
+		gettimeofday(&endTime, NULL);
 		average +=((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
 
@@ -175,15 +176,17 @@ void partF(char *test[1000]){
 	srand((unsigned) time(&t));
 	
 	for(x=0;x<100;x++){
-		gettimeofday(&beginTime,0);
+		gettimeofday(&beginTime, NULL);
 		int k=0;
 		for(k = 0; k < 1000; k++){
-			test[k] = (char *)malloc(5005 * sizeof(char));
-			// numMallocs++;
-			free(test[k]);
-			// numFrees++;
+			test[k] = (char *)malloc(40 * sizeof(char));
+			numMallocs++;
 		}
-		gettimeofday(&endTime,0);
+		for(k = 0; k < 1000; k++){
+			free(test[k]);
+			numFrees++;
+		}
+		gettimeofday(&endTime, NULL);
 		average +=((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
 
