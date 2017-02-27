@@ -72,7 +72,7 @@ void partC(char *test[1000]){
 	srand((unsigned) time(&t));
 	int x = 0;
 	
-	for(x = 0; x < 100; x++){
+	for(x = 0; x < 100; x++){	
 		gettimeofday(&beginTime,0);
 		while(k<1000){
 			int r =rand() %2;
@@ -95,10 +95,11 @@ void partC(char *test[1000]){
 					break;
 			}
 		}
+		free(test);
 		gettimeofday(&endTime,0);
 		average += ((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
-	free(test);
+	
 	printf("Grind C time: %ld microseconds\n",average/100); 
 	endGrind(test);
 	return;
@@ -127,7 +128,7 @@ void partD(char *test[1000]){
 					
 					break;
 				case 1:
-					free(test[k]);
+					free(test[k-bytes]);
 					break;
 				default:
 					break;
@@ -173,16 +174,14 @@ void partF(char *test[1000]){
 	long average=0;
 	time_t t;
 	srand((unsigned) time(&t));
-	
 	for(x=0;x<100;x++){
 		gettimeofday(&beginTime,0);
 		int k=0;
-		for(k = 0; k < 1000; k++){
-			test[k] = (char *)malloc(5005 * sizeof(char));
+		test[x] = (char *)malloc(5005 * sizeof(char));
 			// numMallocs++;
-			free(test[k]);
+		free(test[x]);
 			// numFrees++;
-		}
+		
 		gettimeofday(&endTime,0);
 		average +=((endTime.tv_sec-beginTime.tv_sec)*1000000 + endTime.tv_usec-beginTime.tv_usec);
 	}
@@ -190,6 +189,7 @@ void partF(char *test[1000]){
 	free(test);
 	printf("Grind F time: %ld microseconds\n",average/100); 
 	endGrind(test);
+	printf("PartF is an error test case, there will be a lot of errors printed out; this is not our program crashing or working improperly, it is showing how our malloc wont allow over 5000 bytes to be allocated and shows how it doesn't explode\n");
 }
 
 
@@ -198,7 +198,7 @@ int main(int argc, char** argv){
 	partA(test);
 	partB(test);
 	partC(test);
-//partD(test);
+	//partD(test);
 	partE(test);
 	partF(test);
 	return 0;
