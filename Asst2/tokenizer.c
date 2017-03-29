@@ -12,7 +12,7 @@ Node* tokenize(FILE* file, char* fileName)
     Node* head = NULL;
     char buffer[5000];
     int i = 0;
-	Node* curr = NULL;
+	Node* temp = NULL;
 	char c = fgetc(file);
 	while (c != EOF)
     {
@@ -31,20 +31,20 @@ Node* tokenize(FILE* file, char* fileName)
 		}
 		//make sure string is null terminated
 		buffer[i] = '\0';
-		char* currTok = malloc(sizeof(char)*i+1);
+		char* token = malloc(sizeof(char)*i+1);
 		if(strlen(buffer)>0)
         {
 		//+1?
-			memcpy(currTok, buffer, strlen(buffer)+1);
+			memcpy(token, buffer, strlen(buffer)+1);
 			if(head == NULL)
        	 	{
-            	head = createNode(fileName, currTok);
-            	curr = head;
+            	head = createNode(fileName, token);
+            	temp = head;
         	}
         	else
         	{
-            	curr->next = createNode(fileName, currTok);
-            	curr = curr-> next;
+            	temp->next = createNode(fileName, token);
+            	temp = temp->next;
         	}
     	}
 	}
@@ -53,43 +53,43 @@ Node* tokenize(FILE* file, char* fileName)
 }
 
 
-void traverseDirectory(hashTable* mainTable, const char * dir_name)
+void traverseDirectory(hashTable* mainTable, const char * directoryName)
 {
 
-	DIR * dir;
-	FILE* targetFile;
+	DIR * directory;
+	FILE* file;
 
-	//printf("%s\t %d\n", dir_name, sizeof(dir_name));
-	dir = opendir(dir_name);
-	if(!dir)
+	//printf("%s\t %d\n", directoryName, sizeof(directoryName));
+	directory = opendir(directoryName);
+	if(!directory)
 	{
 		if (errno == ENOTDIR)
 		{
 			char buffer [256];
-			memcpy (buffer, dir_name, sizeof(dir_name)+1);
-			buffer[sizeof(dir_name)+1] = '\0';
-			targetFile = fopen(dir_name, "r");
-			if (targetFile == NULL)
+			memcpy (buffer, directoryName, sizeof(directoryName)+1);
+			buffer[sizeof(directoryName)+1] = '\0';
+			file = fopen(directoryName, "r");
+			if (file == NULL)
 			{
 				printf("file is null\n");
 			}
 			//printf("%s\n", buffer);
-			Node* tokenStream = tokenize(targetFile, buffer);
+			Node* tokenStream = tokenize(file, buffer);
 			insertNode(tokenStream, mainTable, buffer);
 			return;
 		}
 		else
 		{
-			printf("Error: could not open %s - File or directory  may not exist\n ", dir_name);
+			printf("Error: could not open %s - File or directory  may not exist\n ", directoryName);
 				return;
 		}
 	}
-	while(dir !=NULL)
+	while(directory !=NULL)
 	{
 
 		struct dirent * entry;
 		char * d_name;
-		entry = readdir(dir);
+		entry = readdir(directory);
 		if(!entry)
 		{
 			//end of stream, break
@@ -107,7 +107,7 @@ void traverseDirectory(hashTable* mainTable, const char * dir_name)
 					//need to EXTEND THE PATH for next traverseDirectory call, working dir doesn't change (think adir/ -> adir/bdir/....)
 					int pathlength = 0;	
 					char path[256];
-					pathlength = snprintf(path, 256, "%s/%s",dir_name, d_name);
+					pathlength = snprintf(path, 256, "%s/%s",directoryName, d_name);
 					if(pathlength > 255)
 					{
 						printf("Path length is too long error");
@@ -123,12 +123,12 @@ void traverseDirectory(hashTable* mainTable, const char * dir_name)
 				//regular files, need to check to ensure ".txt"....
 			{	
 				char pathname [256];
-				FILE* targetFile;
-				sprintf(pathname, "%s/%s", dir_name, d_name);
-				targetFile = fopen(pathname, "r");
-				if (targetFile!=NULL)
+				FILE* file;
+				sprintf(pathname, "%s/%s", directoryName, d_name);
+				file = fopen(pathname, "r");
+				if (file!=NULL)
 				{
-						Node* tmp = tokenize(targetFile, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
+						Node* tmp = tokenize(file, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
 					insertNode(tmp, mainTable, d_name);
 				}
 				break;
@@ -139,8 +139,8 @@ void traverseDirectory(hashTable* mainTable, const char * dir_name)
 		}
 	
 	}
-//	printf("closing directory: %s\n", dir_name); //DEBUGGING 
-	if(closedir(dir)){
+//	printf("closing directory: %s\n", directoryName); //DEBUGGING 
+	if(closedir(directory)){
 		printf("error could not close dir");
 		return;
 	}
