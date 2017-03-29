@@ -25,9 +25,10 @@ char* inputString = "this is a test sentence now^Im utilizing $%^&symbols$%^&*(*
 boolean outputInitialized = FALSE;
 
 void addToTable(Node* list, hashTable* hTable , char* fileName);
-void travdir (hashTable* hTable, const char * dir_name);
 
-Node* makeNode(char* fileName, char* token);
+void traverseDirectory(hashTable* hTable, const char * dir_name);
+
+Node* createNode(char* fileName, char* token);
 
 hashTable* makeHashTable(int size);
 
