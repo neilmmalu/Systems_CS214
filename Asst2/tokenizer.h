@@ -44,11 +44,11 @@ void scatterTokens(Node* head, int size, FILE* outputFile);
 
 void outputTokenList(hashTable* myTable, FILE* outputFile);
 
-void initializeOutput();
+void printOpeningTags();
 
-void closeOutput();
+void printClosingTags();
 
-void myToLower(Node* head);
+void toLowerCase(Node* head);
 
 int sortalnum(const char* a, const char* b);
 

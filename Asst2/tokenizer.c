@@ -48,7 +48,7 @@ Node* tokenize(FILE* file, char* fileName)
         	}
     	}
 	}
-	myToLower(head);
+	toLowerCase(head);
     return head;
 }
 
@@ -222,7 +222,7 @@ void outputTokens(hashTable* masterTable, FILE* outputFile)
 		}
 	}
 	//deleteTable(masterTable);
-    closeOutput(outputFile);
+    printClosingTags(outputFile);
 }
 //I'm like 99% sure this works
 void scatterTokens (Node* head, int size, FILE* outputFile)
@@ -272,7 +272,7 @@ void outputTokenList (hashTable* mainTable, FILE* outputFile)
 	boolean wordInitialized = FALSE;
 	if (!outputInitialized)
 	{
-		initializeOutput(outputFile);
+		printOpeningTags(outputFile);
 		outputInitialized = TRUE;
 	}
 	int i;
@@ -298,17 +298,17 @@ void outputTokenList (hashTable* mainTable, FILE* outputFile)
 	fprintf(outputFile, "\t</word>\n");
 	//deleteTable(mainTable);
 }
-void initializeOutput(FILE* outputFile)
+void printOpeningTags(FILE* outputFile)
 {
 	fprintf(outputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
 	fprintf(outputFile, "<fileIndex>\n");
 }
 
-void closeOutput(FILE* outputFile)
+void printClosingTags(FILE* outputFile)
 {
 	fprintf(outputFile, "</fileIndex>");
 }
-void myToLower(Node* head)
+void toLowerCase(Node* head)
 {
 	int i;
 	Node* temp = head;
