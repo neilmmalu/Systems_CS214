@@ -169,80 +169,80 @@ Node* tokenize(FILE* file, char* fileName)
 //works for determined edge cases. will run more scenarios
 
 
-void insertNode(Node* list, hashTable* hTable , char* fileName)
+void insertNode(Node* head, hashTable* list , char* fileName)
 {
 	int count =0;
     //slot in the hashTable according to leading letter
-    int index;
+	int index;
     //leading letter
-    char leading;
-    //hashTable* hTable = createHashTable(36);
-	while(list!=NULL)
+	char leading;
+    //hashTable* list = createHashTable(36);
+	while(head!=NULL)
 	{
 		count ++;
-		leading = list->token[0];
-        	index = leading;
+		leading = head->token[0];
+		index = leading;
 		//alphas first in table, numerics second
 		if (!isalpha(leading))
-			{
-				index += 26;
-			}
+		{
+			index += 26;
+		}
 		else
-			{
-				index -=97;
-			}
+		{
+			index -=97;
+		}
 		//node to be inserted
-        Node* node = createNode(fileName, list->token);
-        //if node is to be inserted at front of list
-		if (hTable->table[index] == NULL || sortalnum(hTable->table[index]->token, node->token)<0)    
-			{
-                node->next = hTable->table[index];
-                hTable->table[index] = node;
-			}
+		Node* node = createNode(fileName, head->token);
+        //if node is to be inserted at front of head
+		if (list->table[index] == NULL || sortalnum(list->table[index]->token, node->token)<0)    
+		{
+			node->next = list->table[index];
+			list->table[index] = node;
+		}
         //if node is second node or later
-            else
-            {
-                Node* curr = hTable->table[index];
-                Node* prev = curr;
+		else
+		{
+			Node* curr = list->table[index];
+			Node* prev = curr;
             //while string to be inserted comes after existing strings
-                while(curr!=NULL && sortalnum(curr->token, node->token)>0)
-                {
-                    prev = curr;
-                    curr = curr->next;
-                }
+			while(curr!=NULL && sortalnum(curr->token, node->token)>0)
+			{
+				prev = curr;
+				curr = curr->next;
+			}
 			if (curr!=NULL && sortalnum(curr->token, node->token)==0)
 			{
 				if (strcmp(curr->fileName, node->fileName)!=0)
 				{
 								//HERE BEGINS THE NEW TERRITORY
-							if(curr->next != NULL && strcmp(curr->next->token, node->token)==0 && strcmp(curr->next->fileName, node->fileName)!=0){
-									curr->next->count++;
+					if(curr->next != NULL && strcmp(curr->next->token, node->token)==0 && strcmp(curr->next->fileName, node->fileName)!=0){
+						curr->next->count++;
 							//free(node);
-							}else{
+					}else{
 							//printf("original file %s, current file  %s, token = %s\n", curr->fileName, node->fileName, node->token);
-							node->next = curr->next;
-							curr -> next = node;
+						node->next = curr->next;
+						curr -> next = node;
 							//printHashTable(hTable);
-							}
-						}
-						else
-						{
-							curr -> count ++;
-							//free(node);
-							printf("%s\n", curr->token);
-						}
 					}
-					else
-						{
-						node->next = curr;
-						prev->next = node;
-						}
 				}
-				Node* temp = list;
-				list = list->next;
-				free(temp);
+				else
+				{
+					curr -> count ++;
+							//free(node);
+					printf("%s\n", curr->token);
+				}
 			}
-    return;
+			else
+			{
+				node->next = curr;
+				prev->next = node;
+			}
+		}
+		Node* temp = head;
+		head = head->next;
+		free(temp);
+	}
+	return;
 }
 
 //collects tokens, scatters into individual hash tables, and outputs them to designated output file
