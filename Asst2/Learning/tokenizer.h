@@ -2,19 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
+#include <dirent.h>
 
 typedef struct Node
 {
-	char* file;
-	char* token;
+	char* fileName;
 	int count;
+	char* token;
 	struct Node* next;
-}Node;
+}recordNode;
 
 typedef struct HashTable
 {
-	Node** table;
+	recordNode** table;
 	int length;
 }hashTable;
 
@@ -24,32 +24,42 @@ char* inputString = "this is a test sentence now^Im utilizing $%^&symbols$%^&*(*
 
 boolean outputInitialized = FALSE;
 
-void traverseDirectory(hashTable *myTable, const char *dir_name);
+void addToTable(recordNode* list, hashTable* hTable , char* fileName);
+void travdir (hashTable* hTable, const char * dir_name);
 
-Node* createNode(char* file, char* token);
+recordNode* makeNode(char* fileName, char* token);
 
-hashTable* createHashTable(int size);
+hashTable* makeHashTable(int size);
 
-Node* tokenize(FILE* file, char* fileName);
+recordNode* tokenize(FILE* file, char* fileName);
 
-void insertNode(Node* list, hashTable* hTable, char* file);
+int checkInput(int argc);
 
-void printTokens(hashTable* masterTable, FILE* outputFile);
+//recordNode* head, int size, char* fileName)
 
-hashTable* scatterTokens(Node* head, int size, FILE* outputFile);
+hashTable* makeMasterTable(recordNode* head, char* fileName);
 
-void printTokenList(hashTable* myTable, FILE* outputFile);
+//char* outputFile
+void outputTokens(hashTable* masterTable, FILE* outputFile);
 
-void toLowerCase(Node* head);
+void scatterTokens(recordNode* head, int size, FILE* outputFile);
 
-int sortalnum(const char *a, const char *b);
+void outputTokenList(hashTable* myTable, FILE* outputFile);
 
-void printHashTable(hashTable *hTable);
+void initializeOutput();
 
-void deleteHashTable(hashTable *hTable);
+void closeOutput();
 
-void deleteLinkedList(Node* head);
+void myToLower(recordNode* head);
 
-void printLL(Node* head);
+int sortalnum(const char* a, const char* b);
 
-int exists(char** argv);
+void printTable(hashTable* hTable);
+
+void destroyTable(hashTable* hTable);
+
+void destroyList(recordNode* head);
+
+void printLL(recordNode* head);
+
+
