@@ -5,8 +5,9 @@ int main (int argc, char** argv)
 	hashTable* myTable = createHashTable(36);
 
 		//FILE* inputFile = fopen(argv[2], "r");
-	if(validateInput(argc) == 1)
+	if(argc!= 3)
 	{
+		printf("incorrect input, correct input is ./index <output_file> <target_file/directory>\n";
 		return 1; //-1?
 	}
 	if (exists(argv)==0)
