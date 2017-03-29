@@ -7,35 +7,35 @@
 #include <dirent.h>
 #include <unistd.h>
 
-void traverseDirectory (hashTable* myTable, const char * dir_name)
+void traverseDirectory (hashTable* myTable, const char *directoryName)
 {
 
-	DIR * dir;
-	FILE* targetFile;
+	DIR* directory;
+	FILE* fp;
 
-	//printf("%s\t %d\n", dir_name, sizeof(dir_name));
-	dir = opendir(dir_name);
-	if(!dir)
+	//printf("%s\t %d\n", directoryName, sizeof(directoryName));
+	directory = opendir(directoryName);
+	if(!directory)
 	{
 		if (errno == ENOTDIR)
 		{
-			char buffer [256];
-			memcpy (buffer, dir_name, sizeof(dir_name)+1);
-			buffer[sizeof(dir_name)+1] = '\0';
-			targetFile = fopen(dir_name, "r");
-			if (targetFile == NULL)
+			char buffer[256];
+			memcpy(buffer, directoryName, sizeof(directoryName) + 1);
+			buffer[sizeof(directoryName)+1] = '\0';
+			fp = fopen(directoryName, "r");
+			if (!fp)
 			{
 				printf("file is null\n");
 			}
 			//printf("%s\n", buffer);
-			recordNode* tokenStream = tokenize(targetFile, buffer);
-			insertNode(tokenStream, myTable, buffer);
+			recordNode* tokens = tokenize(fp, buffer);
+			insertNode(tokens, myTable, buffer);
 			return;
 		}
 		else
 		{
-			printf("Error: could not open %s - File or directory  may not exist\n ", dir_name);
-				return;
+			printf("Error: could not open %s - File or directory  may not exist\n ",directoryName);
+			return;
 		}
 	}
 	while(dir !=NULL)
@@ -61,7 +61,7 @@ void traverseDirectory (hashTable* myTable, const char * dir_name)
 					//need to EXTEND THE PATH for next traverseDirectory call, working dir doesn't change (think adir/ -> adir/bdir/....)
 					int pathlength = 0;	
 					char path[256];
-					pathlength = snprintf(path, 256, "%s/%s",dir_name, d_name);
+					pathlength = snprintf(path, 256, "%s/%s",directoryName, d_name);
 					if(pathlength > 255)
 					{
 						printf("Path length is too long error");
@@ -77,12 +77,12 @@ void traverseDirectory (hashTable* myTable, const char * dir_name)
 				//regular files, need to check to ensure ".txt"....
 			{	
 				char pathname [256];
-				FILE* targetFile;
-				sprintf(pathname, "%s/%s", dir_name, d_name);
-				targetFile = fopen(pathname, "r");
-				if (targetFile!=NULL)
+				FILE* fp;
+				sprintf(pathname, "%s/%s", directoryName, d_name);
+				fp = fopen(pathname, "r");
+				if (fp!=NULL)
 				{
-				//		recordNode* tmp = tokenize(targetFile, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
+				//		recordNode* tmp = tokenize(fp, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
 				//	insertNode(tmp, myTable, d_name);
 				}
 				break;
@@ -93,7 +93,7 @@ void traverseDirectory (hashTable* myTable, const char * dir_name)
 		}
 	
 	}
-//	printf("closing directory: %s\n", dir_name); //DEBUGGING 
+//	printf("closing directory: %s\n", directoryName); //DEBUGGING 
 	if(closedir(dir)){
 		printf("error could not close dir");
 		return;
