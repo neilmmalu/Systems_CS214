@@ -169,21 +169,21 @@ Node* tokenize(FILE* file, char* fileName)
 //works for determined edge cases. will run more scenarios
 
 
-void insertNode(Node* head, hashTable* list , char* fileName)
+void insertNode(Node* head, hashTable* list , char* file)
 {
 	int count =0;
     //slot in the hashTable according to leading letter
 	int index;
     //leading letter
-	char leading;
+	char first;
     //hashTable* list = createHashTable(36);
 	while(head!=NULL)
 	{
 		count ++;
-		leading = head->token[0];
-		index = leading;
+		first = head->token[0];
+		index = first;
 		//alphas first in table, numerics second
-		if (!isalpha(leading))
+		if (!isalpha(first))
 		{
 			index += 26;
 		}
@@ -192,12 +192,12 @@ void insertNode(Node* head, hashTable* list , char* fileName)
 			index -=97;
 		}
 		//node to be inserted
-		Node* node = createNode(fileName, head->token);
-        //if node is to be inserted at front of head
-		if (list->table[index] == NULL || sortalnum(list->table[index]->token, node->token)<0)    
+		Node* newNode = createNode(file, head->token);
+        //if temp is to be inserted at front of head
+		if (list->table[index] == NULL || sortalnum(list->table[index]->token, newNode->token) < 0)
 		{
-			node->next = list->table[index];
-			list->table[index] = node;
+			newNode->next = list->table[index];
+			list->table[index] = newNode;
 		}
         //if node is second node or later
 		else
@@ -205,23 +205,23 @@ void insertNode(Node* head, hashTable* list , char* fileName)
 			Node* curr = list->table[index];
 			Node* prev = curr;
             //while string to be inserted comes after existing strings
-			while(curr!=NULL && sortalnum(curr->token, node->token)>0)
+			while(curr!=NULL && sortalnum(curr->token, newNode->token)>0)
 			{
 				prev = curr;
 				curr = curr->next;
 			}
-			if (curr!=NULL && sortalnum(curr->token, node->token)==0)
+			if (curr!=NULL && sortalnum(curr->token, newNode->token)==0)
 			{
-				if (strcmp(curr->fileName, node->fileName)!=0)
+				if (strcmp(curr->file, newNode->file)!=0)
 				{
 								//HERE BEGINS THE NEW TERRITORY
-					if(curr->next != NULL && strcmp(curr->next->token, node->token)==0 && strcmp(curr->next->fileName, node->fileName)!=0){
+					if(curr->next != NULL && strcmp(curr->next->token, newNode->token)==0 && strcmp(curr->next->file, newNode->file)!=0){
 						curr->next->count++;
 							//free(node);
 					}else{
 							//printf("original file %s, current file  %s, token = %s\n", curr->fileName, node->fileName, node->token);
-						node->next = curr->next;
-						curr -> next = node;
+						newNode->next = curr->next;
+						curr -> next = newNode;
 							//printHashTable(hTable);
 					}
 				}
@@ -234,8 +234,8 @@ void insertNode(Node* head, hashTable* list , char* fileName)
 			}
 			else
 			{
-				node->next = curr;
-				prev->next = node;
+				newNode->next = curr;
+				prev->next = newNode;
 			}
 		}
 		Node* temp = head;
