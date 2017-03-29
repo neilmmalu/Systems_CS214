@@ -24,34 +24,38 @@ char* inputString = "this is a test sentence now^Im utilizing $%^&symbols$%^&*(*
 
 boolean outputInitialized = FALSE;
 
-recordNode* makeNode(char* fileName, char* token);
+void traverseDirectory(hashTable *myTable, const char *dir_name);
 
-hashTable* makeHashTable(int size);
+recordNode* createNode(char* fileName, char* token);
+
+hashTable* createHashTable(int size);
 
 recordNode* tokenize(FILE* file, char* fileName);
 
-int checkInput(int argc);
-//recordNode* head, int size, char* fileName)
-hashTable* makeMasterTable(recordNode* head, char* fileName);
-//char* outputFile
-void outputTokens(hashTable* masterTable, FILE* outputFile);
+int validateInput(int argc);
+
+void insertNode(recordNode* list, hashTable* hTable, char* fileName);
+
+void printTokens(hashTable* masterTable, FILE* outputFile);
 
 hashTable* scatterTokens(recordNode* head, int size, FILE* outputFile);
 
-void outputTokenList(hashTable* myTable, FILE* outputFile);
+void printTokenList(hashTable* myTable, FILE* outputFile);
 
-void initializeOutput();
+void printOpeningTag(FILE* outputFile);
 
-void closeOutput();
+void printClosingTag(FILE* outputFile);
 
-void myToLower(recordNode* head);
+void toLowerCase(recordNode* head);
 
-int sortalnum(const char* a, const char* b);
+int sortalnum(const char *a, const char *b);
 
-void printTable(hashTable* hTable);
+void printHashTable(hashTable *hTable);
 
-void destroyTable(hashTable* hTable);
+void deleteHashTable(hashTable *hTable);
 
-void destroyList(recordNode* head);
+void deleteLinkedList(recordNode* head);
 
 void printLL(recordNode* head);
+
+int checkOverwrite(char** argv);
