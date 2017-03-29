@@ -364,7 +364,7 @@ void printTokenList(hashTable* mainTable, FILE* outputFile)
 			//while(sortalnum(token, curr->token)==0)
 			while (curr!=NULL)
 			{
-				fprintf(outputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->fileName, curr->count);
+				fprintf(outputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->file, curr->count);
 				curr = curr-> next;
 			}
 			fprintf(outputFile, "\t</word>\n");
