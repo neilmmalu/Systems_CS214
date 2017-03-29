@@ -10,11 +10,11 @@ typedef struct Node
 	int count;
 	char* token;
 	struct Node* next;
-}recordNode;
+}Node;
 
 typedef struct HashTable
 {
-	recordNode** table;
+	Node** table;
 	int length;
 }hashTable;
 
@@ -24,25 +24,22 @@ char* inputString = "this is a test sentence now^Im utilizing $%^&symbols$%^&*(*
 
 boolean outputInitialized = FALSE;
 
-void addToTable(recordNode* list, hashTable* hTable , char* fileName);
+void addToTable(Node* list, hashTable* hTable , char* fileName);
 void travdir (hashTable* hTable, const char * dir_name);
 
-recordNode* makeNode(char* fileName, char* token);
+Node* makeNode(char* fileName, char* token);
 
 hashTable* makeHashTable(int size);
 
-recordNode* tokenize(FILE* file, char* fileName);
+Node* tokenize(FILE* file, char* fileName);
 
 int checkInput(int argc);
 
-//recordNode* head, int size, char* fileName)
+hashTable* makeMasterTable(Node* head, char* fileName);
 
-hashTable* makeMasterTable(recordNode* head, char* fileName);
-
-//char* outputFile
 void outputTokens(hashTable* masterTable, FILE* outputFile);
 
-void scatterTokens(recordNode* head, int size, FILE* outputFile);
+void scatterTokens(Node* head, int size, FILE* outputFile);
 
 void outputTokenList(hashTable* myTable, FILE* outputFile);
 
@@ -50,7 +47,7 @@ void initializeOutput();
 
 void closeOutput();
 
-void myToLower(recordNode* head);
+void myToLower(Node* head);
 
 int sortalnum(const char* a, const char* b);
 
@@ -58,8 +55,8 @@ void printTable(hashTable* hTable);
 
 void destroyTable(hashTable* hTable);
 
-void destroyList(recordNode* head);
+void destroyList(Node* head);
 
-void printLL(recordNode* head);
+void printLL(Node* head);
 
 
