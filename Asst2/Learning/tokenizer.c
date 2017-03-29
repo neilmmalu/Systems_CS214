@@ -168,7 +168,7 @@ Node* tokenize(FILE* file, char* fileName)
 }
 //works for determined edge cases. will run more scenarios
 
-<<<<<<< HEAD
+
 int validateInput(int argc)
 {
     //too few or too many inputs
@@ -180,8 +180,6 @@ int validateInput(int argc)
         }
     return 0;
 }
-=======
->>>>>>> 8cf2ec238a7eaa9c5be674ab988c994303c988f6
 
 void insertNode(Node* head, hashTable* list, char* file)
 {
@@ -498,7 +496,6 @@ void deleteLinkedList(Node* head)
         free(head);
         head = temp;
     }
-
 }
 
 void printLL(Node* head)
