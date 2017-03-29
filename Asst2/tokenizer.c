@@ -263,7 +263,7 @@ void scatterTokens (Node* head, int size, FILE* outputFile)
 		}
 		head = head->next;
 	}
-	//destroyList(toFree);
+	//deleteList(toFree);
 	outputTokenList(mainTable, outputFile);
 }
 
@@ -410,7 +410,7 @@ void deleteTable(hashTable* hTable)
     free(hTable);
 }
 //free unsorted temp linked list
-void destroyList(Node* head)
+void deleteList(Node* head)
 {
     Node* temp;
 	while(head!=NULL)
