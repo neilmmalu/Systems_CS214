@@ -42,10 +42,6 @@ hashTable* scatterTokens(Node* head, int size, FILE* outputFile);
 
 void printTokenList(hashTable* myTable, FILE* outputFile);
 
-void printOpeningTag(FILE* outputFile);
-
-void printClosingTag(FILE* outputFile);
-
 void toLowerCase(Node* head);
 
 int sortalnum(const char *a, const char *b);
