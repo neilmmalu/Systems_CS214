@@ -15,7 +15,7 @@ void traverseDirectory(hashTable* mainTable, const char *directoryName)
 
 	//printf("%s\t %d\n", directoryName, sizeof(directoryName));
 	directory = opendir(directoryName);
-	if(!directory)
+	if(directory != NULL)
 	{
 		if (errno == ENOTDIR)
 		{
@@ -38,7 +38,7 @@ void traverseDirectory(hashTable* mainTable, const char *directoryName)
 			return;
 		}
 	}
-	while(!directory)
+	while(directory != NULL)
 	{
 
 		struct dirent* pwd;
@@ -177,9 +177,9 @@ void insertNode(Node* head, hashTable* list , char* file)
     //leading letter
 	char first;
     //hashTable* list = createHashTable(36);
-	while(head!=NULL)
+	while(!head)
 	{
-		count ++;
+		count++;
 		first = head->token[0];
 		index = first;
 		//alphas first in table, numerics second
@@ -258,14 +258,14 @@ void printTokens(hashTable* mainTable, FILE* file)
 	for (i=0; i<mainTable->length; i++)
 	{
 		head = mainTable->table[i];
-		while(!head)
+		while(head != NULL)
 		{
 			temp = head;
 			prev = temp;
 			token = head->token;
 			maxNum = temp->count;
 
-			while (!temp && sortalnum(token, temp->token) ==0)
+			while (temp != NULL && sortalnum(token, temp->token) == 0)
 			{
 				if(temp->count > maxNum)
 				{
@@ -275,7 +275,7 @@ void printTokens(hashTable* mainTable, FILE* file)
 				temp = temp->next;
 			}
 			
-			if (temp!= NULL)
+			if (temp != NULL)
 			{
 				Node* temp = createNode(temp->file, temp->token);
 				temp -> count = temp->count;
@@ -287,7 +287,7 @@ void printTokens(hashTable* mainTable, FILE* file)
 				mainTable -> table[i] = NULL;
 			}
 			prev->next = NULL;
-			if(head!=NULL)
+			if(head != NULL)
 			{
 				scatterTokens(head, maxNum, file);
 			}
@@ -298,14 +298,14 @@ void printTokens(hashTable* mainTable, FILE* file)
     fprintf(file, "</fileIndex>");
 }
 //I'm like 99% sure this works
-hashTable* scatterTokens (Node* head, int size, FILE* file)
+hashTable* scatterTokens(Node* head, int size, FILE* file)
 {
 	Node *temp, *prev, *deleteThis;
 	deleteThis = head;
 	hashTable* mainTable = createHashTable(size);
-	while (head!=NULL)
+	while (head != NULL)
 	{
-		if(mainTable->table[head->count-1]==NULL)
+		if(mainTable->table[head->count-1] == NULL)
 		{
 			Node* newNode = createNode(head->file, head->token);
 			newNode->count = head -> count;
@@ -316,7 +316,7 @@ hashTable* scatterTokens (Node* head, int size, FILE* file)
 			temp = mainTable->table[head->count-1];
 			prev = temp;
 			//for the same token with the same counts for different files, keep alphanumeric order
-			while(temp!=NULL && strcmp(temp->file, head->file)<0)//sortalnum(temp->file, head->file)>0)
+			while(temp != NULL && strcmp(temp->file, head->file)<0)//sortalnum(temp->file, head->file)>0)
 			{
 				prev = temp;
 				temp = temp->next;
@@ -350,22 +350,22 @@ void printTokenList(hashTable* mainTable, FILE* outputFile)
 		outputInitialized = TRUE;
 	}
 	int i;
-	Node* curr;
+	Node* temp;
 	for (i=0; i<mainTable->length; i++)
 	{
-		curr = mainTable->table[i];
-		while(curr!=NULL)
+		temp = mainTable->table[i];
+		while(temp != NULL)
 		{
 			if(!wordInitialized)
 			{
-				fprintf(outputFile, "\t<word text = \"%s\">\n", curr->token);
+				fprintf(outputFile, "\t<word text = \"%s\">\n", temp->token);
 				wordInitialized = TRUE;
 			}
-			//while(sortalnum(token, curr->token)==0)
-			while (curr!=NULL)
+			//while(sortalnum(token, temp->token)==0)
+			while (temp!=NULL)
 			{
-				fprintf(outputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->file, curr->count);
-				curr = curr-> next;
+				fprintf(outputFile, "\t\t<file name = \"%s\">%i</file>\n",temp->file, temp->count);
+				temp = temp-> next;
 			}
 			fprintf(outputFile, "\t</word>\n");
 		}
@@ -377,7 +377,7 @@ void toLowerCase(Node* head)
 {
 	int i;
 	Node* temp = head;
-	while(!temp)
+	while(temp != NULL)
 	{	
 		for (i = 0; i < strlen(temp->token); i++)
 		{
@@ -438,13 +438,13 @@ int sortalnum(const char *a, const char *b)
 	}
 }
 
-void printHashTable(hashTable* hTable)
+void printHashTable(hashTable* list)
 {
     int i;
     Node* curr;
-    for (i=0; i<hTable->length; i++)
+    for (i=0; i < list->length; i++)
     {
-        curr = hTable->table[i];
+        curr = list->table[i];
 		while(curr!=NULL)
         {
             printf("token: %s   count: %i   fileName: %s\n", curr->token, curr->count, curr->file);
@@ -454,14 +454,14 @@ void printHashTable(hashTable* hTable)
 }
 
 //free all inner nodes and table itself
-void deleteHashTable(hashTable* hTable)
+void deleteHashTable(hashTable* list)
 {
     int i;
     Node* curr;
     Node* temp;
-	for (i=0; i<hTable->length; i++)
+	for (i=0; i<list->length; i++)
     {
-        curr = hTable->table[i];
+        curr = list->table[i];
         while(curr!=NULL)
         {
             temp = curr->next;
@@ -471,14 +471,14 @@ void deleteHashTable(hashTable* hTable)
             curr = temp;   		
 		}
     }
-    free(hTable->table);
-    free(hTable);
+    free(list->table);
+    free(list);
 }
 //free unsorted temp linked list
 void deleteLinkedList(Node* head)
 {
     Node* temp;
-	while(head!=NULL)
+	while(head != NULL)
     {
         temp = head->next;
         free(head->token);
@@ -510,7 +510,7 @@ int exists(char** argv)
 	if(access(buffer, F_OK) == 0)
 	{
 		printf("File already exists in directory. Do you wish you overwrite it? Enter 1 to proceed or 0 to exit\n");
-	temp = getchar();
+		temp = getchar();
 	}
 	return temp;
 }
