@@ -10,13 +10,13 @@
 Node* tokenize(FILE* file, char* fileName)
 {
     Node* head = NULL;
-    char buffer [5000];
-    int index = 0;
+    char buffer[5000];
+    int i = 0;
 	Node* curr = NULL;
 	char c = fgetc(file);
 	while (c != EOF)
     {
-		index = 0;
+		i = 0;
 		//skip all non-alphanumeric garbage THIS NEEDS TO SKIP ON FIRST NUMBERS TOO APPARENTLY
 		while (c!=EOF && !isalpha(c))
 		{
@@ -25,25 +25,25 @@ Node* tokenize(FILE* file, char* fileName)
 		//get all alphanumerics in current token
 		while(c!= EOF && isalnum(c))
 		{
-			buffer[index] = c; //does this move the pointer every time?
-			index ++;
+			buffer[i] = c; //does this move the pointer every time?
+			i++;
 			c = fgetc(file);
 		}
 		//make sure string is null terminated
-		buffer[index] = '\0';
-		char* currTok = malloc(sizeof(char)*index+1);
+		buffer[i] = '\0';
+		char* currTok = malloc(sizeof(char)*i+1);
 		if(strlen(buffer)>0)
         {
 		//+1?
 			memcpy(currTok, buffer, strlen(buffer)+1);
 			if(head == NULL)
        	 	{
-            	head = makeNode(fileName, currTok);
+            	head = createNode(fileName, currTok);
             	curr = head;
         	}
         	else
         	{
-            	curr->next = makeNode(fileName, currTok);
+            	curr->next = createNode(fileName, currTok);
             	curr = curr-> next;
         	}
     	}
@@ -53,7 +53,7 @@ Node* tokenize(FILE* file, char* fileName)
 }
 
 
-void travdir (hashTable* mainTable, const char * dir_name)
+void traverseDirectory(hashTable* mainTable, const char * dir_name)
 {
 
 	DIR * dir;
@@ -104,7 +104,7 @@ void travdir (hashTable* mainTable, const char * dir_name)
 			{
 				if(strcmp(d_name,".") != 0 && strcmp(d_name, "..") != 0)
 				{
-					//need to EXTEND THE PATH for next travdir call, working dir doesn't change (think adir/ -> adir/bdir/....)
+					//need to EXTEND THE PATH for next traverseDirectory call, working dir doesn't change (think adir/ -> adir/bdir/....)
 					int pathlength = 0;	
 					char path[256];
 					pathlength = snprintf(path, 256, "%s/%s",dir_name, d_name);
@@ -115,7 +115,7 @@ void travdir (hashTable* mainTable, const char * dir_name)
 					}
 					//strcat(path, d_name); //lengthens path 
 					//printf("%s\n",d_name); //error checking and DEBUGGING
-					travdir(mainTable, path); //RECURSIVE STEP
+					traverseDirectory(mainTable, path); //RECURSIVE STEP
 				}
 				break;
 			}
@@ -146,7 +146,7 @@ void travdir (hashTable* mainTable, const char * dir_name)
 	}
 }
 
-Node* makeNode(char* fileName, char* token)
+Node* createNode(char* fileName, char* token)
 {
     Node* myNode = (Node*)calloc(1, sizeof(Node));
     //mallocs and copies data into new string
@@ -234,7 +234,7 @@ void scatterTokens (Node* head, int size, FILE* outputFile)
 	{
 		if(mainTable->table[head->count-1]==NULL)
 		{
-			Node* temp = makeNode(head->fileName, head->token);
+			Node* temp = createNode(head->fileName, head->token);
 			temp->count = head -> count;
 			mainTable->table[head->count-1] = temp;
 		}
@@ -248,7 +248,7 @@ void scatterTokens (Node* head, int size, FILE* outputFile)
 				prev = curr;
 				curr = curr->next;
 			}
-			Node* temp = makeNode(head->fileName, head->token);
+			Node* temp = createNode(head->fileName, head->token);
 			temp->count = head->count;
 			temp->next = curr;
 			if (mainTable->table[temp->count-1] == curr)	
@@ -475,7 +475,7 @@ void addToTable(Node* list, hashTable* hTable , char* fileName)
 				index -=97;
 			}
 		//node to be inserted
-        Node* node = makeNode(fileName, list->token);
+        Node* node = createNode(fileName, list->token);
         //if node is to be inserted at front of list
 		if (hTable->table[index] == NULL || sortalnum(hTable->table[index]->token, node->token)<0)    		{
             node->next = hTable->table[index];
@@ -537,7 +537,7 @@ int main(int argc, char** argv)
 	{
 		return 0;
 	}
-	travdir(mainTable, argv[2]);
+	traverseDirectory(mainTable, argv[2]);
 	FILE* outputFile = fopen(argv[1], "w+");
 	outputTokens(mainTable, outputFile);
 	return 0;
