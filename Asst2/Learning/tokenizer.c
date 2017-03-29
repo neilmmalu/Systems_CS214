@@ -307,7 +307,7 @@ hashTable* scatterTokens (Node* head, int size, FILE* file)
 	{
 		if(mainTable->table[head->count-1]==NULL)
 		{
-			Node* newNode = createNode(head->fileName, head->token);
+			Node* newNode = createNode(head->file, head->token);
 			newNode->count = head -> count;
 			mainTable->table[head->count-1] = newNode;
 		}
@@ -316,12 +316,12 @@ hashTable* scatterTokens (Node* head, int size, FILE* file)
 			temp = mainTable->table[head->count-1];
 			prev = temp;
 			//for the same token with the same counts for different files, keep alphanumeric order
-			while(temp!=NULL && strcmp(temp->fileName, head->fileName)<0)//sortalnum(temp->fileName, head->fileName)>0)
+			while(temp!=NULL && strcmp(temp->file, head->file)<0)//sortalnum(temp->file, head->file)>0)
 			{
 				prev = temp;
 				temp = temp->next;
 			}
-			Node* newNode = createNode(head->fileName, head->token);
+			Node* newNode = createNode(head->file, head->token);
 			newNode->count = head->count;
 			newNode->next = temp;
 			if (mainTable->table[newNode->count-1] == temp)	
@@ -447,7 +447,7 @@ void printHashTable(hashTable* hTable)
         curr = hTable->table[i];
 		while(curr!=NULL)
         {
-            printf("token: %s   count: %i   fileName: %s\n", curr->token, curr->count, curr-> fileName);
+            printf("token: %s   count: %i   fileName: %s\n", curr->token, curr->count, curr->file);
             curr = curr->next;
         }
     }
@@ -466,7 +466,7 @@ void deleteHashTable(hashTable* hTable)
         {
             temp = curr->next;
             free(curr->token);
-			free(curr->fileName);
+			free(curr->file);
             free(curr);
             curr = temp;   		
 		}
