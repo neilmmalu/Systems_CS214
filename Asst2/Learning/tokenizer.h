@@ -30,9 +30,7 @@ Node* createNode(char* file, char* token);
 
 hashTable* createHashTable(int size);
 
-Node* tokenize(FILE* file, char* file);
-
-int validateInput(int argc);
+Node* tokenize(FILE* file, char* fileName);
 
 void insertNode(Node* list, hashTable* hTable, char* file);
 
