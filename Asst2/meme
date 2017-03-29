@@ -1,0 +1,6380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileIndex>
+	<word text = "a">
+		<file name = ".DS_Store">1</file>
+		<file name = "Asst3.tgz">1</file>
+		<file name = "Introduction">1</file>
+		<file name = "baa">1</file>
+		<file name = "boo">1</file>
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "main.c">1</file>
+		<file name = "meme">1</file>
+		<file name = "README.pdf">2</file>
+		<file name = "tokenizer.h">2</file>
+		<file name = "sorted-list.c">4</file>
+		<file name = "Makefile">5</file>
+		<file name = "testplan.txt">14</file>
+		<file name = "tokenizer.c">22</file>
+		<file name = "sorted-list.h">29</file>
+		<file name = "hp">112</file>
+	</word>
+	<word text = "abbrev">
+		<file name = "index">1</file>
+	</word>
+	<word text = "able">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "about">
+		<file name = "hp">14</file>
+	</word>
+	<word text = "above">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "access">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "according">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "account">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "across">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "act">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "acting">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "actual">
+		<file name = "testplan.txt">3</file>
+	</word>
+	<word text = "added">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "adding">
+		<file name = "sorted-list.c">3</file>
+	</word>
+	<word text = "addoccurrencetolist">
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+	</word>
+	<word text = "addstringtolist">
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+	</word>
+	<word text = "addtokentolist">
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">1</file>
+	</word>
+	<word text = "addtotable">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "adir">
+		<file name = "tokenizer.c">2</file>
+		<file name = "testplan.txt">37</file>
+	</word>
+	<word text = "adir2">
+		<file name = "testplan.txt">26</file>
+	</word>
+	<word text = "admiring">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "advanced">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "affect">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "after">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">4</file>
+	</word>
+	<word text = "afternoon">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "again">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "age">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "agree">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "air">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "albus">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "all">
+		<file name = "Makefile">1</file>
+		<file name = "Makefile">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "tokenizer.c">4</file>
+		<file name = "sorted-list.h">6</file>
+		<file name = "hp">32</file>
+	</word>
+	<word text = "allocated">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "allow">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "allowed">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "allows">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "almost">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "alphanumeric">
+		<file name = "tokenizer.c">4</file>
+	</word>
+	<word text = "alphanumerical">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "alphanumerics">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "alphas">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "alphnumeric">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "already">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "also">
+		<file name = "Introduction">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "alter">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "although">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "always">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "amount">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "amuse">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "an">
+		<file name = "example">1</file>
+		<file name = "testplan.txt">3</file>
+		<file name = "Introduction">5</file>
+		<file name = "sorted-list.c">6</file>
+		<file name = "hp">7</file>
+		<file name = "sorted-list.h">8</file>
+	</word>
+	<word text = "and">
+		<file name = "testplan.txt">2</file>
+		<file name = "Introduction">3</file>
+		<file name = "sorted-list.c">4</file>
+		<file name = "tokenizer.c">12</file>
+		<file name = "sorted-list.h">15</file>
+		<file name = "hp">103</file>
+	</word>
+	<word text = "angrily">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "angry">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "another">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "answer">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "anxious">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "any">
+		<file name = "sorted-list.h">3</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "anyone">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "anything">
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "anywhere">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "apart">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "api">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "apparently">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "appeared">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "appears">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "apple">
+		<file name = "Info.plist">3</file>
+		<file name = "testplan.txt">3</file>
+		<file name = "index">4</file>
+	</word>
+	<word text = "appropriate">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "approve">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ar">
+		<file name = "Makefile">1</file>
+	</word>
+	<word text = "arch">
+		<file name = "libi.a">1</file>
+	</word>
+	<word text = "are">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">3</file>
+		<file name = "tokenizer.c">4</file>
+		<file name = "hp">8</file>
+	</word>
+	<word text = "argc">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "main.c">2</file>
+		<file name = "tokenizer.c">5</file>
+	</word>
+	<word text = "argv">
+		<file name = "tokenizer.h">1</file>
+		<file name = "main.c">4</file>
+		<file name = "tokenizer.c">7</file>
+	</word>
+	<word text = "arg1">
+		<file name = "indexer.h">2</file>
+		<file name = "indexer.c">10</file>
+	</word>
+	<word text = "arg2">
+		<file name = "indexer.h">2</file>
+		<file name = "indexer.c">10</file>
+	</word>
+	<word text = "arm">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "armchair">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "arms">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "around">
+		<file name = "hp">10</file>
+	</word>
+	<word text = "arr">
+		<file name = "main.c">3</file>
+	</word>
+	<word text = "arrived">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "arr2">
+		<file name = "main.c">2</file>
+	</word>
+	<word text = "arr3">
+		<file name = "main.c">2</file>
+	</word>
+	<word text = "as">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "Introduction">2</file>
+		<file name = "tokenizer.c">3</file>
+		<file name = "hp">47</file>
+	</word>
+	<word text = "ask">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "asked">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "asleep">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "assignment">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "associated">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "asst3">
+		<file name = "Asst3.tgz">2</file>
+	</word>
+	<word text = "astonishing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "astounding">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "astride">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "at">
+		<file name = "tokenizer.c">4</file>
+		<file name = "hp">34</file>
+	</word>
+	<word text = "attempting">
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "aunt">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "averywhere">
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "awake">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "away">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "b">
+		<file name = "tokenizer.h">1</file>
+		<file name = "README.pdf">2</file>
+		<file name = "index">2</file>
+		<file name = "index">2</file>
+		<file name = "tokenizer.c">12</file>
+	</word>
+	<word text = "baa">
+		<file name = "baa">1</file>
+		<file name = "meme">5</file>
+		<file name = "testplan.txt">25</file>
+	</word>
+	<word text = "baby">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "back">
+		<file name = "hp">15</file>
+	</word>
+	<word text = "backed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bad">
+		<file name = "indexer.c">1</file>
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "bag">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "baker">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bakery">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "balls">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bathroom">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bdir">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "be">
+		<file name = "Introduction">2</file>
+		<file name = "sorted-list.c">4</file>
+		<file name = "tokenizer.c">5</file>
+		<file name = "sorted-list.h">10</file>
+		<file name = "hp">30</file>
+	</word>
+	<word text = "beady">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bear">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "beard">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "because">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "bed">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "bedroom">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "beefy">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "been">
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "hp">21</file>
+	</word>
+	<word text = "before">
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "hp">6</file>
+	</word>
+	<word text = "beginning">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "begins">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "behaving">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "behavior">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "behind">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "being">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "believe">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "below">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "belt">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "beneath">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bent">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "beside">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "best">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bet">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "better">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "big">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "bike">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bird">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "birds">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bit">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "black">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "blame">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "blankets">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "blew">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "blinked">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "blonde">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "blue">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "blushed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bolt">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bonfire">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "boo">
+		<file name = "boo">1</file>
+		<file name = "meme">5</file>
+		<file name = "testplan.txt">25</file>
+	</word>
+	<word text = "bookkeeping">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "books">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "boolean">
+		<file name = "tokenizer.c">1</file>
+		<file name = "tokenizer.h">2</file>
+	</word>
+	<word text = "boots">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "boring">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "borrowed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "both">
+		<file name = "hp">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "bottles">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bound">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bowed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "boy">
+		<file name = "hp">10</file>
+	</word>
+	<word text = "break">
+		<file name = "tokenizer.c">5</file>
+	</word>
+	<word text = "breeze">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "brick">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "briefcase">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bright">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bring">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bringing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bristol">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "britain">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "broad">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "broke">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "broken">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "buckled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bud1">
+		<file name = ".DS_Store">1</file>
+		<file name = "Asst3.tgz">1</file>
+	</word>
+	<word text = "buffer">
+		<file name = "tokenizer.c">12</file>
+	</word>
+	<word text = "building">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bun">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "bunch">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bundle">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "burger">
+		<file name = "testplan.txt">3</file>
+	</word>
+	<word text = "burying">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "bushy">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "business">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "busy">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "but">
+		<file name = "sorted-list.h">2</file>
+		<file name = "hp">31</file>
+	</word>
+	<word text = "buy">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "by">
+		<file name = "Introduction">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "testplan.txt">1</file>
+		<file name = "sorted-list.h">6</file>
+		<file name = "hp">10</file>
+	</word>
+	<word text = "bye">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "c">
+		<file name = "Makefile">2</file>
+		<file name = "README.pdf">2</file>
+		<file name = "hp">2</file>
+		<file name = "indexer.c">3</file>
+		<file name = "sorted-list.c">9</file>
+		<file name = "main.c">10</file>
+		<file name = "tokenizer.c">10</file>
+		<file name = "Makefile">11</file>
+	</word>
+	<word text = "cake">
+		<file name = "testplan.txt">3</file>
+	</word>
+	<word text = "call">
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">2</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "called">
+		<file name = "Introduction">1</file>
+		<file name = "hp">6</file>
+	</word>
+	<word text = "calloc">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "calls">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "calmly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "came">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "can">
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">13</file>
+	</word>
+	<word text = "car">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "cara">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "care">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "careful">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "carefully">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "careless">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "carrying">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "case">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "casually">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "cat">
+		<file name = "meme">1</file>
+		<file name = "baa">3</file>
+		<file name = "testplan.txt">6</file>
+		<file name = "hp">21</file>
+	</word>
+	<word text = "catch">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "cats">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "caught">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ccflags">
+		<file name = "Makefile">1</file>
+	</word>
+	<word text = "celebrate">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "celebrating">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "celebrations">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "cereal">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "certainly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "cf">
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "cfbundledevelopmentregion">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "cfbundleidentifier">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "cfbundleinfodictionaryversion">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "cfbundlepackagetype">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "cfbundleshortversionstring">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "cfbundlesignature">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "cfbundleversion">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "cflags">
+		<file name = "Makefile">1</file>
+	</word>
+	<word text = "ch">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "chair">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "change">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "changed">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "chapter">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "char">
+		<file name = "indexer.h">9</file>
+		<file name = "tokenizer.h">13</file>
+		<file name = "tokenizer.h">13</file>
+		<file name = "main.c">23</file>
+		<file name = "indexer.c">30</file>
+		<file name = "tokenizer.c">44</file>
+	</word>
+	<word text = "character">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "charcompare">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "chardestroy">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "chars">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "check">
+		<file name = "main.c">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "sorted-list.c">4</file>
+		<file name = "tokenizer.c">4</file>
+	</word>
+	<word text = "checker">
+		<file name = "main.c">3</file>
+	</word>
+	<word text = "checking">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "checkinput">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "checkoverwrite">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "checks">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "cheek">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "child">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "choosing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "chopped">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "chortled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "chuckled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "cigarette">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "clean">
+		<file name = "Makefile">3</file>
+	</word>
+	<word text = "cleared">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "clicked">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "climbing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "cloak">
+		<file name = "hp">9</file>
+	</word>
+	<word text = "cloaks">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "clock">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "close">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "closed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "closedir">
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "closeoutput">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "closing">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "clothes">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "cloudy">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "clutching">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "code">
+		<file name = "sorted-list.h">3</file>
+	</word>
+	<word text = "cold">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "coldly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "collecting">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "collects">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "com">
+		<file name = "Info.plist">2</file>
+	</word>
+	<word text = "come">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "comes">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "comforting">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "common">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "comparator">
+		<file name = "sorted-list.h">7</file>
+	</word>
+	<word text = "compare">
+		<file name = "sorted-list.h">3</file>
+		<file name = "sorted-list.c">4</file>
+	</word>
+	<word text = "comparefunct">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">3</file>
+	</word>
+	<word text = "compareoccurrence">
+		<file name = "index">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "compares">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "comparetoken">
+		<file name = "index">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "complete">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "completely">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "computer">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "concentrate">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "confusing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "consecutive">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "const">
+		<file name = "tokenizer.h">5</file>
+		<file name = "tokenizer.c">6</file>
+	</word>
+	<word text = "construct">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "contain">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "contains">
+		<file name = "testplan.txt">3</file>
+	</word>
+	<word text = "continue">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "contrary">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "copies">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "copy">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "corner">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "could">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">2</file>
+		<file name = "hp">14</file>
+	</word>
+	<word text = "couldn">
+		<file name = "hp">13</file>
+	</word>
+	<word text = "count">
+		<file name = "tokenizer.h">1</file>
+		<file name = "main.c">3</file>
+		<file name = "tokenizer.c">20</file>
+	</word>
+	<word text = "country">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "counts">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "count2">
+		<file name = "main.c">3</file>
+	</word>
+	<word text = "couple">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "course">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "cousin">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "craning">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "create">
+		<file name = "Introduction">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.h">3</file>
+	</word>
+	<word text = "createindexer">
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "main.c">2</file>
+	</word>
+	<word text = "creates">
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "createtoken">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "indexer.c">3</file>
+	</word>
+	<word text = "creating">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "crept">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "cried">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "crooked">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "crowd">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "cstring">
+		<file name = "index">1</file>
+	</word>
+	<word text = "ctype">
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "cups">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "curiously">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "curr">
+		<file name = "sorted-list.c">33</file>
+		<file name = "tokenizer.c">72</file>
+	</word>
+	<word text = "current">
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "currently">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "currentnode">
+		<file name = "sorted-list.h">1</file>
+		<file name = "sorted-list.c">24</file>
+	</word>
+	<word text = "currentstring">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">27</file>
+	</word>
+	<word text = "currtok">
+		<file name = "tokenizer.c">8</file>
+	</word>
+	<word text = "cut">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "d">
+		<file name = ".DS_Store">1</file>
+		<file name = "Asst3.tgz">1</file>
+		<file name = "README.pdf">1</file>
+		<file name = "index">1</file>
+		<file name = "index">3</file>
+		<file name = "indexer.c">3</file>
+		<file name = "index">4</file>
+		<file name = "main.c">4</file>
+		<file name = "tokenizer.c">13</file>
+		<file name = "hp">17</file>
+	</word>
+	<word text = "dabbed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dare">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dared">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dark">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "darkness">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dashed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "data">
+		<file name = "Introduction">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "indexer.c">3</file>
+		<file name = "index">6</file>
+		<file name = "sorted-list.h">15</file>
+		<file name = "sorted-list.c">23</file>
+	</word>
+	<word text = "daughter">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "day">
+		<file name = "hp">9</file>
+	</word>
+	<word text = "daylight">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "dead">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "dealing">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "deallocate">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "deallocation">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "dear">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "debug">
+		<file name = "libi.a">1</file>
+		<file name = "index">3</file>
+		<file name = "indexer.c">5</file>
+	</word>
+	<word text = "debugger">
+		<file name = "index">1</file>
+		<file name = "main.c">2</file>
+	</word>
+	<word text = "debugging">
+		<file name = "libi.a">1</file>
+		<file name = "index">2</file>
+		<file name = "indexer.c">2</file>
+		<file name = "main.c">2</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "decided">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "decides">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "dedalus">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "default">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "define">
+		<file name = "indexer.h">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "defined">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "definition">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "definitions">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "del">
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "deletefirstwhitespace">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "deleting">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "delim">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "delimiter">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "delimiters">
+		<file name = "tokenizer.c">1</file>
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "designated">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "destroy">
+		<file name = "indexer.c">4</file>
+		<file name = "sorted-list.h">4</file>
+		<file name = "sorted-list.c">6</file>
+	</word>
+	<word text = "destroyed">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "destroylist">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "destroynode">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "sorted-list.c">3</file>
+	</word>
+	<word text = "destroys">
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "destroytable">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "destruct">
+		<file name = "sorted-list.h">4</file>
+	</word>
+	<word text = "destructfunct">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">3</file>
+	</word>
+	<word text = "destructor">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "determined">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "df">
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "dialing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dict">
+		<file name = "Info.plist">2</file>
+	</word>
+	<word text = "did">
+		<file name = "hp">9</file>
+	</word>
+	<word text = "didn">
+		<file name = "hp">22</file>
+	</word>
+	<word text = "different">
+		<file name = "Introduction">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "diggle">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dinner">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dir">
+		<file name = "testplan.txt">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "main.c">5</file>
+		<file name = "tokenizer.c">22</file>
+	</word>
+	<word text = "direction">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "directly">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "director">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "directories">
+		<file name = "testplan.txt">1</file>
+	</word>
+	<word text = "directory">
+		<file name = "tokenizer.c">4</file>
+		<file name = "main.c">5</file>
+		<file name = "testplan.txt">5</file>
+	</word>
+	<word text = "directoryhelper">
+		<file name = "index">1</file>
+		<file name = "main.c">3</file>
+	</word>
+	<word text = "dirent">
+		<file name = "tokenizer.h">1</file>
+		<file name = "main.c">2</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "disappeared">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "discover">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "discription">
+		<file name = "testplan.txt">1</file>
+	</word>
+	<word text = "discuss">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "distance">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "distinctly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "disturb">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "do">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">3</file>
+		<file name = "indexer.c">4</file>
+		<file name = "sorted-list.h">5</file>
+	</word>
+	<word text = "doctype">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "does">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "doesn">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "dog">
+		<file name = "boo">1</file>
+		<file name = "hp">1</file>
+		<file name = "meme">1</file>
+		<file name = "testplan.txt">6</file>
+	</word>
+	<word text = "dolphins">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "don">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "done">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "door">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "doorstep">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "doughnut">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "down">
+		<file name = "hp">11</file>
+	</word>
+	<word text = "downpour">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "downright">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dozen">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "drawn">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dressed">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "drifting">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "drills">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "drive">
+		<file name = "hp">9</file>
+	</word>
+	<word text = "driven">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "driveway">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "drop">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "drops">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "drove">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "drummed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ds">
+		<file name = "Asst3.tgz">1</file>
+	</word>
+	<word text = "dsym">
+		<file name = "Info.plist">2</file>
+	</word>
+	<word text = "dt">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "dtd">
+		<file name = "Info.plist">2</file>
+	</word>
+	<word text = "dtds">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "dudley">
+		<file name = "hp">9</file>
+	</word>
+	<word text = "dull">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dumbledore">
+		<file name = "hp">37</file>
+	</word>
+	<word text = "dundee">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "dursley">
+		<file name = "hp">47</file>
+	</word>
+	<word text = "dursleys">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "dwarf">
+		<file name = "index">7</file>
+	</word>
+	<word text = "dynamically">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "e">
+		<file name = "README.pdf">1</file>
+		<file name = "indexer.o">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.o">13</file>
+		<file name = "tokenizer.o">54</file>
+	</word>
+	<word text = "each">
+		<file name = "sorted-list.h">1</file>
+		<file name = "Introduction">4</file>
+	</word>
+	<word text = "early">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "earmuffs">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "easily">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "edge">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "eight">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "eiw">
+		<file name = "README.pdf">1</file>
+	</word>
+	<word text = "elements">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "eleven">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "elf">
+		<file name = "indexer.o">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "sorted-list.o">1</file>
+		<file name = "tokenizer.o">1</file>
+		<file name = "index">2</file>
+	</word>
+	<word text = "else">
+		<file name = "hp">1</file>
+		<file name = "main.c">3</file>
+		<file name = "sorted-list.c">3</file>
+		<file name = "indexer.c">8</file>
+		<file name = "tokenizer.c">14</file>
+	</word>
+	<word text = "emerald">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "empty">
+		<file name = "sorted-list.h">1</file>
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "en">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "encoding">
+		<file name = "Info.plist">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "end">
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">2</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">3</file>
+	</word>
+	<word text = "endif">
+		<file name = "indexer.h">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "endindex">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">7</file>
+	</word>
+	<word text = "engine">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "english">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "enotdir">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "enough">
+		<file name = "main.c">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "enraged">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ensure">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "enter">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "entire">
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "entry">
+		<file name = "tokenizer.c">5</file>
+	</word>
+	<word text = "enum">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "eof">
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "equal">
+		<file name = "sorted-list.h">3</file>
+	</word>
+	<word text = "equality">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "er">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "errno">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "error">
+		<file name = "tokenizer.c">4</file>
+	</word>
+	<word text = "even">
+		<file name = "hp">12</file>
+	</word>
+	<word text = "evening">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ever">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "every">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "everyone">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "everything">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "everywhere">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "exactly">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "examined">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "example">
+		<file name = "testplan.txt">12</file>
+	</word>
+	<word text = "example12">
+		<file name = "example">1</file>
+		<file name = "testplan.txt">3</file>
+	</word>
+	<word text = "exasperated">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "except">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "excitedly">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "execute">
+		<file name = "index">1</file>
+	</word>
+	<word text = "exist">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "existing">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "exists">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "exit">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "expect">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "expected">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "testplan.txt">3</file>
+	</word>
+	<word text = "experts">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "explain">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "extend">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "eyed">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "eyes">
+		<file name = "hp">10</file>
+	</word>
+	<word text = "f">
+		<file name = "README.pdf">2</file>
+		<file name = "tokenizer.c">2</file>
+		<file name = "sorted-list.c">3</file>
+	</word>
+	<word text = "face">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "fact">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "failure">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "faintly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "false">
+		<file name = "tokenizer.c">1</file>
+		<file name = "tokenizer.h">2</file>
+	</word>
+	<word text = "faltered">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "family">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "famous">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "fancy">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "far">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "fashion">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "fast">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "fclose">
+		<file name = "index">1</file>
+		<file name = "main.c">2</file>
+	</word>
+	<word text = "fear">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "feasts">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "feet">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "fell">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "fences">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "few">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "fgetc">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "file">
+		<file name = "Introduction">3</file>
+		<file name = "testplan.txt">4</file>
+		<file name = "main.c">5</file>
+		<file name = "tokenizer.h">5</file>
+		<file name = "tokenizer.c">27</file>
+	</word>
+	<word text = "fileindex">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "filename">
+		<file name = "indexer.h">2</file>
+		<file name = "main.c">5</file>
+		<file name = "tokenizer.h">6</file>
+		<file name = "indexer.c">14</file>
+		<file name = "tokenizer.c">24</file>
+	</word>
+	<word text = "filepath">
+		<file name = "main.c">7</file>
+	</word>
+	<word text = "files">
+		<file name = "tokenizer.c">2</file>
+		<file name = "testplan.txt">3</file>
+		<file name = "Introduction">6</file>
+	</word>
+	<word text = "fill">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "filled">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "filter">
+		<file name = "README.pdf">1</file>
+	</word>
+	<word text = "finally">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "find">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "fine">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "finer">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "fingers">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "finished">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "firm">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "firmly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "first">
+		<file name = "hp">2</file>
+		<file name = "tokenizer.c">5</file>
+	</word>
+	<word text = "firstarg">
+		<file name = "indexer.h">1</file>
+		<file name = "indexer.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "firststring">
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "five">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "fixed">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "flatedecode">
+		<file name = "README.pdf">1</file>
+	</word>
+	<word text = "flatter">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "flicked">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "flickered">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "flinched">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "float">
+		<file name = "sorted-list.c">3</file>
+	</word>
+	<word text = "flocks">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "flooded">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "floor">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "flutter">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "flyin">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "flying">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "folks">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "following">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "fond">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "fopen">
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "main.c">2</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "for">
+		<file name = "testplan.txt">1</file>
+		<file name = "indexer.c">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "main.c">7</file>
+		<file name = "tokenizer.c">13</file>
+		<file name = "hp">25</file>
+	</word>
+	<word text = "forehead">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "forever">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "forgotten">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "format">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "forward">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "found">
+		<file name = "Introduction">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">3</file>
+		<file name = "hp">6</file>
+	</word>
+	<word text = "four">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "fprintf">
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">6</file>
+		<file name = "main.c">7</file>
+	</word>
+	<word text = "fread">
+		<file name = "index">1</file>
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "free">
+		<file name = "hp">1</file>
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "main.c">3</file>
+		<file name = "indexer.c">6</file>
+		<file name = "sorted-list.c">10</file>
+		<file name = "tokenizer.c">23</file>
+	</word>
+	<word text = "freeing">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "frequency">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "frightened">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "from">
+		<file name = "sorted-list.c">4</file>
+		<file name = "sorted-list.h">6</file>
+		<file name = "hp">7</file>
+	</word>
+	<word text = "front">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">4</file>
+	</word>
+	<word text = "frozen">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "fseek">
+		<file name = "index">1</file>
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "fsize">
+		<file name = "main.c">3</file>
+	</word>
+	<word text = "ftell">
+		<file name = "index">1</file>
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "full">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "function">
+		<file name = "tokenizer.c">2</file>
+		<file name = "sorted-list.h">7</file>
+	</word>
+	<word text = "functions">
+		<file name = "sorted-list.h">6</file>
+	</word>
+	<word text = "funny">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "furiously">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "future">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "fwrite">
+		<file name = "index">2</file>
+	</word>
+	<word text = "g">
+		<file name = "hp">1</file>
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "README.pdf">2</file>
+	</word>
+	<word text = "garbage">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "garden">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "gasped">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "gave">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "gazed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "gcc">
+		<file name = "Makefile">5</file>
+	</word>
+	<word text = "generic">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "gently">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "get">
+		<file name = "main.c">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "getchar">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "getfilename">
+		<file name = "index">1</file>
+		<file name = "main.c">2</file>
+	</word>
+	<word text = "gets">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "getting">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "getups">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ggdb">
+		<file name = "Makefile">1</file>
+	</word>
+	<word text = "gh">
+		<file name = "indexer.o">1</file>
+		<file name = "libi.a">1</file>
+	</word>
+	<word text = "ghost">
+		<file name = "indexer.c">10</file>
+	</word>
+	<word text = "giant">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "gingerly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "give">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "given">
+		<file name = "Introduction">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "glance">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "glasses">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "glibc">
+		<file name = "index">5</file>
+	</word>
+	<word text = "glowed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "glumly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "gmon">
+		<file name = "index">2</file>
+	</word>
+	<word text = "gnu">
+		<file name = "index">4</file>
+	</word>
+	<word text = "go">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "godric">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "going">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "golden">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "gone">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "good">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "gossiped">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "got">
+		<file name = "index">1</file>
+		<file name = "indexer.c">5</file>
+		<file name = "hp">7</file>
+	</word>
+	<word text = "gray">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "great">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "greater">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "greatest">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "green">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "grew">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "grin">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "grip">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ground">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "group">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "growing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "grudgingly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "grunnings">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "grunted">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "guess">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "gv">
+		<file name = "README.pdf">1</file>
+	</word>
+	<word text = "h">
+		<file name = "Makefile">1</file>
+		<file name = "sorted-list.c">3</file>
+		<file name = "tokenizer.h">3</file>
+		<file name = "indexer.h">4</file>
+		<file name = "sorted-list.h">4</file>
+		<file name = "indexer.c">5</file>
+		<file name = "tokenizer.h">5</file>
+		<file name = "Makefile">6</file>
+		<file name = "index">6</file>
+		<file name = "index">8</file>
+		<file name = "main.c">8</file>
+		<file name = "indexer.o">9</file>
+		<file name = "libi.a">9</file>
+		<file name = "tokenizer.c">13</file>
+		<file name = "sorted-list.o">29</file>
+		<file name = "tokenizer.o">154</file>
+	</word>
+	<word text = "had">
+		<file name = "hp">39</file>
+	</word>
+	<word text = "hadn">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "hagrid">
+		<file name = "hp">14</file>
+	</word>
+	<word text = "hair">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "half">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "hand">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "handkerchief">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "hands">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "handy">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "happen">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "happening">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "happily">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "happy">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "hard">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "harder">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "hardly">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "harold">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "harry">
+		<file name = "hp">21</file>
+	</word>
+	<word text = "harvey">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "has">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">4</file>
+	</word>
+	<word text = "hash">
+		<file name = "tokenizer.c">1</file>
+		<file name = "indexer.c">5</file>
+	</word>
+	<word text = "hashtable">
+		<file name = "tokenizer.h">10</file>
+		<file name = "tokenizer.c">14</file>
+	</word>
+	<word text = "has9876568798">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "have">
+		<file name = "sorted-list.c">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "testplan.txt">6</file>
+		<file name = "hp">33</file>
+	</word>
+	<word text = "haven">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "having">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hc">
+		<file name = "tokenizer.o">4</file>
+	</word>
+	<word text = "he">
+		<file name = "hp">156</file>
+	</word>
+	<word text = "head">
+		<file name = "sorted-list.h">1</file>
+		<file name = "indexer.c">2</file>
+		<file name = "hp">5</file>
+		<file name = "tokenizer.h">6</file>
+		<file name = "sorted-list.c">13</file>
+		<file name = "tokenizer.c">46</file>
+	</word>
+	<word text = "header">
+		<file name = "index">1</file>
+	</word>
+	<word text = "headlight">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "heads">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "heard">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "heart">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "heaven">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "heavily">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hedges">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "heel">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "heeled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "held">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hello">
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "help">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "helper">
+		<file name = "index">1</file>
+	</word>
+	<word text = "her">
+		<file name = "hp">22</file>
+	</word>
+	<word text = "here">
+		<file name = "indexer.c">1</file>
+		<file name = "tokenizer.c">2</file>
+		<file name = "hp">10</file>
+	</word>
+	<word text = "hid">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hiding">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "high">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "him">
+		<file name = "hp">26</file>
+	</word>
+	<word text = "himself">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "his">
+		<file name = "hp">70</file>
+	</word>
+	<word text = "hissed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hits">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "hold">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "holding">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "holds">
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "hollow">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "home">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "hoped">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hoping">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "horribly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hours">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "house">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "how">
+		<file name = "Introduction">1</file>
+		<file name = "sorted-list.h">3</file>
+		<file name = "hp">8</file>
+	</word>
+	<word text = "howard">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "however">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "howl">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hsah">
+		<file name = "index">1</file>
+	</word>
+	<word text = "htable">
+		<file name = "tokenizer.h">4</file>
+		<file name = "tokenizer.c">15</file>
+	</word>
+	<word text = "http">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "huddle">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "huge">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "hugged">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "hummed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hundreds">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hunt">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hurried">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "husband">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "hushed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "h0">
+		<file name = "index">2</file>
+	</word>
+	<word text = "h9">
+		<file name = "tokenizer.o">1</file>
+	</word>
+	<word text = "i">
+		<file name = ".DS_Store">1</file>
+		<file name = "Asst3.tgz">1</file>
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "README.pdf">2</file>
+		<file name = "index">2</file>
+		<file name = "indexer.c">12</file>
+		<file name = "main.c">28</file>
+		<file name = "tokenizer.c">44</file>
+		<file name = "hp">46</file>
+	</word>
+	<word text = "if">
+		<file name = "testplan.txt">1</file>
+		<file name = "sorted-list.h">13</file>
+		<file name = "hp">17</file>
+		<file name = "main.c">19</file>
+		<file name = "indexer.c">30</file>
+		<file name = "sorted-list.c">31</file>
+		<file name = "tokenizer.c">52</file>
+	</word>
+	<word text = "ifndef">
+		<file name = "indexer.h">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "ih">
+		<file name = "tokenizer.o">1</file>
+	</word>
+	<word text = "ii">
+		<file name = "index">2</file>
+	</word>
+	<word text = "iiter">
+		<file name = "indexer.c">6</file>
+	</word>
+	<word text = "ilocblob">
+		<file name = ".DS_Store">1</file>
+		<file name = "Asst3.tgz">1</file>
+	</word>
+	<word text = "im">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "imagination">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "imagining">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "impatiently">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "implement">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "implementation">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "important">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "improve">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "in">
+		<file name = "sorted-list.c">1</file>
+		<file name = "testplan.txt">3</file>
+		<file name = "Introduction">8</file>
+		<file name = "tokenizer.c">8</file>
+		<file name = "sorted-list.h">9</file>
+		<file name = "hp">57</file>
+	</word>
+	<word text = "include">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "indexer.h">2</file>
+		<file name = "sorted-list.c">3</file>
+		<file name = "indexer.c">5</file>
+		<file name = "tokenizer.h">5</file>
+		<file name = "main.c">8</file>
+		<file name = "tokenizer.c">13</file>
+	</word>
+	<word text = "index">
+		<file name = "Info.plist">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "Introduction">2</file>
+		<file name = "Makefile">2</file>
+		<file name = "Makefile">4</file>
+		<file name = "tokenizer.c">39</file>
+	</word>
+	<word text = "indexer">
+		<file name = "libi.a">1</file>
+		<file name = "Introduction">4</file>
+		<file name = "indexer.h">5</file>
+		<file name = "Makefile">7</file>
+		<file name = "indexer.c">12</file>
+		<file name = "main.c">32</file>
+	</word>
+	<word text = "indexerptr">
+		<file name = "indexer.h">3</file>
+		<file name = "indexer.c">4</file>
+		<file name = "main.c">5</file>
+	</word>
+	<word text = "indexing">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "indextest">
+		<file name = "index">1</file>
+		<file name = "main.c">2</file>
+	</word>
+	<word text = "individual">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "info">
+		<file name = "index">1</file>
+	</word>
+	<word text = "information">
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "ing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "initializeoutput">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "inky">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "inner">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "input">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "inputed">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "inputs">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "inputstring">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "insert">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "insertdata">
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "main.c">6</file>
+	</word>
+	<word text = "inserted">
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "inserts">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "inside">
+		<file name = "testplan.txt">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "instead">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "int">
+		<file name = "sorted-list.c">4</file>
+		<file name = "tokenizer.h">7</file>
+		<file name = "sorted-list.h">8</file>
+		<file name = "tokenizer.h">8</file>
+		<file name = "indexer.h">10</file>
+		<file name = "indexer.c">15</file>
+		<file name = "main.c">15</file>
+		<file name = "tokenizer.c">31</file>
+	</word>
+	<word text = "intcompare">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "intdestroy">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "inthelist">
+		<file name = "sorted-list.h">1</file>
+		<file name = "sorted-list.c">6</file>
+	</word>
+	<word text = "into">
+		<file name = "main.c">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">4</file>
+		<file name = "hp">17</file>
+	</word>
+	<word text = "inttodestroy">
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "inverted">
+		<file name = "Introduction">2</file>
+	</word>
+	<word text = "involved">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "ir">
+		<file name = "index">1</file>
+	</word>
+	<word text = "irritably">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "is">
+		<file name = "Introduction">1</file>
+		<file name = "README.pdf">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "hp">5</file>
+		<file name = "sorted-list.h">9</file>
+		<file name = "tokenizer.c">17</file>
+	</word>
+	<word text = "isalnum">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "isalpha">
+		<file name = "indexer.c">1</file>
+		<file name = "main.c">2</file>
+		<file name = "tokenizer.c">8</file>
+	</word>
+	<word text = "isdigit">
+		<file name = "tokenizer.c">4</file>
+	</word>
+	<word text = "isn">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "isupper">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "it">
+		<file name = "testplan.txt">1</file>
+		<file name = "sorted-list.c">4</file>
+		<file name = "tokenizer.c">6</file>
+		<file name = "sorted-list.h">9</file>
+		<file name = "hp">86</file>
+	</word>
+	<word text = "item">
+		<file name = "sorted-list.c">10</file>
+		<file name = "sorted-list.h">19</file>
+	</word>
+	<word text = "items">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">5</file>
+	</word>
+	<word text = "iter">
+		<file name = "main.c">4</file>
+		<file name = "sorted-list.h">5</file>
+		<file name = "sorted-list.c">34</file>
+	</word>
+	<word text = "iterated">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "iterates">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "iterator">
+		<file name = "sorted-list.h">3</file>
+		<file name = "sorted-list.c">7</file>
+	</word>
+	<word text = "iter2">
+		<file name = "main.c">4</file>
+	</word>
+	<word text = "its">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">4</file>
+	</word>
+	<word text = "itself">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "j">
+		<file name = "README.pdf">3</file>
+		<file name = "index">4</file>
+	</word>
+	<word text = "jacket">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "jam">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "james">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "jerked">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "jet">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "jff">
+		<file name = "README.pdf">1</file>
+	</word>
+	<word text = "jim">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "join">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "judging">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "jumping">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "just">
+		<file name = "hp">9</file>
+	</word>
+	<word text = "k">
+		<file name = "README.pdf">1</file>
+		<file name = "index">3</file>
+		<file name = "main.c">6</file>
+	</word>
+	<word text = "keep">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "keeping">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "kent">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "key">
+		<file name = "indexer.h">1</file>
+		<file name = "main.c">1</file>
+		<file name = "indexer.c">6</file>
+		<file name = "Info.plist">14</file>
+	</word>
+	<word text = "kicked">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "kicking">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "kill">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "killed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "kind">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "kiran">
+		<file name = "Asst3.tgz">2</file>
+	</word>
+	<word text = "kiss">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "knee">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "knew">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "knocked">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "know">
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">17</file>
+	</word>
+	<word text = "knowing">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "known">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "knows">
+		<file name = "hp">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "kp">
+		<file name = "README.pdf">1</file>
+	</word>
+	<word text = "l">
+		<file name = "index">1</file>
+		<file name = "README.pdf">3</file>
+	</word>
+	<word text = "la">
+		<file name = "index">1</file>
+	</word>
+	<word text = "lace">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "laid">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "lamp">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "lamps">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "landed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "large">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "last">
+		<file name = "hp">8</file>
+	</word>
+	<word text = "late">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "lately">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "later">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "lay">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "ld">
+		<file name = "index">2</file>
+	</word>
+	<word text = "leading">
+		<file name = "tokenizer.c">6</file>
+	</word>
+	<word text = "leaning">
+		<file name = "indexer.c">1</file>
+	</word>
+	<word text = "learned">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "least">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "leather">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "left">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "legend">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "legs">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "lemon">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "length">
+		<file name = "README.pdf">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">8</file>
+	</word>
+	<word text = "lengthens">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "lent">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "less">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "let">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "letter">
+		<file name = "tokenizer.c">2</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "libc">
+		<file name = "index">4</file>
+	</word>
+	<word text = "libi">
+		<file name = "Makefile">5</file>
+	</word>
+	<word text = "lib64">
+		<file name = "index">2</file>
+	</word>
+	<word text = "lids">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "life">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "light">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "lighter">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "lightning">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "lights">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "like">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">9</file>
+	</word>
+	<word text = "liked">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "lily">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "linked">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "linkedit">
+		<file name = "index">1</file>
+	</word>
+	<word text = "linux">
+		<file name = "index">2</file>
+	</word>
+	<word text = "lips">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "list">
+		<file name = "meme">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "main.c">2</file>
+		<file name = "indexer.h">5</file>
+		<file name = "testplan.txt">6</file>
+		<file name = "Makefile">7</file>
+		<file name = "tokenizer.c">8</file>
+		<file name = "indexer.c">20</file>
+		<file name = "sorted-list.h">28</file>
+		<file name = "sorted-list.c">56</file>
+	</word>
+	<word text = "listptr">
+		<file name = "sorted-list.h">1</file>
+		<file name = "indexer.h">2</file>
+		<file name = "indexer.c">6</file>
+	</word>
+	<word text = "little">
+		<file name = "hp">9</file>
+	</word>
+	<word text = "live">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "lived">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "living">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "ll">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "loc">
+		<file name = "index">2</file>
+	</word>
+	<word text = "location">
+		<file name = "index">1</file>
+	</word>
+	<word text = "london">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "long">
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">4</file>
+	</word>
+	<word text = "longer">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "look">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "looked">
+		<file name = "hp">9</file>
+	</word>
+	<word text = "looking">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "lose">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "lot">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "lots">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "louder">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "loudly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "low">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "luck">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "lucky">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "lunchtime">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "m">
+		<file name = "README.pdf">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">2</file>
+		<file name = "tokenizer.o">2</file>
+	</word>
+	<word text = "madam">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "made">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "mail">
+		<file name = "example">1</file>
+		<file name = "testplan.txt">3</file>
+	</word>
+	<word text = "main">
+		<file name = "index">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "Makefile">2</file>
+		<file name = "index">2</file>
+	</word>
+	<word text = "maintain">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "maintaining">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "maintains">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "make">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "makehashtable">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">4</file>
+	</word>
+	<word text = "makemastertable">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "makenode">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">6</file>
+	</word>
+	<word text = "making">
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "malloc">
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "main.c">2</file>
+		<file name = "sorted-list.c">5</file>
+		<file name = "tokenizer.c">11</file>
+		<file name = "indexer.c">14</file>
+	</word>
+	<word text = "mallocs">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "man">
+		<file name = "hp">10</file>
+	</word>
+	<word text = "manner">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "many">
+		<file name = "Introduction">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "map">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "maps">
+		<file name = "Introduction">1</file>
+		<file name = "hp">1</file>
+	</word>
+	<word text = "markings">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "mastertable">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">6</file>
+	</word>
+	<word text = "match">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "matched">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "maxnum">
+		<file name = "tokenizer.c">5</file>
+	</word>
+	<word text = "may">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "maybe">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "mcgonagall">
+		<file name = "hp">26</file>
+	</word>
+	<word text = "mcguffin">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "me">
+		<file name = "hp">8</file>
+	</word>
+	<word text = "mean">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "meeting">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "memcpy">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "memmove">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "memory">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "mention">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "met">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "mh">
+		<file name = "index">1</file>
+	</word>
+	<word text = "middle">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "midnight">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "might">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "milk">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "mind">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "minute">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "minutes">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "mirror">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "missed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "mixed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "mixing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "modified">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "modify">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "moment">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "mood">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "moon">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "more">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "morning">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "most">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "mother">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "motorcycle">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "mouth">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "mouthed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "move">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "moved">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "moving">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "mr">
+		<file name = "hp">30</file>
+	</word>
+	<word text = "mrs">
+		<file name = "hp">21</file>
+	</word>
+	<word text = "much">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "muffled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "muggle">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "muggles">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "mumbled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "murmured">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "muscular">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "must">
+		<file name = "hp">4</file>
+		<file name = "sorted-list.h">5</file>
+	</word>
+	<word text = "mustache">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "muttered">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "my">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "mynode">
+		<file name = "tokenizer.c">6</file>
+	</word>
+	<word text = "myself">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "mysterious">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "mytable">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">23</file>
+	</word>
+	<word text = "mytolower">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "n">
+		<file name = "README.pdf">1</file>
+		<file name = "index">1</file>
+		<file name = "index">2</file>
+		<file name = "sorted-list.c">5</file>
+		<file name = "main.c">9</file>
+		<file name = "indexer.c">13</file>
+		<file name = "tokenizer.c">18</file>
+	</word>
+	<word text = "name">
+		<file name = "baa">1</file>
+		<file name = "meme">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "boo">2</file>
+		<file name = "main.c">2</file>
+		<file name = "testplan.txt">10</file>
+		<file name = "hp">11</file>
+		<file name = "tokenizer.c">24</file>
+	</word>
+	<word text = "names">
+		<file name = "index">1</file>
+	</word>
+	<word text = "namespac">
+		<file name = "index">1</file>
+	</word>
+	<word text = "narrowed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nasty">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nation">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nb">
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "nc">
+		<file name = "index">1</file>
+	</word>
+	<word text = "nd">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "near">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nearest">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nearly">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "neat">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "neck">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "need">
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "needs">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "neighbors">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "neither">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nephew">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nerve">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nervously">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "never">
+		<file name = "hp">10</file>
+	</word>
+	<word text = "new">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">2</file>
+		<file name = "hp">3</file>
+	</word>
+	<word text = "newindexer">
+		<file name = "indexer.c">6</file>
+	</word>
+	<word text = "newlist">
+		<file name = "sorted-list.c">6</file>
+	</word>
+	<word text = "newnode">
+		<file name = "sorted-list.c">20</file>
+	</word>
+	<word text = "newobj">
+		<file name = "sorted-list.h">7</file>
+		<file name = "sorted-list.c">14</file>
+	</word>
+	<word text = "news">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "newscaster">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "newstr">
+		<file name = "main.c">6</file>
+	</word>
+	<word text = "next">
+		<file name = "tokenizer.h">1</file>
+		<file name = "indexer.c">2</file>
+		<file name = "sorted-list.h">4</file>
+		<file name = "hp">8</file>
+		<file name = "sorted-list.c">20</file>
+		<file name = "tokenizer.c">28</file>
+	</word>
+	<word text = "nice">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "night">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "nighttime">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ninth">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nl">
+		<file name = "index">1</file>
+	</word>
+	<word text = "no">
+		<file name = "indexer.c">1</file>
+		<file name = "main.c">1</file>
+		<file name = "hp">16</file>
+	</word>
+	<word text = "noble">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nodded">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nodding">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "node">
+		<file name = "indexer.c">2</file>
+		<file name = "tokenizer.h">2</file>
+		<file name = "sorted-list.h">5</file>
+		<file name = "sorted-list.c">17</file>
+		<file name = "tokenizer.c">17</file>
+	</word>
+	<word text = "nodedestroyer">
+		<file name = "sorted-list.c">5</file>
+	</word>
+	<word text = "nodeptr">
+		<file name = "sorted-list.c">5</file>
+	</word>
+	<word text = "nodes">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "non">
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "none">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "nonsense">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "nor">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "normal">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "normally">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "nose">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "not">
+		<file name = "main.c">2</file>
+		<file name = "sorted-list.c">3</file>
+		<file name = "tokenizer.c">5</file>
+		<file name = "sorted-list.h">13</file>
+		<file name = "hp">15</file>
+	</word>
+	<word text = "note">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "nothing">
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">7</file>
+	</word>
+	<word text = "notice">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "noticed">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "noticing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "now">
+		<file name = "tokenizer.h">1</file>
+		<file name = "hp">8</file>
+	</word>
+	<word text = "nowhere">
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "null">
+		<file name = "main.c">7</file>
+		<file name = "sorted-list.h">7</file>
+		<file name = "indexer.c">17</file>
+		<file name = "sorted-list.c">36</file>
+		<file name = "tokenizer.c">45</file>
+	</word>
+	<word text = "number">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "numbers">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "numerics">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "numofocc">
+		<file name = "indexer.h">2</file>
+		<file name = "main.c">2</file>
+		<file name = "indexer.c">13</file>
+	</word>
+	<word text = "nu289374mbers">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "o">
+		<file name = "README.pdf">1</file>
+		<file name = "hp">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "Makefile">12</file>
+	</word>
+	<word text = "obj">
+		<file name = "README.pdf">1</file>
+	</word>
+	<word text = "objc">
+		<file name = "index">1</file>
+	</word>
+	<word text = "object">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "obviously">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "occ">
+		<file name = "indexer.c">5</file>
+		<file name = "main.c">5</file>
+	</word>
+	<word text = "occptr">
+		<file name = "indexer.c">20</file>
+	</word>
+	<word text = "occurencelist">
+		<file name = "indexer.h">1</file>
+		<file name = "main.c">1</file>
+		<file name = "indexer.c">9</file>
+	</word>
+	<word text = "occuriter">
+		<file name = "indexer.c">4</file>
+	</word>
+	<word text = "occurred">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "occurrence">
+		<file name = "indexer.h">1</file>
+		<file name = "main.c">2</file>
+		<file name = "indexer.c">28</file>
+	</word>
+	<word text = "occurrencedestroy">
+		<file name = "index">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "occurrences">
+		<file name = "indexer.h">1</file>
+	</word>
+	<word text = "odd">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "oddly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "of">
+		<file name = "main.c">1</file>
+		<file name = "Introduction">3</file>
+		<file name = "sorted-list.c">5</file>
+		<file name = "sorted-list.h">9</file>
+		<file name = "tokenizer.c">11</file>
+		<file name = "hp">75</file>
+	</word>
+	<word text = "off">
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "hp">7</file>
+	</word>
+	<word text = "office">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "oh">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "ok">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "old">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "older">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "on">
+		<file name = "testplan.txt">1</file>
+		<file name = "tokenizer.c">2</file>
+		<file name = "sorted-list.h">4</file>
+		<file name = "hp">51</file>
+	</word>
+	<word text = "once">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "one">
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">7</file>
+	</word>
+	<word text = "only">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "onto">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "opaque">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "open">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "opendir">
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "opened">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "opening">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "operations">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "opinion">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "opperator">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "or">
+		<file name = "sorted-list.h">3</file>
+		<file name = "tokenizer.c">4</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "orange">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "order">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "orginal">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "original">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "originalstring">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">5</file>
+	</word>
+	<word text = "other">
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">3</file>
+	</word>
+	<word text = "our">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "out">
+		<file name = "hp">22</file>
+	</word>
+	<word text = "outer">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "output">
+		<file name = "Introduction">1</file>
+		<file name = "tokenizer.c">2</file>
+		<file name = "testplan.txt">6</file>
+	</word>
+	<word text = "outputfile">
+		<file name = "main.c">2</file>
+		<file name = "tokenizer.h">4</file>
+		<file name = "tokenizer.c">17</file>
+	</word>
+	<word text = "outputfileptr">
+		<file name = "main.c">10</file>
+	</word>
+	<word text = "outputinitialized">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "outputs">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "outputtokenlist">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "outputtokens">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "outside">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "over">
+		<file name = "hp">17</file>
+	</word>
+	<word text = "overhead">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "overwrite">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "owl">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "owls">
+		<file name = "hp">11</file>
+	</word>
+	<word text = "o3ne">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "p">
+		<file name = "README.pdf">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "sorted-list.o">1</file>
+		<file name = "tokenizer.o">3</file>
+		<file name = "index">8</file>
+	</word>
+	<word text = "pagezero">
+		<file name = "index">1</file>
+	</word>
+	<word text = "pair">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "parameter">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "parameters">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "parking">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "parse">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "part">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "particular">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "parties">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "passed">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "passersby">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "past">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "path">
+		<file name = "tokenizer.c">7</file>
+	</word>
+	<word text = "pathlength">
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "pathname">
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "patted">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "pattern">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "patting">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "pavement">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "pdf">
+		<file name = "README.pdf">1</file>
+	</word>
+	<word text = "pdirent">
+		<file name = "main.c">4</file>
+	</word>
+	<word text = "pecked">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "peculiar">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "peered">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "people">
+		<file name = "hp">21</file>
+	</word>
+	<word text = "per">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "perfect">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "perfectly">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "perhaps">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "person">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "persuade">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "petunia">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "pfile">
+		<file name = "main.c">8</file>
+	</word>
+	<word text = "phoning">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "picked">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "piercing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "pinched">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "pinpricks">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "place">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "places">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "plain">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "plan">
+		<file name = "testplan.txt">2</file>
+	</word>
+	<word text = "planets">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "plist">
+		<file name = "Info.plist">4</file>
+	</word>
+	<word text = "pocket">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "point">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "pointed">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">3</file>
+	</word>
+	<word text = "pointer">
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.c">3</file>
+		<file name = "sorted-list.h">4</file>
+	</word>
+	<word text = "pointers">
+		<file name = "Introduction">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "pointersorter">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "pointing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "pomfrey">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "poor">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "pop">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "popped">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "possible">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "potter">
+		<file name = "hp">12</file>
+	</word>
+	<word text = "potters">
+		<file name = "hp">10</file>
+	</word>
+	<word text = "power">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "powers">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "practice">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "precious">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "preserve">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "pressed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "presume">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "pretend">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "pretended">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "prev">
+		<file name = "sorted-list.c">10</file>
+		<file name = "tokenizer.c">11</file>
+	</word>
+	<word text = "print">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "printf">
+		<file name = "main.c">3</file>
+		<file name = "sorted-list.c">5</file>
+		<file name = "indexer.c">14</file>
+		<file name = "tokenizer.c">18</file>
+	</word>
+	<word text = "printlist">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "printll">
+		<file name = "tokenizer.c">1</file>
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "printocclist">
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+	</word>
+	<word text = "printstringlist">
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+	</word>
+	<word text = "printtable">
+		<file name = "tokenizer.c">1</file>
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "printtofile">
+		<file name = "index">1</file>
+		<file name = "main.c">2</file>
+	</word>
+	<word text = "printtokenlist">
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "printvoidoccurrence">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "printvoidtoken">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "privet">
+		<file name = "hp">8</file>
+	</word>
+	<word text = "probably">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "problems">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "proceed">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "prodded">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "produce">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "professor">
+		<file name = "hp">30</file>
+	</word>
+	<word text = "program">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "promise">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "promised">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "proper">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "propertylist">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "prototypes">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "proud">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "provides">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "ptr">
+		<file name = "tokenizer.c">1</file>
+		<file name = "index">2</file>
+		<file name = "indexer.c">12</file>
+	</word>
+	<word text = "public">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "pull">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "pulled">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "purple">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "pursed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "put">
+		<file name = "hp">8</file>
+	</word>
+	<word text = "putchar">
+		<file name = "index">1</file>
+	</word>
+	<word text = "puts">
+		<file name = "index">2</file>
+	</word>
+	<word text = "p0">
+		<file name = "index">3</file>
+	</word>
+	<word text = "q">
+		<file name = "README.pdf">2</file>
+		<file name = "index">2</file>
+	</word>
+	<word text = "quickly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "quite">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "quiver">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "r">
+		<file name = "Makefile">1</file>
+		<file name = "index">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.o">1</file>
+		<file name = "README.pdf">2</file>
+		<file name = "tokenizer.c">2</file>
+		<file name = "index">3</file>
+	</word>
+	<word text = "rain">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "rather">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "rattled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "re">
+		<file name = "hp">13</file>
+	</word>
+	<word text = "reached">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "read">
+		<file name = "hp">1</file>
+		<file name = "main.c">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "readdir">
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "readfile">
+		<file name = "index">1</file>
+		<file name = "main.c">3</file>
+	</word>
+	<word text = "reading">
+		<file name = "Introduction">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "ready">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "real">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "realize">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "realized">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "really">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "reason">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "receiver">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "recently">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "recordnode">
+		<file name = "tokenizer.h">11</file>
+		<file name = "tokenizer.c">32</file>
+	</word>
+	<word text = "recursive">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "refcounter">
+		<file name = "sorted-list.h">1</file>
+		<file name = "sorted-list.c">15</file>
+	</word>
+	<word text = "refers">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "reg">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "regular">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "rejoice">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "related">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "relieved">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "remember">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "remove">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "removecharat">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "removed">
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "removes">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "repeated">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "reply">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "report">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "reported">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "require">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "rest">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "result">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "return">
+		<file name = "main.c">8</file>
+		<file name = "sorted-list.h">14</file>
+		<file name = "sorted-list.c">29</file>
+		<file name = "indexer.c">39</file>
+		<file name = "tokenizer.c">39</file>
+	</word>
+	<word text = "returned">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "returns">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "rewind">
+		<file name = "index">1</file>
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "rf">
+		<file name = "Makefile">1</file>
+	</word>
+	<word text = "right">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">6</file>
+	</word>
+	<word text = "rilocblob">
+		<file name = ".DS_Store">1</file>
+		<file name = "Asst3.tgz">1</file>
+	</word>
+	<word text = "rm">
+		<file name = "Makefile">4</file>
+	</word>
+	<word text = "road">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "roar">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "robes">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "rolled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "room">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "rooted">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "rose">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ruffled">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "rumbling">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "rummaging">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "rumor">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "rumors">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "rutgers">
+		<file name = "example">1</file>
+		<file name = "testplan.txt">3</file>
+	</word>
+	<word text = "s">
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "README.pdf">5</file>
+		<file name = "indexer.c">5</file>
+		<file name = "sorted-list.h">5</file>
+		<file name = "main.c">9</file>
+		<file name = "tokenizer.c">20</file>
+		<file name = "hp">49</file>
+	</word>
+	<word text = "sad">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "said">
+		<file name = "hp">32</file>
+	</word>
+	<word text = "same">
+		<file name = "hp">3</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "sat">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "saw">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "say">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "saying">
+		<file name = "hp">10</file>
+	</word>
+	<word text = "scar">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "scars">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "scatters">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "scattertokens">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "scratchy">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "scream">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "screaming">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "second">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "secondarg">
+		<file name = "indexer.h">1</file>
+		<file name = "indexer.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "seconds">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "secondstring">
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "secret">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "secretary">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "see">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">9</file>
+	</word>
+	<word text = "seeing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "seek">
+		<file name = "main.c">1</file>
+	</word>
+	<word text = "seem">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "seemed">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "seems">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "seen">
+		<file name = "hp">8</file>
+	</word>
+	<word text = "seized">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sense">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "sensible">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sentence">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "seperate">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "sequence">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "seriously">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "set">
+		<file name = "Introduction">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "several">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "severe">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sh">
+		<file name = "tokenizer.o">3</file>
+	</word>
+	<word text = "shaggy">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shake">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shall">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shape">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shaped">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sharp">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "sharply">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "she">
+		<file name = "hp">26</file>
+	</word>
+	<word text = "shhh">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shocked">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shone">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shoo">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shook">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shooting">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "shorter">
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "shot">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "should">
+		<file name = "indexer.c">1</file>
+		<file name = "Introduction">2</file>
+		<file name = "hp">2</file>
+		<file name = "tokenizer.c">2</file>
+		<file name = "sorted-list.c">4</file>
+		<file name = "sorted-list.h">14</file>
+	</word>
+	<word text = "shoulder">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shoulders">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shouted">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "showers">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "showing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "shuddered">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sideways">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sight">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "sightings">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sign">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "signs">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "silence">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "silent">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "silently">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "silly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "silver">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "simply">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "since">
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "single">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "sinking">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sipped">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sir">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "sirius">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "sister">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "sit">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "sitting">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "size">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "indexer.h">2</file>
+		<file name = "tokenizer.h">3</file>
+		<file name = "main.c">5</file>
+		<file name = "tokenizer.c">6</file>
+		<file name = "indexer.c">8</file>
+		<file name = "sorted-list.c">11</file>
+	</word>
+	<word text = "sizeof">
+		<file name = "main.c">3</file>
+		<file name = "sorted-list.c">5</file>
+		<file name = "indexer.c">14</file>
+		<file name = "tokenizer.c">20</file>
+	</word>
+	<word text = "sizeofchecker">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "skip">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "sky">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "slammed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "slcreate">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "indexer.c">2</file>
+		<file name = "sorted-list.h">4</file>
+	</word>
+	<word text = "slcreateiterator">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "main.c">2</file>
+		<file name = "indexer.c">4</file>
+		<file name = "sorted-list.h">4</file>
+	</word>
+	<word text = "sldestroy">
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "main.c">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "sldestroyiterator">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "main.c">2</file>
+		<file name = "sorted-list.h">3</file>
+		<file name = "indexer.c">4</file>
+	</word>
+	<word text = "sleep">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sleepiness">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sleeping">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sleeve">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "slept">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "slgetitem">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "main.c">2</file>
+		<file name = "indexer.c">4</file>
+		<file name = "sorted-list.c">4</file>
+		<file name = "sorted-list.h">4</file>
+	</word>
+	<word text = "slinking">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "slinsert">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">4</file>
+		<file name = "indexer.c">8</file>
+	</word>
+	<word text = "slipped">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "slnextitem">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "main.c">2</file>
+		<file name = "indexer.c">4</file>
+		<file name = "sorted-list.c">4</file>
+		<file name = "sorted-list.h">6</file>
+	</word>
+	<word text = "slot">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "slremove">
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">4</file>
+	</word>
+	<word text = "small">
+		<file name = "indexer.c">1</file>
+		<file name = "testplan.txt">2</file>
+		<file name = "hp">3</file>
+	</word>
+	<word text = "smaller">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "smile">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "smiling">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "snapped">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "sniff">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sniffed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "snprintf">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "so">
+		<file name = "testplan.txt">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "index">4</file>
+		<file name = "hp">14</file>
+	</word>
+	<word text = "sobbed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "some">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "somebody">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "somehow">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "someone">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "something">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">14</file>
+	</word>
+	<word text = "son">
+		<file name = "hp">7</file>
+	</word>
+	<word text = "soon">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "sorcerer">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sorry">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "sort">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "sortalnum">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">7</file>
+	</word>
+	<word text = "sorted">
+		<file name = "Introduction">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "main.c">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">6</file>
+		<file name = "Makefile">7</file>
+	</word>
+	<word text = "sortedlist">
+		<file name = "indexer.h">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">17</file>
+	</word>
+	<word text = "sortedlistiterator">
+		<file name = "sorted-list.c">6</file>
+		<file name = "sorted-list.h">14</file>
+	</word>
+	<word text = "sortedlistiteratorptr">
+		<file name = "main.c">2</file>
+		<file name = "indexer.c">4</file>
+		<file name = "sorted-list.c">6</file>
+		<file name = "sorted-list.h">7</file>
+	</word>
+	<word text = "sortedlistptr">
+		<file name = "indexer.h">7</file>
+		<file name = "sorted-list.c">8</file>
+		<file name = "sorted-list.h">10</file>
+		<file name = "indexer.c">13</file>
+	</word>
+	<word text = "sortlistiterator">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "sound">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sounding">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "sparkling">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "special">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "specified">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "spectacles">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "sped">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "spend">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "spent">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "split">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "spoke">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "spot">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "spotted">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "sprintf">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "spying">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "square">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "squeaky">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "src">
+		<file name = "indexer.h">2</file>
+		<file name = "indexer.c">15</file>
+	</word>
+	<word text = "st">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "staff">
+		<file name = "Asst3.tgz">2</file>
+	</word>
+	<word text = "stand">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "standing">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "stare">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "stared">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "staring">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "stars">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "start">
+		<file name = "index">4</file>
+	</word>
+	<word text = "started">
+		<file name = "hp">1</file>
+		<file name = "testplan.txt">1</file>
+	</word>
+	<word text = "startindex">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">6</file>
+	</word>
+	<word text = "starts">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "statement">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "statue">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "staying">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stdio">
+		<file name = "indexer.c">1</file>
+		<file name = "main.c">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "stdlib">
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "main.c">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "steadily">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "steering">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "step">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "stepped">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stern">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stiff">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stiffly">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "still">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "stone">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stood">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "stop">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stopped">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "store">
+		<file name = "Asst3.tgz">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "stored">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "story">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "str">
+		<file name = "index">1</file>
+		<file name = "tokenizer.h">2</file>
+		<file name = "indexer.h">3</file>
+		<file name = "tokenizer.c">15</file>
+		<file name = "main.c">18</file>
+		<file name = "indexer.c">21</file>
+	</word>
+	<word text = "straight">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "strange">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "strangely">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stranger">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "strcat">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "main.c">2</file>
+	</word>
+	<word text = "strcmp">
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "main.c">2</file>
+		<file name = "indexer.c">3</file>
+		<file name = "tokenizer.c">7</file>
+	</word>
+	<word text = "strcpy">
+		<file name = "index">1</file>
+		<file name = "main.c">2</file>
+		<file name = "tokenizer.c">4</file>
+		<file name = "indexer.c">6</file>
+	</word>
+	<word text = "strdup">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "stream">
+		<file name = "README.pdf">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "streaming">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "street">
+		<file name = "hp">14</file>
+	</word>
+	<word text = "streets">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stretch">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "string">
+		<file name = "tokenizer.h">1</file>
+		<file name = "indexer.c">2</file>
+		<file name = "tokenizer.h">2</file>
+		<file name = "main.c">7</file>
+		<file name = "Info.plist">14</file>
+		<file name = "tokenizer.c">34</file>
+	</word>
+	<word text = "stringcompare">
+		<file name = "index">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "indexer.c">3</file>
+	</word>
+	<word text = "stringdestroy">
+		<file name = "index">1</file>
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+	</word>
+	<word text = "stringptr">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+		<file name = "indexer.c">3</file>
+	</word>
+	<word text = "strings">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "stringtodestroy">
+		<file name = "indexer.c">3</file>
+	</word>
+	<word text = "strlen">
+		<file name = "index">1</file>
+		<file name = "index">1</file>
+		<file name = "indexer.c">6</file>
+		<file name = "main.c">6</file>
+		<file name = "tokenizer.c">18</file>
+	</word>
+	<word text = "strncmp">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "strncpy">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "stroked">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "struck">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "struct">
+		<file name = "indexer.c">1</file>
+		<file name = "main.c">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "tokenizer.h">3</file>
+		<file name = "tokenizer.h">3</file>
+		<file name = "indexer.h">4</file>
+		<file name = "tokenizer.c">4</file>
+		<file name = "sorted-list.h">9</file>
+	</word>
+	<word text = "structs">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "structure">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "structures">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "str2">
+		<file name = "main.c">5</file>
+	</word>
+	<word text = "str3">
+		<file name = "main.c">2</file>
+	</word>
+	<word text = "stub">
+		<file name = "index">1</file>
+	</word>
+	<word text = "stubs">
+		<file name = "index">1</file>
+	</word>
+	<word text = "stuff">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stumbled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stunt">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "stupid">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "sub">
+		<file name = "tokenizer.c">4</file>
+	</word>
+	<word text = "subject">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "subset">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "substring">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">5</file>
+	</word>
+	<word text = "succeed">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "success">
+		<file name = "sorted-list.h">3</file>
+	</word>
+	<word text = "successfully">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "such">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "suddenly">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "suggest">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sunrise">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "supply">
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "suppose">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "supposed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sure">
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">2</file>
+		<file name = "hp">3</file>
+	</word>
+	<word text = "surely">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "surprised">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "survive">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "swallowed">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "swapping">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "swarmin">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sweet">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "sweets">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "swelled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "swept">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "swish">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "switch">
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "swoop">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "swooped">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "swung">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "symbol">
+		<file name = "index">2</file>
+	</word>
+	<word text = "symbols">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "system">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "t">
+		<file name = "indexer.o">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "tokenizer.o">1</file>
+		<file name = "README.pdf">2</file>
+		<file name = "index">3</file>
+		<file name = "indexer.c">3</file>
+		<file name = "index">4</file>
+		<file name = "index">4</file>
+		<file name = "tokenizer.c">6</file>
+		<file name = "main.c">7</file>
+		<file name = "hp">62</file>
+	</word>
+	<word text = "tabby">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "table">
+		<file name = "indexer.h">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "indexer.c">7</file>
+		<file name = "main.c">9</file>
+		<file name = "tokenizer.c">21</file>
+	</word>
+	<word text = "tables">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "tail">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "take">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "takes">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "takin">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "taking">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "talk">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "tall">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "tangles">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "tantrum">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "target">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "targetfile">
+		<file name = "tokenizer.c">8</file>
+	</word>
+	<word text = "task">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "tawny">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "td">
+		<file name = "index">6</file>
+	</word>
+	<word text = "tdestroy">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "tea">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "ted">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "telephone">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "tell">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "temp">
+		<file name = "sorted-list.c">7</file>
+		<file name = "tokenizer.c">25</file>
+	</word>
+	<word text = "tempocc">
+		<file name = "main.c">5</file>
+	</word>
+	<word text = "tend">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ter">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "terminated">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "terminator">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "territory">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "tes">
+		<file name = "testplan.txt">1</file>
+	</word>
+	<word text = "test">
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "testplan.txt">11</file>
+	</word>
+	<word text = "tested">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "test1">
+		<file name = "testplan.txt">1</file>
+	</word>
+	<word text = "test2">
+		<file name = "testplan.txt">1</file>
+	</word>
+	<word text = "test3">
+		<file name = "testplan.txt">1</file>
+	</word>
+	<word text = "text">
+		<file name = "tokenizer.c">1</file>
+		<file name = "index">7</file>
+	</word>
+	<word text = "than">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "thank">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "thankful">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "that">
+		<file name = "Introduction">2</file>
+		<file name = "testplan.txt">3</file>
+		<file name = "sorted-list.c">4</file>
+		<file name = "tokenizer.c">8</file>
+		<file name = "sorted-list.h">9</file>
+		<file name = "hp">59</file>
+	</word>
+	<word text = "the">
+		<file name = "indexer.c">1</file>
+		<file name = "testplan.txt">7</file>
+		<file name = "Introduction">9</file>
+		<file name = "sorted-list.c">19</file>
+		<file name = "tokenizer.c">25</file>
+		<file name = "sorted-list.h">51</file>
+		<file name = "hp">205</file>
+	</word>
+	<word text = "their">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">11</file>
+	</word>
+	<word text = "them">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">17</file>
+	</word>
+	<word text = "then">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "there">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">13</file>
+	</word>
+	<word text = "these">
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">4</file>
+	</word>
+	<word text = "they">
+		<file name = "hp">32</file>
+	</word>
+	<word text = "thin">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "thing">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "things">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "thingtodestroy">
+		<file name = "indexer.h">2</file>
+		<file name = "sorted-list.h">2</file>
+		<file name = "indexer.c">6</file>
+	</word>
+	<word text = "think">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">8</file>
+	</word>
+	<word text = "thinking">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "this">
+		<file name = "Introduction">1</file>
+		<file name = "example">1</file>
+		<file name = "tokenizer.h">2</file>
+		<file name = "testplan.txt">3</file>
+		<file name = "tokenizer.c">4</file>
+		<file name = "hp">16</file>
+	</word>
+	<word text = "those">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "though">
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">7</file>
+	</word>
+	<word text = "thought">
+		<file name = "hp">9</file>
+	</word>
+	<word text = "three">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "threw">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "throat">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "through">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">4</file>
+	</word>
+	<word text = "throwing">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "tidy">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "tie">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "tight">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "time">
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">3</file>
+	</word>
+	<word text = "times">
+		<file name = "Introduction">1</file>
+		<file name = "hp">2</file>
+	</word>
+	<word text = "tin">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "tiny">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "tk">
+		<file name = "tokenizer.h">4</file>
+		<file name = "main.c">6</file>
+		<file name = "tokenizer.c">32</file>
+	</word>
+	<word text = "tkcreate">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "tkdestroy">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "tkgetnexttoken">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "tmp">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "to">
+		<file name = "testplan.txt">1</file>
+		<file name = "Introduction">2</file>
+		<file name = "indexer.c">4</file>
+		<file name = "sorted-list.c">11</file>
+		<file name = "tokenizer.c">22</file>
+		<file name = "sorted-list.h">33</file>
+		<file name = "hp">94</file>
+	</word>
+	<word text = "today">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "todestroy">
+		<file name = "indexer.c">9</file>
+	</word>
+	<word text = "tofile">
+		<file name = "indexer.c">15</file>
+	</word>
+	<word text = "tofree">
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "together">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "toke">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">14</file>
+	</word>
+	<word text = "token">
+		<file name = "tokenizer.h">2</file>
+		<file name = "Introduction">3</file>
+		<file name = "indexer.h">3</file>
+		<file name = "tokenizer.h">4</file>
+		<file name = "main.c">7</file>
+		<file name = "indexer.c">21</file>
+		<file name = "tokenizer.c">45</file>
+	</word>
+	<word text = "tokendestroy">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "tokeniter">
+		<file name = "indexer.c">7</file>
+	</word>
+	<word text = "tokenize">
+		<file name = "Introduction">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">4</file>
+	</word>
+	<word text = "tokenizer">
+		<file name = "tokenizer.h">2</file>
+		<file name = "Makefile">3</file>
+		<file name = "main.c">5</file>
+		<file name = "Makefile">7</file>
+		<file name = "tokenizer.c">12</file>
+	</word>
+	<word text = "tokenizert">
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.h">8</file>
+		<file name = "tokenizer.c">10</file>
+	</word>
+	<word text = "tokenizing">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "tokenptr">
+		<file name = "indexer.h">1</file>
+		<file name = "main.c">1</file>
+		<file name = "indexer.c">14</file>
+	</word>
+	<word text = "tokens">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "tokenstream">
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "tokentype">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "told">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "tolower">
+		<file name = "index">1</file>
+		<file name = "indexer.h">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "index">2</file>
+		<file name = "indexer.c">3</file>
+	</word>
+	<word text = "tonight">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "too">
+		<file name = "indexer.c">1</file>
+		<file name = "tokenizer.c">4</file>
+		<file name = "hp">5</file>
+	</word>
+	<word text = "took">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "top">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "toward">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "towards">
+		<file name = "indexer.c">1</file>
+	</word>
+	<word text = "town">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "track">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "traffic">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "trash">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "travdir">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">4</file>
+	</word>
+	<word text = "traversal">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "trembled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "trick">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "tried">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "true">
+		<file name = "tokenizer.h">1</file>
+		<file name = "hp">2</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "trust">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "try">
+		<file name = "sorted-list.c">2</file>
+		<file name = "sorted-list.h">2</file>
+	</word>
+	<word text = "trying">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "ts">
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">7</file>
+	</word>
+	<word text = "tt">
+		<file name = "tokenizer.c">18</file>
+	</word>
+	<word text = "ttcreate">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">4</file>
+	</word>
+	<word text = "tuck">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "tucked">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "tuesday">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "tuft">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "turn">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "turned">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "turning">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "twelve">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "twice">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "twinkling">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "twitched">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "two">
+		<file name = "sorted-list.h">2</file>
+		<file name = "hp">6</file>
+	</word>
+	<word text = "txt">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "tyke">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "type">
+		<file name = "tokenizer.h">2</file>
+		<file name = "sorted-list.h">3</file>
+		<file name = "tokenizer.c">14</file>
+	</word>
+	<word text = "typedef">
+		<file name = "indexer.c">1</file>
+		<file name = "indexer.h">4</file>
+		<file name = "tokenizer.h">5</file>
+		<file name = "sorted-list.h">6</file>
+	</word>
+	<word text = "types">
+		<file name = "index">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "t1">
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "t2">
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "u">
+		<file name = "index">3</file>
+		<file name = "indexer.o">4</file>
+		<file name = "libi.a">4</file>
+		<file name = "sorted-list.o">4</file>
+		<file name = "tokenizer.o">16</file>
+	</word>
+	<word text = "uh">
+		<file name = "indexer.o">2</file>
+		<file name = "libi.a">2</file>
+		<file name = "sorted-list.o">2</file>
+		<file name = "tokenizer.o">7</file>
+	</word>
+	<word text = "unable">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "unblinkingly">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "uncle">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "under">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "underground">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "underneath">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "understand">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "undursleyish">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "uneasy">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "uniqueness">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "unistd">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "unknown">
+		<file name = "sorted-list.h">1</file>
+	</word>
+	<word text = "unsorted">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "unsticking">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "until">
+		<file name = "tokenizer.c">2</file>
+		<file name = "hp">6</file>
+	</word>
+	<word text = "unusual">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "unusually">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "unwelcome">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "unwind">
+		<file name = "index">1</file>
+	</word>
+	<word text = "up">
+		<file name = "hp">14</file>
+	</word>
+	<word text = "upset">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "upstairs">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ur">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "us">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "usage">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "use">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "used">
+		<file name = "sorted-list.h">2</file>
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "useful">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "user">
+		<file name = "sorted-list.h">6</file>
+	</word>
+	<word text = "using">
+		<file name = "Introduction">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "testplan.txt">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "ustar">
+		<file name = "Asst3.tgz">2</file>
+	</word>
+	<word text = "usual">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "usually">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "utf">
+		<file name = "Info.plist">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "utilizing">
+		<file name = "tokenizer.h">1</file>
+	</word>
+	<word text = "v">
+		<file name = "README.pdf">1</file>
+		<file name = "index">1</file>
+	</word>
+	<word text = "vast">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "ve">
+		<file name = "hp">9</file>
+	</word>
+	<word text = "version">
+		<file name = "tokenizer.c">1</file>
+		<file name = "Info.plist">2</file>
+	</word>
+	<word text = "very">
+		<file name = "hp">17</file>
+	</word>
+	<word text = "viewers">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "violet">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "visible">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "voice">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "voices">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "void">
+		<file name = "tokenizer.h">3</file>
+		<file name = "main.c">4</file>
+		<file name = "sorted-list.c">7</file>
+		<file name = "tokenizer.h">12</file>
+		<file name = "indexer.h">15</file>
+		<file name = "tokenizer.c">15</file>
+		<file name = "sorted-list.h">20</file>
+		<file name = "indexer.c">30</file>
+	</word>
+	<word text = "voldemort">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "w">
+		<file name = "main.c">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "waiting">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "wake">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "waking">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "walk">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "walked">
+		<file name = "sorted-list.h">1</file>
+		<file name = "hp">4</file>
+	</word>
+	<word text = "wall">
+		<file name = "Makefile">4</file>
+		<file name = "hp">7</file>
+	</word>
+	<word text = "walls">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "want">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "wanted">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "was">
+		<file name = "sorted-list.c">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "sorted-list.h">3</file>
+		<file name = "hp">89</file>
+	</word>
+	<word text = "wasn">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "watch">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "watched">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "watchers">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "watching">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "way">
+		<file name = "sorted-list.c">1</file>
+		<file name = "sorted-list.h">3</file>
+		<file name = "hp">4</file>
+	</word>
+	<word text = "we">
+		<file name = "indexer.c">1</file>
+		<file name = "tokenizer.c">3</file>
+		<file name = "testplan.txt">7</file>
+		<file name = "hp">10</file>
+	</word>
+	<word text = "wearing">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "weather">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "weatherman">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "week">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "weeks">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "weirdos">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "well">
+		<file name = "Introduction">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "hp">9</file>
+	</word>
+	<word text = "went">
+		<file name = "hp">6</file>
+	</word>
+	<word text = "were">
+		<file name = "hp">23</file>
+	</word>
+	<word text = "weren">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "wet">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "what">
+		<file name = "tokenizer.c">2</file>
+		<file name = "hp">14</file>
+	</word>
+	<word text = "whatever">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "wheel">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "when">
+		<file name = "hp">10</file>
+	</word>
+	<word text = "where">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "whether">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "which">
+		<file name = "sorted-list.h">1</file>
+		<file name = "Introduction">2</file>
+		<file name = "hp">7</file>
+	</word>
+	<word text = "while">
+		<file name = "hp">1</file>
+		<file name = "sorted-list.h">1</file>
+		<file name = "main.c">4</file>
+		<file name = "sorted-list.c">4</file>
+		<file name = "indexer.c">6</file>
+		<file name = "tokenizer.c">22</file>
+	</word>
+	<word text = "whiskery">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "whisper">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "whispered">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "whisperers">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "whispering">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "who">
+		<file name = "hp">14</file>
+	</word>
+	<word text = "whole">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "why">
+		<file name = "hp">8</file>
+	</word>
+	<word text = "wide">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "wife">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "wild">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "will">
+		<file name = "Introduction">4</file>
+		<file name = "hp">5</file>
+		<file name = "sorted-list.h">10</file>
+	</word>
+	<word text = "window">
+		<file name = "hp">5</file>
+	</word>
+	<word text = "wiping">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "wise">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "wish">
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "with">
+		<file name = "Introduction">1</file>
+		<file name = "sorted-list.c">1</file>
+		<file name = "tokenizer.c">3</file>
+		<file name = "sorted-list.h">4</file>
+		<file name = "hp">16</file>
+	</word>
+	<word text = "without">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "woke">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "woken">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "woman">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "won">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "wondered">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "word">
+		<file name = "Introduction">2</file>
+		<file name = "hp">2</file>
+		<file name = "tokenizer.c">8</file>
+	</word>
+	<word text = "wordcheck">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "tokenizer.h">1</file>
+		<file name = "tokenizer.c">2</file>
+	</word>
+	<word text = "wordinitialized">
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "words">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "work">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "working">
+		<file name = "tokenizer.c">3</file>
+	</word>
+	<word text = "works">
+		<file name = "testplan.txt">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "world">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "worried">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "worrying">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "would">
+		<file name = "hp">11</file>
+	</word>
+	<word text = "wouldn">
+		<file name = "hp">4</file>
+	</word>
+	<word text = "wounded">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "wraptoken">
+		<file name = "index">1</file>
+		<file name = "libi.a">1</file>
+		<file name = "indexer.c">2</file>
+	</word>
+	<word text = "wrestled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "write">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "writing">
+		<file name = "Introduction">1</file>
+	</word>
+	<word text = "written">
+		<file name = "hp">2</file>
+	</word>
+	<word text = "wrong">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "www">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "w7">
+		<file name = "README.pdf">1</file>
+	</word>
+	<word text = "x">
+		<file name = "index">1</file>
+		<file name = "sorted-list.o">1</file>
+		<file name = "index">2</file>
+		<file name = "tokenizer.o">2</file>
+		<file name = "tokenizer.c">3</file>
+		<file name = "README.pdf">5</file>
+		<file name = "main.c">6</file>
+	</word>
+	<word text = "xcode">
+		<file name = "Info.plist">1</file>
+	</word>
+	<word text = "xml">
+		<file name = "Info.plist">1</file>
+		<file name = "tokenizer.c">1</file>
+	</word>
+	<word text = "x0">
+		<file name = "index">2</file>
+	</word>
+	<word text = "x86">
+		<file name = "index">2</file>
+	</word>
+	<word text = "y">
+		<file name = "index">1</file>
+		<file name = "README.pdf">4</file>
+		<file name = "main.c">5</file>
+	</word>
+	<word text = "yawned">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "yeah">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "years">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "yelled">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "yes">
+		<file name = "hp">11</file>
+	</word>
+	<word text = "yesterday">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "yorkshire">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "you">
+		<file name = "Introduction">3</file>
+		<file name = "tokenizer.c">3</file>
+		<file name = "sorted-list.h">7</file>
+		<file name = "hp">46</file>
+	</word>
+	<word text = "youknow">
+		<file name = "hp">1</file>
+	</word>
+	<word text = "young">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "your">
+		<file name = "hp">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "Introduction">3</file>
+		<file name = "sorted-list.h">4</file>
+	</word>
+	<word text = "yourself">
+		<file name = "hp">3</file>
+	</word>
+	<word text = "z">
+		<file name = "README.pdf">1</file>
+		<file name = "tokenizer.c">1</file>
+		<file name = "index">4</file>
+	</word>
+</fileIndex>

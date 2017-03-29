@@ -1,179 +1,546 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<ctype.h>
-#include"tokenizer.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <errno.h>
+#include <dirent.h>
+#include <unistd.h>
+#include "tokenizer.h"
 
-
-
-TokenizerT *TKCreate( char * ts ) {
-  //check that ts is not NULL
-	if(ts==NULL){
-		return NULL;
+recordNode* tokenize(FILE* file, char* fileName)
+{
+    recordNode* head = NULL;
+    char buffer [5000];
+    int index = 0;
+	recordNode* curr = NULL;
+	char c = fgetc(file);
+	while (c != EOF)
+    {
+		index = 0;
+		//skip all non-alphanumeric garbage THIS NEEDS TO SKIP ON FIRST NUMBERS TOO APPARENTLY
+		while (c!=EOF && !isalpha(c))
+		{
+			c = fgetc(file);
+		}
+		//get all alphanumerics in current token
+		while(c!= EOF && isalnum(c))
+		{
+			buffer[index] = c; //does this move the pointer every time?
+			index ++;
+			c = fgetc(file);
+		}
+		//make sure string is null terminated
+		buffer[index] = '\0';
+		char* currTok = malloc(sizeof(char)*index+1);
+		if(strlen(buffer)>0)
+        {
+		//+1?
+			memcpy(currTok, buffer, strlen(buffer)+1);
+			if(head == NULL)
+       	 	{
+            	head = makeNode(fileName, currTok);
+            	curr = head;
+        	}
+        	else
+        	{
+            	curr->next = makeNode(fileName, currTok);
+            	curr = curr-> next;
+        	}
+    	}
 	}
-	//Create a TokenizerT struct that holds the "original string" and the string we are currently working on
-	TokenizerT* tokenizer =  malloc(sizeof(TokenizerT));
-	tokenizer->originalString= malloc(sizeof(char)*(strlen(ts)+1));
-	//copy input string into orginal string to preserve it
-	strcpy(tokenizer->originalString,ts);
-	tokenizer->originalString[strlen(tokenizer->originalString)] = '\0';
-	tokenizer->currentString= malloc(sizeof(char)*(strlen(ts)+1));
-	//copy input into current string in order to keep track of what we are currently tokenizing
-	strcpy(tokenizer->currentString,ts);
-	tokenizer->currentString[strlen(tokenizer->currentString)] = '\0';
-   
-	return tokenizer;
-}
-//seperate structure that holds individual tokens and their types
-token *TTCreate(char* str, const char* type){
-  if(str==NULL || type == NULL){
-    return NULL;
-  }
-  token *toke =malloc(sizeof(token));
-  toke->string = malloc(sizeof(char)*(strlen(str)+1));
-  strcpy(toke->string,str);
-  toke->string[strlen(toke->string)] = '\0';
-  toke->type= malloc(sizeof(char)*(strlen(type)+1));
-  strcpy(toke->type,type);
-  toke->type[strlen(toke->type)] = '\0';
-  return toke;
-
+	myToLower(head);
+    return head;
 }
 
 
-//removes the character at the specified index of the string
-void removeCharAt(char** string, int index){
-	if(index>=strlen(*string)){
-		// checks if index is greater than length of string
+void travdir (hashTable* myTable, const char * dir_name)
+{
+
+	DIR * dir;
+	FILE* targetFile;
+
+	//printf("%s\t %d\n", dir_name, sizeof(dir_name));
+	dir = opendir(dir_name);
+	if(!dir)
+	{
+		if (errno == ENOTDIR)
+		{
+			char buffer [256];
+			memcpy (buffer, dir_name, sizeof(dir_name)+1);
+			buffer[sizeof(dir_name)+1] = '\0';
+			targetFile = fopen(dir_name, "r");
+			if (targetFile == NULL)
+			{
+				printf("file is null\n");
+			}
+			//printf("%s\n", buffer);
+			recordNode* tokenStream = tokenize(targetFile, buffer);
+			addToTable(tokenStream, myTable, buffer);
+			return;
+		}
+		else
+		{
+			printf("Error: could not open %s - File or directory  may not exist\n ", dir_name);
+				return;
+		}
+	}
+	while(dir !=NULL)
+	{
+
+		struct dirent * entry;
+		char * d_name;
+		entry = readdir(dir);
+		if(!entry)
+		{
+			//end of stream, break
+			break;
+		}
+		d_name = entry->d_name;
+		
+		switch(entry->d_type)
+		{
+			
+			case DT_DIR:
+			{
+				if(strcmp(d_name,".") != 0 && strcmp(d_name, "..") != 0)
+				{
+					//need to EXTEND THE PATH for next travdir call, working dir doesn't change (think adir/ -> adir/bdir/....)
+					int pathlength = 0;	
+					char path[256];
+					pathlength = snprintf(path, 256, "%s/%s",dir_name, d_name);
+					if(pathlength > 255)
+					{
+						printf("Path length is too long error");
+						return;
+					}
+					//strcat(path, d_name); //lengthens path 
+					//printf("%s\n",d_name); //error checking and DEBUGGING
+					travdir(myTable, path); //RECURSIVE STEP
+				}
+				break;
+			}
+			case DT_REG:
+				//regular files, need to check to ensure ".txt"....
+			{	
+				char pathname [256];
+				FILE* targetFile;
+				sprintf(pathname, "%s/%s", dir_name, d_name);
+				targetFile = fopen(pathname, "r");
+				if (targetFile!=NULL)
+				{
+						recordNode* tmp = tokenize(targetFile, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
+					addToTable(tmp, myTable, d_name);
+				}
+				break;
+			}
+			default:
+				printf("something is not right in ur switch statement");
+				return;
+		}
+	
+	}
+//	printf("closing directory: %s\n", dir_name); //DEBUGGING 
+	if(closedir(dir)){
+		printf("error could not close dir");
 		return;
 	}
-	memmove(&(*string)[index], &(*string)[index + 1], strlen(*string) - index);
 }
 
-// used to seperate a token that has been found at specified index and returns the token that was chopped off
-char * substring(char** stringPtr, int startIndex, int endIndex){
-	char * string=*stringPtr;
-	char* sub= malloc(sizeof(char)*(endIndex-startIndex+2));
-	int i=0;
-	for(i=0;i<(endIndex-startIndex+1);i++){
-		sub[i]=string[startIndex];
-		removeCharAt(&string,startIndex);
-	}
-	sub[(endIndex-startIndex+1)]='\0';
-	return sub;
+recordNode* makeNode(char* fileName, char* token)
+{
+    recordNode* myNode = (recordNode*)calloc(1, sizeof(recordNode));
+    //mallocs and copies data into new string
+    myNode -> fileName = strdup(fileName);
+    myNode -> count = 1;
+    myNode -> token = token;
+    myNode -> next = NULL;
+    return myNode;
 }
 
-/*
- * TKDestroy destroys a TokenizerT object.  It should free all dynamically
- * allocated memory that is part of the object being destroyed.
- *
- * You need to fill in this function as part of your implementation.
- */
-//used to free TokenizerT structs
-void TKDestroy( TokenizerT * tk ) {
-	free(tk->originalString);
-	free(tk->currentString);
-	free(tk);
+hashTable* makeHashTable(int size)
+{
+    hashTable* myTable = (hashTable*)malloc(sizeof(hashTable));
+    myTable -> table = (recordNode**)malloc(sizeof(recordNode*)*size);
+    int i;
+    for (i=0; i<size; i++)
+    {
+        myTable->table[i] = NULL;
+    }
+    myTable->length = size;
+    return myTable;
 }
-//used to free token structs
-void TDestroy( token * toke ) {
-	free(toke->string);
-	free(toke->type);
-	free(toke);
+
+int checkInput(int argc)
+{
+    //too few or too many inputs
+	//printf("%i\n", argc);
+	if(argc!=3)
+        {
+		   printf("usage: pointersorter.c output_file target_file/directory \n");
+            return 1;
+        }
+    return 0;
 }
-int deleteFirstWhiteSpace(TokenizerT * tk){
+
+//collects tokens, scatters into individual hash tables, and outputs them to designated output file
+void outputTokens(hashTable* masterTable, FILE* outputFile)
+{
+	int i;
+	recordNode* head;
+	recordNode* curr;
+	recordNode* prev;
+	char* currTok;
+	int maxNum;
 	
-	//switch statement takes in the char at the beginning of the index and decides if it is a delimiter if so, removes it
-	if(!isalpha(tk->currentString[0])){
-		removeCharAt(&(tk->currentString),0);
+	for (i=0; i<masterTable->length; i++)
+	{
+		head = masterTable->table[i];
+		while(head!=NULL)
+		{
+			curr = head;
+			prev = curr;
+			currTok = head->token;
+			maxNum = curr->count;
+
+			while (curr!=NULL && sortalnum(currTok, curr->token) ==0)
+			{
+				if(curr->count > maxNum)
+				{
+					maxNum = curr->count;
+				}
+				prev = curr;
+				curr = curr->next;
+			}
+			
+				masterTable -> table[i] = curr;
+			prev->next = NULL;
+			if(head!=NULL)
+			{
+				scatterTokens(head, maxNum, outputFile);
+			}
+			head = masterTable->table[i];
+		}
+	}
+	//destroyTable(masterTable);
+    closeOutput(outputFile);
+}
+//I'm like 99% sure this works
+void scatterTokens (recordNode* head, int size, FILE* outputFile)
+{	
+	recordNode *curr, *prev;//, *toFree;
+//	toFree = head;
+	hashTable* myTable = makeHashTable(size);
+	while (head!=NULL)
+	{
+		if(myTable->table[head->count-1]==NULL)
+		{
+			recordNode* temp = makeNode(head->fileName, head->token);
+			temp->count = head -> count;
+			myTable->table[head->count-1] = temp;
+		}
+		else
+		{
+			curr = myTable->table[head->count-1];
+			prev = curr;
+			//for the same token with the same counts for different files, keep alphanumeric order
+			while(curr!=NULL && strcmp(curr->fileName, head->fileName)<0)//sortalnum(curr->fileName, head->fileName)>0)
+			{
+				prev = curr;
+				curr = curr->next;
+			}
+			recordNode* temp = makeNode(head->fileName, head->token);
+			temp->count = head->count;
+			temp->next = curr;
+			if (myTable->table[temp->count-1] == curr)	
+			{
+				myTable->table[temp->count-1] = temp;
+			}
+			else
+			{
+				prev->next = temp;
+			}
+	
+		}
+		head = head->next;
+	}
+	//destroyList(toFree);
+	outputTokenList(myTable, outputFile);
+}
+
+void outputTokenList (hashTable* myTable, FILE* outputFile)
+{
+	boolean wordInitialized = FALSE;
+	if (!outputInitialized)
+	{
+		initializeOutput(outputFile);
+		outputInitialized = TRUE;
+	}
+	int i;
+	recordNode* curr;
+	for (i=0; i<myTable->length; i++)
+	{
+		curr = myTable->table[i];
+		while(curr!=NULL)
+		{
+			if(!wordInitialized)
+			{
+				fprintf(outputFile, "\t<word text = \"%s\">\n", curr->token);
+				wordInitialized = TRUE;
+			}
+			//while(sortalnum(currTok, curr->token)==0)
+			while (curr!=NULL)
+			{
+				fprintf(outputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->fileName, curr->count);
+				curr = curr-> next;
+			}
+		}
+	}
+	fprintf(outputFile, "\t</word>\n");
+	//destroyTable(myTable);
+}
+void initializeOutput(FILE* outputFile)
+{
+	fprintf(outputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+	fprintf(outputFile, "<fileIndex>\n");
+}
+
+void closeOutput(FILE* outputFile)
+{
+	fprintf(outputFile, "</fileIndex>");
+}
+void myToLower(recordNode* head)
+{
+	int i;
+	recordNode* temp = head;
+	while(temp!=NULL)
+	{	
+		for (i=0; i<strlen(temp->token); i++)
+		{
+			if (isupper(temp->token[i]))
+			{
+				temp->token[i] = tolower(temp->token[i]);
+			}
+		}
+		temp = temp->next;
+	}
+}
+
+//modified strncmp to allow for alphanumerics
+int sortalnum(const char *a, const char *b)
+{
+	while(*a != '\0' && *b != '\0')
+		{
+    
+        	if (*a == *b)
+			{
+        	    a++;
+        	    b++;
+        	    continue;
+        	}
+        
+        	if( (isalpha(*a) && isalpha(*b)) || (isdigit(*a) && isdigit(*b)) )
+			{
+            
+        		if(*a < *b)
+				return 1;
+                
+            		if(*b < *a)
+                		return -1;
+        	}
+        	else if(isalpha(*a) && isdigit(*b))
+			{
+            		return 1;
+        	}    
+        	else
+			{       //should be isdigit(*a) && isalpha(*b)
+            		return -1;
+        	}    
+    	}
+	//both pointers have matched until one hits null terminator
+	if(*a == '\0' && *b == '\0')
+	{
+	//both pointers matched and are same length
 		return 0;
 	}
+	else if(strlen(a) < strlen(b)){
+	//first string is shorter
+		return 1;
+	}	
+	else
+	{
+	//first string is longer
 		return -1;
-	
+	}
 }
-// compares inputed string to "sizeof(" returns 0 if there is a match
-int sizeOfChecker(const char* str){
-  return strcmp("sizeof(",str);
-}
-      
-//function that creates a "word" token, filled with alphanumerical chars
-token *wordCheck(TokenizerT *tk){
-  token *tt = NULL;
-  //to account for the "sizeof()" opperator
-  if(tk->currentString[0] == 's'){
-    char *str = malloc(sizeof(char)*8);
-    strncpy(str, tk->currentString,7);
-    str[7] = '\0';
-    int check = sizeOfChecker(str);
-    free(str);
-    if(check == 0){
-      int index = 7;
-      while(tk->currentString[index] != ')'){
-	index++;
-      }
-      tt = TTCreate(substring(&(tk->currentString),0,index), "sizeof()");
-      return tt;
-    }
-  }
-  int index = 1;
-  int endIndex; 
-  //iterates through the string until a char that is non-alphanumeric is found
-  while(isalnum(tk->currentString[index])){
-    //to account for the "sizeof()" opperator found inside of a current alphnumeric sequence
-    if(tk->currentString[index] == 's'){
-      if((tk->currentString[index+1]== 'i') && (tk->currentString[index+2]== 'z') && (tk->currentString[index+3]== 'e') && (tk->currentString[index+4]== 'o') && (tk->currentString[index+5]== 'f') && (tk->currentString[index+6]== '(')){
-	  break;
-      }
-      
-      
-    }
-    index++;
-  }
-  endIndex = index-1;
-  const char* word = "word";
-  //creates a token struct using the alphanumeric substring as the string and "word" as the type
-  tt = TTCreate(substring(&(tk->currentString),0,endIndex), word);
-  return tt;
-  
-}
-char *TKGetNextToken( TokenizerT * tk ) {
 
-	if(tk==NULL || tk->currentString==NULL || strlen(tk->currentString)<1 || (tk->currentString)[0]=='\0'){
-		return NULL;
+void printTable(hashTable* hTable)
+{
+    int i;
+    recordNode* curr;
+    for (i=0; i<hTable->length; i++)
+    {
+        curr = hTable->table[i];
+		while(curr!=NULL)
+        {
+            printf("token: %s   count: %i   fileName: %s\n", curr->token, curr->count, curr-> fileName);
+            curr = curr->next;
+        }
+    }
+}
+
+//free all inner nodes and table itself
+void destroyTable(hashTable* hTable)
+{
+    int i;
+    recordNode* curr;
+    recordNode* temp;
+	for (i=0; i<hTable->length; i++)
+    {
+        curr = hTable->table[i];
+        while(curr!=NULL)
+        {
+            temp = curr->next;
+            free(curr->token);
+			free(curr->fileName);
+            free(curr);
+            curr = temp;   		
+		}
+    }
+    free(hTable->table);
+    free(hTable);
+}
+//free unsorted temp linked list
+void destroyList(recordNode* head)
+{
+    recordNode* temp;
+	while(head!=NULL)
+    {
+        temp = head->next;
+        free(head->token);
+		free (head->fileName);
+        free(head);
+        head = temp;
+    }
+
+}
+
+void printLL(recordNode* head)
+{
+	//recordNode* ptr = head;
+	while(head != NULL)
+	{
+		printf("%s, %s\n", head->token, head ->fileName);
+		head = head->next;
 	}
-	token *tt = NULL;
-	//takes care of delimiters
-	int del = deleteFirstWhiteSpace(tk);
-	if(del >= 0){
-	  tt = TTCreate(substring(&(tk->currentString),0,(del-1)), "delim");
-	  char *str = tt->string;
-	  TDestroy(tt);
-	  return str;
+}
+
+int checkOverwrite(char** argv)
+{
+	int x = 1;
+	char file [260];
+	file[0] = '.';
+	file[1] = '/';
+	memcpy(file+2, argv[1], strlen(argv[1])+1);
+	printf("%s\n", file);
+	if(access(file, F_OK) == 0)
+	{
+		printf("File already exists in directory. Do you wish you overwrite it? Enter 1 to proceed or 0 to exit\n");
+	x = getchar();
 	}
-	if(strlen(tk->currentString)<1 || (tk->currentString)[0] == '\0' ){
-		return NULL;
-	}
-	//store first char and see what kind of token we are dealing with
-	char ch = tk->currentString[0];
-	//is the token a word?
-	if(isalpha(ch)){
-		tt = wordCheck(tk);
-	}
+	return x;
+}
+
+
+void addToTable(recordNode* list, hashTable* hTable , char* fileName)
+{
 	
-	else{
-		tt = NULL;
+	int count =0;
+    //slot in the hashTable according to leading letter
+    int index;
+    //leading letter
+    char leading;
+    //hashTable* hTable = makeHashTable(36);
+	while(list!=NULL)
+	{
+		count ++;
+		leading = list->token[0];
+        	index = leading;
+		//alphas first in table, numerics second
+		if (!isalpha(leading))
+			{
+				index += 26;
+			}
+		else
+			{
+				index -=97;
+			}
+		//node to be inserted
+        recordNode* node = makeNode(fileName, list->token);
+        //if node is to be inserted at front of list
+		if (hTable->table[index] == NULL || sortalnum(hTable->table[index]->token, node->token)<0)    		{
+            node->next = hTable->table[index];
+            hTable->table[index] = node;
+		}
+        //if node is second node or later
+            else
+            {
+                recordNode* curr = hTable->table[index];
+                recordNode* prev = curr;
+            //while string to be inserted comes after existing strings
+                while(curr!=NULL && sortalnum(curr->token, node->token)>0)
+                {
+                    prev = curr;
+                    curr = curr->next;
+                }
+			if (curr!=NULL && sortalnum(curr->token, node->token)==0)
+			{
+				if (strcmp(curr->fileName, node->fileName)!=0)
+				{
+								//HERE BEGINS THE NEW TERRITORY
+							if(curr->next != NULL && strcmp(curr->next->token, node->token)==0 && strcmp(node->fileName, curr->next->fileName)==0)
+							{
+								//printf("well it might be working");	
+								curr->next->count++;
+							}
+							else
+							{
+								node->next = curr->next;
+								curr->next=node;
+							}
+				}
+							else
+							{
+								curr->count ++;
+							}
+				}
+				else
+				{
+					node->next = curr;
+					prev->next = node;
+				}
+			}
+			list = list->next;
+			}
+			return;
 	}
 
-	if(tt==NULL){
-		return NULL;
+
+int main (int argc, char** argv)
+{
+	hashTable* myTable = makeHashTable(36);
+
+	if(checkInput(argc) == 1)
+	{
+		return 1; //-1?
 	}
-	//store string to return before free struct
-	char* str = tt->string;
-	free(tt->type);
-	free(tt);
-	//print the token and type
-	// printf("%s ",tt->type);
-	// printf("\"%s\"\n",tt->string);
-	//TDestroy(tt);
-	return str;
+	if (checkOverwrite(argv)==0)
+	{
+		return 0;
+	}
+	travdir(myTable, argv[2]);
+	FILE* outputFile = fopen(argv[1], "w+");
+	outputTokens(myTable, outputFile);
+	return 0;
 }
+
+
