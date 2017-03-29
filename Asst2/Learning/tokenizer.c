@@ -246,98 +246,98 @@ void insertNode(Node* head, hashTable* list , char* file)
 }
 
 //collects tokens, scatters into individual hash tables, and outputs them to designated output file
-void printTokens(hashTable* masterTable, FILE* outputFile)
+void printTokens(hashTable* mainTable, FILE* file)
 {
 	int i;
 	Node* head;
-	Node* curr;
+	Node* temp;
 	Node* prev;
-	char* currTok;
+	char* token;
 	int maxNum;
 	
-	for (i=0; i<masterTable->length; i++)
+	for (i=0; i<mainTable->length; i++)
 	{
-		head = masterTable->table[i];
-		while(head!=NULL)
+		head = mainTable->table[i];
+		while(!head)
 		{
-			curr = head;
-			prev = curr;
-			currTok = head->token;
-			maxNum = curr->count;
+			temp = head;
+			prev = temp;
+			token = head->token;
+			maxNum = temp->count;
 
-			while (curr!=NULL && sortalnum(currTok, curr->token) ==0)
+			while (!temp && sortalnum(token, temp->token) ==0)
 			{
-				if(curr->count > maxNum)
+				if(temp->count > maxNum)
 				{
-					maxNum = curr->count;
+					maxNum = temp->count;
 				}
-				prev = curr;
-				curr = curr->next;
+				prev = temp;
+				temp = temp->next;
 			}
 			
-			if (curr!= NULL)
+			if (temp!= NULL)
 			{
-				Node* temp = createNode(curr->fileName, curr->token);
-				temp -> count = curr->count;
-				temp -> next = curr -> next;
-				masterTable -> table[i] = temp;
+				Node* temp = createNode(temp->file, temp->token);
+				temp -> count = temp->count;
+				temp -> next = temp -> next;
+				mainTable -> table[i] = temp;
 			}
 			else
 			{
-				masterTable -> table[i] = NULL;
+				mainTable -> table[i] = NULL;
 			}
 			prev->next = NULL;
 			if(head!=NULL)
 			{
-				scatterTokens(head, maxNum, outputFile);
+				scatterTokens(head, maxNum, file);
 			}
-			head = masterTable->table[i];
+			head = mainTable->table[i];
 		}
 	}
-	deleteHashTable(masterTable);
-    fprintf(outputFile, "</fileIndex>");
+	deleteHashTable(mainTable);
+    fprintf(file, "</fileIndex>");
 }
 //I'm like 99% sure this works
-hashTable* scatterTokens (Node* head, int size, FILE* outputFile)
+hashTable* scatterTokens (Node* head, int size, FILE* file)
 {
-	Node *curr, *prev, *toFree;
-	toFree = head;
+	Node *temp, *prev, *deleteThis;
+	deleteThis = head;
 	hashTable* mainTable = createHashTable(size);
 	while (head!=NULL)
 	{
 		if(mainTable->table[head->count-1]==NULL)
 		{
-			Node* temp = createNode(head->fileName, head->token);
-			temp->count = head -> count;
-			mainTable->table[head->count-1] = temp;
+			Node* newNode = createNode(head->fileName, head->token);
+			newNode->count = head -> count;
+			mainTable->table[head->count-1] = newNode;
 		}
 		else
 		{
-			curr = mainTable->table[head->count-1];
-			prev = curr;
+			temp = mainTable->table[head->count-1];
+			prev = temp;
 			//for the same token with the same counts for different files, keep alphanumeric order
-			while(curr!=NULL && strcmp(curr->fileName, head->fileName)<0)//sortalnum(curr->fileName, head->fileName)>0)
+			while(temp!=NULL && strcmp(temp->fileName, head->fileName)<0)//sortalnum(temp->fileName, head->fileName)>0)
 			{
-				prev = curr;
-				curr = curr->next;
+				prev = temp;
+				temp = temp->next;
 			}
-			Node* temp = createNode(head->fileName, head->token);
-			temp->count = head->count;
-			temp->next = curr;
-			if (mainTable->table[temp->count-1] == curr)	
+			Node* newNode = createNode(head->fileName, head->token);
+			newNode->count = head->count;
+			newNode->next = temp;
+			if (mainTable->table[newNode->count-1] == temp)	
 			{
-				mainTable->table[temp->count-1] = temp;
+				mainTable->table[newNode->count-1] = newNode;
 			}
 			else
 			{
-				prev->next = temp;
+				prev->next = newNode;
 			}
 	
 		}
 		head = head->next;
 	}
-	deleteLinkedList(toFree);
-	printTokenList(mainTable, outputFile);
+	deleteLinkedList(deleteThis);
+	printTokenList(mainTable, file);
 }
 
 void printTokenList(hashTable* mainTable, FILE* outputFile)
@@ -361,7 +361,7 @@ void printTokenList(hashTable* mainTable, FILE* outputFile)
 				fprintf(outputFile, "\t<word text = \"%s\">\n", curr->token);
 				wordInitialized = TRUE;
 			}
-			//while(sortalnum(currTok, curr->token)==0)
+			//while(sortalnum(token, curr->token)==0)
 			while (curr!=NULL)
 			{
 				fprintf(outputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->fileName, curr->count);
