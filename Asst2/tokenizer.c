@@ -75,7 +75,7 @@ void traverseDirectory(hashTable* mainTable, const char * dir_name)
 			}
 			//printf("%s\n", buffer);
 			Node* tokenStream = tokenize(targetFile, buffer);
-			addToTable(tokenStream, mainTable, buffer);
+			insertNode(tokenStream, mainTable, buffer);
 			return;
 		}
 		else
@@ -129,7 +129,7 @@ void traverseDirectory(hashTable* mainTable, const char * dir_name)
 				if (targetFile!=NULL)
 				{
 						Node* tmp = tokenize(targetFile, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
-					addToTable(tmp, mainTable, d_name);
+					insertNode(tmp, mainTable, d_name);
 				}
 				break;
 			}
@@ -221,7 +221,7 @@ void outputTokens(hashTable* masterTable, FILE* outputFile)
 			head = masterTable->table[i];
 		}
 	}
-	//destroyTable(masterTable);
+	//deleteTable(masterTable);
     closeOutput(outputFile);
 }
 //I'm like 99% sure this works
@@ -296,7 +296,7 @@ void outputTokenList (hashTable* mainTable, FILE* outputFile)
 		}
 	}
 	fprintf(outputFile, "\t</word>\n");
-	//destroyTable(mainTable);
+	//deleteTable(mainTable);
 }
 void initializeOutput(FILE* outputFile)
 {
@@ -389,7 +389,7 @@ void printTable(hashTable* hTable)
 }
 
 //free all inner nodes and table itself
-void destroyTable(hashTable* hTable)
+void deleteTable(hashTable* hTable)
 {
     int i;
     Node* curr;
@@ -451,7 +451,7 @@ int checkOverwrite(char** argv)
 }
 
 
-void addToTable(Node* list, hashTable* hTable , char* fileName)
+void insertNode(Node* list, hashTable* hTable , char* fileName)
 {
 	
 	int count =0;

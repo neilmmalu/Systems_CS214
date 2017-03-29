@@ -24,7 +24,7 @@ char* inputString = "this is a test sentence now^Im utilizing $%^&symbols$%^&*(*
 
 boolean outputInitialized = FALSE;
 
-void addToTable(Node* list, hashTable* hTable , char* fileName);
+void insertNode(Node* list, hashTable* hTable , char* fileName);
 
 void traverseDirectory(hashTable* hTable, const char * dir_name);
 
@@ -54,7 +54,7 @@ int sortalnum(const char* a, const char* b);
 
 void printTable(hashTable* hTable);
 
-void destroyTable(hashTable* hTable);
+void deleteTable(hashTable* hTable);
 
 void destroyList(Node* head);
 
