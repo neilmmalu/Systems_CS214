@@ -15,7 +15,7 @@ void traverseDirectory(hashTable* mainTable, const char *directoryName)
 
 	//printf("%s\t %d\n", directoryName, sizeof(directoryName));
 	directory = opendir(directoryName);
-	if(directory != NULL)
+	if(!directory)
 	{
 		if (errno == ENOTDIR)
 		{
@@ -38,7 +38,7 @@ void traverseDirectory(hashTable* mainTable, const char *directoryName)
 			return;
 		}
 	}
-	while(directory != NULL)
+	while(!directory)
 	{
 
 		struct dirent* pwd;
