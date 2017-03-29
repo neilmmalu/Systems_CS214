@@ -482,7 +482,7 @@ void deleteLinkedList(Node* head)
     {
         temp = head->next;
         free(head->token);
-		free (head->fileName);
+		free (head->file);
         free(head);
         head = temp;
     }
@@ -494,7 +494,7 @@ void printLL(Node* head)
 	//Node* ptr = head;
 	while(head != NULL)
 	{
-		printf("%s, %s\n", head->token, head ->fileName);
+		printf("%s, %s\n", head->token, head ->file);
 		head = head->next;
 	}
 }
