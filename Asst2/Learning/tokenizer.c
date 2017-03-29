@@ -168,17 +168,6 @@ Node* tokenize(FILE* file, char* fileName)
 }
 //works for determined edge cases. will run more scenarios
 
-int validateInput(int argc)
-{
-    //too few or too many inputs
-	//printf("%i\n", argc);
-	if(argc!=3)
-        {
-		   printf("usage: ./tokenize output_file target_file/directory \n");
-            return 1;
-        }
-    return 0;
-}
 
 void insertNode(Node* list, hashTable* hTable , char* fileName)
 {
@@ -306,7 +295,7 @@ void printTokens(hashTable* masterTable, FILE* outputFile)
 		}
 	}
 	deleteHashTable(masterTable);
-    printClosingTag(outputFile);
+    fprintf(outputFile, "</fileIndex>");
 }
 //I'm like 99% sure this works
 hashTable* scatterTokens (Node* head, int size, FILE* outputFile)
@@ -356,7 +345,8 @@ void printTokenList(hashTable* mainTable, FILE* outputFile)
 	boolean wordInitialized = FALSE;
 	if (!outputInitialized)
 	{
-		printOpeningTag(outputFile);
+		fprintf(outputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+		fprintf(outputFile, "<fileIndex>\n");
 		outputInitialized = TRUE;
 	}
 	int i;
@@ -383,16 +373,6 @@ void printTokenList(hashTable* mainTable, FILE* outputFile)
 	deleteHashTable(mainTable);
 }
 //not sure if i have to pass argv here or not...feel like no
-void printOpeningTag(FILE* outputFile)
-{
-	fprintf(outputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-	fprintf(outputFile, "<fileIndex>\n");
-}
-
-void printClosingTag(FILE* outputFile)
-{
-	fprintf(outputFile, "</fileIndex>");
-}
 void toLowerCase(Node* head)
 {
 	int i;
