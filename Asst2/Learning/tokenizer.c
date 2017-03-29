@@ -351,7 +351,7 @@ hashTable* scatterTokens (Node* head, int size, FILE* outputFile)
 	printTokenList(mainTable, outputFile);
 }
 
-void printTokenList (hashTable* mainTable, FILE* outputFile)
+void printTokenList(hashTable* mainTable, FILE* outputFile)
 {
 	boolean wordInitialized = FALSE;
 	if (!outputInitialized)
@@ -397,9 +397,9 @@ void toLowerCase(Node* head)
 {
 	int i;
 	Node* temp = head;
-	while(temp!=NULL)
+	while(!temp)
 	{	
-		for (i=0; i<strlen(temp->token); i++)
+		for (i = 0; i < strlen(temp->token); i++)
 		{
 			if (isupper(temp->token[i]))
 			{
