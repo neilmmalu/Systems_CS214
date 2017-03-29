@@ -1,0 +1,3425 @@
+{"list":[
+	{"a" : [
+		{"hp" : 112}
+	]},
+	{"able" : [
+		{"hp" : 2}
+	]},
+	{"about" : [
+		{"hp" : 14}
+	]},
+	{"above" : [
+		{"hp" : 1}
+	]},
+	{"across" : [
+		{"hp" : 2}
+	]},
+	{"act" : [
+		{"hp" : 1}
+	]},
+	{"acting" : [
+		{"hp" : 1}
+	]},
+	{"admiring" : [
+		{"hp" : 1}
+	]},
+	{"affect" : [
+		{"hp" : 1}
+	]},
+	{"after" : [
+		{"hp" : 4}
+	]},
+	{"afternoon" : [
+		{"hp" : 1}
+	]},
+	{"again" : [
+		{"hp" : 3}
+	]},
+	{"age" : [
+		{"hp" : 1}
+	]},
+	{"agree" : [
+		{"hp" : 1}
+	]},
+	{"air" : [
+		{"hp" : 3}
+	]},
+	{"albus" : [
+		{"hp" : 3}
+	]},
+	{"all" : [
+		{"hp" : 32}
+	]},
+	{"allowed" : [
+		{"hp" : 2}
+	]},
+	{"almost" : [
+		{"hp" : 5}
+	]},
+	{"also" : [
+		{"hp" : 2}
+	]},
+	{"although" : [
+		{"hp" : 2}
+	]},
+	{"always" : [
+		{"hp" : 2}
+	]},
+	{"amount" : [
+		{"hp" : 1}
+	]},
+	{"amuse" : [
+		{"hp" : 1}
+	]},
+	{"an" : [
+		{"hp" : 7}
+	]},
+	{"and" : [
+		{"hp" : 103}
+	]},
+	{"angrily" : [
+		{"hp" : 2}
+	]},
+	{"angry" : [
+		{"hp" : 1}
+	]},
+	{"another" : [
+		{"hp" : 3}
+	]},
+	{"answer" : [
+		{"hp" : 1}
+	]},
+	{"anxious" : [
+		{"hp" : 1}
+	]},
+	{"any" : [
+		{"hp" : 5}
+	]},
+	{"anyone" : [
+		{"hp" : 2}
+	]},
+	{"anything" : [
+		{"hp" : 5}
+	]},
+	{"anywhere" : [
+		{"hp" : 1}
+	]},
+	{"apart" : [
+		{"hp" : 1}
+	]},
+	{"appeared" : [
+		{"hp" : 2}
+	]},
+	{"approve" : [
+		{"hp" : 1}
+	]},
+	{"are" : [
+		{"hp" : 8}
+	]},
+	{"arm" : [
+		{"hp" : 1}
+	]},
+	{"armchair" : [
+		{"hp" : 1}
+	]},
+	{"arms" : [
+		{"hp" : 2}
+	]},
+	{"around" : [
+		{"hp" : 10}
+	]},
+	{"arrived" : [
+		{"hp" : 3}
+	]},
+	{"as" : [
+		{"hp" : 47}
+	]},
+	{"ask" : [
+		{"hp" : 1}
+	]},
+	{"asked" : [
+		{"hp" : 2}
+	]},
+	{"asleep" : [
+		{"hp" : 4}
+	]},
+	{"astonishing" : [
+		{"hp" : 1}
+	]},
+	{"astounding" : [
+		{"hp" : 1}
+	]},
+	{"astride" : [
+		{"hp" : 1}
+	]},
+	{"at" : [
+		{"hp" : 34}
+	]},
+	{"aunt" : [
+		{"hp" : 2}
+	]},
+	{"awake" : [
+		{"hp" : 1}
+	]},
+	{"away" : [
+		{"hp" : 3}
+	]},
+	{"baby" : [
+		{"hp" : 2}
+	]},
+	{"back" : [
+		{"hp" : 15}
+	]},
+	{"backed" : [
+		{"hp" : 1}
+	]},
+	{"bag" : [
+		{"hp" : 1}
+	]},
+	{"baker" : [
+		{"hp" : 1}
+	]},
+	{"bakery" : [
+		{"hp" : 1}
+	]},
+	{"balls" : [
+		{"hp" : 1}
+	]},
+	{"bathroom" : [
+		{"hp" : 1}
+	]},
+	{"be" : [
+		{"hp" : 30}
+	]},
+	{"beady" : [
+		{"hp" : 1}
+	]},
+	{"bear" : [
+		{"hp" : 3}
+	]},
+	{"beard" : [
+		{"hp" : 2}
+	]},
+	{"because" : [
+		{"hp" : 7}
+	]},
+	{"bed" : [
+		{"hp" : 3}
+	]},
+	{"bedroom" : [
+		{"hp" : 1}
+	]},
+	{"beefy" : [
+		{"hp" : 1}
+	]},
+	{"been" : [
+		{"hp" : 21}
+	]},
+	{"before" : [
+		{"hp" : 6}
+	]},
+	{"behaving" : [
+		{"hp" : 1}
+	]},
+	{"behavior" : [
+		{"hp" : 1}
+	]},
+	{"behind" : [
+		{"hp" : 1}
+	]},
+	{"being" : [
+		{"hp" : 5}
+	]},
+	{"believe" : [
+		{"hp" : 3}
+	]},
+	{"belt" : [
+		{"hp" : 1}
+	]},
+	{"beneath" : [
+		{"hp" : 1}
+	]},
+	{"bent" : [
+		{"hp" : 2}
+	]},
+	{"beside" : [
+		{"hp" : 1}
+	]},
+	{"best" : [
+		{"hp" : 1}
+	]},
+	{"bet" : [
+		{"hp" : 1}
+	]},
+	{"better" : [
+		{"hp" : 3}
+	]},
+	{"big" : [
+		{"hp" : 2}
+	]},
+	{"bike" : [
+		{"hp" : 1}
+	]},
+	{"bird" : [
+		{"hp" : 1}
+	]},
+	{"birds" : [
+		{"hp" : 1}
+	]},
+	{"bit" : [
+		{"hp" : 2}
+	]},
+	{"black" : [
+		{"hp" : 4}
+	]},
+	{"blame" : [
+		{"hp" : 2}
+	]},
+	{"blankets" : [
+		{"hp" : 5}
+	]},
+	{"blew" : [
+		{"hp" : 1}
+	]},
+	{"blinked" : [
+		{"hp" : 2}
+	]},
+	{"blonde" : [
+		{"hp" : 1}
+	]},
+	{"blue" : [
+		{"hp" : 1}
+	]},
+	{"blushed" : [
+		{"hp" : 1}
+	]},
+	{"bolt" : [
+		{"hp" : 1}
+	]},
+	{"bonfire" : [
+		{"hp" : 1}
+	]},
+	{"books" : [
+		{"hp" : 1}
+	]},
+	{"boots" : [
+		{"hp" : 3}
+	]},
+	{"boring" : [
+		{"hp" : 1}
+	]},
+	{"borrowed" : [
+		{"hp" : 1}
+	]},
+	{"both" : [
+		{"hp" : 2}
+	]},
+	{"bottles" : [
+		{"hp" : 1}
+	]},
+	{"bound" : [
+		{"hp" : 1}
+	]},
+	{"bowed" : [
+		{"hp" : 1}
+	]},
+	{"boy" : [
+		{"hp" : 10}
+	]},
+	{"breeze" : [
+		{"hp" : 1}
+	]},
+	{"brick" : [
+		{"hp" : 1}
+	]},
+	{"briefcase" : [
+		{"hp" : 1}
+	]},
+	{"bright" : [
+		{"hp" : 1}
+	]},
+	{"bring" : [
+		{"hp" : 1}
+	]},
+	{"bringing" : [
+		{"hp" : 1}
+	]},
+	{"bristol" : [
+		{"hp" : 1}
+	]},
+	{"britain" : [
+		{"hp" : 1}
+	]},
+	{"broad" : [
+		{"hp" : 2}
+	]},
+	{"broke" : [
+		{"hp" : 1}
+	]},
+	{"broken" : [
+		{"hp" : 2}
+	]},
+	{"buckled" : [
+		{"hp" : 1}
+	]},
+	{"building" : [
+		{"hp" : 1}
+	]},
+	{"bun" : [
+		{"hp" : 2}
+	]},
+	{"bunch" : [
+		{"hp" : 1}
+	]},
+	{"bundle" : [
+		{"hp" : 4}
+	]},
+	{"burying" : [
+		{"hp" : 1}
+	]},
+	{"bushy" : [
+		{"hp" : 1}
+	]},
+	{"business" : [
+		{"hp" : 1}
+	]},
+	{"busy" : [
+		{"hp" : 1}
+	]},
+	{"but" : [
+		{"hp" : 31}
+	]},
+	{"buy" : [
+		{"hp" : 1}
+	]},
+	{"by" : [
+		{"hp" : 10}
+	]},
+	{"bye" : [
+		{"hp" : 2}
+	]},
+	{"c" : [
+		{"hp" : 2}
+	]},
+	{"call" : [
+		{"hp" : 2}
+	]},
+	{"called" : [
+		{"hp" : 6}
+	]},
+	{"calls" : [
+		{"hp" : 1}
+	]},
+	{"calmly" : [
+		{"hp" : 1}
+	]},
+	{"came" : [
+		{"hp" : 3}
+	]},
+	{"can" : [
+		{"hp" : 13}
+	]},
+	{"car" : [
+		{"hp" : 3}
+	]},
+	{"cara" : [
+		{"hp" : 1}
+	]},
+	{"care" : [
+		{"hp" : 1}
+	]},
+	{"careful" : [
+		{"hp" : 1}
+	]},
+	{"carefully" : [
+		{"hp" : 1}
+	]},
+	{"careless" : [
+		{"hp" : 2}
+	]},
+	{"carrying" : [
+		{"hp" : 1}
+	]},
+	{"casually" : [
+		{"hp" : 1}
+	]},
+	{"cat" : [
+		{"hp" : 21}
+	]},
+	{"catch" : [
+		{"hp" : 1}
+	]},
+	{"cats" : [
+		{"hp" : 1}
+	]},
+	{"caught" : [
+		{"hp" : 1}
+	]},
+	{"celebrate" : [
+		{"hp" : 1}
+	]},
+	{"celebrating" : [
+		{"hp" : 4}
+	]},
+	{"celebrations" : [
+		{"hp" : 1}
+	]},
+	{"cereal" : [
+		{"hp" : 1}
+	]},
+	{"certainly" : [
+		{"hp" : 1}
+	]},
+	{"chair" : [
+		{"hp" : 1}
+	]},
+	{"changed" : [
+		{"hp" : 3}
+	]},
+	{"chapter" : [
+		{"hp" : 1}
+	]},
+	{"cheek" : [
+		{"hp" : 1}
+	]},
+	{"child" : [
+		{"hp" : 2}
+	]},
+	{"choosing" : [
+		{"hp" : 1}
+	]},
+	{"chortled" : [
+		{"hp" : 1}
+	]},
+	{"chuckled" : [
+		{"hp" : 1}
+	]},
+	{"cigarette" : [
+		{"hp" : 1}
+	]},
+	{"cleared" : [
+		{"hp" : 1}
+	]},
+	{"clicked" : [
+		{"hp" : 4}
+	]},
+	{"climbing" : [
+		{"hp" : 1}
+	]},
+	{"cloak" : [
+		{"hp" : 9}
+	]},
+	{"cloaks" : [
+		{"hp" : 4}
+	]},
+	{"clock" : [
+		{"hp" : 1}
+	]},
+	{"close" : [
+		{"hp" : 1}
+	]},
+	{"closed" : [
+		{"hp" : 1}
+	]},
+	{"clothes" : [
+		{"hp" : 2}
+	]},
+	{"cloudy" : [
+		{"hp" : 1}
+	]},
+	{"clutching" : [
+		{"hp" : 1}
+	]},
+	{"cold" : [
+		{"hp" : 1}
+	]},
+	{"coldly" : [
+		{"hp" : 1}
+	]},
+	{"collecting" : [
+		{"hp" : 2}
+	]},
+	{"come" : [
+		{"hp" : 5}
+	]},
+	{"comforting" : [
+		{"hp" : 1}
+	]},
+	{"common" : [
+		{"hp" : 1}
+	]},
+	{"complete" : [
+		{"hp" : 1}
+	]},
+	{"completely" : [
+		{"hp" : 1}
+	]},
+	{"concentrate" : [
+		{"hp" : 2}
+	]},
+	{"confusing" : [
+		{"hp" : 1}
+	]},
+	{"contrary" : [
+		{"hp" : 1}
+	]},
+	{"corner" : [
+		{"hp" : 7}
+	]},
+	{"could" : [
+		{"hp" : 14}
+	]},
+	{"couldn" : [
+		{"hp" : 13}
+	]},
+	{"country" : [
+		{"hp" : 2}
+	]},
+	{"couple" : [
+		{"hp" : 1}
+	]},
+	{"course" : [
+		{"hp" : 1}
+	]},
+	{"cousin" : [
+		{"hp" : 1}
+	]},
+	{"craning" : [
+		{"hp" : 1}
+	]},
+	{"crept" : [
+		{"hp" : 1}
+	]},
+	{"cried" : [
+		{"hp" : 1}
+	]},
+	{"crooked" : [
+		{"hp" : 1}
+	]},
+	{"crowd" : [
+		{"hp" : 1}
+	]},
+	{"cups" : [
+		{"hp" : 1}
+	]},
+	{"curiously" : [
+		{"hp" : 1}
+	]},
+	{"cut" : [
+		{"hp" : 1}
+	]},
+	{"d" : [
+		{"hp" : 17}
+	]},
+	{"dabbed" : [
+		{"hp" : 1}
+	]},
+	{"dare" : [
+		{"hp" : 1}
+	]},
+	{"dared" : [
+		{"hp" : 1}
+	]},
+	{"dark" : [
+		{"hp" : 2}
+	]},
+	{"darkness" : [
+		{"hp" : 1}
+	]},
+	{"dashed" : [
+		{"hp" : 1}
+	]},
+	{"daughter" : [
+		{"hp" : 1}
+	]},
+	{"day" : [
+		{"hp" : 9}
+	]},
+	{"daylight" : [
+		{"hp" : 4}
+	]},
+	{"dead" : [
+		{"hp" : 3}
+	]},
+	{"dear" : [
+		{"hp" : 4}
+	]},
+	{"decided" : [
+		{"hp" : 1}
+	]},
+	{"dedalus" : [
+		{"hp" : 1}
+	]},
+	{"destroyed" : [
+		{"hp" : 1}
+	]},
+	{"determined" : [
+		{"hp" : 1}
+	]},
+	{"dialing" : [
+		{"hp" : 1}
+	]},
+	{"did" : [
+		{"hp" : 9}
+	]},
+	{"didn" : [
+		{"hp" : 22}
+	]},
+	{"different" : [
+		{"hp" : 2}
+	]},
+	{"diggle" : [
+		{"hp" : 1}
+	]},
+	{"dinner" : [
+		{"hp" : 1}
+	]},
+	{"direction" : [
+		{"hp" : 1}
+	]},
+	{"director" : [
+		{"hp" : 1}
+	]},
+	{"disappeared" : [
+		{"hp" : 2}
+	]},
+	{"discover" : [
+		{"hp" : 1}
+	]},
+	{"discuss" : [
+		{"hp" : 1}
+	]},
+	{"distance" : [
+		{"hp" : 1}
+	]},
+	{"distinctly" : [
+		{"hp" : 1}
+	]},
+	{"disturb" : [
+		{"hp" : 1}
+	]},
+	{"do" : [
+		{"hp" : 3}
+	]},
+	{"does" : [
+		{"hp" : 1}
+	]},
+	{"dog" : [
+		{"hp" : 1}
+	]},
+	{"dolphins" : [
+		{"hp" : 1}
+	]},
+	{"don" : [
+		{"hp" : 4}
+	]},
+	{"done" : [
+		{"hp" : 1}
+	]},
+	{"door" : [
+		{"hp" : 5}
+	]},
+	{"doorstep" : [
+		{"hp" : 1}
+	]},
+	{"doughnut" : [
+		{"hp" : 1}
+	]},
+	{"down" : [
+		{"hp" : 11}
+	]},
+	{"downpour" : [
+		{"hp" : 1}
+	]},
+	{"downright" : [
+		{"hp" : 1}
+	]},
+	{"dozen" : [
+		{"hp" : 1}
+	]},
+	{"drawn" : [
+		{"hp" : 1}
+	]},
+	{"dressed" : [
+		{"hp" : 3}
+	]},
+	{"drifting" : [
+		{"hp" : 1}
+	]},
+	{"drills" : [
+		{"hp" : 6}
+	]},
+	{"drive" : [
+		{"hp" : 9}
+	]},
+	{"driven" : [
+		{"hp" : 1}
+	]},
+	{"driveway" : [
+		{"hp" : 1}
+	]},
+	{"drop" : [
+		{"hp" : 3}
+	]},
+	{"drops" : [
+		{"hp" : 2}
+	]},
+	{"drove" : [
+		{"hp" : 2}
+	]},
+	{"drummed" : [
+		{"hp" : 1}
+	]},
+	{"dudley" : [
+		{"hp" : 9}
+	]},
+	{"dull" : [
+		{"hp" : 1}
+	]},
+	{"dumbledore" : [
+		{"hp" : 37}
+	]},
+	{"dundee" : [
+		{"hp" : 1}
+	]},
+	{"dursley" : [
+		{"hp" : 47}
+	]},
+	{"dursleys" : [
+		{"hp" : 7}
+	]},
+	{"early" : [
+		{"hp" : 1}
+	]},
+	{"earmuffs" : [
+		{"hp" : 1}
+	]},
+	{"edge" : [
+		{"hp" : 2}
+	]},
+	{"eight" : [
+		{"hp" : 1}
+	]},
+	{"eleven" : [
+		{"hp" : 2}
+	]},
+	{"else" : [
+		{"hp" : 1}
+	]},
+	{"emerald" : [
+		{"hp" : 2}
+	]},
+	{"end" : [
+		{"hp" : 2}
+	]},
+	{"engine" : [
+		{"hp" : 1}
+	]},
+	{"enough" : [
+		{"hp" : 2}
+	]},
+	{"enraged" : [
+		{"hp" : 1}
+	]},
+	{"er" : [
+		{"hp" : 1}
+	]},
+	{"even" : [
+		{"hp" : 12}
+	]},
+	{"evening" : [
+		{"hp" : 1}
+	]},
+	{"ever" : [
+		{"hp" : 2}
+	]},
+	{"every" : [
+		{"hp" : 2}
+	]},
+	{"everyone" : [
+		{"hp" : 4}
+	]},
+	{"everything" : [
+		{"hp" : 3}
+	]},
+	{"everywhere" : [
+		{"hp" : 1}
+	]},
+	{"exactly" : [
+		{"hp" : 2}
+	]},
+	{"examined" : [
+		{"hp" : 1}
+	]},
+	{"exasperated" : [
+		{"hp" : 1}
+	]},
+	{"except" : [
+		{"hp" : 1}
+	]},
+	{"excitedly" : [
+		{"hp" : 2}
+	]},
+	{"expect" : [
+		{"hp" : 3}
+	]},
+	{"expected" : [
+		{"hp" : 1}
+	]},
+	{"experts" : [
+		{"hp" : 1}
+	]},
+	{"explain" : [
+		{"hp" : 3}
+	]},
+	{"eyed" : [
+		{"hp" : 3}
+	]},
+	{"eyes" : [
+		{"hp" : 10}
+	]},
+	{"face" : [
+		{"hp" : 3}
+	]},
+	{"fact" : [
+		{"hp" : 2}
+	]},
+	{"faintly" : [
+		{"hp" : 1}
+	]},
+	{"faltered" : [
+		{"hp" : 1}
+	]},
+	{"family" : [
+		{"hp" : 1}
+	]},
+	{"famous" : [
+		{"hp" : 4}
+	]},
+	{"fancy" : [
+		{"hp" : 1}
+	]},
+	{"far" : [
+		{"hp" : 2}
+	]},
+	{"fashion" : [
+		{"hp" : 1}
+	]},
+	{"fast" : [
+		{"hp" : 1}
+	]},
+	{"fear" : [
+		{"hp" : 2}
+	]},
+	{"feasts" : [
+		{"hp" : 1}
+	]},
+	{"feet" : [
+		{"hp" : 2}
+	]},
+	{"fell" : [
+		{"hp" : 6}
+	]},
+	{"fences" : [
+		{"hp" : 1}
+	]},
+	{"few" : [
+		{"hp" : 5}
+	]},
+	{"finally" : [
+		{"hp" : 3}
+	]},
+	{"find" : [
+		{"hp" : 2}
+	]},
+	{"fine" : [
+		{"hp" : 1}
+	]},
+	{"finer" : [
+		{"hp" : 1}
+	]},
+	{"fingers" : [
+		{"hp" : 1}
+	]},
+	{"finished" : [
+		{"hp" : 1}
+	]},
+	{"firm" : [
+		{"hp" : 1}
+	]},
+	{"firmly" : [
+		{"hp" : 1}
+	]},
+	{"first" : [
+		{"hp" : 2}
+	]},
+	{"five" : [
+		{"hp" : 3}
+	]},
+	{"fixed" : [
+		{"hp" : 2}
+	]},
+	{"flatter" : [
+		{"hp" : 1}
+	]},
+	{"flicked" : [
+		{"hp" : 1}
+	]},
+	{"flickered" : [
+		{"hp" : 1}
+	]},
+	{"flinched" : [
+		{"hp" : 1}
+	]},
+	{"flocks" : [
+		{"hp" : 1}
+	]},
+	{"flooded" : [
+		{"hp" : 1}
+	]},
+	{"floor" : [
+		{"hp" : 1}
+	]},
+	{"flutter" : [
+		{"hp" : 1}
+	]},
+	{"flyin" : [
+		{"hp" : 1}
+	]},
+	{"flying" : [
+		{"hp" : 3}
+	]},
+	{"folks" : [
+		{"hp" : 1}
+	]},
+	{"fond" : [
+		{"hp" : 1}
+	]},
+	{"for" : [
+		{"hp" : 25}
+	]},
+	{"forehead" : [
+		{"hp" : 1}
+	]},
+	{"forever" : [
+		{"hp" : 1}
+	]},
+	{"forgotten" : [
+		{"hp" : 1}
+	]},
+	{"forward" : [
+		{"hp" : 1}
+	]},
+	{"found" : [
+		{"hp" : 6}
+	]},
+	{"four" : [
+		{"hp" : 6}
+	]},
+	{"free" : [
+		{"hp" : 1}
+	]},
+	{"frightened" : [
+		{"hp" : 2}
+	]},
+	{"from" : [
+		{"hp" : 7}
+	]},
+	{"front" : [
+		{"hp" : 4}
+	]},
+	{"frozen" : [
+		{"hp" : 1}
+	]},
+	{"full" : [
+		{"hp" : 1}
+	]},
+	{"funny" : [
+		{"hp" : 3}
+	]},
+	{"furiously" : [
+		{"hp" : 1}
+	]},
+	{"future" : [
+		{"hp" : 1}
+	]},
+	{"g" : [
+		{"hp" : 1}
+	]},
+	{"garden" : [
+		{"hp" : 4}
+	]},
+	{"gasped" : [
+		{"hp" : 1}
+	]},
+	{"gave" : [
+		{"hp" : 4}
+	]},
+	{"gazed" : [
+		{"hp" : 1}
+	]},
+	{"gently" : [
+		{"hp" : 2}
+	]},
+	{"get" : [
+		{"hp" : 5}
+	]},
+	{"gets" : [
+		{"hp" : 1}
+	]},
+	{"getting" : [
+		{"hp" : 1}
+	]},
+	{"getups" : [
+		{"hp" : 1}
+	]},
+	{"giant" : [
+		{"hp" : 1}
+	]},
+	{"gingerly" : [
+		{"hp" : 1}
+	]},
+	{"give" : [
+		{"hp" : 1}
+	]},
+	{"glance" : [
+		{"hp" : 1}
+	]},
+	{"glasses" : [
+		{"hp" : 3}
+	]},
+	{"glowed" : [
+		{"hp" : 1}
+	]},
+	{"glumly" : [
+		{"hp" : 1}
+	]},
+	{"go" : [
+		{"hp" : 1}
+	]},
+	{"godric" : [
+		{"hp" : 1}
+	]},
+	{"going" : [
+		{"hp" : 6}
+	]},
+	{"golden" : [
+		{"hp" : 1}
+	]},
+	{"gone" : [
+		{"hp" : 7}
+	]},
+	{"good" : [
+		{"hp" : 7}
+	]},
+	{"gossiped" : [
+		{"hp" : 1}
+	]},
+	{"got" : [
+		{"hp" : 7}
+	]},
+	{"gray" : [
+		{"hp" : 1}
+	]},
+	{"great" : [
+		{"hp" : 2}
+	]},
+	{"greatest" : [
+		{"hp" : 1}
+	]},
+	{"green" : [
+		{"hp" : 1}
+	]},
+	{"grew" : [
+		{"hp" : 1}
+	]},
+	{"grin" : [
+		{"hp" : 1}
+	]},
+	{"grip" : [
+		{"hp" : 1}
+	]},
+	{"ground" : [
+		{"hp" : 3}
+	]},
+	{"group" : [
+		{"hp" : 1}
+	]},
+	{"growing" : [
+		{"hp" : 1}
+	]},
+	{"grudgingly" : [
+		{"hp" : 1}
+	]},
+	{"grunnings" : [
+		{"hp" : 2}
+	]},
+	{"grunted" : [
+		{"hp" : 1}
+	]},
+	{"guess" : [
+		{"hp" : 1}
+	]},
+	{"had" : [
+		{"hp" : 39}
+	]},
+	{"hadn" : [
+		{"hp" : 2}
+	]},
+	{"hagrid" : [
+		{"hp" : 14}
+	]},
+	{"hair" : [
+		{"hp" : 4}
+	]},
+	{"half" : [
+		{"hp" : 5}
+	]},
+	{"hand" : [
+		{"hp" : 1}
+	]},
+	{"handkerchief" : [
+		{"hp" : 2}
+	]},
+	{"hands" : [
+		{"hp" : 2}
+	]},
+	{"handy" : [
+		{"hp" : 1}
+	]},
+	{"happen" : [
+		{"hp" : 1}
+	]},
+	{"happening" : [
+		{"hp" : 2}
+	]},
+	{"happily" : [
+		{"hp" : 1}
+	]},
+	{"happy" : [
+		{"hp" : 2}
+	]},
+	{"hard" : [
+		{"hp" : 1}
+	]},
+	{"harder" : [
+		{"hp" : 2}
+	]},
+	{"hardly" : [
+		{"hp" : 2}
+	]},
+	{"harold" : [
+		{"hp" : 1}
+	]},
+	{"harry" : [
+		{"hp" : 21}
+	]},
+	{"harvey" : [
+		{"hp" : 1}
+	]},
+	{"has" : [
+		{"hp" : 4}
+	]},
+	{"have" : [
+		{"hp" : 33}
+	]},
+	{"haven" : [
+		{"hp" : 3}
+	]},
+	{"having" : [
+		{"hp" : 1}
+	]},
+	{"he" : [
+		{"hp" : 156}
+	]},
+	{"head" : [
+		{"hp" : 5}
+	]},
+	{"headlight" : [
+		{"hp" : 1}
+	]},
+	{"heads" : [
+		{"hp" : 1}
+	]},
+	{"heard" : [
+		{"hp" : 4}
+	]},
+	{"heart" : [
+		{"hp" : 2}
+	]},
+	{"heaven" : [
+		{"hp" : 1}
+	]},
+	{"heavily" : [
+		{"hp" : 1}
+	]},
+	{"hedges" : [
+		{"hp" : 1}
+	]},
+	{"heel" : [
+		{"hp" : 1}
+	]},
+	{"heeled" : [
+		{"hp" : 1}
+	]},
+	{"held" : [
+		{"hp" : 1}
+	]},
+	{"help" : [
+		{"hp" : 1}
+	]},
+	{"her" : [
+		{"hp" : 22}
+	]},
+	{"here" : [
+		{"hp" : 10}
+	]},
+	{"hid" : [
+		{"hp" : 1}
+	]},
+	{"hiding" : [
+		{"hp" : 1}
+	]},
+	{"high" : [
+		{"hp" : 2}
+	]},
+	{"him" : [
+		{"hp" : 26}
+	]},
+	{"himself" : [
+		{"hp" : 6}
+	]},
+	{"his" : [
+		{"hp" : 70}
+	]},
+	{"hissed" : [
+		{"hp" : 1}
+	]},
+	{"hold" : [
+		{"hp" : 1}
+	]},
+	{"holding" : [
+		{"hp" : 2}
+	]},
+	{"hollow" : [
+		{"hp" : 1}
+	]},
+	{"home" : [
+		{"hp" : 2}
+	]},
+	{"hoped" : [
+		{"hp" : 1}
+	]},
+	{"hoping" : [
+		{"hp" : 3}
+	]},
+	{"horribly" : [
+		{"hp" : 1}
+	]},
+	{"hours" : [
+		{"hp" : 1}
+	]},
+	{"house" : [
+		{"hp" : 4}
+	]},
+	{"how" : [
+		{"hp" : 8}
+	]},
+	{"howard" : [
+		{"hp" : 1}
+	]},
+	{"however" : [
+		{"hp" : 2}
+	]},
+	{"howl" : [
+		{"hp" : 1}
+	]},
+	{"huddle" : [
+		{"hp" : 1}
+	]},
+	{"huge" : [
+		{"hp" : 2}
+	]},
+	{"hugged" : [
+		{"hp" : 2}
+	]},
+	{"hummed" : [
+		{"hp" : 1}
+	]},
+	{"hundreds" : [
+		{"hp" : 1}
+	]},
+	{"hunt" : [
+		{"hp" : 1}
+	]},
+	{"hurried" : [
+		{"hp" : 2}
+	]},
+	{"husband" : [
+		{"hp" : 1}
+	]},
+	{"hushed" : [
+		{"hp" : 1}
+	]},
+	{"i" : [
+		{"hp" : 46}
+	]},
+	{"if" : [
+		{"hp" : 17}
+	]},
+	{"imagination" : [
+		{"hp" : 1}
+	]},
+	{"imagining" : [
+		{"hp" : 2}
+	]},
+	{"impatiently" : [
+		{"hp" : 1}
+	]},
+	{"important" : [
+		{"hp" : 2}
+	]},
+	{"improve" : [
+		{"hp" : 1}
+	]},
+	{"in" : [
+		{"hp" : 57}
+	]},
+	{"ing" : [
+		{"hp" : 1}
+	]},
+	{"inky" : [
+		{"hp" : 1}
+	]},
+	{"inside" : [
+		{"hp" : 5}
+	]},
+	{"instead" : [
+		{"hp" : 4}
+	]},
+	{"into" : [
+		{"hp" : 17}
+	]},
+	{"involved" : [
+		{"hp" : 2}
+	]},
+	{"irritably" : [
+		{"hp" : 1}
+	]},
+	{"is" : [
+		{"hp" : 5}
+	]},
+	{"isn" : [
+		{"hp" : 2}
+	]},
+	{"it" : [
+		{"hp" : 86}
+	]},
+	{"its" : [
+		{"hp" : 4}
+	]},
+	{"jacket" : [
+		{"hp" : 1}
+	]},
+	{"jam" : [
+		{"hp" : 1}
+	]},
+	{"james" : [
+		{"hp" : 3}
+	]},
+	{"jerked" : [
+		{"hp" : 2}
+	]},
+	{"jet" : [
+		{"hp" : 1}
+	]},
+	{"jim" : [
+		{"hp" : 2}
+	]},
+	{"join" : [
+		{"hp" : 1}
+	]},
+	{"judging" : [
+		{"hp" : 1}
+	]},
+	{"jumping" : [
+		{"hp" : 1}
+	]},
+	{"just" : [
+		{"hp" : 9}
+	]},
+	{"keep" : [
+		{"hp" : 1}
+	]},
+	{"keeping" : [
+		{"hp" : 1}
+	]},
+	{"kent" : [
+		{"hp" : 2}
+	]},
+	{"kicked" : [
+		{"hp" : 1}
+	]},
+	{"kicking" : [
+		{"hp" : 1}
+	]},
+	{"kill" : [
+		{"hp" : 4}
+	]},
+	{"killed" : [
+		{"hp" : 1}
+	]},
+	{"kind" : [
+		{"hp" : 2}
+	]},
+	{"kiss" : [
+		{"hp" : 2}
+	]},
+	{"knee" : [
+		{"hp" : 1}
+	]},
+	{"knew" : [
+		{"hp" : 2}
+	]},
+	{"knocked" : [
+		{"hp" : 1}
+	]},
+	{"know" : [
+		{"hp" : 17}
+	]},
+	{"knowing" : [
+		{"hp" : 3}
+	]},
+	{"known" : [
+		{"hp" : 2}
+	]},
+	{"knows" : [
+		{"hp" : 2}
+	]},
+	{"lace" : [
+		{"hp" : 1}
+	]},
+	{"laid" : [
+		{"hp" : 1}
+	]},
+	{"lamp" : [
+		{"hp" : 2}
+	]},
+	{"lamps" : [
+		{"hp" : 1}
+	]},
+	{"landed" : [
+		{"hp" : 1}
+	]},
+	{"large" : [
+		{"hp" : 5}
+	]},
+	{"last" : [
+		{"hp" : 8}
+	]},
+	{"late" : [
+		{"hp" : 1}
+	]},
+	{"lately" : [
+		{"hp" : 1}
+	]},
+	{"later" : [
+		{"hp" : 1}
+	]},
+	{"lay" : [
+		{"hp" : 2}
+	]},
+	{"learned" : [
+		{"hp" : 1}
+	]},
+	{"least" : [
+		{"hp" : 2}
+	]},
+	{"leather" : [
+		{"hp" : 1}
+	]},
+	{"left" : [
+		{"hp" : 5}
+	]},
+	{"legend" : [
+		{"hp" : 1}
+	]},
+	{"legs" : [
+		{"hp" : 1}
+	]},
+	{"lemon" : [
+		{"hp" : 5}
+	]},
+	{"lent" : [
+		{"hp" : 1}
+	]},
+	{"less" : [
+		{"hp" : 1}
+	]},
+	{"let" : [
+		{"hp" : 2}
+	]},
+	{"letter" : [
+		{"hp" : 5}
+	]},
+	{"lids" : [
+		{"hp" : 1}
+	]},
+	{"life" : [
+		{"hp" : 2}
+	]},
+	{"light" : [
+		{"hp" : 4}
+	]},
+	{"lighter" : [
+		{"hp" : 1}
+	]},
+	{"lightning" : [
+		{"hp" : 1}
+	]},
+	{"lights" : [
+		{"hp" : 1}
+	]},
+	{"like" : [
+		{"hp" : 9}
+	]},
+	{"liked" : [
+		{"hp" : 1}
+	]},
+	{"lily" : [
+		{"hp" : 3}
+	]},
+	{"lips" : [
+		{"hp" : 1}
+	]},
+	{"little" : [
+		{"hp" : 9}
+	]},
+	{"live" : [
+		{"hp" : 3}
+	]},
+	{"lived" : [
+		{"hp" : 2}
+	]},
+	{"living" : [
+		{"hp" : 3}
+	]},
+	{"ll" : [
+		{"hp" : 7}
+	]},
+	{"london" : [
+		{"hp" : 1}
+	]},
+	{"long" : [
+		{"hp" : 4}
+	]},
+	{"look" : [
+		{"hp" : 4}
+	]},
+	{"looked" : [
+		{"hp" : 9}
+	]},
+	{"looking" : [
+		{"hp" : 6}
+	]},
+	{"lose" : [
+		{"hp" : 1}
+	]},
+	{"lot" : [
+		{"hp" : 4}
+	]},
+	{"lots" : [
+		{"hp" : 1}
+	]},
+	{"louder" : [
+		{"hp" : 1}
+	]},
+	{"loudly" : [
+		{"hp" : 1}
+	]},
+	{"low" : [
+		{"hp" : 2}
+	]},
+	{"luck" : [
+		{"hp" : 1}
+	]},
+	{"lucky" : [
+		{"hp" : 1}
+	]},
+	{"lunchtime" : [
+		{"hp" : 1}
+	]},
+	{"m" : [
+		{"hp" : 2}
+	]},
+	{"madam" : [
+		{"hp" : 1}
+	]},
+	{"made" : [
+		{"hp" : 5}
+	]},
+	{"make" : [
+		{"hp" : 1}
+	]},
+	{"man" : [
+		{"hp" : 10}
+	]},
+	{"map" : [
+		{"hp" : 3}
+	]},
+	{"maps" : [
+		{"hp" : 1}
+	]},
+	{"markings" : [
+		{"hp" : 2}
+	]},
+	{"may" : [
+		{"hp" : 2}
+	]},
+	{"maybe" : [
+		{"hp" : 1}
+	]},
+	{"mcgonagall" : [
+		{"hp" : 26}
+	]},
+	{"mcguffin" : [
+		{"hp" : 1}
+	]},
+	{"me" : [
+		{"hp" : 8}
+	]},
+	{"mean" : [
+		{"hp" : 2}
+	]},
+	{"meeting" : [
+		{"hp" : 1}
+	]},
+	{"mention" : [
+		{"hp" : 2}
+	]},
+	{"met" : [
+		{"hp" : 1}
+	]},
+	{"middle" : [
+		{"hp" : 1}
+	]},
+	{"midnight" : [
+		{"hp" : 1}
+	]},
+	{"might" : [
+		{"hp" : 5}
+	]},
+	{"milk" : [
+		{"hp" : 1}
+	]},
+	{"mind" : [
+		{"hp" : 6}
+	]},
+	{"minute" : [
+		{"hp" : 1}
+	]},
+	{"minutes" : [
+		{"hp" : 1}
+	]},
+	{"mirror" : [
+		{"hp" : 1}
+	]},
+	{"missed" : [
+		{"hp" : 1}
+	]},
+	{"mixed" : [
+		{"hp" : 1}
+	]},
+	{"mixing" : [
+		{"hp" : 1}
+	]},
+	{"moment" : [
+		{"hp" : 3}
+	]},
+	{"mood" : [
+		{"hp" : 2}
+	]},
+	{"moon" : [
+		{"hp" : 2}
+	]},
+	{"more" : [
+		{"hp" : 3}
+	]},
+	{"morning" : [
+		{"hp" : 4}
+	]},
+	{"most" : [
+		{"hp" : 5}
+	]},
+	{"mother" : [
+		{"hp" : 1}
+	]},
+	{"motorcycle" : [
+		{"hp" : 5}
+	]},
+	{"mouth" : [
+		{"hp" : 1}
+	]},
+	{"mouthed" : [
+		{"hp" : 1}
+	]},
+	{"move" : [
+		{"hp" : 1}
+	]},
+	{"moved" : [
+		{"hp" : 2}
+	]},
+	{"moving" : [
+		{"hp" : 1}
+	]},
+	{"mr" : [
+		{"hp" : 30}
+	]},
+	{"mrs" : [
+		{"hp" : 21}
+	]},
+	{"much" : [
+		{"hp" : 7}
+	]},
+	{"muffled" : [
+		{"hp" : 1}
+	]},
+	{"muggle" : [
+		{"hp" : 3}
+	]},
+	{"muggles" : [
+		{"hp" : 6}
+	]},
+	{"mumbled" : [
+		{"hp" : 1}
+	]},
+	{"murmured" : [
+		{"hp" : 1}
+	]},
+	{"muscular" : [
+		{"hp" : 1}
+	]},
+	{"must" : [
+		{"hp" : 4}
+	]},
+	{"mustache" : [
+		{"hp" : 2}
+	]},
+	{"muttered" : [
+		{"hp" : 1}
+	]},
+	{"my" : [
+		{"hp" : 7}
+	]},
+	{"myself" : [
+		{"hp" : 1}
+	]},
+	{"mysterious" : [
+		{"hp" : 4}
+	]},
+	{"name" : [
+		{"hp" : 11}
+	]},
+	{"narrowed" : [
+		{"hp" : 1}
+	]},
+	{"nasty" : [
+		{"hp" : 1}
+	]},
+	{"nation" : [
+		{"hp" : 1}
+	]},
+	{"near" : [
+		{"hp" : 1}
+	]},
+	{"nearest" : [
+		{"hp" : 1}
+	]},
+	{"nearly" : [
+		{"hp" : 2}
+	]},
+	{"neat" : [
+		{"hp" : 1}
+	]},
+	{"neck" : [
+		{"hp" : 2}
+	]},
+	{"neighbors" : [
+		{"hp" : 2}
+	]},
+	{"neither" : [
+		{"hp" : 1}
+	]},
+	{"nephew" : [
+		{"hp" : 1}
+	]},
+	{"nerve" : [
+		{"hp" : 1}
+	]},
+	{"nervously" : [
+		{"hp" : 1}
+	]},
+	{"never" : [
+		{"hp" : 10}
+	]},
+	{"new" : [
+		{"hp" : 3}
+	]},
+	{"news" : [
+		{"hp" : 3}
+	]},
+	{"newscaster" : [
+		{"hp" : 1}
+	]},
+	{"next" : [
+		{"hp" : 8}
+	]},
+	{"nice" : [
+		{"hp" : 1}
+	]},
+	{"night" : [
+		{"hp" : 6}
+	]},
+	{"nighttime" : [
+		{"hp" : 1}
+	]},
+	{"ninth" : [
+		{"hp" : 1}
+	]},
+	{"no" : [
+		{"hp" : 16}
+	]},
+	{"noble" : [
+		{"hp" : 1}
+	]},
+	{"nodded" : [
+		{"hp" : 1}
+	]},
+	{"nodding" : [
+		{"hp" : 1}
+	]},
+	{"none" : [
+		{"hp" : 1}
+	]},
+	{"nonsense" : [
+		{"hp" : 2}
+	]},
+	{"nor" : [
+		{"hp" : 3}
+	]},
+	{"normal" : [
+		{"hp" : 5}
+	]},
+	{"normally" : [
+		{"hp" : 3}
+	]},
+	{"nose" : [
+		{"hp" : 2}
+	]},
+	{"not" : [
+		{"hp" : 15}
+	]},
+	{"nothing" : [
+		{"hp" : 7}
+	]},
+	{"notice" : [
+		{"hp" : 2}
+	]},
+	{"noticed" : [
+		{"hp" : 3}
+	]},
+	{"noticing" : [
+		{"hp" : 1}
+	]},
+	{"now" : [
+		{"hp" : 8}
+	]},
+	{"number" : [
+		{"hp" : 7}
+	]},
+	{"numbers" : [
+		{"hp" : 1}
+	]},
+	{"o" : [
+		{"hp" : 1}
+	]},
+	{"obviously" : [
+		{"hp" : 1}
+	]},
+	{"odd" : [
+		{"hp" : 1}
+	]},
+	{"oddly" : [
+		{"hp" : 1}
+	]},
+	{"of" : [
+		{"hp" : 75}
+	]},
+	{"off" : [
+		{"hp" : 7}
+	]},
+	{"office" : [
+		{"hp" : 2}
+	]},
+	{"oh" : [
+		{"hp" : 4}
+	]},
+	{"old" : [
+		{"hp" : 3}
+	]},
+	{"older" : [
+		{"hp" : 2}
+	]},
+	{"on" : [
+		{"hp" : 51}
+	]},
+	{"once" : [
+		{"hp" : 1}
+	]},
+	{"one" : [
+		{"hp" : 7}
+	]},
+	{"only" : [
+		{"hp" : 6}
+	]},
+	{"onto" : [
+		{"hp" : 1}
+	]},
+	{"open" : [
+		{"hp" : 2}
+	]},
+	{"opened" : [
+		{"hp" : 2}
+	]},
+	{"opinion" : [
+		{"hp" : 1}
+	]},
+	{"or" : [
+		{"hp" : 5}
+	]},
+	{"orange" : [
+		{"hp" : 1}
+	]},
+	{"order" : [
+		{"hp" : 1}
+	]},
+	{"other" : [
+		{"hp" : 3}
+	]},
+	{"our" : [
+		{"hp" : 3}
+	]},
+	{"out" : [
+		{"hp" : 22}
+	]},
+	{"outer" : [
+		{"hp" : 3}
+	]},
+	{"outside" : [
+		{"hp" : 3}
+	]},
+	{"over" : [
+		{"hp" : 17}
+	]},
+	{"overhead" : [
+		{"hp" : 2}
+	]},
+	{"owl" : [
+		{"hp" : 5}
+	]},
+	{"owls" : [
+		{"hp" : 11}
+	]},
+	{"pair" : [
+		{"hp" : 1}
+	]},
+	{"parking" : [
+		{"hp" : 1}
+	]},
+	{"parties" : [
+		{"hp" : 1}
+	]},
+	{"passed" : [
+		{"hp" : 3}
+	]},
+	{"passersby" : [
+		{"hp" : 1}
+	]},
+	{"past" : [
+		{"hp" : 4}
+	]},
+	{"patted" : [
+		{"hp" : 1}
+	]},
+	{"pattern" : [
+		{"hp" : 1}
+	]},
+	{"patting" : [
+		{"hp" : 1}
+	]},
+	{"pavement" : [
+		{"hp" : 1}
+	]},
+	{"pecked" : [
+		{"hp" : 1}
+	]},
+	{"peculiar" : [
+		{"hp" : 1}
+	]},
+	{"peered" : [
+		{"hp" : 1}
+	]},
+	{"people" : [
+		{"hp" : 21}
+	]},
+	{"perfect" : [
+		{"hp" : 1}
+	]},
+	{"perfectly" : [
+		{"hp" : 2}
+	]},
+	{"perhaps" : [
+		{"hp" : 1}
+	]},
+	{"person" : [
+		{"hp" : 1}
+	]},
+	{"persuade" : [
+		{"hp" : 1}
+	]},
+	{"petunia" : [
+		{"hp" : 3}
+	]},
+	{"phoning" : [
+		{"hp" : 1}
+	]},
+	{"picked" : [
+		{"hp" : 2}
+	]},
+	{"piercing" : [
+		{"hp" : 1}
+	]},
+	{"pinched" : [
+		{"hp" : 1}
+	]},
+	{"pinpricks" : [
+		{"hp" : 1}
+	]},
+	{"place" : [
+		{"hp" : 4}
+	]},
+	{"places" : [
+		{"hp" : 1}
+	]},
+	{"plain" : [
+		{"hp" : 1}
+	]},
+	{"planets" : [
+		{"hp" : 1}
+	]},
+	{"pocket" : [
+		{"hp" : 3}
+	]},
+	{"point" : [
+		{"hp" : 2}
+	]},
+	{"pointed" : [
+		{"hp" : 1}
+	]},
+	{"pointing" : [
+		{"hp" : 1}
+	]},
+	{"pomfrey" : [
+		{"hp" : 1}
+	]},
+	{"poor" : [
+		{"hp" : 1}
+	]},
+	{"pop" : [
+		{"hp" : 1}
+	]},
+	{"popped" : [
+		{"hp" : 1}
+	]},
+	{"possible" : [
+		{"hp" : 1}
+	]},
+	{"potter" : [
+		{"hp" : 12}
+	]},
+	{"potters" : [
+		{"hp" : 10}
+	]},
+	{"power" : [
+		{"hp" : 1}
+	]},
+	{"powers" : [
+		{"hp" : 1}
+	]},
+	{"precious" : [
+		{"hp" : 1}
+	]},
+	{"pressed" : [
+		{"hp" : 1}
+	]},
+	{"pretend" : [
+		{"hp" : 1}
+	]},
+	{"pretended" : [
+		{"hp" : 2}
+	]},
+	{"privet" : [
+		{"hp" : 8}
+	]},
+	{"probably" : [
+		{"hp" : 1}
+	]},
+	{"problems" : [
+		{"hp" : 2}
+	]},
+	{"prodded" : [
+		{"hp" : 1}
+	]},
+	{"professor" : [
+		{"hp" : 30}
+	]},
+	{"promise" : [
+		{"hp" : 1}
+	]},
+	{"promised" : [
+		{"hp" : 1}
+	]},
+	{"proper" : [
+		{"hp" : 1}
+	]},
+	{"proud" : [
+		{"hp" : 1}
+	]},
+	{"pull" : [
+		{"hp" : 1}
+	]},
+	{"pulled" : [
+		{"hp" : 2}
+	]},
+	{"purple" : [
+		{"hp" : 1}
+	]},
+	{"pursed" : [
+		{"hp" : 1}
+	]},
+	{"put" : [
+		{"hp" : 8}
+	]},
+	{"quickly" : [
+		{"hp" : 1}
+	]},
+	{"quite" : [
+		{"hp" : 2}
+	]},
+	{"quiver" : [
+		{"hp" : 1}
+	]},
+	{"rain" : [
+		{"hp" : 1}
+	]},
+	{"rather" : [
+		{"hp" : 2}
+	]},
+	{"rattled" : [
+		{"hp" : 1}
+	]},
+	{"re" : [
+		{"hp" : 13}
+	]},
+	{"reached" : [
+		{"hp" : 2}
+	]},
+	{"read" : [
+		{"hp" : 1}
+	]},
+	{"reading" : [
+		{"hp" : 2}
+	]},
+	{"ready" : [
+		{"hp" : 1}
+	]},
+	{"real" : [
+		{"hp" : 1}
+	]},
+	{"realize" : [
+		{"hp" : 3}
+	]},
+	{"realized" : [
+		{"hp" : 1}
+	]},
+	{"really" : [
+		{"hp" : 2}
+	]},
+	{"reason" : [
+		{"hp" : 6}
+	]},
+	{"receiver" : [
+		{"hp" : 1}
+	]},
+	{"rejoice" : [
+		{"hp" : 1}
+	]},
+	{"related" : [
+		{"hp" : 1}
+	]},
+	{"relieved" : [
+		{"hp" : 1}
+	]},
+	{"remember" : [
+		{"hp" : 1}
+	]},
+	{"repeated" : [
+		{"hp" : 1}
+	]},
+	{"reply" : [
+		{"hp" : 1}
+	]},
+	{"report" : [
+		{"hp" : 1}
+	]},
+	{"reported" : [
+		{"hp" : 1}
+	]},
+	{"right" : [
+		{"hp" : 6}
+	]},
+	{"road" : [
+		{"hp" : 4}
+	]},
+	{"roar" : [
+		{"hp" : 2}
+	]},
+	{"robes" : [
+		{"hp" : 1}
+	]},
+	{"rolled" : [
+		{"hp" : 1}
+	]},
+	{"room" : [
+		{"hp" : 3}
+	]},
+	{"rooted" : [
+		{"hp" : 1}
+	]},
+	{"rose" : [
+		{"hp" : 1}
+	]},
+	{"ruffled" : [
+		{"hp" : 2}
+	]},
+	{"rumbling" : [
+		{"hp" : 1}
+	]},
+	{"rummaging" : [
+		{"hp" : 1}
+	]},
+	{"rumor" : [
+		{"hp" : 1}
+	]},
+	{"rumors" : [
+		{"hp" : 2}
+	]},
+	{"s" : [
+		{"hp" : 49}
+	]},
+	{"sad" : [
+		{"hp" : 1}
+	]},
+	{"said" : [
+		{"hp" : 32}
+	]},
+	{"same" : [
+		{"hp" : 3}
+	]},
+	{"sat" : [
+		{"hp" : 4}
+	]},
+	{"saw" : [
+		{"hp" : 3}
+	]},
+	{"say" : [
+		{"hp" : 7}
+	]},
+	{"saying" : [
+		{"hp" : 10}
+	]},
+	{"scar" : [
+		{"hp" : 1}
+	]},
+	{"scars" : [
+		{"hp" : 1}
+	]},
+	{"scratchy" : [
+		{"hp" : 1}
+	]},
+	{"scream" : [
+		{"hp" : 1}
+	]},
+	{"screaming" : [
+		{"hp" : 2}
+	]},
+	{"second" : [
+		{"hp" : 1}
+	]},
+	{"seconds" : [
+		{"hp" : 1}
+	]},
+	{"secret" : [
+		{"hp" : 2}
+	]},
+	{"secretary" : [
+		{"hp" : 1}
+	]},
+	{"see" : [
+		{"hp" : 9}
+	]},
+	{"seeing" : [
+		{"hp" : 1}
+	]},
+	{"seem" : [
+		{"hp" : 3}
+	]},
+	{"seemed" : [
+		{"hp" : 6}
+	]},
+	{"seems" : [
+		{"hp" : 2}
+	]},
+	{"seen" : [
+		{"hp" : 8}
+	]},
+	{"seized" : [
+		{"hp" : 1}
+	]},
+	{"sense" : [
+		{"hp" : 2}
+	]},
+	{"sensible" : [
+		{"hp" : 1}
+	]},
+	{"seriously" : [
+		{"hp" : 1}
+	]},
+	{"set" : [
+		{"hp" : 2}
+	]},
+	{"several" : [
+		{"hp" : 2}
+	]},
+	{"severe" : [
+		{"hp" : 1}
+	]},
+	{"shaggy" : [
+		{"hp" : 1}
+	]},
+	{"shake" : [
+		{"hp" : 1}
+	]},
+	{"shall" : [
+		{"hp" : 1}
+	]},
+	{"shape" : [
+		{"hp" : 1}
+	]},
+	{"shaped" : [
+		{"hp" : 1}
+	]},
+	{"sharp" : [
+		{"hp" : 2}
+	]},
+	{"sharply" : [
+		{"hp" : 1}
+	]},
+	{"she" : [
+		{"hp" : 26}
+	]},
+	{"shhh" : [
+		{"hp" : 1}
+	]},
+	{"shocked" : [
+		{"hp" : 1}
+	]},
+	{"shone" : [
+		{"hp" : 1}
+	]},
+	{"shoo" : [
+		{"hp" : 1}
+	]},
+	{"shook" : [
+		{"hp" : 1}
+	]},
+	{"shooting" : [
+		{"hp" : 5}
+	]},
+	{"shot" : [
+		{"hp" : 1}
+	]},
+	{"should" : [
+		{"hp" : 2}
+	]},
+	{"shoulder" : [
+		{"hp" : 1}
+	]},
+	{"shoulders" : [
+		{"hp" : 1}
+	]},
+	{"shouted" : [
+		{"hp" : 1}
+	]},
+	{"showers" : [
+		{"hp" : 1}
+	]},
+	{"showing" : [
+		{"hp" : 1}
+	]},
+	{"shuddered" : [
+		{"hp" : 1}
+	]},
+	{"sideways" : [
+		{"hp" : 1}
+	]},
+	{"sight" : [
+		{"hp" : 2}
+	]},
+	{"sightings" : [
+		{"hp" : 1}
+	]},
+	{"sign" : [
+		{"hp" : 5}
+	]},
+	{"signs" : [
+		{"hp" : 1}
+	]},
+	{"silence" : [
+		{"hp" : 1}
+	]},
+	{"silent" : [
+		{"hp" : 1}
+	]},
+	{"silently" : [
+		{"hp" : 1}
+	]},
+	{"silly" : [
+		{"hp" : 1}
+	]},
+	{"silver" : [
+		{"hp" : 3}
+	]},
+	{"simply" : [
+		{"hp" : 1}
+	]},
+	{"since" : [
+		{"hp" : 2}
+	]},
+	{"single" : [
+		{"hp" : 1}
+	]},
+	{"sinking" : [
+		{"hp" : 1}
+	]},
+	{"sipped" : [
+		{"hp" : 1}
+	]},
+	{"sir" : [
+		{"hp" : 5}
+	]},
+	{"sirius" : [
+		{"hp" : 2}
+	]},
+	{"sister" : [
+		{"hp" : 7}
+	]},
+	{"sit" : [
+		{"hp" : 2}
+	]},
+	{"sitting" : [
+		{"hp" : 5}
+	]},
+	{"size" : [
+		{"hp" : 1}
+	]},
+	{"sky" : [
+		{"hp" : 3}
+	]},
+	{"slammed" : [
+		{"hp" : 1}
+	]},
+	{"sleep" : [
+		{"hp" : 1}
+	]},
+	{"sleepiness" : [
+		{"hp" : 1}
+	]},
+	{"sleeping" : [
+		{"hp" : 1}
+	]},
+	{"sleeve" : [
+		{"hp" : 1}
+	]},
+	{"slept" : [
+		{"hp" : 1}
+	]},
+	{"slinking" : [
+		{"hp" : 1}
+	]},
+	{"slipped" : [
+		{"hp" : 1}
+	]},
+	{"small" : [
+		{"hp" : 3}
+	]},
+	{"smile" : [
+		{"hp" : 2}
+	]},
+	{"smiling" : [
+		{"hp" : 1}
+	]},
+	{"snapped" : [
+		{"hp" : 2}
+	]},
+	{"sniff" : [
+		{"hp" : 1}
+	]},
+	{"sniffed" : [
+		{"hp" : 1}
+	]},
+	{"so" : [
+		{"hp" : 14}
+	]},
+	{"sobbed" : [
+		{"hp" : 1}
+	]},
+	{"some" : [
+		{"hp" : 4}
+	]},
+	{"somebody" : [
+		{"hp" : 1}
+	]},
+	{"somehow" : [
+		{"hp" : 1}
+	]},
+	{"someone" : [
+		{"hp" : 1}
+	]},
+	{"something" : [
+		{"hp" : 14}
+	]},
+	{"son" : [
+		{"hp" : 7}
+	]},
+	{"soon" : [
+		{"hp" : 2}
+	]},
+	{"sorcerer" : [
+		{"hp" : 1}
+	]},
+	{"sorry" : [
+		{"hp" : 3}
+	]},
+	{"sound" : [
+		{"hp" : 1}
+	]},
+	{"sounding" : [
+		{"hp" : 2}
+	]},
+	{"sparkling" : [
+		{"hp" : 1}
+	]},
+	{"special" : [
+		{"hp" : 1}
+	]},
+	{"spectacles" : [
+		{"hp" : 2}
+	]},
+	{"sped" : [
+		{"hp" : 2}
+	]},
+	{"spend" : [
+		{"hp" : 1}
+	]},
+	{"spent" : [
+		{"hp" : 1}
+	]},
+	{"split" : [
+		{"hp" : 1}
+	]},
+	{"spoke" : [
+		{"hp" : 2}
+	]},
+	{"spot" : [
+		{"hp" : 1}
+	]},
+	{"spotted" : [
+		{"hp" : 2}
+	]},
+	{"spying" : [
+		{"hp" : 1}
+	]},
+	{"square" : [
+		{"hp" : 1}
+	]},
+	{"squeaky" : [
+		{"hp" : 1}
+	]},
+	{"stand" : [
+		{"hp" : 1}
+	]},
+	{"standing" : [
+		{"hp" : 2}
+	]},
+	{"stare" : [
+		{"hp" : 2}
+	]},
+	{"stared" : [
+		{"hp" : 2}
+	]},
+	{"staring" : [
+		{"hp" : 2}
+	]},
+	{"stars" : [
+		{"hp" : 5}
+	]},
+	{"started" : [
+		{"hp" : 1}
+	]},
+	{"starts" : [
+		{"hp" : 1}
+	]},
+	{"statue" : [
+		{"hp" : 1}
+	]},
+	{"staying" : [
+		{"hp" : 1}
+	]},
+	{"steadily" : [
+		{"hp" : 1}
+	]},
+	{"steering" : [
+		{"hp" : 1}
+	]},
+	{"step" : [
+		{"hp" : 1}
+	]},
+	{"stepped" : [
+		{"hp" : 1}
+	]},
+	{"stern" : [
+		{"hp" : 1}
+	]},
+	{"stiff" : [
+		{"hp" : 1}
+	]},
+	{"stiffly" : [
+		{"hp" : 2}
+	]},
+	{"still" : [
+		{"hp" : 5}
+	]},
+	{"stone" : [
+		{"hp" : 1}
+	]},
+	{"stood" : [
+		{"hp" : 2}
+	]},
+	{"stop" : [
+		{"hp" : 1}
+	]},
+	{"stopped" : [
+		{"hp" : 3}
+	]},
+	{"story" : [
+		{"hp" : 1}
+	]},
+	{"straight" : [
+		{"hp" : 1}
+	]},
+	{"strange" : [
+		{"hp" : 2}
+	]},
+	{"strangely" : [
+		{"hp" : 1}
+	]},
+	{"stranger" : [
+		{"hp" : 1}
+	]},
+	{"streaming" : [
+		{"hp" : 1}
+	]},
+	{"street" : [
+		{"hp" : 14}
+	]},
+	{"streets" : [
+		{"hp" : 1}
+	]},
+	{"stretch" : [
+		{"hp" : 1}
+	]},
+	{"stroked" : [
+		{"hp" : 1}
+	]},
+	{"struck" : [
+		{"hp" : 1}
+	]},
+	{"stuff" : [
+		{"hp" : 1}
+	]},
+	{"stumbled" : [
+		{"hp" : 1}
+	]},
+	{"stunt" : [
+		{"hp" : 1}
+	]},
+	{"stupid" : [
+		{"hp" : 3}
+	]},
+	{"subject" : [
+		{"hp" : 1}
+	]},
+	{"such" : [
+		{"hp" : 3}
+	]},
+	{"suddenly" : [
+		{"hp" : 6}
+	]},
+	{"suggest" : [
+		{"hp" : 1}
+	]},
+	{"sunrise" : [
+		{"hp" : 1}
+	]},
+	{"suppose" : [
+		{"hp" : 4}
+	]},
+	{"supposed" : [
+		{"hp" : 1}
+	]},
+	{"sure" : [
+		{"hp" : 3}
+	]},
+	{"surely" : [
+		{"hp" : 1}
+	]},
+	{"surprised" : [
+		{"hp" : 1}
+	]},
+	{"survive" : [
+		{"hp" : 1}
+	]},
+	{"swallowed" : [
+		{"hp" : 1}
+	]},
+	{"swapping" : [
+		{"hp" : 1}
+	]},
+	{"swarmin" : [
+		{"hp" : 1}
+	]},
+	{"sweet" : [
+		{"hp" : 1}
+	]},
+	{"sweets" : [
+		{"hp" : 1}
+	]},
+	{"swelled" : [
+		{"hp" : 1}
+	]},
+	{"swept" : [
+		{"hp" : 1}
+	]},
+	{"swish" : [
+		{"hp" : 1}
+	]},
+	{"swoop" : [
+		{"hp" : 1}
+	]},
+	{"swooped" : [
+		{"hp" : 1}
+	]},
+	{"swung" : [
+		{"hp" : 1}
+	]},
+	{"t" : [
+		{"hp" : 62}
+	]},
+	{"tabby" : [
+		{"hp" : 4}
+	]},
+	{"tail" : [
+		{"hp" : 1}
+	]},
+	{"take" : [
+		{"hp" : 1}
+	]},
+	{"takin" : [
+		{"hp" : 1}
+	]},
+	{"taking" : [
+		{"hp" : 1}
+	]},
+	{"talk" : [
+		{"hp" : 1}
+	]},
+	{"tall" : [
+		{"hp" : 2}
+	]},
+	{"tangles" : [
+		{"hp" : 1}
+	]},
+	{"tantrum" : [
+		{"hp" : 1}
+	]},
+	{"tawny" : [
+		{"hp" : 1}
+	]},
+	{"tea" : [
+		{"hp" : 2}
+	]},
+	{"ted" : [
+		{"hp" : 1}
+	]},
+	{"telephone" : [
+		{"hp" : 2}
+	]},
+	{"tell" : [
+		{"hp" : 4}
+	]},
+	{"tend" : [
+		{"hp" : 1}
+	]},
+	{"ter" : [
+		{"hp" : 1}
+	]},
+	{"than" : [
+		{"hp" : 1}
+	]},
+	{"thank" : [
+		{"hp" : 2}
+	]},
+	{"thankful" : [
+		{"hp" : 1}
+	]},
+	{"that" : [
+		{"hp" : 59}
+	]},
+	{"the" : [
+		{"hp" : 205}
+	]},
+	{"their" : [
+		{"hp" : 11}
+	]},
+	{"them" : [
+		{"hp" : 17}
+	]},
+	{"then" : [
+		{"hp" : 5}
+	]},
+	{"there" : [
+		{"hp" : 13}
+	]},
+	{"these" : [
+		{"hp" : 4}
+	]},
+	{"they" : [
+		{"hp" : 32}
+	]},
+	{"thin" : [
+		{"hp" : 2}
+	]},
+	{"thing" : [
+		{"hp" : 2}
+	]},
+	{"things" : [
+		{"hp" : 5}
+	]},
+	{"think" : [
+		{"hp" : 8}
+	]},
+	{"thinking" : [
+		{"hp" : 2}
+	]},
+	{"this" : [
+		{"hp" : 16}
+	]},
+	{"those" : [
+		{"hp" : 1}
+	]},
+	{"though" : [
+		{"hp" : 7}
+	]},
+	{"thought" : [
+		{"hp" : 9}
+	]},
+	{"three" : [
+		{"hp" : 1}
+	]},
+	{"threw" : [
+		{"hp" : 1}
+	]},
+	{"throat" : [
+		{"hp" : 1}
+	]},
+	{"through" : [
+		{"hp" : 1}
+	]},
+	{"throwing" : [
+		{"hp" : 1}
+	]},
+	{"tidy" : [
+		{"hp" : 1}
+	]},
+	{"tie" : [
+		{"hp" : 1}
+	]},
+	{"tight" : [
+		{"hp" : 1}
+	]},
+	{"time" : [
+		{"hp" : 3}
+	]},
+	{"times" : [
+		{"hp" : 2}
+	]},
+	{"tin" : [
+		{"hp" : 1}
+	]},
+	{"tiny" : [
+		{"hp" : 2}
+	]},
+	{"to" : [
+		{"hp" : 94}
+	]},
+	{"today" : [
+		{"hp" : 5}
+	]},
+	{"together" : [
+		{"hp" : 2}
+	]},
+	{"told" : [
+		{"hp" : 4}
+	]},
+	{"tonight" : [
+		{"hp" : 2}
+	]},
+	{"too" : [
+		{"hp" : 5}
+	]},
+	{"took" : [
+		{"hp" : 4}
+	]},
+	{"top" : [
+		{"hp" : 1}
+	]},
+	{"toward" : [
+		{"hp" : 3}
+	]},
+	{"town" : [
+		{"hp" : 3}
+	]},
+	{"traffic" : [
+		{"hp" : 2}
+	]},
+	{"trash" : [
+		{"hp" : 1}
+	]},
+	{"trembled" : [
+		{"hp" : 1}
+	]},
+	{"trick" : [
+		{"hp" : 1}
+	]},
+	{"tried" : [
+		{"hp" : 3}
+	]},
+	{"true" : [
+		{"hp" : 2}
+	]},
+	{"trust" : [
+		{"hp" : 2}
+	]},
+	{"trying" : [
+		{"hp" : 2}
+	]},
+	{"tuck" : [
+		{"hp" : 1}
+	]},
+	{"tucked" : [
+		{"hp" : 1}
+	]},
+	{"tuesday" : [
+		{"hp" : 1}
+	]},
+	{"tuft" : [
+		{"hp" : 1}
+	]},
+	{"turn" : [
+		{"hp" : 1}
+	]},
+	{"turned" : [
+		{"hp" : 6}
+	]},
+	{"turning" : [
+		{"hp" : 1}
+	]},
+	{"twelve" : [
+		{"hp" : 3}
+	]},
+	{"twice" : [
+		{"hp" : 3}
+	]},
+	{"twinkling" : [
+		{"hp" : 1}
+	]},
+	{"twitched" : [
+		{"hp" : 1}
+	]},
+	{"two" : [
+		{"hp" : 6}
+	]},
+	{"tyke" : [
+		{"hp" : 1}
+	]},
+	{"unable" : [
+		{"hp" : 1}
+	]},
+	{"unblinkingly" : [
+		{"hp" : 1}
+	]},
+	{"uncle" : [
+		{"hp" : 2}
+	]},
+	{"under" : [
+		{"hp" : 2}
+	]},
+	{"underground" : [
+		{"hp" : 1}
+	]},
+	{"underneath" : [
+		{"hp" : 1}
+	]},
+	{"understand" : [
+		{"hp" : 1}
+	]},
+	{"undursleyish" : [
+		{"hp" : 1}
+	]},
+	{"uneasy" : [
+		{"hp" : 2}
+	]},
+	{"unsticking" : [
+		{"hp" : 1}
+	]},
+	{"until" : [
+		{"hp" : 6}
+	]},
+	{"unusual" : [
+		{"hp" : 1}
+	]},
+	{"unusually" : [
+		{"hp" : 1}
+	]},
+	{"unwelcome" : [
+		{"hp" : 1}
+	]},
+	{"up" : [
+		{"hp" : 14}
+	]},
+	{"upset" : [
+		{"hp" : 3}
+	]},
+	{"upstairs" : [
+		{"hp" : 1}
+	]},
+	{"us" : [
+		{"hp" : 2}
+	]},
+	{"use" : [
+		{"hp" : 1}
+	]},
+	{"useful" : [
+		{"hp" : 1}
+	]},
+	{"usual" : [
+		{"hp" : 2}
+	]},
+	{"usually" : [
+		{"hp" : 1}
+	]},
+	{"vast" : [
+		{"hp" : 1}
+	]},
+	{"ve" : [
+		{"hp" : 9}
+	]},
+	{"very" : [
+		{"hp" : 17}
+	]},
+	{"viewers" : [
+		{"hp" : 1}
+	]},
+	{"violet" : [
+		{"hp" : 1}
+	]},
+	{"visible" : [
+		{"hp" : 1}
+	]},
+	{"voice" : [
+		{"hp" : 3}
+	]},
+	{"voices" : [
+		{"hp" : 1}
+	]},
+	{"voldemort" : [
+		{"hp" : 6}
+	]},
+	{"waiting" : [
+		{"hp" : 2}
+	]},
+	{"wake" : [
+		{"hp" : 1}
+	]},
+	{"waking" : [
+		{"hp" : 1}
+	]},
+	{"walk" : [
+		{"hp" : 2}
+	]},
+	{"walked" : [
+		{"hp" : 4}
+	]},
+	{"wall" : [
+		{"hp" : 7}
+	]},
+	{"walls" : [
+		{"hp" : 1}
+	]},
+	{"want" : [
+		{"hp" : 2}
+	]},
+	{"wanted" : [
+		{"hp" : 2}
+	]},
+	{"was" : [
+		{"hp" : 89}
+	]},
+	{"wasn" : [
+		{"hp" : 3}
+	]},
+	{"watch" : [
+		{"hp" : 2}
+	]},
+	{"watched" : [
+		{"hp" : 2}
+	]},
+	{"watchers" : [
+		{"hp" : 1}
+	]},
+	{"watching" : [
+		{"hp" : 3}
+	]},
+	{"way" : [
+		{"hp" : 4}
+	]},
+	{"we" : [
+		{"hp" : 10}
+	]},
+	{"wearing" : [
+		{"hp" : 5}
+	]},
+	{"weather" : [
+		{"hp" : 1}
+	]},
+	{"weatherman" : [
+		{"hp" : 1}
+	]},
+	{"week" : [
+		{"hp" : 1}
+	]},
+	{"weeks" : [
+		{"hp" : 1}
+	]},
+	{"weirdos" : [
+		{"hp" : 1}
+	]},
+	{"well" : [
+		{"hp" : 9}
+	]},
+	{"went" : [
+		{"hp" : 6}
+	]},
+	{"were" : [
+		{"hp" : 23}
+	]},
+	{"weren" : [
+		{"hp" : 1}
+	]},
+	{"wet" : [
+		{"hp" : 1}
+	]},
+	{"what" : [
+		{"hp" : 14}
+	]},
+	{"whatever" : [
+		{"hp" : 2}
+	]},
+	{"wheel" : [
+		{"hp" : 1}
+	]},
+	{"when" : [
+		{"hp" : 10}
+	]},
+	{"where" : [
+		{"hp" : 4}
+	]},
+	{"whether" : [
+		{"hp" : 1}
+	]},
+	{"which" : [
+		{"hp" : 7}
+	]},
+	{"while" : [
+		{"hp" : 1}
+	]},
+	{"whiskery" : [
+		{"hp" : 1}
+	]},
+	{"whisper" : [
+		{"hp" : 2}
+	]},
+	{"whispered" : [
+		{"hp" : 2}
+	]},
+	{"whisperers" : [
+		{"hp" : 1}
+	]},
+	{"whispering" : [
+		{"hp" : 2}
+	]},
+	{"who" : [
+		{"hp" : 14}
+	]},
+	{"whole" : [
+		{"hp" : 1}
+	]},
+	{"why" : [
+		{"hp" : 8}
+	]},
+	{"wide" : [
+		{"hp" : 2}
+	]},
+	{"wife" : [
+		{"hp" : 1}
+	]},
+	{"wild" : [
+		{"hp" : 1}
+	]},
+	{"will" : [
+		{"hp" : 5}
+	]},
+	{"window" : [
+		{"hp" : 5}
+	]},
+	{"wiping" : [
+		{"hp" : 1}
+	]},
+	{"wise" : [
+		{"hp" : 1}
+	]},
+	{"with" : [
+		{"hp" : 16}
+	]},
+	{"without" : [
+		{"hp" : 1}
+	]},
+	{"woke" : [
+		{"hp" : 1}
+	]},
+	{"woken" : [
+		{"hp" : 1}
+	]},
+	{"woman" : [
+		{"hp" : 2}
+	]},
+	{"won" : [
+		{"hp" : 2}
+	]},
+	{"wondered" : [
+		{"hp" : 2}
+	]},
+	{"word" : [
+		{"hp" : 2}
+	]},
+	{"words" : [
+		{"hp" : 1}
+	]},
+	{"work" : [
+		{"hp" : 1}
+	]},
+	{"world" : [
+		{"hp" : 1}
+	]},
+	{"worried" : [
+		{"hp" : 1}
+	]},
+	{"worrying" : [
+		{"hp" : 1}
+	]},
+	{"would" : [
+		{"hp" : 11}
+	]},
+	{"wouldn" : [
+		{"hp" : 4}
+	]},
+	{"wounded" : [
+		{"hp" : 1}
+	]},
+	{"wrestled" : [
+		{"hp" : 1}
+	]},
+	{"written" : [
+		{"hp" : 2}
+	]},
+	{"wrong" : [
+		{"hp" : 1}
+	]},
+	{"yawned" : [
+		{"hp" : 1}
+	]},
+	{"yeah" : [
+		{"hp" : 1}
+	]},
+	{"years" : [
+		{"hp" : 3}
+	]},
+	{"yelled" : [
+		{"hp" : 1}
+	]},
+	{"yes" : [
+		{"hp" : 11}
+	]},
+	{"yesterday" : [
+		{"hp" : 1}
+	]},
+	{"yorkshire" : [
+		{"hp" : 1}
+	]},
+	{"you" : [
+		{"hp" : 46}
+	]},
+	{"youknow" : [
+		{"hp" : 1}
+	]},
+	{"young" : [
+		{"hp" : 3}
+	]},
+	{"your" : [
+		{"hp" : 1}
+	]},
+	{"yourself" : [
+		{"hp" : 3}
+	]}
+]}

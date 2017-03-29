@@ -1,0 +1,184 @@
+test plan:
+
+test1: test if it works on a small example file
+
+we have a small example file that contains: 
+
+This an$example12 mail@rutgers
+
+Expected Output:
+
+{"list":[
+	{"an" : [
+		{"example" : 1},
+	]}
+	{"example12" : [
+		{"example" : 1},
+	]}
+	{"mail" : [
+		{"example" : 1},
+	]}
+	{"rutgers" : [
+		{"example" : 1},
+	]}
+	{"this" : [
+		{"example" : 1},
+	]}
+]}
+
+Actual Output:
+
+{"list":[
+	{"an" : [
+		{"example" : 1},
+	]}
+	{"example12" : [
+		{"example" : 1},
+	]}
+	{"mail" : [
+		{"example" : 1},
+	]}
+	{"rutgers" : [
+		{"example" : 1},
+	]}
+	{"this" : [
+		{"example" : 1},
+	]}
+]}
+
+test2: We started by using the test plan in the file discription for directories
+
+we have a directory, adir that contains the files boo and baa
+in the files we have:
+
+/adir/boo    A dog name name Boo
+/adir/baa    A cat name Baa
+
+Expected Output:
+
+{"list":[
+	{"a" : [
+		{"adir/boo" : 1},
+		{"adir/baa" : 1},
+	]}
+	{"boo" : [
+		{"adir/boo" : 1},
+	]},
+	{"baa" : [
+		{"adir/baa" : 1},
+	]}
+	{"cat" : [
+		{"adir/baa" : 1},
+	]}
+	{"dog" : [
+		{"adir/boo" : 1},
+	]}
+	{"name" : [
+		{"adir/boo" : 2},
+		{"adir/baa" : 1},
+	]}
+]}
+
+Actual Output:
+
+{"list":[
+	{"a" : [
+		{"adir/boo" : 1},
+		{"adir/baa" : 1},
+	]}
+	{"boo" : [
+		{"adir/boo" : 1},
+	]},
+	{"baa" : [
+		{"adir/baa" : 1},
+	]}
+	{"cat" : [
+		{"adir/baa" : 1},
+	]}
+	{"dog" : [
+		{"adir/boo" : 1},
+	]}
+	{"name" : [
+		{"adir/boo" : 2},
+		{"adir/baa" : 1},
+	]}
+]}
+
+test3: To test a directory inside a directory
+
+we have a directory, adir2 that contains the directory dir and the file tes
+in the files we have:
+
+so we have 
+/adir2/test  	  apple.cake, burger
+adir2/adir/boo    A dog name name Boo
+adir2/adir/baa    A cat name Baa
+
+Expected Output:
+
+{"list":[
+	{"apple" : [
+		{"adir2/test" : 1},
+	]},
+	{"a" : [
+		{"adir2/adir/boo" : 1},
+		{"adir2/adir/baa" : 1},
+	]}
+	{"burger" : [
+		{"adir2/test" : 1},
+	]},
+	{"boo" : [
+		{"adir2/adir/boo" : 1},
+	]},
+	{"baa" : [
+		{"adir2/adir/baa" : 1},
+	]}
+	{"cat" : [
+		{"adir2/adir/baa" : 1},
+	]},
+	{"cake" : [
+		{"adir2/test" : 1},
+	]}
+	{"dog" : [
+		{"adir2/adir/boo" : 1},
+	]}
+	{"name" : [
+		{"adir2/adir/boo" : 2},
+		{"adir2/adir/baa" : 1},
+	]}
+]}
+
+Actual Output:
+
+{"list":[
+	{"apple" : [
+		{"adir2/test" : 1},
+	]},
+	{"a" : [
+		{"adir2/adir/boo" : 1},
+		{"adir2/adir/baa" : 1},
+	]}
+	{"burger" : [
+		{"adir2/test" : 1},
+	]},
+	{"boo" : [
+		{"adir2/adir/boo" : 1},
+	]},
+	{"baa" : [
+		{"adir2/adir/baa" : 1},
+	]}
+	{"cat" : [
+		{"adir2/adir/baa" : 1},
+	]},
+	{"cake" : [
+		{"adir2/test" : 1},
+	]}
+	{"dog" : [
+		{"adir2/adir/boo" : 1},
+	]}
+	{"name" : [
+		{"adir2/adir/boo" : 2},
+		{"adir2/adir/baa" : 1},
+	]}
+]}
+
