@@ -9,7 +9,7 @@ int main (int argc, char** argv)
 	{
 		return 1; //-1?
 	}
-	if (checkOverwrite(argv)==0)
+	if (exists(argv)==0)
 	{
 		return 0;
 	}

@@ -6,15 +6,15 @@
 
 typedef struct Node
 {
-	char* fileName;
-	int count;
+	char* file;
 	char* token;
+	int count;
 	struct Node* next;
-}recordNode;
+}Node;
 
 typedef struct HashTable
 {
-	recordNode** table;
+	Node** table;
 	int length;
 }hashTable;
 
@@ -26,19 +26,19 @@ boolean outputInitialized = FALSE;
 
 void traverseDirectory(hashTable *myTable, const char *dir_name);
 
-recordNode* createNode(char* fileName, char* token);
+Node* createNode(char* file, char* token);
 
 hashTable* createHashTable(int size);
 
-recordNode* tokenize(FILE* file, char* fileName);
+Node* tokenize(FILE* file, char* file);
 
 int validateInput(int argc);
 
-void insertNode(recordNode* list, hashTable* hTable, char* fileName);
+void insertNode(Node* list, hashTable* hTable, char* file);
 
 void printTokens(hashTable* masterTable, FILE* outputFile);
 
-hashTable* scatterTokens(recordNode* head, int size, FILE* outputFile);
+hashTable* scatterTokens(Node* head, int size, FILE* outputFile);
 
 void printTokenList(hashTable* myTable, FILE* outputFile);
 
@@ -46,7 +46,7 @@ void printOpeningTag(FILE* outputFile);
 
 void printClosingTag(FILE* outputFile);
 
-void toLowerCase(recordNode* head);
+void toLowerCase(Node* head);
 
 int sortalnum(const char *a, const char *b);
 
@@ -54,8 +54,8 @@ void printHashTable(hashTable *hTable);
 
 void deleteHashTable(hashTable *hTable);
 
-void deleteLinkedList(recordNode* head);
+void deleteLinkedList(Node* head);
 
-void printLL(recordNode* head);
+void printLL(Node* head);
 
-int checkOverwrite(char** argv);
+int exists(char** argv);
