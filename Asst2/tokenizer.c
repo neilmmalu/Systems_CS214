@@ -98,7 +98,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 		{
 			
 			case DT_DIR:
-			
+			{
 				if(strcmp(pwd,".") != 0 && strcmp(pwd, "..") != 0)
 				{
 					int length = 0;	
@@ -112,9 +112,10 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 					traverseDirectory(mainTable, path); //RECURSIVE STEP
 				}
 				break;
-			
+			}
+
 			case DT_REG:
-				//regular files, need to check to ensure ".txt"....
+			{	//regular files, need to check to ensure ".txt"....
 				char pathname[256];
 				FILE* fp;
 				sprintf(pathname, "%s/%s", directoryName, pwd);
@@ -125,7 +126,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 					insertNode(n, mainTable, pwd);
 				}
 				break;
-			
+			}
 			default:
 				return;
 		}
