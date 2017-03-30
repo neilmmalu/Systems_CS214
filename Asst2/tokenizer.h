@@ -6,9 +6,9 @@
 
 typedef struct Node
 {
-	char* fileName;
-	int count;
+	char* file;
 	char* token;
+	int count;
 	struct Node* next;
 }Node;
 

@@ -142,7 +142,7 @@ Node* createNode(char* file, char* token)
 {
     Node* n = (Node*)calloc(1, sizeof(Node));
     //mallocs and copies data into new string
-    n->fileName = strdup(file);
+    n->file = strdup(file);
     n->count = 1;
     n->token = token;
     n->next = NULL;
@@ -215,7 +215,7 @@ void scatterTokens(Node* head, int size, FILE* mainOutputFile)
 	{
 		if(mainTable->table[head->count-1]==NULL)
 		{
-			Node* temp = createNode(head->fileName, head->token);
+			Node* temp = createNode(head->file, head->token);
 			temp->count = head -> count;
 			mainTable->table[head->count-1] = temp;
 		}
@@ -224,12 +224,12 @@ void scatterTokens(Node* head, int size, FILE* mainOutputFile)
 			curr = mainTable->table[head->count-1];
 			prev = curr;
 			//for the same token with the same counts for different files, keep alphanumeric order
-			while(curr!=NULL && strcmp(curr->fileName, head->fileName)<0)//sortalnum(curr->fileName, head->fileName)>0)
+			while(curr!=NULL && strcmp(curr->file, head->file)<0)//sortalnum(curr->file, head->file)>0)
 			{
 				prev = curr;
 				curr = curr->next;
 			}
-			Node* temp = createNode(head->fileName, head->token);
+			Node* temp = createNode(head->file, head->token);
 			temp->count = head->count;
 			temp->next = curr;
 			if (mainTable->table[temp->count-1] == curr)	
@@ -272,7 +272,7 @@ void outputTokenList (hashTable* mainTable, FILE* mainOutputFile)
 			//while(sortalnum(currTok, curr->token)==0)
 			while (curr!=NULL)
 			{
-				fprintf(mainOutputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->fileName, curr->count);
+				fprintf(mainOutputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->file, curr->count);
 				curr = curr-> next;
 			}
 		}
@@ -383,7 +383,7 @@ void deleteTable(hashTable* hTable)
         {
             temp = curr->next;
             free(curr->token);
-			free(curr->fileName);
+			free(curr->file);
             free(curr);
             curr = temp;   		
 		}
@@ -399,7 +399,7 @@ void deleteList(Node* head)
     {
         temp = head->next;
         free(head->token);
-		free (head->fileName);
+		free (head->file);
         free(head);
         head = temp;
     }
@@ -411,7 +411,7 @@ void printLL(Node* head)
 	//Node* ptr = head;
 	while(head != NULL)
 	{
-		printf("%s, %s\n", head->token, head ->fileName);
+		printf("%s, %s\n", head->token, head ->file);
 		head = head->next;
 	}
 }
@@ -477,10 +477,10 @@ void insertNode(Node* head, hashTable* list , char* file)
 			}
 			if (curr!=NULL && sortalnum(curr->token, n->token) == 0)
 			{
-				if (strcmp(curr->fileName, n->fileName) != 0)
+				if (strcmp(curr->file, n->file) != 0)
 				{
 								//HERE BEGINS THE NEW TERRITORY
-					if(curr->next != NULL && strcmp(curr->next->token, n->token)==0 && strcmp(n->fileName, curr->next->fileName)==0)
+					if(curr->next != NULL && strcmp(curr->next->token, n->token)==0 && strcmp(n->file, curr->next->file)==0)
 					{
 						curr->next->count++;
 					}
