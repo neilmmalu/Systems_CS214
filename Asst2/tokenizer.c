@@ -168,12 +168,12 @@ void addTokens(int size, FILE* mainOutputFile, Node* head)
 void printTokens(hashTable* mainTable, FILE* mainOutputFile)
 {
 	int flag = 0;
-	if (!boolean)
-	{
-		fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-		fprintf(mainOutputFile, "<fileIndex>\n");
-		boolean = 1;
-	}
+	// if (!boolean)
+	// {
+	// 	fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+	// 	fprintf(mainOutputFile, "<fileIndex>\n");
+	// 	boolean = 1;
+	// }
 	int i;
 	Node* curr;
 	for (i=0; i<mainTable->length; i++)

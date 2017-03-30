@@ -15,6 +15,8 @@ int main(int argc, char** argv)
 	}
 	traverseDirectory(argv[2], mainTable);
 	FILE* mainOutputFile = fopen(argv[1], "w");
+	fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+	fprintf(mainOutputFile, "<fileIndex>\n");
 	outputTokens(mainTable, mainOutputFile);
 	deleteTable(mainTable);
 	return 0;

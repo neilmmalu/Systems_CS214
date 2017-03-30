@@ -81,8 +81,6 @@ void traverseDirectory(const char * directoryName, hashTable* mainTable)
 			}
 			default:
 			{
-				fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-				fprintf(mainOutputFile, "<fileIndex>\n");
 				return;
 			}
 		}
