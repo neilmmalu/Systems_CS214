@@ -42,12 +42,6 @@ void addTokens(Node* head, int size, FILE* outputFile);
 
 void outputTokenList(hashTable* myTable, FILE* outputFile);
 
-// void printOpeningTags();
-
-void printClosingTags();
-
-// void toLowerCase(Node* head);
-
 int sortalnum(const char* a, const char* b);
 
 void printTable(hashTable* list);

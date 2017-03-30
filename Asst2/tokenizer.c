@@ -207,64 +207,37 @@ void printTokens(hashTable* mainTable, FILE* mainOutputFile)
 	fprintf(mainOutputFile, "\t</word>\n");
 	//deleteTable(mainTable);
 }
-// void printOpeningTags(FILE* mainOutputFile)
-// {
-// 	fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-// 	fprintf(mainOutputFile, "<fileIndex>\n");
-// }
 
-// void printClosingTags(FILE* mainOutputFile)
-// {
-// 	fprintf(mainOutputFile, "</fileIndex>\n");
-// }
-// void toLowerCase(Node* head)
-// {
-// 	int i;
-// 	Node* temp = head;
-// 	while(temp != NULL)
-// 	{	
-// 		for (i=0; i<strlen(temp->token); i++)
-// 		{
-// 			if (isupper(temp->token[i]))
-// 			{
-// 				temp->token[i] = tolower(temp->token[i]);
-// 			}
-// 		}
-// 		temp = temp->next;
-// 	}
-// }
 
 //modified strncmp to allow for alphanumerics
 int sortalnum(const char *a, const char *b)
 {
 	while(*a != '\0' && *b != '\0')
+	{
+		if (*a == *b)
 		{
-    
-        	if (*a == *b)
-			{
-        	    a++;
-        	    b++;
-        	    continue;
-        	}
-        
-        	if( (isalpha(*a) && isalpha(*b)) || (isdigit(*a) && isdigit(*b)) )
-			{
-            
-        		if(*a < *b)
+			a++;
+			b++;
+			continue;
+		}
+
+		if( (isalpha(*a) && isalpha(*b)) || (isdigit(*a) && isdigit(*b)) )
+		{
+			if(*a < *b)
 				return 1;
-                
-            		if(*b < *a)
-                		return -1;
-        	}
-        	else if(isalpha(*a) && isdigit(*b))
-			{
-            		return 1;
-        	}    
-        	else
-			{       //should be isdigit(*a) && isalpha(*b)
-            		return -1;
-        	}    
-    	}
+
+			if(*b < *a)
+				return -1;
+		}
+		else if(isalpha(*a) && isdigit(*b))
+		{
+			return 1;
+		}    
+		else
+		{       
+			return -1;
+		}    
+	}
 	//both pointers have matched until one hits null terminator
 	if(*a == '\0' && *b == '\0')
 	{
