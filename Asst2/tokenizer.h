@@ -20,9 +20,9 @@ typedef struct HashTable
 
 int boolean = 0;
 
-void insertNode(Node* head, hashTable* list , char* fileName);
+void insertNode(char* fileName, Node* head, hashTable* list);
 
-void traverseDirectory(hashTable* list, const char * directoryName);
+void traverseDirectory(const char * directoryName, hashTable* list);
 
 Node* createNode(char* fileName, char* token);
 

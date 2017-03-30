@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include "tokenizer.h"
 
-void traverseDirectory(hashTable* mainTable, const char * directoryName)
+void traverseDirectory(const char * directoryName, hashTable* mainTable)
 {
 	FILE* file;
 	DIR* directory;
@@ -26,7 +26,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 				printf("null\n");
 			}
 			Node* token = tokenize(file, buffer);
-			insertNode(token, mainTable, buffer);
+			insertNode(buffer, token, mainTable);
 			return;
 		}
 		else
@@ -61,7 +61,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 						printf("Path length is too long error");
 						return;
 					}
-					traverseDirectory(mainTable, path); 
+					traverseDirectory(path, mainTable); 
 				}
 				break;
 			}
@@ -75,7 +75,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 				if (fp!=NULL)
 				{
 					Node* n = tokenize(fp, pwd);	
-					insertNode(n, mainTable, pwd);
+					insertNode(pwd, n, mainTable);
 				}
 				break;
 			}
@@ -90,7 +90,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 	}
 }
 
-void insertNode(Node* head, hashTable* list , char* file)
+void insertNode(char* file, Node* head, hashTable* list)
 {
 	
 	int count =0;
