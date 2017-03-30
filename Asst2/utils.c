@@ -80,7 +80,11 @@ void traverseDirectory(const char * directoryName, hashTable* mainTable)
 				break;
 			}
 			default:
+			{
+				fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+				fprintf(mainOutputFile, "<fileIndex>\n");
 				return;
+			}
 		}
 	
 	}
@@ -128,7 +132,7 @@ void insertNode(char* file, Node* head, hashTable* list)
 			{
 				if (strcmp(curr->file, n->file) != 0)
 				{
-					if(curr->next != NULL && strcmp(curr->next->token, n->token)==0 && strcmp(n->file, curr->next->file)==0)
+					if(curr->next != NULL && strcmp(curr->next->token, n->token)==0 && strcmp(n->file, curr->next->file) == 0)
 					{
 						curr->next->count++;
 					}
