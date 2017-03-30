@@ -110,7 +110,7 @@ void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
 			token = head->token;
 			limit = temp->count;
 
-			while (temp!=NULL && sortalnum(token, temp->token) ==0)
+			while (temp!=NULL && sortHelper(token, temp->token) ==0)
 			{
 				if(temp->count > limit)
 				{
@@ -150,7 +150,7 @@ void addTokens(Node* head, int size, FILE* mainOutputFile)
 			curr = mainTable->table[head->count - 1];
 			prev = curr;
 			//for the same token with the same counts for different files, keep alphanumeric order
-			while(curr!=NULL && strcmp(curr->file, head->file)<0)//sortalnum(curr->file, head->file)>0)
+			while(curr!=NULL && strcmp(curr->file, head->file)<0)//sortHelper(curr->file, head->file)>0)
 			{
 				prev = curr;
 				curr = curr->next;
@@ -175,12 +175,12 @@ void addTokens(Node* head, int size, FILE* mainOutputFile)
 
 void printTokens(hashTable* mainTable, FILE* mainOutputFile)
 {
-	boolean wordInitialized = FALSE;
+	int wordInitialized = 0;
 	if (!outputInitialized)
 	{
 		fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
 		fprintf(mainOutputFile, "<fileIndex>\n");
-		outputInitialized = TRUE;
+		outputInitialized = 1;
 	}
 	int i;
 	Node* curr;
@@ -192,9 +192,9 @@ void printTokens(hashTable* mainTable, FILE* mainOutputFile)
 			if(!wordInitialized)
 			{
 				fprintf(mainOutputFile, "\t<word text = \"%s\">\n", curr->token);
-				wordInitialized = TRUE;
+				wordInitialized = 1;
 			}
-			//while(sortalnum(currTok, curr->token)==0)
+			//while(sortHelper(currTok, curr->token)==0)
 			while (curr!=NULL)
 			{
 				fprintf(mainOutputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->file, curr->count);
@@ -208,7 +208,7 @@ void printTokens(hashTable* mainTable, FILE* mainOutputFile)
 
 
 //modified strncmp to allow for alphanumerics
-int sortalnum(const char *a, const char *b)
+int sortHelper(const char *a, const char *b)
 {
 	while(*a != '\0' && *b != '\0')
 	{

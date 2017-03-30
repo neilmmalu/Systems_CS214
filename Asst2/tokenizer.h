@@ -18,11 +18,9 @@ typedef struct HashTable
 	int length;
 }hashTable;
 
-typedef enum {FALSE, TRUE} boolean;
-
 char* inputString = "this is a test sentence now^Im utilizing $%^&symbols$%^&*(*&^$as+_)(*&delimiters This  o3ne has9876568798 nu289374mbers\0";
 
-boolean outputInitialized = FALSE;
+int outputInitialized = 0;
 
 void insertNode(Node* head, hashTable* list , char* fileName);
 
@@ -42,7 +40,7 @@ void addTokens(Node* head, int size, FILE* outputFile);
 
 void outputTokenList(hashTable* myTable, FILE* outputFile);
 
-int sortalnum(const char* a, const char* b);
+int sortHelper(const char* a, const char* b);
 
 void deleteTable(hashTable* list);
 

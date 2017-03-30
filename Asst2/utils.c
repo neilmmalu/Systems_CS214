@@ -139,7 +139,6 @@ void insertNode(Node* head, hashTable* list , char* file)
 			{
 				if (strcmp(curr->file, n->file) != 0)
 				{
-								//HERE BEGINS THE NEW TERRITORY
 					if(curr->next != NULL && strcmp(curr->next->token, n->token)==0 && strcmp(n->file, curr->next->file)==0)
 					{
 						curr->next->count++;
