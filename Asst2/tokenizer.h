@@ -61,11 +61,17 @@ void addTokens(int size, FILE* outputFile, Node* head);
 void outputTokenList(hashTable* myTable, FILE* outputFile);
 
 /*
-*Helps sort alphanumeric file names by checking if digits are present, checking the file length and returning either positive, negative, or 0
+*Helps sort alphanumeric file names by checking if digits are present, checking the file length *and returning either positive, negative, or 0
 */
 int sortHelper(const char* a, const char* b);
 
+/*
+*Frees all the pointers corresponding to the main hashtable and the structure itself
+*/
 void deleteTable(hashTable* list);
 
+/*
+*Checks if the file you wish to write in already exists and if you wish to overwrite it
+*/
 int exists(char** argv);
 
