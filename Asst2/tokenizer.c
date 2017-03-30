@@ -253,31 +253,6 @@ int sortalnum(const char *a, const char *b)
 	}
 }
 
-void printTable(hashTable* hTable)
-{
-    int i;
-    Node* curr;
-    for (i=0; i<hTable->length; i++)
-    {
-        curr = hTable->table[i];
-		while(curr!=NULL)
-        {
-            printf("token: %s   count: %i   fileName: %s\n", curr->token, curr->count, curr->file);
-            curr = curr->next;
-        }
-    }
-}
-
-void printLL(Node* head)
-{
-	//Node* ptr = head;
-	while(head != NULL)
-	{
-		printf("%s, %s\n", head->token, head ->file);
-		head = head->next;
-	}
-}
-
 int exists(char** argv)
 {
 	int temp = 1;
