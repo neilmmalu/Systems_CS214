@@ -259,15 +259,12 @@ int exists(char** argv)
 	int flag;
 	if(temp == 1)
 	{
-		FILE *fp = fopen(file, "w");
-		if(fp)
+		flag = remove(file);
+		if(flag != 0)
 		{
-			flag = remove(fp);
-			if(flag != 0)
-			{
 				printf("Did not delete file");
-			}
 		}
+		
 	}
 	return temp;
 }
