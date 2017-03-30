@@ -250,7 +250,6 @@ int exists(char** argv)
 	file[0] = '.';
 	file[1] = '/';
 	memcpy(file + 2, argv[1], strlen(argv[1]) + 1);
-	printf("%s\n", file + 2);
 	if(access(file, F_OK) == 0)
 	{
 		printf("File already exists. Do you wish to continue? Enter 1 to proceed or 0 to exit\n");
@@ -264,7 +263,6 @@ int exists(char** argv)
 		{
 			printf("File deleted");
 		}
-		
 	}
 	return temp;
 }
