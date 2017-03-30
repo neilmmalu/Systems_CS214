@@ -365,7 +365,7 @@ void printTable(hashTable* hTable)
         curr = hTable->table[i];
 		while(curr!=NULL)
         {
-            printf("token: %s   count: %i   fileName: %s\n", curr->token, curr->count, curr-> fileName);
+            printf("token: %s   count: %i   fileName: %s\n", curr->token, curr->count, curr->file);
             curr = curr->next;
         }
     }
