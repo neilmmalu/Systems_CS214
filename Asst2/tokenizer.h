@@ -18,7 +18,7 @@ typedef struct HashTable
 	int length;
 }hashTable;
 
-int outputInitialized = 0;
+int boolean = 0;
 
 void insertNode(Node* head, hashTable* list , char* fileName);
 
@@ -29,8 +29,6 @@ Node* createNode(char* fileName, char* token);
 hashTable* createHashTable(int size);
 
 Node* tokenize(FILE* file, char* fileName);
-
-hashTable* makeMasterTable(Node* head, char* fileName);
 
 void printTokens(hashTable* masterTable, FILE* outputFile);
 

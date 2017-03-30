@@ -167,12 +167,12 @@ void addTokens(Node* head, int size, FILE* mainOutputFile)
 
 void printTokens(hashTable* mainTable, FILE* mainOutputFile)
 {
-	int wordInitialized = 0;
-	if (!outputInitialized)
+	int flag = 0;
+	if (!boolean)
 	{
 		fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
 		fprintf(mainOutputFile, "<fileIndex>\n");
-		outputInitialized = 1;
+		boolean = 1;
 	}
 	int i;
 	Node* curr;
@@ -181,10 +181,10 @@ void printTokens(hashTable* mainTable, FILE* mainOutputFile)
 		curr = mainTable->table[i];
 		while(curr!=NULL)
 		{
-			if(!wordInitialized)
+			if(!flag)
 			{
 				fprintf(mainOutputFile, "\t<word text = \"%s\">\n", curr->token);
-				wordInitialized = 1;
+				flag = 1;
 			}
 			while (curr!=NULL)
 			{
