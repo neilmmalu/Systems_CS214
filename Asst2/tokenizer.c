@@ -255,7 +255,6 @@ int exists(char** argv)
 	int flag;
 	if(temp == 1)
 	{
-		printf("file name: %s\n", file + 2);
 		flag = remove(file + 2);
 		if(flag == 0)
 		{
