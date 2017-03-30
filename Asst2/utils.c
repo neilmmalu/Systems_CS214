@@ -119,7 +119,7 @@ void insertNode(Node* head, hashTable* list , char* file)
 		//node to be inserted
 		Node* n = createNode(file, head->token);
         //if node is to be inserted at front of head
-		if (list->table[i] == NULL || sortalnum(list->table[i]->token, n->token)<0)    
+		if (list->table[i] == NULL || sortHelper(list->table[i]->token, n->token)<0)    
 		{
 			n->next = list->table[i];
 			list->table[i] = n;
@@ -130,12 +130,12 @@ void insertNode(Node* head, hashTable* list , char* file)
 			Node* curr = list->table[i];
 			Node* prev = curr;
             //while string to be inserted comes after existing strings
-			while(curr != NULL && sortalnum(curr->token, n->token) > 0)
+			while(curr != NULL && sortHelper(curr->token, n->token) > 0)
 			{
 				prev = curr;
 				curr = curr->next;
 			}
-			if (curr!=NULL && sortalnum(curr->token, n->token) == 0)
+			if (curr!=NULL && sortHelper(curr->token, n->token) == 0)
 			{
 				if (strcmp(curr->file, n->file) != 0)
 				{
