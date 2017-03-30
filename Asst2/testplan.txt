@@ -1,25 +1,141 @@
 Testplan:
 Case 1: read missing directory / something does not exist / any error case
-Input: ./index testcase empty
-Expected output / Our output:
+	Input: 
+		./index testcase empty
+	Expected output / Our output:
+		Error: could not open empty - File or directory may not exist
+	File "testcase":
+		<?xml version="1.0" encoding="UTF-8"?>
+		<fileIndex>
+		</fileIndex>
 
 Case 1a: read a directory that doesn’t exist
-Input: ./index testcase doesntexist
-Expected output/ Our output:
-Error: could not open doesntexist – File or directory may not exist
+	Input: 
+		./index testcase doesntexist
+	Expected output/ Our output:
+		Error: could not open doesntexist - File or directory may not exist
+	File "testcase":
+		<?xml version="1.0" encoding="UTF-8"?>
+		<fileIndex>
+		</fileIndex>
+
 Case 2: read a file with a single line of text
-Input: ./index testcase test0
-Expected output / Our output:
+	Input: 
+		./index testcase test0
+	Expected output / Our output:
+	File "testcase":
+		<?xml version="1.0" encoding="UTF-8"?>
+		<fileIndex>
+			<word text = "an">
+				<file name = "test0">1</file>
+			</word>
+			<word text = "easy">
+				<file name = "test0">1</file>
+			</word>
+			<word text = "hello">
+				<file name = "test0">1</file>
+			</word>
+			<word text = "is">
+				<file name = "test0">1</file>
+			</word>
+			<word text = "test">
+				<file name = "test0">1</file>
+			</word>
+			<word text = "this">
+				<file name = "test0">1</file>
+			</word>
+		</fileIndex>
 
 Case 3: read files within the same directory with lines of text (with repeating tokens)
-Input: ./index testcase test0a
-Expected output / Output:
+	Input: 
+		./index testcase test0a
+	Expected output / Output:
+	File "testcase":
+		<?xml version="1.0" encoding="UTF-8"?>
+		<fileIndex>
+			<word text = "a">
+				<file name = "test0a">3</file>
+			</word>
+			<word text = "hello">
+				<file name = "test0a">3</file>
+			</word>
+			<word text = "is">
+				<file name = "test0a">3</file>
+			</word>
+			<word text = "test">
+				<file name = "test0a">3</file>
+			</word>
+			<word text = "there">
+				<file name = "test0a">3</file>
+			</word>
+			<word text = "this">
+				<file name = "test0a">3</file>
+			</word>
+		</fileIndex>
 
 Case 4: read files in a separate directory with long texts
-Input: ./index testcase test1
-Expected output / output:
+	Input: 
+		./index testcase test1
+	Expected output / output:
+	File "testcase":
+		<?xml version="1.0" encoding="UTF-8"?>
+		<fileIndex>
+			<word text = "a">
+				<file name = "test0a">3</file>
+			</word>
+			<word text = "hello">
+				<file name = "test0a">3</file>
+			</word>
+			<word text = "is">
+				<file name = "test0a">3</file>
+			</word>
+			<word text = "test">
+				<file name = "test0a">3</file>
+			</word>
+			<word text = "there">
+				<file name = "test0a">3</file>
+			</word>
+			<word text = "this">
+				<file name = "test0a">3</file>
+			</word>
+		</fileIndex>
 
 Case 5: read multiple files from nested directories
-Input: ./index testcase test2
-Expected output/ output:
+	Input: 
+		./index testcase test2
+	Expected output/ output:
+	File "testcase":
+		<?xml version="1.0" encoding="UTF-8"?>
+		<fileIndex>
+			<word text = "bottom">
+				<file name = "test2bot">1</file>
+			</word>
+			<word text = "hello">
+				<file name = "test2bot">1</file>
+				<file name = "test2top">1</file>
+			</word>
+			<word text = "is">
+				<file name = "test2bot">1</file>
+				<file name = "test2top">1</file>
+			</word>
+			<word text = "layer">
+				<file name = "test2bot">1</file>
+			</word>
+			<word text = "level">
+				<file name = "test2top">1</file>
+			</word>
+			<word text = "test">
+				<file name = "test2bot">1</file>
+				<file name = "test2top">1</file>
+			</word>
+			<word text = "this">
+				<file name = "test2bot">1</file>
+				<file name = "test2top">1</file>
+			</word>
+			<word text = "upper">
+				<file name = "test2top">1</file>
+			</word>
+		</fileIndex>
+
+
 
