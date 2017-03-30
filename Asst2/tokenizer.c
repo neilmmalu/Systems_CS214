@@ -226,19 +226,16 @@ int sortHelper(const char *a, const char *b)
 			return -1;
 		}    
 	}
-	//both pointers have matched until one hits null terminator
 	if(*a == '\0' && *b == '\0')
 	{
-	//both pointers matched and are same length
 		return 0;
 	}
-	else if(strlen(a) < strlen(b)){
-	//first string is shorter
+	else if(strlen(a) < strlen(b))
+	{
 		return 1;
 	}	
 	else
 	{
-	//first string is longer
 		return -1;
 	}
 }
@@ -258,10 +255,11 @@ int exists(char** argv)
 	int flag;
 	if(temp == 1)
 	{
+		printf("file name: %s", file + 2);
 		flag = remove(file + 2);
 		if(flag == 0)
 		{
-			printf("File deleted");
+			printf("File deleted\n");
 		}
 	}
 	return temp;
