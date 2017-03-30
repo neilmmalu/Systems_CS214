@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileIndex>
+	<word text = "bottom">
+		<file name = "test2bot">1</file>
+	</word>
+	<word text = "hello">
+		<file name = "test2bot">1</file>
+		<file name = "test2top">1</file>
+	</word>
+	<word text = "is">
+		<file name = "test2bot">1</file>
+		<file name = "test2top">1</file>
+	</word>
+	<word text = "layer">
+		<file name = "test2bot">1</file>
+	</word>
+	<word text = "level">
+		<file name = "test2top">1</file>
+	</word>
+	<word text = "test">
+		<file name = "test2bot">1</file>
+		<file name = "test2top">1</file>
+	</word>
+	<word text = "this">
+		<file name = "test2bot">1</file>
+		<file name = "test2top">1</file>
+	</word>
+	<word text = "upper">
+		<file name = "test2top">1</file>
+	</word>
+</fileIndex>
