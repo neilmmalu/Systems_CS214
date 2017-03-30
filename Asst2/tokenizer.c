@@ -122,12 +122,12 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 				//regular files, need to check to ensure ".txt"....
 			{	
 				char pathname [256];
-				FILE* fp;
+				FILE* file;
 				sprintf(pathname, "%s/%s", directoryName, d_name);
-				fp = fopen(pathname, "r");
-				if (fp!=NULL)
+				file = fopen(pathname, "r");
+				if (file!=NULL)
 				{
-						Node* tmp = tokenize(fp, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
+						Node* tmp = tokenize(file, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
 					insertNode(tmp, mainTable, d_name);
 				}
 				break;
