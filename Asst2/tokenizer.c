@@ -85,12 +85,11 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 	}
 	while(directory != NULL)
 	{
-		struct dirent *pointer;
 		char *pwd;
+		struct dirent *pointer;
 		pointer = readdir(directory);
 		if(!pointer)
 		{
-			//end of stream, break
 			break;
 		}
 		pwd = pointer->d_name;
@@ -99,10 +98,9 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 		{
 			
 			case DT_DIR:
-			{
+			
 				if(strcmp(pwd,".") != 0 && strcmp(pwd, "..") != 0)
 				{
-					//need to EXTEND THE PATH for next traverseDirectory call, working dir doesn't change (think adir/ -> adir/bdir/....)
 					int length = 0;	
 					char path[256];
 					length = snprintf(path, 256, "%s/%s",directoryName, pwd);
@@ -111,15 +109,12 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 						printf("Path length is too long error");
 						return;
 					}
-					//strcat(path, pwd); //lengthens path 
-					//printf("%s\n",pwd); //error checking and DEBUGGING
 					traverseDirectory(mainTable, path); //RECURSIVE STEP
 				}
 				break;
-			}
+			
 			case DT_REG:
 				//regular files, need to check to ensure ".txt"....
-			{	
 				char pathname[256];
 				FILE* fp;
 				sprintf(pathname, "%s/%s", directoryName, pwd);
@@ -130,7 +125,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 					insertNode(n, mainTable, pwd);
 				}
 				break;
-			}
+			
 			default:
 				return;
 		}
