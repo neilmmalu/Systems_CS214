@@ -288,7 +288,7 @@ int exists(char** argv)
 	printf("%s\n", file);
 	if(access(file, F_OK) == 0)
 	{
-		printf("File already exists in directory. Do you wish you overwrite it? Enter 1 to proceed or 0 to exit\n");
+		printf("File already exists. Do you wish to continue? Enter 1 to proceed or 0 to exit\n");
 	temp = getchar();
 	}
 	return temp;
