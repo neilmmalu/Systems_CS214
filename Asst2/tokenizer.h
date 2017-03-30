@@ -22,7 +22,7 @@ int boolean = 0;
 
 void insertNode(char* fileName, Node* head, hashTable* list);
 
-void traverseDirectory(const char * directoryName, hashTable* list);
+void traverseDirectory(const char* directoryName, hashTable* list);
 
 Node* createNode(char* fileName, char* token);
 
@@ -32,7 +32,7 @@ Node* tokenize(FILE* file, char* fileName);
 
 void printTokens(hashTable* masterTable, FILE* outputFile);
 
-void addTokens(Node* head, int size, FILE* outputFile);
+void addTokens(int size, FILE* outputFile, Node* head);
 
 void outputTokenList(hashTable* myTable, FILE* outputFile);
 

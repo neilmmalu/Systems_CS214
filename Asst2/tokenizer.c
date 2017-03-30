@@ -118,7 +118,7 @@ void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
 			prev->next = NULL;
 			if(head!=NULL)
 			{
-				addTokens(head, limit, mainOutputFile);
+				addTokens(limit, mainOutputFile, head);
 			}
 			head = mainTable->table[i];
 		}
@@ -126,7 +126,7 @@ void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
     fprintf(mainOutputFile, "</fileIndex>\n");
 }
 
-void addTokens(Node* head, int size, FILE* mainOutputFile)
+void addTokens(int size, FILE* mainOutputFile, Node* head)
 {	
 	Node *curr, *prev;
 	hashTable* mainTable = createHashTable(size);
