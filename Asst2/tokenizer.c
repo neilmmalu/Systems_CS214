@@ -135,8 +135,7 @@ void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
 //I'm like 99% sure this works
 void addTokens(Node* head, int size, FILE* mainOutputFile)
 {	
-	Node *curr, *prev, *freeThis;
-	freeThis = head;
+	Node *curr, *prev;
 	hashTable* mainTable = createHashTable(size);
 	while (head != NULL)
 	{
@@ -171,7 +170,6 @@ void addTokens(Node* head, int size, FILE* mainOutputFile)
 		}
 		head = head->next;
 	}
-	deleteList(freeThis);
 	printTokens(mainTable, mainOutputFile);
 }
 

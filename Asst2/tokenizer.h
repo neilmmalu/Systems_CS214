@@ -48,8 +48,6 @@ void printTable(hashTable* list);
 
 void deleteTable(hashTable* list);
 
-void deleteList(Node* head);
-
 void printLL(Node* head);
 
 int exists(char** argv);

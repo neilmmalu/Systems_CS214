@@ -186,17 +186,3 @@ void deleteTable(hashTable* hTable)
     free(hTable->table);
     free(hTable);
 }
-
-void deleteList(Node* head)
-{
-    Node* temp;
-	while(head!=NULL)
-    {
-        temp = head->next;
-        free(head->token);
-		free (head->file);
-        free(head);
-        head = temp;
-    }
-
-}
