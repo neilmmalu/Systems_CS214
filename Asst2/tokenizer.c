@@ -84,36 +84,36 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 			return;
 		}
 	}
-	while(directory !=NULL)
+	while(directory != NULL)
 	{
-		struct dirent * pwd;
-		char * d_name;
-		pwd = readdir(directory);
-		if(!pwd)
+		struct dirent *pointer;
+		char *pwd;
+		pointer = readdir(directory);
+		if(!pointer)
 		{
 			//end of stream, break
 			break;
 		}
-		d_name = pwd->d_name;
+		pwd = pointer->d_name;
 		
-		switch(pwd->d_type)
+		switch(pointer->d_type)
 		{
 			
 			case DT_DIR:
 			{
-				if(strcmp(d_name,".") != 0 && strcmp(d_name, "..") != 0)
+				if(strcmp(pwd,".") != 0 && strcmp(pwd, "..") != 0)
 				{
 					//need to EXTEND THE PATH for next traverseDirectory call, working dir doesn't change (think adir/ -> adir/bdir/....)
 					int pathlength = 0;	
 					char path[256];
-					pathlength = snprintf(path, 256, "%s/%s",directoryName, d_name);
+					pathlength = snprintf(path, 256, "%s/%s",directoryName, pwd);
 					if(pathlength > 255)
 					{
 						printf("Path length is too long error");
 						return;
 					}
-					//strcat(path, d_name); //lengthens path 
-					//printf("%s\n",d_name); //error checking and DEBUGGING
+					//strcat(path, pwd); //lengthens path 
+					//printf("%s\n",pwd); //error checking and DEBUGGING
 					traverseDirectory(mainTable, path); //RECURSIVE STEP
 				}
 				break;
@@ -122,13 +122,13 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 				//regular files, need to check to ensure ".txt"....
 			{	
 				char pathname [256];
-				FILE* file;
-				sprintf(pathname, "%s/%s", directoryName, d_name);
-				file = fopen(pathname, "r");
-				if (file!=NULL)
+				FILE* fp;
+				sprintf(pathname, "%s/%s", directoryName, pwd);
+				fp = fopen(pathname, "r");
+				if (fp!=NULL)
 				{
-						Node* tmp = tokenize(file, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
-					insertNode(tmp, mainTable, d_name);
+						Node* tmp = tokenize(fp, pwd);	//  <-----------------------------HERE IS THE TOKENIZE CALL
+					insertNode(tmp, mainTable, pwd);
 				}
 				break;
 			}
