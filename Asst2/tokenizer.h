@@ -34,8 +34,6 @@ hashTable* createHashTable(int size);
 
 Node* tokenize(FILE* file, char* fileName);
 
-int checkInput(int argc);
-
 hashTable* makeMasterTable(Node* head, char* fileName);
 
 void outputTokens(hashTable* masterTable, FILE* outputFile);

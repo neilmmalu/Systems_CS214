@@ -104,10 +104,10 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 				if(strcmp(pwd,".") != 0 && strcmp(pwd, "..") != 0)
 				{
 					//need to EXTEND THE PATH for next traverseDirectory call, working dir doesn't change (think adir/ -> adir/bdir/....)
-					int pathlength = 0;	
+					int length = 0;	
 					char path[256];
-					pathlength = snprintf(path, 256, "%s/%s",directoryName, pwd);
-					if(pathlength > 255)
+					length = snprintf(path, 256, "%s/%s",directoryName, pwd);
+					if(length > 255)
 					{
 						printf("Path length is too long error");
 						return;
@@ -121,7 +121,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 			case DT_REG:
 				//regular files, need to check to ensure ".txt"....
 			{	
-				char pathname [256];
+				char pathname[256];
 				FILE* fp;
 				sprintf(pathname, "%s/%s", directoryName, pwd);
 				fp = fopen(pathname, "r");
@@ -168,17 +168,6 @@ hashTable* createHashTable(int size)
     return mainTable;
 }
 
-int checkInput(int argc)
-{
-    //too few or too many inputs
-	//printf("%i\n", argc);
-	if(argc!=3)
-        {
-		   printf("usage: pointersorter.c output_file target_file/directory \n");
-            return 1;
-        }
-    return 0;
-}
 
 //collects tokens, scatters into individual hash tables, and outputs them to designated output file
 void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
