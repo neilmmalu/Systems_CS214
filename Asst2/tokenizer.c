@@ -7,10 +7,10 @@
 #include <unistd.h>
 #include "tokenizer.h"
 
-Node* tokenize(FILE* file, char* fileName)
+Node* tokenize(FILE* file, char* fName)
 {
     Node* head = NULL;
-    char buffer[5000];
+    char stream[5000];
     int i = 0;
 	Node* temp = NULL;
 	char c = fgetc(file);
@@ -25,25 +25,25 @@ Node* tokenize(FILE* file, char* fileName)
 		//get all alphanumerics in current token
 		while(c!= EOF && isalnum(c))
 		{
-			buffer[i] = c; //does this move the pointer every time?
+			stream[i] = c; //does this move the pointer every time?
 			i++;
 			c = fgetc(file);
 		}
 		//make sure string is null terminated
-		buffer[i] = '\0';
-		char* token = malloc(sizeof(char)*i+1);
-		if(strlen(buffer)>0)
+		stream[i] = '\0';
+		char* token = malloc(sizeof(char)*i + 1);
+		if(strlen(stream)>0)
         {
 		//+1?
-			memcpy(token, buffer, strlen(buffer)+1);
+			memcpy(token, stream, strlen(stream) + 1);
 			if(head == NULL)
        	 	{
-            	head = createNode(fileName, token);
+            	head = createNode(fName, token);
             	temp = head;
         	}
         	else
         	{
-            	temp->next = createNode(fileName, token);
+            	temp->next = createNode(fName, token);
             	temp = temp->next;
         	}
     	}
@@ -55,9 +55,8 @@ Node* tokenize(FILE* file, char* fileName)
 
 void traverseDirectory(hashTable* mainTable, const char * directoryName)
 {
-
-	DIR * directory;
 	FILE* file;
+	DIR* directory;
 
 	//printf("%s\t %d\n", directoryName, sizeof(directoryName));
 	directory = opendir(directoryName);
@@ -71,7 +70,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 			file = fopen(directoryName, "r");
 			if (file == NULL)
 			{
-				printf("file is null\n");
+				printf("null\n");
 			}
 			//printf("%s\n", buffer);
 			Node* token = tokenize(file, buffer);
@@ -424,18 +423,18 @@ void printLL(Node* head)
 
 int exists(char** argv)
 {
-	int x = 1;
+	int temp = 1;
 	char file [260];
 	file[0] = '.';
 	file[1] = '/';
-	memcpy(file+2, argv[1], strlen(argv[1])+1);
+	memcpy(file + 2, argv[1], strlen(argv[1])+1);
 	printf("%s\n", file);
 	if(access(file, F_OK) == 0)
 	{
 		printf("File already exists in directory. Do you wish you overwrite it? Enter 1 to proceed or 0 to exit\n");
-	x = getchar();
+	temp = getchar();
 	}
-	return x;
+	return temp;
 }
 
 
@@ -443,69 +442,68 @@ void insertNode(Node* head, hashTable* list , char* file)
 {
 	
 	int count =0;
-    //slot in the hashTable according to leading letter
-	int index;
+    //slot in the hashTable according to first letter
+	int i;
     //leading letter
-	char leading;
+	char first;
     //hashTable* list = createHashTable(36);
 	while(head!=NULL)
 	{
-		count ++;
-		leading = head->token[0];
-		index = leading;
+		count++;
+		first = head->token[0];
+		i = first;
 		//alphas first in table, numerics second
-		if (!isalpha(leading))
+		if (!isalpha(first))
 		{
-			index += 26;
+			i += 26;
 		}
 		else
 		{
-			index -=97;
+			i -=97;
 		}
 		//node to be inserted
-		Node* node = createNode(file, head->token);
+		Node* n = createNode(file, head->token);
         //if node is to be inserted at front of head
-		if (list->table[index] == NULL || sortalnum(list->table[index]->token, node->token)<0)    
+		if (list->table[i] == NULL || sortalnum(list->table[i]->token, n->token)<0)    
 		{
-			node->next = list->table[index];
-			list->table[index] = node;
+			n->next = list->table[i];
+			list->table[i] = n;
 		}
-        //if node is second node or later
+        //if n is second node or later
 		else
 		{
-			Node* curr = list->table[index];
+			Node* curr = list->table[i];
 			Node* prev = curr;
             //while string to be inserted comes after existing strings
-			while(curr!=NULL && sortalnum(curr->token, node->token)>0)
+			while(curr != NULL && sortalnum(curr->token, n->token) > 0)
 			{
 				prev = curr;
 				curr = curr->next;
 			}
-			if (curr!=NULL && sortalnum(curr->token, node->token)==0)
+			if (curr!=NULL && sortalnum(curr->token, n->token) == 0)
 			{
-				if (strcmp(curr->fileName, node->fileName)!=0)
+				if (strcmp(curr->fileName, n->fileName) != 0)
 				{
 								//HERE BEGINS THE NEW TERRITORY
-					if(curr->next != NULL && strcmp(curr->next->token, node->token)==0 && strcmp(node->fileName, curr->next->fileName)==0)
+					if(curr->next != NULL && strcmp(curr->next->token, n->token)==0 && strcmp(n->fileName, curr->next->fileName)==0)
 					{
-								//printf("well it might be working");	
 						curr->next->count++;
 					}
 					else
 					{
-						node->next = curr->next;
-						curr->next=node;
+						n->next = curr->next;
+						curr->next = n;
 					}
 				}
 				else
 				{
-					curr->count ++;
+					curr->count++;
 				}
 			}
 			else
 			{
-				node->next = curr;
-				prev->next = node;
+				n->next = curr;
+				prev->next = n;
 			}
 		}
 		head = head->next;
