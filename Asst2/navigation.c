@@ -166,3 +166,24 @@ void insertNode(Node* head, hashTable* list , char* file)
 	return;
 }
 
+void deleteTable(hashTable* hTable)
+{
+    int i;
+    Node* curr;
+    Node* temp;
+	for (i=0; i<hTable->length; i++)
+    {
+        curr = hTable->table[i];
+        while(curr!=NULL)
+        {
+            temp = curr->next;
+            free(curr->token);
+			free(curr->file);
+            free(curr);
+            curr = temp;   		
+		}
+    }
+    free(hTable->table);
+    free(hTable);
+}
+

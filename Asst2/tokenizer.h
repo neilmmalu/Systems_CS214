@@ -46,7 +46,7 @@ int sortalnum(const char* a, const char* b);
 
 void printTable(hashTable* list);
 
-// void deleteTable(hashTable* list);
+void deleteTable(hashTable* list);
 
 // void deleteList(Node* head);
 
