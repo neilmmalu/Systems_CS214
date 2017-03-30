@@ -48,7 +48,7 @@ void printTable(hashTable* list);
 
 void deleteTable(hashTable* list);
 
-// void deleteList(Node* head);
+void deleteList(Node* head);
 
 void printLL(Node* head);
 
