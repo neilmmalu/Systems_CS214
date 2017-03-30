@@ -263,10 +263,10 @@ int exists(char** argv)
 		if(fp)
 		{
 			flag = remove(fp);
-		}
-		else
-		{
-			printf("Did not delete file");
+			if(flag == 0)
+			{
+				printf("Did not delete file");
+			}
 		}
 	}
 	return temp;
