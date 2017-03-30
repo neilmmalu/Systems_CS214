@@ -1,0 +1,25 @@
+Testplan:
+Case 1: read missing directory / something does not exist / any error case
+Input: ./index testcase empty
+Expected output / Our output:
+
+Case 1a: read a directory that doesn’t exist
+Input: ./index testcase doesntexist
+Expected output/ Our output:
+Error: could not open doesntexist – File or directory may not exist
+Case 2: read a file with a single line of text
+Input: ./index testcase test0
+Expected output / Our output:
+
+Case 3: read files within the same directory with lines of text (with repeating tokens)
+Input: ./index testcase test0a
+Expected output / Output:
+
+Case 4: read files in a separate directory with long texts
+Input: ./index testcase test1
+Expected output / output:
+
+Case 5: read multiple files from nested directories
+Input: ./index testcase test2
+Expected output/ output:
+
