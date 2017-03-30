@@ -181,7 +181,7 @@ int checkInput(int argc)
 }
 
 //collects tokens, scatters into individual hash tables, and outputs them to designated output file
-void outputTokens(hashTable* masterTable, FILE* outputFile)
+void outputTokens(hashTable* masterTable, FILE* mainOutputFile)
 {
 	int i;
 	Node* head;
@@ -214,16 +214,16 @@ void outputTokens(hashTable* masterTable, FILE* outputFile)
 			prev->next = NULL;
 			if(head!=NULL)
 			{
-				scatterTokens(head, maxNum, outputFile);
+				scatterTokens(head, maxNum, mainOutputFile);
 			}
 			head = masterTable->table[i];
 		}
 	}
 	//deleteTable(masterTable);
-    printClosingTags(outputFile);
+    printClosingTags(mainOutputFile);
 }
 //I'm like 99% sure this works
-void scatterTokens (Node* head, int size, FILE* outputFile)
+void scatterTokens (Node* head, int size, FILE* mainOutputFile)
 {	
 	Node *curr, *prev;//, *toFree;
 //	toFree = head;
@@ -262,15 +262,15 @@ void scatterTokens (Node* head, int size, FILE* outputFile)
 		head = head->next;
 	}
 	//deleteList(toFree);
-	outputTokenList(mainTable, outputFile);
+	outputTokenList(mainTable, mainOutputFile);
 }
 
-void outputTokenList (hashTable* mainTable, FILE* outputFile)
+void outputTokenList (hashTable* mainTable, FILE* mainOutputFile)
 {
 	boolean wordInitialized = FALSE;
 	if (!outputInitialized)
 	{
-		printOpeningTags(outputFile);
+		printOpeningTags(mainOutputFile);
 		outputInitialized = TRUE;
 	}
 	int i;
@@ -282,29 +282,29 @@ void outputTokenList (hashTable* mainTable, FILE* outputFile)
 		{
 			if(!wordInitialized)
 			{
-				fprintf(outputFile, "\t<word text = \"%s\">\n", curr->token);
+				fprintf(mainOutputFile, "\t<word text = \"%s\">\n", curr->token);
 				wordInitialized = TRUE;
 			}
 			//while(sortalnum(currTok, curr->token)==0)
 			while (curr!=NULL)
 			{
-				fprintf(outputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->fileName, curr->count);
+				fprintf(mainOutputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->fileName, curr->count);
 				curr = curr-> next;
 			}
 		}
 	}
-	fprintf(outputFile, "\t</word>\n");
+	fprintf(mainOutputFile, "\t</word>\n");
 	//deleteTable(mainTable);
 }
-void printOpeningTags(FILE* outputFile)
+void printOpeningTags(FILE* mainOutputFile)
 {
-	fprintf(outputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-	fprintf(outputFile, "<fileIndex>\n");
+	fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+	fprintf(mainOutputFile, "<fileIndex>\n");
 }
 
-void printClosingTags(FILE* outputFile)
+void printClosingTags(FILE* mainOutputFile)
 {
-	fprintf(outputFile, "</fileIndex>\n");
+	fprintf(mainOutputFile, "</fileIndex>\n");
 }
 void toLowerCase(Node* head)
 {
@@ -432,7 +432,7 @@ void printLL(Node* head)
 	}
 }
 
-int checkOverwrite(char** argv)
+int exists(char** argv)
 {
 	int x = 1;
 	char file [260];
@@ -527,17 +527,18 @@ int main(int argc, char** argv)
 {
 	hashTable* mainTable = createHashTable(36);
 
-	if(checkInput(argc) == 1)
-	{
-		return 1; //-1?
-	}
-	if (checkOverwrite(argv)==0)
+	if(argc!=3)
+    {
+	  	printf("usage: ./index output_file target_file/directory \n");
+        return 1;
+    }
+	if (exists(argv)==0)
 	{
 		return 0;
 	}
 	traverseDirectory(mainTable, argv[2]);
-	FILE* outputFile = fopen(argv[1], "w+");
-	outputTokens(mainTable, outputFile);
+	FILE* mainOutputFile = fopen(argv[1], "w+");
+	outputTokens(mainTable, mainOutputFile);
 	return 0;
 }
 

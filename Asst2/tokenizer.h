@@ -60,4 +60,5 @@ void deleteList(Node* head);
 
 void printLL(Node* head);
 
+int exists(char** argv);
 
