@@ -245,7 +245,7 @@ int sortHelper(const char *a, const char *b)
 
 int exists(char** argv)
 {
-	int temp = 1;
+	int temp = 0;
 	char file [260];
 	file[0] = '.';
 	file[1] = '/';
@@ -257,7 +257,7 @@ int exists(char** argv)
 		temp = getchar();
 	}
 	int flag;
-	if(temp == '1')
+	if(temp == 1)
 	{
 		flag = remove(file);
 		if(flag != 0)
