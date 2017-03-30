@@ -5,7 +5,7 @@
 #include <errno.h>
 #include <dirent.h>
 #include <unistd.h>
-#include "navigation.c"
+#include "utils.c"
 
 Node* tokenize(FILE* file, char* fName)
 {
