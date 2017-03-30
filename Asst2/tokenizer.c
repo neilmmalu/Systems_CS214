@@ -48,7 +48,20 @@ Node* tokenize(FILE* file, char* fName)
         	}
     	}
 	}
-	toLowerCase(head);
+	
+	Node *ptr = head;
+	while(ptr != NULL)
+	{	
+		for (i=0; i<strlen(ptr->token); i++)
+		{
+			if (isupper(ptr->token[i]))
+			{
+				ptr->token[i] = tolower(ptr->token[i]);
+			}
+		}
+		ptr = ptr->next;
+	}
+
     return head;
 }
 
@@ -111,7 +124,7 @@ void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
 			prev->next = NULL;
 			if(head!=NULL)
 			{
-				scatterTokens(head, limit, mainOutputFile);
+				addTokens(head, limit, mainOutputFile);
 			}
 			head = mainTable->table[i];
 		}
@@ -120,22 +133,22 @@ void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
     fprintf(mainOutputFile, "</fileIndex>\n");
 }
 //I'm like 99% sure this works
-void scatterTokens(Node* head, int size, FILE* mainOutputFile)
+void addTokens(Node* head, int size, FILE* mainOutputFile)
 {	
 	Node *curr, *prev;//, *toFree;
 //	toFree = head;
 	hashTable* mainTable = createHashTable(size);
-	while (head!=NULL)
+	while (head != NULL)
 	{
-		if(mainTable->table[head->count-1]==NULL)
+		if(mainTable->table[head->count - 1]==NULL)
 		{
 			Node* temp = createNode(head->file, head->token);
-			temp->count = head -> count;
-			mainTable->table[head->count-1] = temp;
+			temp->count = head->count;
+			mainTable->table[head->count - 1] = temp;
 		}
 		else
 		{
-			curr = mainTable->table[head->count-1];
+			curr = mainTable->table[head->count - 1];
 			prev = curr;
 			//for the same token with the same counts for different files, keep alphanumeric order
 			while(curr!=NULL && strcmp(curr->file, head->file)<0)//sortalnum(curr->file, head->file)>0)
@@ -146,9 +159,9 @@ void scatterTokens(Node* head, int size, FILE* mainOutputFile)
 			Node* temp = createNode(head->file, head->token);
 			temp->count = head->count;
 			temp->next = curr;
-			if (mainTable->table[temp->count-1] == curr)	
+			if (mainTable->table[temp->count - 1] == curr)	
 			{
-				mainTable->table[temp->count-1] = temp;
+				mainTable->table[temp->count - 1] = temp;
 			}
 			else
 			{
@@ -159,10 +172,10 @@ void scatterTokens(Node* head, int size, FILE* mainOutputFile)
 		head = head->next;
 	}
 	//deleteList(toFree);
-	outputTokenList(mainTable, mainOutputFile);
+	printTokens(mainTable, mainOutputFile);
 }
 
-void outputTokenList (hashTable* mainTable, FILE* mainOutputFile)
+void printTokens(hashTable* mainTable, FILE* mainOutputFile)
 {
 	boolean wordInitialized = FALSE;
 	if (!outputInitialized)
@@ -204,22 +217,22 @@ void outputTokenList (hashTable* mainTable, FILE* mainOutputFile)
 // {
 // 	fprintf(mainOutputFile, "</fileIndex>\n");
 // }
-void toLowerCase(Node* head)
-{
-	int i;
-	Node* temp = head;
-	while(temp!=NULL)
-	{	
-		for (i=0; i<strlen(temp->token); i++)
-		{
-			if (isupper(temp->token[i]))
-			{
-				temp->token[i] = tolower(temp->token[i]);
-			}
-		}
-		temp = temp->next;
-	}
-}
+// void toLowerCase(Node* head)
+// {
+// 	int i;
+// 	Node* temp = head;
+// 	while(temp != NULL)
+// 	{	
+// 		for (i=0; i<strlen(temp->token); i++)
+// 		{
+// 			if (isupper(temp->token[i]))
+// 			{
+// 				temp->token[i] = tolower(temp->token[i]);
+// 			}
+// 		}
+// 		temp = temp->next;
+// 	}
+// }
 
 //modified strncmp to allow for alphanumerics
 int sortalnum(const char *a, const char *b)

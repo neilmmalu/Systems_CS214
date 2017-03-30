@@ -36,9 +36,9 @@ Node* tokenize(FILE* file, char* fileName);
 
 hashTable* makeMasterTable(Node* head, char* fileName);
 
-void outputTokens(hashTable* masterTable, FILE* outputFile);
+void printTokens(hashTable* masterTable, FILE* outputFile);
 
-void scatterTokens(Node* head, int size, FILE* outputFile);
+void addTokens(Node* head, int size, FILE* outputFile);
 
 void outputTokenList(hashTable* myTable, FILE* outputFile);
 
@@ -46,7 +46,7 @@ void outputTokenList(hashTable* myTable, FILE* outputFile);
 
 void printClosingTags();
 
-void toLowerCase(Node* head);
+// void toLowerCase(Node* head);
 
 int sortalnum(const char* a, const char* b);
 
