@@ -181,7 +181,7 @@ int checkInput(int argc)
 }
 
 //collects tokens, scatters into individual hash tables, and outputs them to designated output file
-void outputTokens(hashTable* masterTable, FILE* mainOutputFile)
+void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
 {
 	int i;
 	Node* head;
@@ -190,9 +190,9 @@ void outputTokens(hashTable* masterTable, FILE* mainOutputFile)
 	char* currTok;
 	int maxNum;
 	
-	for (i=0; i<masterTable->length; i++)
+	for (i=0; i<mainTable->length; i++)
 	{
-		head = masterTable->table[i];
+		head = mainTable->table[i];
 		while(head!=NULL)
 		{
 			curr = head;
@@ -210,16 +210,16 @@ void outputTokens(hashTable* masterTable, FILE* mainOutputFile)
 				curr = curr->next;
 			}
 			
-				masterTable -> table[i] = curr;
+				mainTable -> table[i] = curr;
 			prev->next = NULL;
 			if(head!=NULL)
 			{
 				scatterTokens(head, maxNum, mainOutputFile);
 			}
-			head = masterTable->table[i];
+			head = mainTable->table[i];
 		}
 	}
-	//deleteTable(masterTable);
+	//deleteTable(mainTable);
     printClosingTags(mainOutputFile);
 }
 //I'm like 99% sure this works
@@ -449,7 +449,7 @@ int exists(char** argv)
 }
 
 
-void insertNode(Node* list, hashTable* hTable , char* fileName)
+void insertNode(Node* head, hashTable* list , char* fileName)
 {
 	
 	int count =0;
@@ -457,12 +457,12 @@ void insertNode(Node* list, hashTable* hTable , char* fileName)
     int index;
     //leading letter
     char leading;
-    //hashTable* hTable = createHashTable(36);
-	while(list!=NULL)
+    //hashTable* list = createHashTable(36);
+	while(head!=NULL)
 	{
 		count ++;
-		leading = list->token[0];
-        	index = leading;
+		leading = head->token[0];
+        index = leading;
 		//alphas first in table, numerics second
 		if (!isalpha(leading))
 			{
@@ -473,16 +473,17 @@ void insertNode(Node* list, hashTable* hTable , char* fileName)
 				index -=97;
 			}
 		//node to be inserted
-        Node* node = createNode(fileName, list->token);
-        //if node is to be inserted at front of list
-		if (hTable->table[index] == NULL || sortalnum(hTable->table[index]->token, node->token)<0)    		{
-            node->next = hTable->table[index];
-            hTable->table[index] = node;
+        Node* node = createNode(fileName, head->token);
+        //if node is to be inserted at front of head
+		if (list->table[index] == NULL || sortalnum(list->table[index]->token, node->token)<0)    
+		{
+            node->next = list->table[index];
+            list->table[index] = node;
 		}
         //if node is second node or later
             else
             {
-                Node* curr = hTable->table[index];
+                Node* curr = list->table[index];
                 Node* prev = curr;
             //while string to be inserted comes after existing strings
                 while(curr!=NULL && sortalnum(curr->token, node->token)>0)
@@ -517,7 +518,7 @@ void insertNode(Node* list, hashTable* hTable , char* fileName)
 					prev->next = node;
 				}
 			}
-			list = list->next;
+			head = head->next;
 			}
 			return;
 	}
@@ -532,7 +533,7 @@ int main(int argc, char** argv)
 	  	printf("usage: ./index output_file target_file/directory \n");
         return 1;
     }
-	if (exists(argv)==0)
+	if (exists(argv) == 0)
 	{
 		return 0;
 	}
