@@ -48,7 +48,7 @@ Node* tokenize(FILE* file, char* fName)
 	Node *ptr = head;
 	while(ptr != NULL)
 	{	
-		for (i=0; i<strlen(ptr->token); i++)
+		for (i = 0; i<strlen(ptr->token); i++)
 		{
 			if (isupper(ptr->token[i]))
 			{
@@ -97,7 +97,7 @@ void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
 	for (i=0; i<mainTable->length; i++)
 	{
 		head = mainTable->table[i];
-		while(head!=NULL)
+		while(head != NULL)
 		{
 			temp = head;
 			prev = temp;
@@ -254,7 +254,16 @@ int exists(char** argv)
 	if(access(file, F_OK) == 0)
 	{
 		printf("File already exists. Do you wish to continue? Enter 1 to proceed or 0 to exit\n");
-	temp = getchar();
+		temp = getchar();
+	}
+	int flag;
+	if(temp == 1)
+	{
+		FILE *fp = fopen(file, "w");
+		if(fp)
+		{
+			flag = remove(fp);
+		}
 	}
 	return temp;
 }
