@@ -174,45 +174,45 @@ void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
 {
 	int i;
 	Node* head;
-	Node* curr;
+	Node* temp;
 	Node* prev;
-	char* currTok;
-	int maxNum;
+	char* token;
+	int limit;
 	
 	for (i=0; i<mainTable->length; i++)
 	{
 		head = mainTable->table[i];
 		while(head!=NULL)
 		{
-			curr = head;
-			prev = curr;
-			currTok = head->token;
-			maxNum = curr->count;
+			temp = head;
+			prev = temp;
+			token = head->token;
+			limit = temp->count;
 
-			while (curr!=NULL && sortalnum(currTok, curr->token) ==0)
+			while (temp!=NULL && sortalnum(token, temp->token) ==0)
 			{
-				if(curr->count > maxNum)
+				if(temp->count > limit)
 				{
-					maxNum = curr->count;
+					limit = temp->count;
 				}
-				prev = curr;
-				curr = curr->next;
+				prev = temp;
+				temp = temp->next;
 			}
 			
-				mainTable -> table[i] = curr;
+			mainTable -> table[i] = temp;
 			prev->next = NULL;
 			if(head!=NULL)
 			{
-				scatterTokens(head, maxNum, mainOutputFile);
+				scatterTokens(head, limit, mainOutputFile);
 			}
 			head = mainTable->table[i];
 		}
 	}
 	//deleteTable(mainTable);
-    printClosingTags(mainOutputFile);
+    fprintf(mainOutputFile, "</fileIndex>\n");
 }
 //I'm like 99% sure this works
-void scatterTokens (Node* head, int size, FILE* mainOutputFile)
+void scatterTokens(Node* head, int size, FILE* mainOutputFile)
 {	
 	Node *curr, *prev;//, *toFree;
 //	toFree = head;
@@ -259,7 +259,8 @@ void outputTokenList (hashTable* mainTable, FILE* mainOutputFile)
 	boolean wordInitialized = FALSE;
 	if (!outputInitialized)
 	{
-		printOpeningTags(mainOutputFile);
+		fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+		fprintf(mainOutputFile, "<fileIndex>\n");
 		outputInitialized = TRUE;
 	}
 	int i;
@@ -285,16 +286,16 @@ void outputTokenList (hashTable* mainTable, FILE* mainOutputFile)
 	fprintf(mainOutputFile, "\t</word>\n");
 	//deleteTable(mainTable);
 }
-void printOpeningTags(FILE* mainOutputFile)
-{
-	fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-	fprintf(mainOutputFile, "<fileIndex>\n");
-}
+// void printOpeningTags(FILE* mainOutputFile)
+// {
+// 	fprintf(mainOutputFile, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+// 	fprintf(mainOutputFile, "<fileIndex>\n");
+// }
 
-void printClosingTags(FILE* mainOutputFile)
-{
-	fprintf(mainOutputFile, "</fileIndex>\n");
-}
+// void printClosingTags(FILE* mainOutputFile)
+// {
+// 	fprintf(mainOutputFile, "</fileIndex>\n");
+// }
 void toLowerCase(Node* head)
 {
 	int i;
@@ -438,79 +439,79 @@ int exists(char** argv)
 }
 
 
-void insertNode(Node* head, hashTable* list , char* fileName)
+void insertNode(Node* head, hashTable* list , char* file)
 {
 	
 	int count =0;
     //slot in the hashTable according to leading letter
-    int index;
+	int index;
     //leading letter
-    char leading;
+	char leading;
     //hashTable* list = createHashTable(36);
 	while(head!=NULL)
 	{
 		count ++;
 		leading = head->token[0];
-        index = leading;
+		index = leading;
 		//alphas first in table, numerics second
 		if (!isalpha(leading))
-			{
-				index += 26;
-			}
+		{
+			index += 26;
+		}
 		else
-			{
-				index -=97;
-			}
+		{
+			index -=97;
+		}
 		//node to be inserted
-        Node* node = createNode(fileName, head->token);
+		Node* node = createNode(file, head->token);
         //if node is to be inserted at front of head
 		if (list->table[index] == NULL || sortalnum(list->table[index]->token, node->token)<0)    
 		{
-            node->next = list->table[index];
-            list->table[index] = node;
+			node->next = list->table[index];
+			list->table[index] = node;
 		}
         //if node is second node or later
-            else
-            {
-                Node* curr = list->table[index];
-                Node* prev = curr;
+		else
+		{
+			Node* curr = list->table[index];
+			Node* prev = curr;
             //while string to be inserted comes after existing strings
-                while(curr!=NULL && sortalnum(curr->token, node->token)>0)
-                {
-                    prev = curr;
-                    curr = curr->next;
-                }
+			while(curr!=NULL && sortalnum(curr->token, node->token)>0)
+			{
+				prev = curr;
+				curr = curr->next;
+			}
 			if (curr!=NULL && sortalnum(curr->token, node->token)==0)
 			{
 				if (strcmp(curr->fileName, node->fileName)!=0)
 				{
 								//HERE BEGINS THE NEW TERRITORY
-							if(curr->next != NULL && strcmp(curr->next->token, node->token)==0 && strcmp(node->fileName, curr->next->fileName)==0)
-							{
+					if(curr->next != NULL && strcmp(curr->next->token, node->token)==0 && strcmp(node->fileName, curr->next->fileName)==0)
+					{
 								//printf("well it might be working");	
-								curr->next->count++;
-							}
-							else
-							{
-								node->next = curr->next;
-								curr->next=node;
-							}
-				}
-							else
-							{
-								curr->count ++;
-							}
+						curr->next->count++;
+					}
+					else
+					{
+						node->next = curr->next;
+						curr->next=node;
+					}
 				}
 				else
 				{
-					node->next = curr;
-					prev->next = node;
+					curr->count ++;
 				}
 			}
-			head = head->next;
+			else
+			{
+				node->next = curr;
+				prev->next = node;
 			}
-			return;
+		}
+		head = head->next;
 	}
+	return;
+}
 
 
 int main(int argc, char** argv)

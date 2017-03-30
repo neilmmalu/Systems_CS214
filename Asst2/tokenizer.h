@@ -42,7 +42,7 @@ void scatterTokens(Node* head, int size, FILE* outputFile);
 
 void outputTokenList(hashTable* myTable, FILE* outputFile);
 
-void printOpeningTags();
+// void printOpeningTags();
 
 void printClosingTags();
 
