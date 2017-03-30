@@ -7,12 +7,11 @@
 #include <unistd.h>
 #include "tokenizer.h"
 
-void traverseDirectory(hashTable* mainTable, const char * directoryName)
+void traverseDirectory(const char * directoryName, hashTable* mainTable)
 {
 	FILE* file;
 	DIR* directory;
 
-	//printf("%s\t %d\n", directoryName, sizeof(directoryName));
 	directory = opendir(directoryName);
 	if(!directory)
 	{
@@ -26,7 +25,6 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 			{
 				printf("null\n");
 			}
-			//printf("%s\n", buffer);
 			Node* token = tokenize(file, buffer);
 			insertNode(token, mainTable, buffer);
 			return;
@@ -63,13 +61,13 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 						printf("Path length is too long error");
 						return;
 					}
-					traverseDirectory(mainTable, path); //RECURSIVE STEP
+					traverseDirectory(mainTable, path); 
 				}
 				break;
 			}
 
 			case DT_REG:
-			{	//regular files, need to check to ensure ".txt"....
+			{	
 				char pathname[256];
 				FILE* fp;
 				sprintf(pathname, "%s/%s", directoryName, pwd);
@@ -86,28 +84,23 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 		}
 	
 	}
-//	printf("closing directory: %s\n", directoryName); //DEBUGGING 
 	if(closedir(directory)){
 		printf("error could not close dir");
 		return;
 	}
 }
 
-void insertNode(Node* head, hashTable* list , char* file)
+void insertNode(char* file, Node* head, hashTable* list)
 {
 	
 	int count =0;
-    //slot in the hashTable according to first letter
 	int i;
-    //leading letter
 	char first;
-    //hashTable* list = createHashTable(36);
 	while(head!=NULL)
 	{
 		count++;
 		first = head->token[0];
 		i = first;
-		//alphas first in table, numerics second
 		if (!isalpha(first))
 		{
 			i += 26;
@@ -116,20 +109,16 @@ void insertNode(Node* head, hashTable* list , char* file)
 		{
 			i -=97;
 		}
-		//node to be inserted
 		Node* n = createNode(file, head->token);
-        //if node is to be inserted at front of head
 		if (list->table[i] == NULL || sortHelper(list->table[i]->token, n->token)<0)    
 		{
 			n->next = list->table[i];
 			list->table[i] = n;
 		}
-        //if n is second node or later
 		else
 		{
 			Node* curr = list->table[i];
 			Node* prev = curr;
-            //while string to be inserted comes after existing strings
 			while(curr != NULL && sortHelper(curr->token, n->token) > 0)
 			{
 				prev = curr;

@@ -22,9 +22,9 @@ char* inputString = "this is a test sentence now^Im utilizing $%^&symbols$%^&*(*
 
 int outputInitialized = 0;
 
-void insertNode(Node* head, hashTable* list , char* fileName);
+void traverseDirectory(const char * directoryName, hashTable* list);
 
-void traverseDirectory(hashTable* list, const char * directoryName);
+void insertNode(char* fileName, Node* head, hashTable* list);
 
 Node* createNode(char* fileName, char* token);
 

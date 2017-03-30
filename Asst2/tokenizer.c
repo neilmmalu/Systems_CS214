@@ -17,24 +17,20 @@ Node* tokenize(FILE* file, char* fName)
 	while (c != EOF)
     {
 		i = 0;
-		//skip all non-alphanumeric garbage THIS NEEDS TO SKIP ON FIRST NUMBERS TOO APPARENTLY
 		while (c!=EOF && !isalpha(c))
 		{
 			c = fgetc(file);
 		}
-		//get all alphanumerics in current token
 		while(c!= EOF && isalnum(c))
 		{
-			stream[i] = c; //does this move the pointer every time?
+			stream[i] = c; 
 			i++;
 			c = fgetc(file);
 		}
-		//make sure string is null terminated
 		stream[i] = '\0';
 		char* token = malloc(sizeof(char)*i + 1);
 		if(strlen(stream)>0)
         {
-		//+1?
 			memcpy(token, stream, strlen(stream) + 1);
 			if(head == NULL)
        	 	{
@@ -68,7 +64,6 @@ Node* tokenize(FILE* file, char* fName)
 Node* createNode(char* file, char* token)
 {
     Node* n = (Node*)calloc(1, sizeof(Node));
-    //mallocs and copies data into new string
     n->file = strdup(file);
     n->count = 1;
     n->token = token;
@@ -90,7 +85,6 @@ hashTable* createHashTable(int size)
 }
 
 
-//collects tokens, scatters into individual hash tables, and outputs them to designated output file
 void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
 {
 	int i;
@@ -129,10 +123,9 @@ void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
 			head = mainTable->table[i];
 		}
 	}
-	//deleteTable(mainTable);
     fprintf(mainOutputFile, "</fileIndex>\n");
 }
-//I'm like 99% sure this works
+
 void addTokens(Node* head, int size, FILE* mainOutputFile)
 {	
 	Node *curr, *prev;
@@ -149,8 +142,7 @@ void addTokens(Node* head, int size, FILE* mainOutputFile)
 		{
 			curr = mainTable->table[head->count - 1];
 			prev = curr;
-			//for the same token with the same counts for different files, keep alphanumeric order
-			while(curr!=NULL && strcmp(curr->file, head->file)<0)//sortHelper(curr->file, head->file)>0)
+			while(curr!=NULL && strcmp(curr->file, head->file)<0)
 			{
 				prev = curr;
 				curr = curr->next;
@@ -194,7 +186,6 @@ void printTokens(hashTable* mainTable, FILE* mainOutputFile)
 				fprintf(mainOutputFile, "\t<word text = \"%s\">\n", curr->token);
 				wordInitialized = 1;
 			}
-			//while(sortHelper(currTok, curr->token)==0)
 			while (curr!=NULL)
 			{
 				fprintf(mainOutputFile, "\t\t<file name = \"%s\">%i</file>\n",curr->file, curr->count);
@@ -203,7 +194,6 @@ void printTokens(hashTable* mainTable, FILE* mainOutputFile)
 		}
 	}
 	fprintf(mainOutputFile, "\t</word>\n");
-	//deleteTable(mainTable);
 }
 
 
