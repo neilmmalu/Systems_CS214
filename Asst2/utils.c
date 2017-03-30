@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include "tokenizer.h"
 
-void traverseDirectory(const char * directoryName, hashTable* mainTable)
+void traverseDirectory(hashTable* mainTable, const char * directoryName)
 {
 	FILE* file;
 	DIR* directory;
@@ -90,7 +90,7 @@ void traverseDirectory(const char * directoryName, hashTable* mainTable)
 	}
 }
 
-void insertNode(char* file, Node* head, hashTable* list)
+void insertNode(Node* head, hashTable* list , char* file)
 {
 	
 	int count =0;

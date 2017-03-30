@@ -18,13 +18,14 @@ typedef struct HashTable
 	int length;
 }hashTable;
 
+
 char* inputString = "this is a test sentence now^Im utilizing $%^&symbols$%^&*(*&^$as+_)(*&delimiters This  o3ne has9876568798 nu289374mbers\0";
 
 int outputInitialized = 0;
 
-void traverseDirectory(const char * directoryName, hashTable* list);
+void insertNode(Node* head, hashTable* list , char* fileName);
 
-void insertNode(char* fileName, Node* head, hashTable* list);
+void traverseDirectory(hashTable* list, const char * directoryName);
 
 Node* createNode(char* fileName, char* token);
 
