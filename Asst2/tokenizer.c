@@ -127,13 +127,12 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 				fp = fopen(pathname, "r");
 				if (fp!=NULL)
 				{
-						Node* tmp = tokenize(fp, pwd);	//  <-----------------------------HERE IS THE TOKENIZE CALL
-					insertNode(tmp, mainTable, pwd);
+					Node* n = tokenize(fp, pwd);	
+					insertNode(n, mainTable, pwd);
 				}
 				break;
 			}
 			default:
-				printf("something is not right in ur switch statement");
 				return;
 		}
 	
@@ -145,18 +144,18 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 	}
 }
 
-Node* createNode(char* fileName, char* token)
+Node* createNode(char* file, char* token)
 {
-    Node* myNode = (Node*)calloc(1, sizeof(Node));
+    Node* n = (Node*)calloc(1, sizeof(Node));
     //mallocs and copies data into new string
-    myNode -> fileName = strdup(fileName);
-    myNode -> count = 1;
-    myNode -> token = token;
-    myNode -> next = NULL;
-    return myNode;
+    n->fileName = strdup(file);
+    n->count = 1;
+    n->token = token;
+    n->next = NULL;
+    return n;
 }
 
-hashTable* makeHashTable(int size)
+hashTable* createHashTable(int size)
 {
     hashTable* mainTable = (hashTable*)malloc(sizeof(hashTable));
     mainTable -> table = (Node**)malloc(sizeof(Node*)*size);
@@ -228,7 +227,7 @@ void scatterTokens (Node* head, int size, FILE* outputFile)
 {	
 	Node *curr, *prev;//, *toFree;
 //	toFree = head;
-	hashTable* mainTable = makeHashTable(size);
+	hashTable* mainTable = createHashTable(size);
 	while (head!=NULL)
 	{
 		if(mainTable->table[head->count-1]==NULL)
@@ -305,7 +304,7 @@ void printOpeningTags(FILE* outputFile)
 
 void printClosingTags(FILE* outputFile)
 {
-	fprintf(outputFile, "</fileIndex>");
+	fprintf(outputFile, "</fileIndex>\n");
 }
 void toLowerCase(Node* head)
 {
@@ -458,7 +457,7 @@ void insertNode(Node* list, hashTable* hTable , char* fileName)
     int index;
     //leading letter
     char leading;
-    //hashTable* hTable = makeHashTable(36);
+    //hashTable* hTable = createHashTable(36);
 	while(list!=NULL)
 	{
 		count ++;
@@ -526,7 +525,7 @@ void insertNode(Node* list, hashTable* hTable , char* fileName)
 
 int main(int argc, char** argv)
 {
-	hashTable* mainTable = makeHashTable(36);
+	hashTable* mainTable = createHashTable(36);
 
 	if(checkInput(argc) == 1)
 	{

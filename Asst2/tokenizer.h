@@ -30,7 +30,7 @@ void traverseDirectory(hashTable* hTable, const char * dir_name);
 
 Node* createNode(char* fileName, char* token);
 
-hashTable* makeHashTable(int size);
+hashTable* createHashTable(int size);
 
 Node* tokenize(FILE* file, char* fileName);
 
