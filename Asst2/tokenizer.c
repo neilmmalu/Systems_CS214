@@ -372,26 +372,26 @@ void printTable(hashTable* hTable)
 }
 
 //free all inner nodes and table itself
-void deleteTable(hashTable* hTable)
-{
-    int i;
-    Node* curr;
-    Node* temp;
-	for (i=0; i<hTable->length; i++)
-    {
-        curr = hTable->table[i];
-        while(curr!=NULL)
-        {
-            temp = curr->next;
-            free(curr->token);
-			free(curr->file);
-            free(curr);
-            curr = temp;   		
-		}
-    }
-    free(hTable->table);
-    free(hTable);
-}
+// void deleteTable(hashTable* hTable)
+// {
+//     int i;
+//     Node* curr;
+//     Node* temp;
+// 	for (i=0; i<hTable->length; i++)
+//     {
+//         curr = hTable->table[i];
+//         while(curr!=NULL)
+//         {
+//             temp = curr->next;
+//             free(curr->token);
+// 			free(curr->file);
+//             free(curr);
+//             curr = temp;   		
+// 		}
+//     }
+//     free(hTable->table);
+//     free(hTable);
+// }
 //free unsorted temp linked list
 void deleteList(Node* head)
 {
