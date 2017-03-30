@@ -65,7 +65,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 	{
 		if (errno == ENOTDIR)
 		{
-			char buffer [256];
+			char buffer[256];
 			memcpy (buffer, directoryName, sizeof(directoryName)+1);
 			buffer[sizeof(directoryName)+1] = '\0';
 			file = fopen(directoryName, "r");
@@ -74,30 +74,29 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 				printf("file is null\n");
 			}
 			//printf("%s\n", buffer);
-			Node* tokenStream = tokenize(file, buffer);
-			insertNode(tokenStream, mainTable, buffer);
+			Node* token = tokenize(file, buffer);
+			insertNode(token, mainTable, buffer);
 			return;
 		}
 		else
 		{
-			printf("Error: could not open %s - File or directory  may not exist\n ", directoryName);
-				return;
+			printf("Error: could not open %s - File or directory may not exist\n ", directoryName);
+			return;
 		}
 	}
 	while(directory !=NULL)
 	{
-
-		struct dirent * entry;
+		struct dirent * pwd;
 		char * d_name;
-		entry = readdir(directory);
-		if(!entry)
+		pwd = readdir(directory);
+		if(!pwd)
 		{
 			//end of stream, break
 			break;
 		}
-		d_name = entry->d_name;
+		d_name = pwd->d_name;
 		
-		switch(entry->d_type)
+		switch(pwd->d_type)
 		{
 			
 			case DT_DIR:
@@ -123,12 +122,12 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 				//regular files, need to check to ensure ".txt"....
 			{	
 				char pathname [256];
-				FILE* file;
+				FILE* fp;
 				sprintf(pathname, "%s/%s", directoryName, d_name);
-				file = fopen(pathname, "r");
-				if (file!=NULL)
+				fp = fopen(pathname, "r");
+				if (fp!=NULL)
 				{
-						Node* tmp = tokenize(file, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
+						Node* tmp = tokenize(fp, d_name);	//  <-----------------------------HERE IS THE TOKENIZE CALL
 					insertNode(tmp, mainTable, d_name);
 				}
 				break;
