@@ -14,7 +14,7 @@ int main(int argc, char** argv)
 		return 0;
 	}
 	traverseDirectory(argv[2], mainTable);
-	FILE* mainOutputFile = fopen(argv[1], "w+");
+	FILE* mainOutputFile = fopen(argv[1], "w");
 	outputTokens(mainTable, mainOutputFile);
 	deleteTable(mainTable);
 	return 0;
