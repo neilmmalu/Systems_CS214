@@ -135,7 +135,7 @@ void outputTokens(hashTable* mainTable, FILE* mainOutputFile)
 //I'm like 99% sure this works
 void addTokens(Node* head, int size, FILE* mainOutputFile)
 {	
-	Node *curr, *prev;, *freeThis;
+	Node *curr, *prev, *freeThis;
 	freeThis = head;
 	hashTable* mainTable = createHashTable(size);
 	while (head != NULL)
