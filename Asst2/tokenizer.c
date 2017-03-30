@@ -65,7 +65,7 @@ void traverseDirectory(hashTable* mainTable, const char * directoryName)
 		if (errno == ENOTDIR)
 		{
 			char buffer[256];
-			memcpy (buffer, directoryName, sizeof(directoryName)+1);
+			memcpy(buffer, directoryName, sizeof(directoryName) + 1);
 			buffer[sizeof(directoryName)+1] = '\0';
 			file = fopen(directoryName, "r");
 			if (file == NULL)
@@ -393,19 +393,19 @@ void printTable(hashTable* hTable)
 //     free(hTable);
 // }
 //free unsorted temp linked list
-void deleteList(Node* head)
-{
-    Node* temp;
-	while(head!=NULL)
-    {
-        temp = head->next;
-        free(head->token);
-		free (head->file);
-        free(head);
-        head = temp;
-    }
+// void deleteList(Node* head)
+// {
+//     Node* temp;
+// 	while(head!=NULL)
+//     {
+//         temp = head->next;
+//         free(head->token);
+// 		free (head->file);
+//         free(head);
+//         head = temp;
+//     }
 
-}
+// }
 
 void printLL(Node* head)
 {
