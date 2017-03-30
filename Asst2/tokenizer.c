@@ -268,23 +268,6 @@ void printTable(hashTable* hTable)
     }
 }
 
-//free all inner nodes and table itself
-
-//free unsorted temp linked list
-// void deleteList(Node* head)
-// {
-//     Node* temp;
-// 	while(head!=NULL)
-//     {
-//         temp = head->next;
-//         free(head->token);
-// 		free (head->file);
-//         free(head);
-//         head = temp;
-//     }
-
-// }
-
 void printLL(Node* head)
 {
 	//Node* ptr = head;
