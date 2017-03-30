@@ -257,7 +257,7 @@ int exists(char** argv)
 		temp = getchar();
 	}
 	int flag;
-	if(temp == 1)
+	if(temp == '1')
 	{
 		flag = remove(file);
 		if(flag != 0)
