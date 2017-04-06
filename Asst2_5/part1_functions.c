@@ -164,14 +164,13 @@ void eleven(const char *str) {
  * Creates an array of values containing the values {0.0, 0.1, ..., 0.9}.
  */
 void twelve() {
-  float *values;
+	int i, n = 10;
+  	float *values = malloc(n*sizeof(float));
+  	for (i = 0; i < n; i++)
+   		values[i] = (float)i / n;
 
-  int i, n = 10;
-  for (i = 0; i < n; i++)
-    values[i] = (float)i / n;
-
-  for (i = 0; i < n; i++)
-    printf("%f ", values[i]);
+  	for (i = 0; i < n; i++)
+    	printf("%f ", values[i]);
   printf("\n");
 }
 
