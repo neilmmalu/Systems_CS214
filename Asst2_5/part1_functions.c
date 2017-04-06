@@ -127,166 +127,166 @@ void eight() {
 /**
  * Assigns a pointer (float *p) a numeric value (12.5).
  */
-void nine() {
-  float *p;
-  *p = 12.5;
+// void nine() {
+//   float *p;
+//   *p = 12.5;
 
-  printf("The value of p is: %f\n", *p);
-}
+//   printf("The value of p is: %f\n", *p);
+// }
 
-/**
- * Reset the value of x to zero.
- *
- * @param x
- *     Pointer to reset to 0.
- */
-void ten(int *x) { x = 0; }
+// /**
+//  * Reset the value of x to zero.
+//  *
+//  * @param x
+//  *     Pointer to reset to 0.
+//  */
+// void ten(int *x) { x = 0; }
 
-/**
- * Concatenates "Hello " and the parameter str, which is guaranteed to be a
- * valid c string, and
- * prints the concatenated string.
- */
-void eleven(const char *str) {
-  char *s = "Hello ";
-  strcat(s, str);
-  printf("%s\n", s);
-}
+// /**
+//  * Concatenates "Hello " and the parameter str, which is guaranteed to be a
+//  * valid c string, and
+//  * prints the concatenated string.
+//  */
+// void eleven(const char *str) {
+//   char *s = "Hello ";
+//   strcat(s, str);
+//   printf("%s\n", s);
+// }
 
-/**
- * Creates an array of values containing the values {0.0, 0.1, ..., 0.9}.
- */
-void twelve() {
-  float *values;
+// /**
+//  * Creates an array of values containing the values {0.0, 0.1, ..., 0.9}.
+//  */
+// void twelve() {
+//   float *values;
 
-  int i, n = 10;
-  for (i = 0; i < n; i++)
-    values[i] = (float)i / n;
+//   int i, n = 10;
+//   for (i = 0; i < n; i++)
+//     values[i] = (float)i / n;
 
-  for (i = 0; i < n; i++)
-    printf("%f ", values[i]);
-  printf("\n");
-}
+//   for (i = 0; i < n; i++)
+//     printf("%f ", values[i]);
+//   printf("\n");
+// }
 
-/**
- * Creates a 2D array of values and prints out the values on the diagonal.
- */
-void thirteen(int a) {
-  int **values;
+// /**
+//  * Creates a 2D array of values and prints out the values on the diagonal.
+//  */
+// void thirteen(int a) {
+//   int **values;
 
-  int i, j;
-  values = malloc(10 * sizeof(int));
-  for (i = 0; i < 10; i++)
-    for (j = 0; j < 10; j++)
-      values[i][j] = i * j * a;
+//   int i, j;
+//   values = malloc(10 * sizeof(int));
+//   for (i = 0; i < 10; i++)
+//     for (j = 0; j < 10; j++)
+//       values[i][j] = i * j * a;
 
-  for (i = 0; i < 10; i++)
-    printf("%d ", values[i][i]);
-  printf("\n");
-}
+//   for (i = 0; i < 10; i++)
+//     printf("%d ", values[i][i]);
+//   printf("\n");
+// }
 
-/**
- * Prints out a specific string based on the input parameter (s).
- *
- * @param s
- *     Input parameter, used to determine which string is printed.
- */
-void fourteen(const char *s) {
-  switch (s) {
-  case "blue":
-    printf("Orange and BLUE!\n");
-    break;
+// /**
+//  * Prints out a specific string based on the input parameter (s).
+//  *
+//  * @param s
+//  *     Input parameter, used to determine which string is printed.
+//  */
+// void fourteen(const char *s) {
+//   switch (s) {
+//   case "blue":
+//     printf("Orange and BLUE!\n");
+//     break;
 
-  case "orange":
-    printf("ORANGE and blue!\n");
-    break;
+//   case "orange":
+//     printf("ORANGE and blue!\n");
+//     break;
 
-  default:
-    printf("orange and blue!\n");
-    break;
-  }
-}
+//   default:
+//     printf("orange and blue!\n");
+//     break;
+//   }
+// }
 
-/**
- * Prints out a specific string based on the input parameter (value).
- *
- * @param value
- *     Input parameter, used to determine which string is printed.
- */
-void fifteen(const int value) {
-  switch (value) {
-  case 1:
-    printf("You passed in the value of one!\n");
+// /**
+//  * Prints out a specific string based on the input parameter (value).
+//  *
+//  * @param value
+//  *     Input parameter, used to determine which string is printed.
+//  */
+// void fifteen(const int value) {
+//   switch (value) {
+//   case 1:
+//     printf("You passed in the value of one!\n");
 
-  case 2:
-    printf("You passed in the value of two!\n");
+//   case 2:
+//     printf("You passed in the value of two!\n");
 
-  default:
-    printf("You passed in some other value!\n");
-  }
-}
+//   default:
+//     printf("You passed in some other value!\n");
+//   }
+// }
 
-/**
- * Returns a newly allocated string on the heap with the value of "Hello".
- * This should not be freed.
- *
- * @returns
- *     A newly allocated string, stored on the heap, with the value "Hello".
- */
-char *sixteen() {
-  char *s = malloc(5);
-  strcpy(s, "Hello");
-}
+// /**
+//  * Returns a newly allocated string on the heap with the value of "Hello".
+//  * This should not be freed.
+//  *
+//  * @returns
+//  *     A newly allocated string, stored on the heap, with the value "Hello".
+//  */
+// char *sixteen() {
+//   char *s = malloc(5);
+//   strcpy(s, "Hello");
+// }
 
-/**
- * Prints out the radius of a circle, given its diameter.
- *
- * @param d
- *     The diameter of the circle.
- */
-void seventeen(const int d) {
-  printf("The radius of the circle is: %f.\n", d / 2);
-}
+// /**
+//  * Prints out the radius of a circle, given its diameter.
+//  *
+//  * @param d
+//  *     The diameter of the circle.
+//  */
+// void seventeen(const int d) {
+//   printf("The radius of the circle is: %f.\n", d / 2);
+// }
 
-/**
- * Manipulates the input parameter (k) and prints the result.
- *
- * @param k
- *     The input parameter to manipulate.
- */
-void eighteen(const int k) {
-  k = k * k;
-  k += k;
-  k *= k;
-  k -= 1;
+// /**
+//  * Manipulates the input parameter (k) and prints the result.
+//  *
+//  * @param k
+//  *     The input parameter to manipulate.
+//  */
+// void eighteen(const int k) {
+//   k = k * k;
+//   k += k;
+//   k *= k;
+//   k -= 1;
 
-  printf("Result: %d\n", k);
-}
+//   printf("Result: %d\n", k);
+// }
 
-/**
- * @brief
- *     Clears the bits in "value" that are set in "flag".
- *
- * This function will apply the following rules to the number stored
- * in the input parameter "value":
- * (1): If a specific bit is set in BOTH "value" and "flag", that
- *      bit is NOT SET in the result.
- * (2): If a specific bit is set ONLY in "value", that bit IS SET
- *      in the result.
- * (3): All other bits are NOT SET in the result.
- *
- * Examples:
- *    clear_bits(value = 0xFF, flag = 0x55): 0xAA
- *    clear_bits(value = 0x00, flag = 0xF0): 0x00
- *    clear_bits(value = 0xAB, flag = 0x00): 0xAB
- *
- * @param value
- *     The numeric value to manipulate.
- *
- * @param flag
- *     The flag (or mask) used in order to clear bits from "value".
- */
-long int clear_bits(long int value, long int flag) {
-  // TODO clear_bits
-}
+// /**
+//  * @brief
+//  *     Clears the bits in "value" that are set in "flag".
+//  *
+//  * This function will apply the following rules to the number stored
+//  * in the input parameter "value":
+//  * (1): If a specific bit is set in BOTH "value" and "flag", that
+//  *      bit is NOT SET in the result.
+//  * (2): If a specific bit is set ONLY in "value", that bit IS SET
+//  *      in the result.
+//  * (3): All other bits are NOT SET in the result.
+//  *
+//  * Examples:
+//  *    clear_bits(value = 0xFF, flag = 0x55): 0xAA
+//  *    clear_bits(value = 0x00, flag = 0xF0): 0x00
+//  *    clear_bits(value = 0xAB, flag = 0x00): 0xAB
+//  *
+//  * @param value
+//  *     The numeric value to manipulate.
+//  *
+//  * @param flag
+//  *     The flag (or mask) used in order to clear bits from "value".
+//  */
+// long int clear_bits(long int value, long int flag) {
+//   // TODO clear_bits
+// }
 
