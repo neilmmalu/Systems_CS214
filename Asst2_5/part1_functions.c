@@ -137,13 +137,13 @@ void nine() {
   printf("The value of p is: %f\n", *p);
 }
 
-// /**
-//  * Reset the value of x to zero.
-//  *
-//  * @param x
-//  *     Pointer to reset to 0.
-//  */
-// void ten(int *x) { x = 0; }
+/**
+ * Reset the value of x to zero.
+ *
+ * @param x
+ *     Pointer to reset to 0.
+ */
+void ten(int *x) { x = 0; }
 
 // /**
 //  * Concatenates "Hello " and the parameter str, which is guaranteed to be a
