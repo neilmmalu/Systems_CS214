@@ -223,15 +223,18 @@ void fourteen(const char *s) {
  *     Input parameter, used to determine which string is printed.
  */
 void fifteen(const int value) {
-  switch (value) {
-  case 1:
-    printf("You passed in the value of one!\n");
+  	switch (value) {
+  	case 1:
+    	printf("You passed in the value of one!\n");
+		break;
 
-  case 2:
-    printf("You passed in the value of two!\n");
-
-  default:
-    printf("You passed in some other value!\n");
+  	case 2:
+    	printf("You passed in the value of two!\n");
+		break;
+  
+	default:
+    	printf("You passed in some other value!\n");
+		break;
   }
 }
 
