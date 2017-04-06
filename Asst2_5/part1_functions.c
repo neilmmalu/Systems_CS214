@@ -178,17 +178,19 @@ void twelve() {
  * Creates a 2D array of values and prints out the values on the diagonal.
  */
 void thirteen(int a) {
-  int **values;
+  	int **values;
 
-  int i, j;
-  values = malloc(10 * sizeof(int));
-  for (i = 0; i < 10; i++)
-    for (j = 0; j < 10; j++)
-      values[i][j] = i * j * a;
-
-  for (i = 0; i < 10; i++)
-    printf("%d ", values[i][i]);
-  printf("\n");
+  	int i = 0, j = 0;
+  	values = (int **)malloc(10 * sizeof(int*));
+  	for (i = 0; i < 10; i++){
+		values[i] = (int *)malloc(10 * sizeof(int));
+   		for (j = 0; j < 10; j++){
+      		values[i][j] = i * j * a;
+		}
+	}
+  	for (i = 0; i < 10; i++)
+    	printf("%d ", values[i][i]);
+  	printf("\n");
 }
 
 // /**
