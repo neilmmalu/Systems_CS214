@@ -12,9 +12,9 @@
  * @param b
  *     Input parameter b.
  */
-void one(const int a, const int b) {
+void one(int a, int b) {
   int c = (a * a) + (b * b);
-  printf("%d^2 + %d^2 = %d", &a, &b, &c);
+  printf("%d^2 + %d^2 = %d\n", &a, &b, &c);
 }
 
 /**
