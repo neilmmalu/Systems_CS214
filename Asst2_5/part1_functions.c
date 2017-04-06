@@ -267,12 +267,13 @@ void seventeen(const int d) {
  *     The input parameter to manipulate.
  */
 void eighteen(const int k) {
-  k = k * k;
-  k += k;
-  k *= k;
-  k -= 1;
+  	int x = k;
+	x = x * x;
+  	x += x;
+  	x *= x;
+  	x -= 1;
 
-  printf("Result: %d\n", k);
+  	printf("Result: %d\n", x);
 }
 
 // /**
