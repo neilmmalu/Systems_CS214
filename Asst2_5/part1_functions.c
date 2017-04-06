@@ -143,7 +143,7 @@ void nine() {
  * @param x
  *     Pointer to reset to 0.
  */
-void ten(int *x) { x = 0; }
+void ten(int *x) { *x = 0; }
 
 // /**
 //  * Concatenates "Hello " and the parameter str, which is guaranteed to be a
