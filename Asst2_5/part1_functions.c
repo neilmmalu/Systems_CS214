@@ -246,9 +246,9 @@ void fifteen(const int value) {
  *     A newly allocated string, stored on the heap, with the value "Hello".
  */
 char *sixteen() {
-  char *s = malloc(5);
-  strcpy(s, "Hello");
-// }
+  	char *s = malloc(5);
+  	strcpy(s, "Hello\0");
+ }
 
 // /**
 //  * Prints out the radius of a circle, given its diameter.
