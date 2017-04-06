@@ -14,7 +14,7 @@
  */
 void one(const int a, const int b) {
   int c = (a * a) + (b * b);
-  printf("%d^2 + %d^2 = %d", a, b, c);
+  printf("%d^2 + %d^2 = %d", &a, &b, &c);
 }
 
 /**
@@ -26,18 +26,20 @@ void one(const int a, const int b) {
  */
 void two(const char *grade) {
   // you may find the atoi function useful
-  if (grade > 70)
-    printf("%d passed!\n", grade);
-  else
-    printf("%d not passed!\n", grade);
+  
+	int x = atoi(grade);
+	if (x > 70)
+		printf("%d passed!\n", &x);
+	else
+    	printf("%d not passed!\n", &x);
 }
 
 /**
  * Assigns a pointer (int *p) the value of a stack variable (int x).
  */
 void three() {
-  int x = 4;
-  int *p = x;
+	int x = 4;
+	int *p = &x;
 
   printf("The value of p is: %d\n", *p);
 }
@@ -50,10 +52,10 @@ void three() {
  *     Value to test.
  */
 void four(const float value) {
-  if (0 < value < 1)
-    printf("The value is between zero and one.\n");
-  else
-    printf("The value is not between zero and one.\n");
+	if (0 < value && value < 1)
+    	printf("The value is between zero and one.\n");
+	else
+    	printf("The value is not between zero and one.\n");
 }
 
 /**
@@ -67,10 +69,10 @@ void four(const float value) {
  *     Second input parameter.
  */
 void five(const int *x, const int *y) {
-  if (x == y)
-    printf("x and y are equal.\n");
-  else
-    printf("x and y are different.\n");
+	if (*x == *y)
+    	printf("x and y are equal.\n");
+	else
+    	printf("x and y are different.\n");
 }
 
 /**
@@ -85,8 +87,8 @@ void five(const int *x, const int *y) {
  *     contains the value of the input parameter.
  */
 float *six(const int *x) {
-  float *p = *x;
-  return p;
+	float *p = x;
+ 	return p;
 }
 
 /**
@@ -98,7 +100,7 @@ float *six(const int *x) {
  *
  */
 void seven(const char *a) {
-  if (a >= 'A' && a <= 'z')
+  if ((int)a >= 'A' && (int)a <= 'z')
     printf("a is a letter.\n");
   else
     printf("a is not a letter.\n");
@@ -117,7 +119,7 @@ void eight() {
   s[3] = 'l';
   s[4] = 'o';
   s[5] = '\0';
-  printf("%s\n", s);
+  printf("%s\n", &s);
 
   free(s);
 }
@@ -127,7 +129,7 @@ void eight() {
  */
 void nine() {
   float *p;
-  p = 12.5;
+  *p = 12.5;
 
   printf("The value of p is: %f\n", *p);
 }
