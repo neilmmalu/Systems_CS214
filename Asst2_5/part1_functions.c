@@ -216,24 +216,24 @@ void fourteen(const char *s) {
  	}
 }
 
-// /**
-//  * Prints out a specific string based on the input parameter (value).
-//  *
-//  * @param value
-//  *     Input parameter, used to determine which string is printed.
-//  */
-// void fifteen(const int value) {
-//   switch (value) {
-//   case 1:
-//     printf("You passed in the value of one!\n");
+/**
+ * Prints out a specific string based on the input parameter (value).
+ *
+ * @param value
+ *     Input parameter, used to determine which string is printed.
+ */
+void fifteen(const int value) {
+  switch (value) {
+  case 1:
+    printf("You passed in the value of one!\n");
 
-//   case 2:
-//     printf("You passed in the value of two!\n");
+  case 2:
+    printf("You passed in the value of two!\n");
 
-//   default:
-//     printf("You passed in some other value!\n");
-//   }
-// }
+  default:
+    printf("You passed in some other value!\n");
+  }
+}
 
 // /**
 //  * Returns a newly allocated string on the heap with the value of "Hello".
