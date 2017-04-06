@@ -81,11 +81,11 @@ int main() {
   char *str = sixteen();
   printf("%s\n", str);
   free(str);
-  /*
+  
   printf("== seventeen() ==\n");
   seventeen(35);
   seventeen(20);
-
+  /*
   printf("== eighteen() ==\n");
   eighteen(3);
   eighteen(5);

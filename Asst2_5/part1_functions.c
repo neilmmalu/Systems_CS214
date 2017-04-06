@@ -250,15 +250,15 @@ char *sixteen() {
   	strcpy(s, "Hello\0");
  }
 
-// /**
-//  * Prints out the radius of a circle, given its diameter.
-//  *
-//  * @param d
-//  *     The diameter of the circle.
-//  */
-// void seventeen(const int d) {
-//   printf("The radius of the circle is: %f.\n", d / 2);
-// }
+/**
+ * Prints out the radius of a circle, given its diameter.
+ *
+ * @param d
+ *     The diameter of the circle.
+ */
+void seventeen(const int d) {
+  printf("The radius of the circle is: %f.\n", d / 2);
+}
 
 // /**
 //  * Manipulates the input parameter (k) and prints the result.
