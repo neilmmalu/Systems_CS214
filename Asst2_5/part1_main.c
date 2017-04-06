@@ -76,12 +76,12 @@ int main() {
   fifteen(1);
   fifteen(2);
   fifteen(3);
-  /*
+  
   printf("== sixteen() ==\n");
   char *str = sixteen();
   printf("%s\n", str);
   free(str);
-
+  /*
   printf("== seventeen() ==\n");
   seventeen(35);
   seventeen(20);

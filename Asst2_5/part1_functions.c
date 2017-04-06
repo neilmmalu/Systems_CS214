@@ -232,22 +232,22 @@ void fifteen(const int value) {
     	printf("You passed in the value of two!\n");
 		break;
   
-	default:
+   default:
     	printf("You passed in some other value!\n");
 		break;
   }
 }
 
-// /**
-//  * Returns a newly allocated string on the heap with the value of "Hello".
-//  * This should not be freed.
-//  *
-//  * @returns
-//  *     A newly allocated string, stored on the heap, with the value "Hello".
-//  */
-// char *sixteen() {
-//   char *s = malloc(5);
-//   strcpy(s, "Hello");
+/**
+ * Returns a newly allocated string on the heap with the value of "Hello".
+ * This should not be freed.
+ *
+ * @returns
+ *     A newly allocated string, stored on the heap, with the value "Hello".
+ */
+char *sixteen() {
+  char *s = malloc(5);
+  strcpy(s, "Hello");
 // }
 
 // /**
