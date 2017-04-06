@@ -25,7 +25,7 @@ int main() {
   const int num2 = 3;
   five(&num1, &num2);
 
-  const int num3 = 4;
+  /*const int num3 = 4;
   five(&num1, &num3);
 
   printf("== six() ==\n");
@@ -110,7 +110,7 @@ int main() {
 
   result = clear_bits(0xBB, 0xBB);
   printf("%ld\n", result);
-
+*/
 
   return 0;
 }
