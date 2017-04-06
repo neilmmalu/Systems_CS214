@@ -39,7 +39,7 @@ int main() {
   p_six = six(&i432);
   printf("%d == %f\n", i432, *p_six);
   free(p_six);
-
+  */
   printf("== seven() ==\n");
   const char s = 'S';
   seven(&s);
@@ -48,7 +48,7 @@ int main() {
 
   printf("== eight() ==\n");
   eight();
-
+  /*
   printf("== nine() ==\n");
   nine();
 

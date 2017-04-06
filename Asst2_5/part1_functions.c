@@ -86,8 +86,9 @@ void five(const int *x, const int *y) {
  *     A new pointer, allocated on the heap and not freed, that
  *     contains the value of the input parameter.
  */
-float *six(const int *x) {
-	float *p = x;
+float *six(const int *x){
+	float temp = (float)*x;
+	float *p = &temp;
  	return p;
 }
 
