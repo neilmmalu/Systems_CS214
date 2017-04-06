@@ -200,19 +200,20 @@ void thirteen(int a) {
  *     Input parameter, used to determine which string is printed.
  */
 void fourteen(const char *s) {
-  switch (s) {
-  case "blue":
-    printf("Orange and BLUE!\n");
-    break;
+		
+  	switch (s[0]) {
+  		case 'b':
+   			printf("Orange and BLUE!\n");
+    		break;
 
-  case "orange":
-    printf("ORANGE and blue!\n");
-    break;
+  		case 'o':
+    		printf("ORANGE and blue!\n");
+    		break;
 
-  default:
-    printf("orange and blue!\n");
-    break;
-  }
+  		default:
+    		printf("orange and blue!\n");
+    		break;
+ 	}
 }
 
 // /**
