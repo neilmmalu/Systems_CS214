@@ -62,10 +62,10 @@ int main() {
   
   printf("== twelve() ==\n");
   twelve();
-  /*
+  
   printf("== thirteen() ==\n");
   thirteen(10);
-
+  /*
   printf("== fourteen() ==\n");
   fourteen("red");
   fourteen("orange");

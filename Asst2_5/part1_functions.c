@@ -174,22 +174,22 @@ void twelve() {
   printf("\n");
 }
 
-// /**
-//  * Creates a 2D array of values and prints out the values on the diagonal.
-//  */
-// void thirteen(int a) {
-//   int **values;
+/**
+ * Creates a 2D array of values and prints out the values on the diagonal.
+ */
+void thirteen(int a) {
+  int **values;
 
-//   int i, j;
-//   values = malloc(10 * sizeof(int));
-//   for (i = 0; i < 10; i++)
-//     for (j = 0; j < 10; j++)
-//       values[i][j] = i * j * a;
+  int i, j;
+  values = malloc(10 * sizeof(int));
+  for (i = 0; i < 10; i++)
+    for (j = 0; j < 10; j++)
+      values[i][j] = i * j * a;
 
-//   for (i = 0; i < 10; i++)
-//     printf("%d ", values[i][i]);
-//   printf("\n");
-// }
+  for (i = 0; i < 10; i++)
+    printf("%d ", values[i][i]);
+  printf("\n");
+}
 
 // /**
 //  * Prints out a specific string based on the input parameter (s).
