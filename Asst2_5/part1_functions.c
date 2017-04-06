@@ -145,16 +145,16 @@ void nine() {
  */
 void ten(int *x) { *x = 0; }
 
-// /**
-//  * Concatenates "Hello " and the parameter str, which is guaranteed to be a
-//  * valid c string, and
-//  * prints the concatenated string.
-//  */
-// void eleven(const char *str) {
-//   char *s = "Hello ";
-//   strcat(s, str);
-//   printf("%s\n", s);
-// }
+/**
+ * Concatenates "Hello " and the parameter str, which is guaranteed to be a
+ * valid c string, and
+ * prints the concatenated string.
+ */
+void eleven(const char *str) {
+  char *s = "Hello ";
+  strcat(s, str);
+  printf("%s\n", s);
+}
 
 // /**
 //  * Creates an array of values containing the values {0.0, 0.1, ..., 0.9}.

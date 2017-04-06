@@ -56,10 +56,10 @@ int main() {
   int i_ten = 100;
   ten(&i_ten);
   printf("%d == 0?\n", i_ten);
-  /*
+  
   printf("== eleven() ==\n");
   eleven("World!");
-
+  /*
   printf("== twelve() ==\n");
   twelve();
 
