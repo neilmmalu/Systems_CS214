@@ -130,12 +130,12 @@ void eight() {
 /**
  * Assigns a pointer (float *p) a numeric value (12.5).
  */
-// void nine() {
-//   float *p;
-//   *p = 12.5;
+void nine() {
+  float *p;
+  *p = 12.5;
 
-//   printf("The value of p is: %f\n", *p);
-// }
+  printf("The value of p is: %f\n", *p);
+}
 
 // /**
 //  * Reset the value of x to zero.
