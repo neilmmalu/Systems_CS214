@@ -71,12 +71,12 @@ int main() {
   fourteen("orange");
   fourteen("blue");
   fourteen("green");
-  /*
+  
   printf("== fifteen() ==\n");
   fifteen(1);
   fifteen(2);
   fifteen(3);
-
+  /*
   printf("== sixteen() ==\n");
   char *str = sixteen();
   printf("%s\n", str);
