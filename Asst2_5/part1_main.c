@@ -65,13 +65,13 @@ int main() {
   
   printf("== thirteen() ==\n");
   thirteen(10);
-  /*
+  
   printf("== fourteen() ==\n");
   fourteen("red");
   fourteen("orange");
   fourteen("blue");
   fourteen("green");
-
+  /*
   printf("== fifteen() ==\n");
   fifteen(1);
   fifteen(2);

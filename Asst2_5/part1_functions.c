@@ -193,27 +193,27 @@ void thirteen(int a) {
   	printf("\n");
 }
 
-// /**
-//  * Prints out a specific string based on the input parameter (s).
-//  *
-//  * @param s
-//  *     Input parameter, used to determine which string is printed.
-//  */
-// void fourteen(const char *s) {
-//   switch (s) {
-//   case "blue":
-//     printf("Orange and BLUE!\n");
-//     break;
+/**
+ * Prints out a specific string based on the input parameter (s).
+ *
+ * @param s
+ *     Input parameter, used to determine which string is printed.
+ */
+void fourteen(const char *s) {
+  switch (s) {
+  case "blue":
+    printf("Orange and BLUE!\n");
+    break;
 
-//   case "orange":
-//     printf("ORANGE and blue!\n");
-//     break;
+  case "orange":
+    printf("ORANGE and blue!\n");
+    break;
 
-//   default:
-//     printf("orange and blue!\n");
-//     break;
-//   }
-// }
+  default:
+    printf("orange and blue!\n");
+    break;
+  }
+}
 
 // /**
 //  * Prints out a specific string based on the input parameter (value).
