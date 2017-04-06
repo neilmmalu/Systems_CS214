@@ -13,9 +13,9 @@
  *     Input parameter b.
  */
 void one(const int a, const int b) {
-  int x = &a, y = &b;
+  int *x = &a, *y = &b;
   int c = (x * x) + (y * y);
-  printf("%d^2 + %d^2 = %d\n", &x, &y, &c);
+  printf("%d^2 + %d^2 = %d\n", x, y, &c);
 }
 
 /**
