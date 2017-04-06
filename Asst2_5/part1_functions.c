@@ -268,7 +268,7 @@ void seventeen(const int d) {
  */
 void eighteen(const int k) {
   	int x = k;
-	x = x * x;
+	  x = x * x;
   	x += x;
   	x *= x;
   	x -= 1;
@@ -276,30 +276,30 @@ void eighteen(const int k) {
   	printf("Result: %d\n", x);
 }
 
-// /**
-//  * @brief
-//  *     Clears the bits in "value" that are set in "flag".
-//  *
-//  * This function will apply the following rules to the number stored
-//  * in the input parameter "value":
-//  * (1): If a specific bit is set in BOTH "value" and "flag", that
-//  *      bit is NOT SET in the result.
-//  * (2): If a specific bit is set ONLY in "value", that bit IS SET
-//  *      in the result.
-//  * (3): All other bits are NOT SET in the result.
-//  *
-//  * Examples:
-//  *    clear_bits(value = 0xFF, flag = 0x55): 0xAA
-//  *    clear_bits(value = 0x00, flag = 0xF0): 0x00
-//  *    clear_bits(value = 0xAB, flag = 0x00): 0xAB
-//  *
-//  * @param value
-//  *     The numeric value to manipulate.
-//  *
-//  * @param flag
-//  *     The flag (or mask) used in order to clear bits from "value".
-//  */
-// long int clear_bits(long int value, long int flag) {
-//   // TODO clear_bits
-// }
+/**
+ * @brief
+ *     Clears the bits in "value" that are set in "flag".
+ *
+ * This function will apply the following rules to the number stored
+ * in the input parameter "value":
+ * (1): If a specific bit is set in BOTH "value" and "flag", that
+ *      bit is NOT SET in the result.
+ * (2): If a specific bit is set ONLY in "value", that bit IS SET
+ *      in the result.
+ * (3): All other bits are NOT SET in the result.
+ *
+ * Examples:
+ *    clear_bits(value = 0xFF, flag = 0x55): 0xAA
+ *    clear_bits(value = 0x00, flag = 0xF0): 0x00
+ *    clear_bits(value = 0xAB, flag = 0x00): 0xAB
+ *
+ * @param value
+ *     The numeric value to manipulate.
+ *
+ * @param flag
+ *     The flag (or mask) used in order to clear bits from "value".
+ */
+long int clear_bits(long int value, long int flag) {
+  // TODO clear_bits
+}
 
