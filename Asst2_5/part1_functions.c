@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 /**
  * Calculates a value (c) based on the input parameters (a, b) and prints
@@ -101,10 +102,11 @@ float *six(const int *x){
  *
  */
 void seven(const char *a) {
-  if ((int)a >= 'A' && (int)a <= 'z')
-    printf("a is a letter.\n");
-  else
-    printf("a is not a letter.\n");
+	char t = a[0];
+	if (isalpha(t))
+    	printf("a is a letter.\n");
+	else
+    	printf("a is not a letter.\n");
 }
 
 /**
@@ -120,7 +122,7 @@ void eight() {
   s[3] = 'l';
   s[4] = 'o';
   s[5] = '\0';
-  printf("%s\n", &s);
+  printf("%s\n", s);
 
   free(s);
 }
