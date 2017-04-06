@@ -260,20 +260,20 @@ void seventeen(const int d) {
   printf("The radius of the circle is: %f.\n", (float)d / 2);
 }
 
-// /**
-//  * Manipulates the input parameter (k) and prints the result.
-//  *
-//  * @param k
-//  *     The input parameter to manipulate.
-//  */
-// void eighteen(const int k) {
-//   k = k * k;
-//   k += k;
-//   k *= k;
-//   k -= 1;
+/**
+ * Manipulates the input parameter (k) and prints the result.
+ *
+ * @param k
+ *     The input parameter to manipulate.
+ */
+void eighteen(const int k) {
+  k = k * k;
+  k += k;
+  k *= k;
+  k -= 1;
 
-//   printf("Result: %d\n", k);
-// }
+  printf("Result: %d\n", k);
+}
 
 // /**
 //  * @brief
