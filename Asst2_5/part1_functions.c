@@ -257,7 +257,7 @@ char *sixteen() {
  *     The diameter of the circle.
  */
 void seventeen(const int d) {
-  printf("The radius of the circle is: %f.\n", d / 2);
+  printf("The radius of the circle is: %f.\n", (float)d / 2);
 }
 
 // /**
