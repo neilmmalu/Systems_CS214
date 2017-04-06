@@ -29,9 +29,9 @@ void two(const char *grade) {
   
 	int x = atoi(grade);
 	if (x > 70)
-		printf("%d passed!\n", &x);
+		printf("%d passed!\n", x);
 	else
-    	printf("%d not passed!\n", &x);
+    	printf("%d not passed!\n", x);
 }
 
 /**
