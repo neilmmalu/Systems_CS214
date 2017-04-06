@@ -151,9 +151,13 @@ void ten(int *x) { *x = 0; }
  * prints the concatenated string.
  */
 void eleven(const char *str) {
-  char *s = "Hello ";
-  strcat(s, str);
-  printf("%s\n", s);
+  	char *x = malloc(sizeof(str));
+	char *s = "Hello ";
+	char *y = malloc(sizeof(s));
+	strcpy(x, str);
+	strcpy(y, s);
+  	s = strcat(y, x);
+  	printf("%s\n", s);
 }
 
 // /**
