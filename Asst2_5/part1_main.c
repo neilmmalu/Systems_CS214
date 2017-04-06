@@ -59,10 +59,10 @@ int main() {
   
   printf("== eleven() ==\n");
   eleven("World!");
-  /*
+  
   printf("== twelve() ==\n");
   twelve();
-
+  /*
   printf("== thirteen() ==\n");
   thirteen(10);
 

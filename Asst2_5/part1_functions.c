@@ -151,29 +151,29 @@ void ten(int *x) { *x = 0; }
  * prints the concatenated string.
  */
 void eleven(const char *str) {
-  	char *x = malloc(sizeof(str));
-	char *s = "Hello ";
-	char *y = malloc(sizeof(s));
-	strcpy(x, str);
-	strcpy(y, s);
-  	s = strcat(y, x);
-  	printf("%s\n", s);
+    char *x = malloc(sizeof(str));
+  	char *s = "Hello ";
+  	char *y = malloc(sizeof(s));
+  	strcpy(x, str);
+  	strcpy(y, s);
+    s = strcat(y, x);
+    printf("%s\n", s);
 }
 
-// /**
-//  * Creates an array of values containing the values {0.0, 0.1, ..., 0.9}.
-//  */
-// void twelve() {
-//   float *values;
+/**
+ * Creates an array of values containing the values {0.0, 0.1, ..., 0.9}.
+ */
+void twelve() {
+  float *values;
 
-//   int i, n = 10;
-//   for (i = 0; i < n; i++)
-//     values[i] = (float)i / n;
+  int i, n = 10;
+  for (i = 0; i < n; i++)
+    values[i] = (float)i / n;
 
-//   for (i = 0; i < n; i++)
-//     printf("%f ", values[i]);
-//   printf("\n");
-// }
+  for (i = 0; i < n; i++)
+    printf("%f ", values[i]);
+  printf("\n");
+}
 
 // /**
 //  * Creates a 2D array of values and prints out the values on the diagonal.
