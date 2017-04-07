@@ -89,7 +89,7 @@ void five(const int *x, const int *y) {
  */
 float *six(const int *x){
 	float *p = malloc(sizeof(x));
-	p = (float)*x;
+	*p = (float)*x;
  	return p;
 }
 
@@ -268,7 +268,7 @@ void seventeen(const int d) {
  */
 void eighteen(const int k) {
   	int x = k;
-	  x = x * x;
+	x = x * x;
   	x += x;
   	x *= x;
   	x -= 1;
@@ -301,6 +301,15 @@ void eighteen(const int k) {
  */
 long int clear_bits(long int value, long int flag) {
   // TODO clear_bits
-  
+ 
+  if(value == 0){
+  	return value & flag;
+  }
+  if(flag == 0){
+  	return value;
+  }
+  if(value - flag >= 0)
+  	return value - flag;
+  return 0;
 }
 
