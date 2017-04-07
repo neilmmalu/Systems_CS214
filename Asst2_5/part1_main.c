@@ -27,7 +27,7 @@ int main() {
 
   const int num3 = 4;
   five(&num1, &num3);
-  /*
+  
   printf("== six() ==\n");
   float *p_six;
   int i4 = 4, i432 = 432;
@@ -39,7 +39,7 @@ int main() {
   p_six = six(&i432);
   printf("%d == %f\n", i432, *p_six);
   free(p_six);
-  */
+  
   printf("== seven() ==\n");
   const char s = 'S';
   seven(&s);

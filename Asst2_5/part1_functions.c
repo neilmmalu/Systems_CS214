@@ -88,8 +88,8 @@ void five(const int *x, const int *y) {
  *     contains the value of the input parameter.
  */
 float *six(const int *x){
-	float temp = (float)*x;
-	float *p = &temp;
+	float *p = malloc(sizeof(x));
+	p = (float)*x;
  	return p;
 }
 
@@ -301,5 +301,6 @@ void eighteen(const int k) {
  */
 long int clear_bits(long int value, long int flag) {
   // TODO clear_bits
+  
 }
 
