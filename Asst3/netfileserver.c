@@ -178,7 +178,7 @@ void *thread_process(void *socket){
 }
 
 
-int open(file_data *new){
+int local_open(file_data *new){
     int res = -1;
     if(canOpen(new) == 0){
         return -1;
@@ -273,7 +273,7 @@ int deleteFD(int server_fd){
     return -1;
 }
 
-int read(int file_descriptor, ssize_t nbyte, char *readBuffer){
+int local_read(int file_descriptor, ssize_t nbyte, char *readBuffer){
     int n = -1;
     int i=(file_descriptor/ -10) - 5;
    //printf("Makes it here netread\n");
@@ -296,7 +296,7 @@ int read(int file_descriptor, ssize_t nbyte, char *readBuffer){
 
 }
 
-int write(int file_descriptor, char * readBuffer, ssize_t nbyte){
+int local_write(int file_descriptor, char * readBuffer, ssize_t nbyte){
     int n = -1;
 	int i=(file_descriptor/ -10) - 5;
     if(i < DATA_TABLE_SIZE && i >= 0){

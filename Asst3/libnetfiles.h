@@ -56,8 +56,8 @@ int createFD(file_data *new);
 int deleteFD(int server_fd);
 int canOpen(file_data *new);
 void *thread_process(void *socket);
-int open(file_data *new);
-int read(int file_descriptor, ssize_t nbyte, char * readBuffer);
-int write(int file_descriptor, char * readBuffer, ssize_t nbyte);
+int local_open(file_data *new);
+int local_read(int file_descriptor, ssize_t nbyte, char * readBuffer);
+int local_write(int file_descriptor, char * readBuffer, ssize_t nbyte);
 
 #endif    // _LIBNETFILES_H_
