@@ -6,7 +6,7 @@ typedef struct{
     CONNECTION_MODE conn_mode;
     int flag;
     char file_pwd[256];
-}file_data;
+} file_data;
 
 static int check = 0;
 
