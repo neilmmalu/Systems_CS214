@@ -175,7 +175,7 @@ extern int netclose(int fd){
     errno = 0;
     h_errno = 0;
 
-    int net_addr  = -1;
+    // int net_addr  = -1;
     int socket_fd = -1;
     int serv_ret = 0;
     char buff[BUFF_SIZE] = "";
