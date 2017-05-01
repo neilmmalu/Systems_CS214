@@ -1,13 +1,5 @@
 #include "libnetfiles.h"
 
-typedef struct{
-    int  server_fd;
-    int local_fd;
-    CONNECTION_MODE conn_mode;
-    int flag;
-    char file_pwd[256];
-} file_data;
-
 static int check = 0;
 
 file_data data_table[DATA_TABLE_SIZE];

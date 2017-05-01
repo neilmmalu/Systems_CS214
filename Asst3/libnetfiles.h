@@ -36,6 +36,14 @@ typedef enum {
     INVALID   = 99
 } NET_FUNCTION_TYPE;
 
+typedef struct{
+    int  server_fd;
+    int local_fd;
+    CONNECTION_MODE conn_mode;
+    int flag;
+    char file_pwd[256];
+} file_data;
+
 extern int netserverinit(char *hostname, int filemode);
 extern int netopen(const char *pathname, int flags);
 extern ssize_t netread(int fildes, void *buf, size_t nbyte); 
