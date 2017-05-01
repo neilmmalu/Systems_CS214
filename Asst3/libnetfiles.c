@@ -27,7 +27,7 @@ int socketGen(const char *hostname){
 		return -1;
 	}
 
-	memset((char *) &server_address, sizeof(server_address));
+	bzero((char *) &server_address, sizeof(server_address));
     server_address.sin_family = AF_INET;
     memcpy((char *)server->h_addr, (char *)&server_address.sin_addr.s_addr, server->h_length);
     server_address.sin_port = htons(PORT_NO);
@@ -75,7 +75,7 @@ extern int netserverinit(char *hostname, int filemode){
         return -1;
     }
 
-    memset(buff, BUFF_SIZE);
+    bzero(buff, BUFF_SIZE);
     sprintf(buff, "%d,0,0,0", 1);
 
     serv_ret = write(socket_fd, buff, strlen(buff));
@@ -85,7 +85,7 @@ extern int netserverinit(char *hostname, int filemode){
         return -1;
     }
 
-    memset(buff, BUFF_SIZE);
+    bzero(buff, BUFF_SIZE);
     serv_ret = read(socket_fd, buff, BUFF_SIZE - 1);  
 
     if(serv_ret < 0){
@@ -136,7 +136,7 @@ int netopen(const char *pathname, int flags){
         return -1;
     }
 
-    memset(buff, BUFF_SIZE);
+    bzero(buff, BUFF_SIZE);
     sprintf(buff, "%d,%d,%d,%s", NET_OPEN, CONNECTION.conn_mode, flags, pathname);
 
     serv_ret = write(socket_fd, buff, strlen(buff));
@@ -145,7 +145,7 @@ int netopen(const char *pathname, int flags){
         return -1;
     }
 
-	memset(buff, BUFF_SIZE);
+	bzero(buff, BUFF_SIZE);
 	serv_ret = read(socket_fd, buff, BUFF_SIZE - 1);
 
 	if(serv_ret < 0){
@@ -189,7 +189,7 @@ extern int netclose(int fd){
         return -1;
     }
 
-    memset(buff, BUFF_SIZE);
+    bzero(buff, BUFF_SIZE);
     sprintf(buff, "%d,%d", NET_CLOSE, fd);
 
     serv_ret = write(socket_fd, buff, strlen(buff));
@@ -200,7 +200,7 @@ extern int netclose(int fd){
         return -1;
     }
 
-    memset(buff, BUFF_SIZE);
+    bzero(buff, BUFF_SIZE);
     serv_ret = read(socket_fd, buff, BUFF_SIZE - 1);
 
     if(serv_ret < 0){
@@ -240,7 +240,7 @@ extern ssize_t netread(int fildes, void *buf, size_t nbyte){
         return -1;
     }
 
-	memset(buff, BUFF_SIZE); 
+	bzero(buff, BUFF_SIZE); 
 	sprintf(buff, "%u,%d,%d", NET_READ, fildes, (int)nbyte);
 
     serv_ret = write(socket_fd, buff, strlen(buff));
@@ -251,7 +251,7 @@ extern ssize_t netread(int fildes, void *buf, size_t nbyte){
         return -1;
     }   
 
-	memset(buff, BUFF_SIZE); 
+	bzero(buff, BUFF_SIZE); 
 	serv_ret = read(socket_fd, buff, BUFF_SIZE - 1);   
 
 	if(serv_ret < 0){
@@ -296,7 +296,7 @@ extern ssize_t netwrite(int fildes, const void *buf, size_t nbyte){
         return -1;
     }
 
-	memset(buff, BUFF_SIZE); 
+	bzero(buff, BUFF_SIZE); 
 	sprintf(buff, "%u,%d,%d,%d,%s", NET_WRITE, fildes, (int)nbyte, strlen(temp_buffer), temp_buffer);
 
     serv_ret = write(socket_fd, buff, strlen(buff));
@@ -307,7 +307,7 @@ extern ssize_t netwrite(int fildes, const void *buf, size_t nbyte){
         return -1;
     }    
 
-	memset(buff, BUFF_SIZE);
+	bzero(buff, BUFF_SIZE);
 	serv_ret = read(socket_fd, buff, BUFF_SIZE - 1);
 	if(serv_ret < 0){
         h_errno = ECOMM;  
