@@ -1,24 +1,8 @@
-#include <errno.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <netdb.h>
-#include <string.h>
-#include <strings.h>
-#include <fcntl.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <pthread.h>
-#include <sys/stat.h>
-#include <signal.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
 #include "libnetfiles.h"
 
 static int check = 0;
 
 file_data data_table[DATA_TABLE_SIZE];
-
 
 
 int main(int argc, char *argv[]){
@@ -49,10 +33,8 @@ int main(int argc, char *argv[]){
         close(socket_fd);
         exit(EXIT_FAILURE);
     }
-    // else{}
 
-
-while(check == 0){
+    while(check == 0){
         printf("netfileserver says: listener is ready to accept incoming requests\n");
         if ((newsocket_fd = accept(socket_fd, (struct sockaddr *)&client_address, &client_address_length)) < 0){
             if (errno != EINTR){
