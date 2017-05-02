@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
     pthread_t thread_id = 0;
 
     struct sockaddr_in server_address, client_address;
-    // int client_address_length = sizeof(client_address);
+    int client_address_length = sizeof(client_address);
     createTable();
  	socket_fd = socket(AF_INET, SOCK_STREAM, 0);
     if(socket_fd < 0){
@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
 
     while(check == 0){
         printf("netfileserver says: listener is ready to accept incoming requests\n");
-        if ((newsocket_fd = accept(socket_fd, (struct sockaddr *)&client_address, sizeof(client_address))) < 0){
+        if ((newsocket_fd = accept(socket_fd, (struct sockaddr *)&client_address, &client_address_length)) < 0){
             if (errno != EINTR){
                 fprintf(stderr,"accept() failed...netfileserver(), errno= %d\n", errno);
             	close(newsocket_fd);
