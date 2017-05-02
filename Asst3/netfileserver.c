@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
 
     while(check == 0){
         printf("netfileserver says: listener is ready to accept incoming requests\n");
-        if ((newsocket_fd = accept(socket_fd, (struct sockaddr *)&client_address, &client_address_length)) < 0){
+        if ((newsocket_fd = accept(socket_fd, (struct sockaddr_in *)&client_address, &client_address_length)) < 0){
             if (errno != EINTR){
                 fprintf(stderr,"accept() failed...netfileserver(), errno= %d\n", errno);
             	close(newsocket_fd);
