@@ -15,7 +15,7 @@ int socketGen(const char *hostname){
 
 	socket_fd = socket(AF_INET, SOCK_STREAM, 0);
 	if(socket_fd < 0){
-		fprintf(stderr, "libnetfiles: socket() failed errno = %d\n", errno);
+		fprintf(stderr, "Error in libnetfiles socket() errno = %d\n", errno);
 		return -1;
 	}
 
@@ -23,7 +23,7 @@ int socketGen(const char *hostname){
 	if(server == NULL){
 		errno = 0;
 		h_errno = HOST_NOT_FOUND;
-		printf("stderr, libnetfiles: host not found, h_errno");
+		printf("stderr, Host Not Found libnetfiles, h_errno");
 		return -1;
 	}
 
@@ -33,7 +33,7 @@ int socketGen(const char *hostname){
     server_address.sin_port = htons(PORT_NO);
 
     if(connect(socket_fd,(struct sockaddr *)&server_address, sizeof(server_address)) < 0){
-        fprintf(stderr,"libnetfiles: cannot connect to %s, h_errno= %d\n", hostname, h_errno);
+        fprintf(stderr,"Cannot connect : libnetfiles %s, h_errno= %d\n", hostname, h_errno);
     	return -1;
     }
 
@@ -59,7 +59,7 @@ extern int netserverinit(char *hostname, int filemode){
 
         default:
             h_errno = INVALID_FILE;
-            fprintf(stderr, "netserverinit: invalid file connection mode\n");
+            fprintf(stderr, "bad connection mode netserverinit() \n");
             return -1;
     }
 
@@ -81,7 +81,7 @@ extern int netserverinit(char *hostname, int filemode){
     serv_ret = write(socket_fd, buff, strlen(buff));
     if(serv_ret < 0){
        	h_errno = ECOMM;  
-        printf("Failed to write to SERVER_CONN");
+        printf("SERVER_CONN: failed to write");
         return -1;
     }
 
@@ -90,7 +90,7 @@ extern int netserverinit(char *hostname, int filemode){
 
     if(serv_ret < 0){
         h_errno = ECOMM;  
-        printf("Failed to read from socket\n");
+        printf("Could not read from socket\n");
         if(socket_fd != 0) 
         	close(socket_fd);
         return -1;
@@ -117,13 +117,13 @@ int netopen(const char *pathname, int flags){
     char buff[BUFF_SIZE] = "";
 
     if(pathname == NULL || strlen(pathname) < 1){
-        printf("Pathname is Invalid\n");
+        printf("The pathname is invalid\n");
         errno = EINVAL;  
         return -1;
     }
 
     if(flags != O_RDONLY && flags != O_WRONLY && flags != O_RDWR){
-		printf("Invalid flags argument\n");
+		printf("Invalid flags\n");
 		errno = EINVAL;
 		return -1;
     }
@@ -132,7 +132,7 @@ int netopen(const char *pathname, int flags){
     if(socket_fd < 0){
         errno = 0;
         h_errno = HOST_NOT_FOUND;
-        fprintf(stderr, "netopen: host not found, %s\n", CONNECTION.hostname);
+        fprintf(stderr, "host not found : netopen, %s\n", CONNECTION.hostname);
         return -1;
     }
 
@@ -141,7 +141,7 @@ int netopen(const char *pathname, int flags){
 
     serv_ret = write(socket_fd, buff, strlen(buff));
     if(serv_ret < 0){
-        fprintf(stderr, "netopen: failed to write cmd to CONNECTION.  serv_ret= %d\n", serv_ret);
+        fprintf(stderr, "failed to write cmd to CONNECTION...netopen() .  serv_ret= %d\n", serv_ret);
         return -1;
     }
 
@@ -159,7 +159,7 @@ int netopen(const char *pathname, int flags){
     sscanf(buff, "%d,%d,%d,%d", &serv_ret, &net_addr, &errno, &h_errno);
 
     if(serv_ret == -1){
-        printf("netopen: SERVER_CONN returns FAIL, errno= %d (%s), h_errno=%d\n", errno, strerror(errno), h_errno);
+        printf("SERVER_CONN returns FAIL....netopen() , errno= %d (%s), h_errno=%d\n", errno, strerror(errno), h_errno);
         return -1;
     }
 
@@ -185,7 +185,7 @@ extern int netclose(int fd){
     if(socket_fd < 0){
         errno = 0;
         h_errno = HOST_NOT_FOUND;
-        fprintf(stderr, "netopen: host not found, %s\n", CONNECTION.hostname);
+        fprintf(stderr, "host not found...netopen(), %s\n", CONNECTION.hostname);
         return -1;
     }
 
@@ -196,7 +196,7 @@ extern int netclose(int fd){
 
     if(serv_ret < 0){
         h_errno = ECOMM;  
-        printf("Failed to write to SERVER_CONN");
+        printf("Failed write to SERVER_CONN");
         return -1;
     }
 
@@ -205,7 +205,7 @@ extern int netclose(int fd){
 
     if(serv_ret < 0){
         h_errno = ECOMM;  
-        printf("Failed to read from socket\n");
+        printf("Failed to read from the given socket\n");
         if(socket_fd != 0)
         	close(socket_fd);
         return -1;
@@ -236,7 +236,7 @@ extern ssize_t netread(int fildes, void *buf, size_t nbyte){
     if(socket_fd < 0){
         errno = 0;
         h_errno = HOST_NOT_FOUND;
-        fprintf(stderr, "netopen: host not found, %s\n", CONNECTION.hostname);
+        fprintf(stderr, "host not found...netopen(), %s\n", CONNECTION.hostname);
         return -1;
     }
 
@@ -247,7 +247,7 @@ extern ssize_t netread(int fildes, void *buf, size_t nbyte){
 
     if(serv_ret < 0){
         h_errno = ECOMM;  
-        printf("Failed to write to SERVER_CONN");
+        printf("Failed write to SERVER_CONN");
         return -1;
     }   
 
@@ -256,7 +256,7 @@ extern ssize_t netread(int fildes, void *buf, size_t nbyte){
 
 	if(serv_ret < 0){
         h_errno = ECOMM;  
-        printf("Failed to read from socket\n");
+        printf("Failed read from socket\n");
         if(socket_fd != 0)
         	close(socket_fd);
         return -1;
@@ -292,7 +292,7 @@ extern ssize_t netwrite(int fildes, const void *buf, size_t nbyte){
     if(socket_fd < 0){
         errno = 0;
         h_errno = HOST_NOT_FOUND;
-        fprintf(stderr, "netopen: host not found, %s\n", CONNECTION.hostname);
+        fprintf(stderr, "Host was not found...netopen(), %s\n", CONNECTION.hostname);
         return -1;
     }
 
@@ -303,7 +303,7 @@ extern ssize_t netwrite(int fildes, const void *buf, size_t nbyte){
 
     if(serv_ret < 0){
         h_errno = ECOMM;  
-        printf("Failed to write to SERVER_CONN");
+        printf("Failed write to SERVER_CONN");
         return -1;
     }    
 
@@ -311,7 +311,7 @@ extern ssize_t netwrite(int fildes, const void *buf, size_t nbyte){
 	serv_ret = read(socket_fd, buff, BUFF_SIZE - 1);
 	if(serv_ret < 0){
         h_errno = ECOMM;  
-        printf("Failed to read from socket\n");
+        printf("Failed read from socket\n");
         if(socket_fd != 0)
         	close(socket_fd);
         return -1;

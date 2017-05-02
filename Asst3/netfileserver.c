@@ -31,7 +31,7 @@ int main(int argc, char *argv[]){
     createTable();
  	socket_fd = socket(AF_INET, SOCK_STREAM, 0);
     if (socket_fd < 0) {
-        fprintf(stderr,"netfileserver: socket() failed, errno= %d\n", errno);
+        fprintf(stderr,"socket() has failed...netfileserver(), errno= %d\n", errno);
         exit(EXIT_FAILURE);
     }
 
@@ -40,12 +40,12 @@ int main(int argc, char *argv[]){
     server_address.sin_addr.s_addr = INADDR_ANY;
     server_address.sin_port = htons(PORT_NO);
     if (bind(socket_fd, (struct sockaddr *) &server_address, sizeof(server_address)) < 0){
-        fprintf(stderr,"netfileserver: bind() failed, errno= %d\n", errno);
+        fprintf(stderr,"bind() failed...netfileserver(), errno= %d\n", errno);
         exit(EXIT_FAILURE);
     }
 
     if (listen(socket_fd, 50) < 0){
-        fprintf(stderr,"netfileserver: listen() failed, errno= %d\n", errno);
+        fprintf(stderr," listen() failed...netfileserver(), errno= %d\n", errno);
         close(socket_fd);
         exit(EXIT_FAILURE);
     }
@@ -53,10 +53,10 @@ int main(int argc, char *argv[]){
 
 
 while(check == 0){
-        printf("netfileserver: listener is waiting to accept incoming request\n");
+        printf("netfileserver says: listener is ready to accept incoming requests\n");
         if ((newsocket_fd = accept(socket_fd, (struct sockaddr *)&client_address, &client_address_length)) < 0){
             if (errno != EINTR){
-                fprintf(stderr,"netfileserver: accept() failed, errno= %d\n", errno);
+                fprintf(stderr,"accept() failed...netfileserver(), errno= %d\n", errno);
             	close(newsocket_fd);
             	if(socket_fd != 0)
             		close(socket_fd);
@@ -70,9 +70,9 @@ while(check == 0){
             }
         }
         else{
-            printf("netfileserver: listener accepted a new request from socket\n");
+            printf("netfileserver: listener has accepted new request from socket\n");
             pthread_create(&thread_id, NULL, &thread_process, &newsocket_fd );
-            printf("netfileserver: listener spawned a new worker thread with ID Thread : %lu\n",thread_id);
+            printf("netfileserver: listener has spawned new ID Thread : %lu\n",thread_id);
         }
     }
 
@@ -98,13 +98,13 @@ void *thread_process(void *socket){
     temp = read(*socket_fd, buff, BUFF_SIZE -1);
 
     if ( temp < 0 ){
-        fprintf(stderr,"Thread: %lu failed to read from socket\n", pthread_self());
+        fprintf(stderr,"Thread: %lu couldn't read from socket\n", pthread_self());
         if(*socket_fd != 0)
         	close(*socket_fd);
 		pthread_exit(NULL);
     }
     else{
-        printf("Thread: %lu received \"%s\"\n", pthread_self(), buff);
+        printf("Thread: %lu has been received \"%s\"\n", pthread_self(), buff);
     }
 
     int * nbyte = malloc(sizeof(int));
@@ -115,7 +115,7 @@ void *thread_process(void *socket){
 
         case NET_SERVERINIT:
             sprintf(buff, "%d,0,0,0", 0);
-            printf("Thread : %lu responding with \"%s\"\n", pthread_self(), buff);
+            printf("Thread : %lu responding... \"%s\"\n", pthread_self(), buff);
             break;
 
         case NET_OPEN:
@@ -132,7 +132,7 @@ void *thread_process(void *socket){
 				bzero(buff, BUFF_SIZE);
                 sprintf(buff, "%d,%d,%d,%d", 0, temp, errno, h_errno);
             }
-            printf("Thread : %lu responding with \"%s\"\n", pthread_self(), buff);
+            printf("Thread : %lu responding... \"%s\"\n", pthread_self(), buff);
             free(newFd);
             break;
 
@@ -155,11 +155,11 @@ void *thread_process(void *socket){
             temp = local_write(file_descriptor, readBuffer, *nbyte);
             if(temp == -1){
                 sprintf(buff, "%d,%d,%d", -1, errno, h_errno);
-                printf("write Failed with %d\n", temp);
+                printf("write failed...  %d\n", temp);
             }
             else{
                 sprintf(buff, "%d,%d,%d", 0, temp, errno);
-                printf("write succeeded with %d\n", temp);
+                printf("write succeeded... %d\n", temp);
             }
 	    	free(nbyte);
             break;
@@ -179,14 +179,14 @@ void *thread_process(void *socket){
             break;
 
         default:
-            printf("Thread : %lu received invalid net function\n", pthread_self());
+            printf("Thread : %lu invalid net recieved\n", pthread_self());
             break;
 
 	}    
 	temp = write(*socket_fd, buff, (strlen(buff)+1));                                                // Send Server response back to client
     //printf("value of n: %d\n", n);
     if(temp < 0){
-        fprintf(stderr,"Thread : %lu fails to write to socket\n", pthread_self());
+        fprintf(stderr,"Thread : %lu write to socket fails\n", pthread_self());
     }
     
     pthread_exit(NULL);
@@ -291,8 +291,6 @@ int deleteFD(int server_fd){
 int local_read(int file_descriptor, ssize_t nbyte, char *readBuffer){
     int n = -1;
     int i=(file_descriptor/ -10) - 5;
-   //printf("Makes it here netread\n");
-    //printf("LocalFD: %d\n", data_table[i].local_fd);
     if(i<DATA_TABLE_SIZE && i>=0){
         if(data_table[i].flag == O_WRONLY){
             errno = EBADF;
@@ -302,7 +300,7 @@ int local_read(int file_descriptor, ssize_t nbyte, char *readBuffer){
         printf("return of read %d\n", n);
         if(n >= 0){
         	return n;
-        	printf("Makes it past read\n");
+        	printf("Makes it through read\n");
         }
     }
     
@@ -323,7 +321,7 @@ int local_write(int file_descriptor, char * readBuffer, ssize_t nbyte){
         printf("return of write%d\n", n);
         if(n >= 0){
         	return n;
-        	printf("Makes it past read\n");
+        	printf("Makes it through read\n");
         }
     }
     
