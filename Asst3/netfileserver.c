@@ -236,7 +236,6 @@ void createTable(){
 
 int createFD(file_data *new){
     int i = 0;
-    int n = -1;
 
     for (i=0; i < DATA_TABLE_SIZE; i++) {
         if (data_table[i].local_fd == 0 ){
