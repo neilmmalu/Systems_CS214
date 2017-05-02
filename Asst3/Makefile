@@ -1,7 +1,7 @@
 CC = gcc
 CCFLAGS = -Wall
 
-all : libnetfiles netfileserver clean
+all : libnetfiles netfileserver
 
 libnetfiles: libnetfiles.c libnetfiles.h tester.c
 	$(CC) $(CCFLAGS) -o client libnetfiles.c tester.c
