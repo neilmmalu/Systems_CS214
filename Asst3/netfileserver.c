@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
     pthread_t thread_id = 0;
 
     struct sockaddr_in server_address, client_address;
-    int client_address_length = sizeof(client_address);
+    socklen_t client_address_length = sizeof(client_address);
     createTable();
  	socket_fd = socket(AF_INET, SOCK_STREAM, 0);
     if(socket_fd < 0){
