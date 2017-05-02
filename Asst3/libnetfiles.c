@@ -297,7 +297,7 @@ extern ssize_t netwrite(int fildes, const void *buf, size_t nbyte){
     }
 
 	bzero(buff, BUFF_SIZE); 
-	sprintf(buff, "%u,%d,%d,%d,%s", NET_WRITE, fildes, (int)nbyte, strlen(temp_buffer), temp_buffer);
+	sprintf(buff, "%u,%d,%d,%d,%s", NET_WRITE, fildes, (int)nbyte, (int)strlen(temp_buffer), temp_buffer);
 
     serv_ret = write(socket_fd, buff, strlen(buff));
 
