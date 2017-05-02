@@ -1,5 +1,5 @@
-#ifndef _LIBNETFILES_H_
-#define _LIBNETFILES_H_
+#ifndef LIBNETFILES_H
+#define LIBNETFILES_H
 
 #include <errno.h>
 #include <stdio.h>
