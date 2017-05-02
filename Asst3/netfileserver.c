@@ -72,7 +72,7 @@ while(check == 0){
         else{
             printf("netfileserver: listener has accepted new request from socket\n");
             pthread_create(&thread_id, NULL, &thread_process, &newsocket_fd );
-            printf("netfileserver: listener has spawned new ID Thread : %lu\n",thread_id);
+            printf("netfileserver: listener has now created a new ID Thread : %lu\n",thread_id);
         }
     }
 
