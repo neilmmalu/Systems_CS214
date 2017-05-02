@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
         exit(EXIT_FAILURE);
     }
 
-	memset((char *) &server_address, sizeof(server_address));
+	bzero((char *) &server_address, sizeof(server_address));
     server_address.sin_family = AF_INET;
     server_address.sin_addr.s_addr = INADDR_ANY;
     server_address.sin_port = htons(PORT_NO);
@@ -108,13 +108,13 @@ void *thread_process(void *socket){
 
             sscanf(buff, "%u,%d,%d,%s", &function_type, (int *)&(newFd->conn_mode), &(newFd->flag), newFd->file_pwd);
 
-            temp = open(newFd);
+            temp = local_open(newFd);
             if (temp == -1){
-				memset(buff, BUFF_SIZE);
+				bzero(buff, BUFF_SIZE);
                 sprintf(buff, "%d,%d,%d,%d", -1, temp, errno, h_errno);
             } 
             else {
-				memset(buff, BUFF_SIZE);
+				bzero(buff, BUFF_SIZE);
                 sprintf(buff, "%d,%d,%d,%d", 0, temp, errno, h_errno);
             }
             printf("Thread : %lu responding with \"%s\"\n", pthread_self(), buff);
@@ -123,7 +123,7 @@ void *thread_process(void *socket){
 
         case NET_READ:
             sscanf(buff, "%u,%d, %d", &function_type, &file_descriptor, nbyte);
-            temp = read(file_descriptor, *nbyte, readBuffer);
+            temp = local_read(file_descriptor, *nbyte, readBuffer);
             if(temp==-1){
                 sprintf(buff, "%d,%d,%d,%d", -1, errno, h_errno, temp);
             }
@@ -137,7 +137,7 @@ void *thread_process(void *socket){
         case NET_WRITE: 
             sscanf(buff, "%u,%d,%d,%d", &function_type, &file_descriptor, nbyte, &wbuff_length);
 	    	strncpy(readBuffer, buff+strlen(buff)-wbuff_length, *nbyte);
-            temp = write(file_descriptor, readBuffer, *nbyte);
+            temp = local_write(file_descriptor, readBuffer, *nbyte);
             if(temp == -1){
                 sprintf(buff, "%d,%d,%d", -1, errno, h_errno);
                 printf("write Failed with %d\n", temp);
